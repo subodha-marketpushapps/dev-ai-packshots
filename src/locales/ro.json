@@ -87,7 +87,8 @@
     "columnGeneratedImages": "Imagini generate",
     "viewAllGeneratedImages": "Vizualizați toate imaginile generate",
     "liveImageAlt": "Imagine live",
-    "generatedImageAlt": "Imagine generată"
+    "generatedImageAlt": "Imagine generată",
+    "edit": "Editați"
   },
   "statisticsTab": {
     "title": "Statistici",

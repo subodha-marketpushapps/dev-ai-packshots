@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { TableActionCell } from "@wix/design-system";
 
@@ -11,11 +12,12 @@ const CellPhotoEditBtn: React.FC<CellLivePreviewBtnProps> = ({
   productId,
   onPhotoEditClick,
 }) => {
+  const { t } = useTranslation();
   return (
     <TableActionCell
       size="small"
       primaryAction={{
-        text: "Edit",
+        text: t('productsTab.edit', {defaultValue: "Edit"}),
         onClick: onPhotoEditClick,
       }}
     />

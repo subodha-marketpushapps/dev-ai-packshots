@@ -87,7 +87,8 @@
     "columnGeneratedImages": "Imágenes generadas",
     "viewAllGeneratedImages": "Ver todas las imágenes generadas",
     "liveImageAlt": "Imagen en vivo",
-    "generatedImageAlt": "Imagen generada"
+    "generatedImageAlt": "Imagen generada",
+    "edit": "Editar"
   },
   "statisticsTab": {
     "title": "Estadísticas",
