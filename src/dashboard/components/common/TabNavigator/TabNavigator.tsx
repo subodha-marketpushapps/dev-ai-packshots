@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { SkeletonLine, Tabs, Box } from "@wix/design-system";
 import { ROUTES } from "../../../routes";
 
@@ -10,11 +11,12 @@ type TabNavigatorProps = {
 };
 
 const TabNavigator: React.FC<TabNavigatorProps> = ({ size = "medium" }) => {
+  const { t } = useTranslation();
   const [activeTabId, setActiveTabId] = useRecoilState(activeRouteIdState);
 
   const filteredTabs = ROUTES.filter((tab) => tab.id !== 0);
   const items = filteredTabs.map((item) => {
-    return { id: item.id, title: item.title };
+    return { id: item.id, title: t(item.titleKey, {defaultValue: item.titleKey}) };
   });
 
   const onTabChange = (tabId: number) => {

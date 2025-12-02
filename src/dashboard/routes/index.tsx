@@ -45,20 +45,18 @@ const SyncRecoilWithRouter: React.FC = () => {
 // Route configuration interface
 interface AppRoute {
   id: number;
-  title: string;
+  titleKey: string; // Translation key instead of hardcoded title
   path: string;
   element: React.ReactElement;
 }
 
-// Define all available routes
+// Define all available routes with translation keys
 export const ROUTES: AppRoute[] = [
-  // { id: 1, title: "Overview", path: "/", element: <StatisticsTab /> },
-  { id: 2, title: "Products", path: "/products", element: <ProductsTab /> },
-  { id: 3, title: "Draft Images", path: "/gallery", element: <GalleryTab /> },
-  // { id: 4, title: "Settings", path: "/settings", element: <SettingsTab /> },
+  // { id: 1, titleKey: "tabs.overview", path: "/", element: <StatisticsTab /> },
+  { id: 2, titleKey: "tabs.products", path: "/products", element: <ProductsTab /> },
+  { id: 3, titleKey: "tabs.draftImages", path: "/gallery", element: <GalleryTab /> },
+  // { id: 4, titleKey: "tabs.settings", path: "/settings", element: <SettingsTab /> },
 ];
-
-// Note: Route titles are used in TabNavigator, which will need i18next support if needed
 
 const AppRouter: React.FC = () => (
   <Layout>

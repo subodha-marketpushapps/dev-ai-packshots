@@ -1,7 +1,7 @@
 import { TableColumn } from "@wix/design-system";
-import i18n from "../../../../../i18n";
+import { TFunction } from "i18next";
 
-export const definedColumnStructure: TableColumn[] = [
+export const getDefinedColumnStructure = (t: TFunction): TableColumn[] => [
   {
     title: "",
     render: (row: any) => row.cellProductImage,
@@ -9,20 +9,20 @@ export const definedColumnStructure: TableColumn[] = [
   },
   {
     key: "name",
-    title: i18n.t('productsTab.columnProductName', {defaultValue: "Product Name"}),
+    title: t('productsTab.columnProductName', {defaultValue: "Product Name"}),
     render: (row: any) => row.cellProductDetails,
     sortable: true,
     width: "40%",
   },
   {
     key: "liveImages",
-    title: i18n.t('productsTab.columnProductImages', {defaultValue: "Product Images"}),
+    title: t('productsTab.columnProductImages', {defaultValue: "Product Images"}),
     render: (row: any) => row.cellLiveImages,
     width: "30%",
   },
   {
     key: "generatedImages",
-    title: i18n.t('productsTab.columnGeneratedImages', {defaultValue: "Generated Images"}),
+    title: t('productsTab.columnGeneratedImages', {defaultValue: "Generated Images"}),
     render: (row: any) => row.cellGeneratedImages,
     width: "30%",
   },

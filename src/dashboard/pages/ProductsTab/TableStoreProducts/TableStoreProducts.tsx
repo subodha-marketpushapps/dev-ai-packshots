@@ -29,7 +29,7 @@ import { TableState } from "../../../components/ui/TableState";
 import { EmptyTableTitle } from "../../../components/ui/TableSkeleton";
 
 import {
-  definedColumnStructure,
+  getDefinedColumnStructure,
   TableRawData,
   derivedTableElements,
 } from "./table-config";
@@ -41,11 +41,18 @@ interface TableStoreProductsProps {
 const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
   onProductsUpdate
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   // 🎯 Following Wix Design System patterns with PAGINATION (better for data tables)
   
-  // Get translated column structure
-  const [columns, setColumns] = useState<TableColumn[]>(definedColumnStructure);
+  // Get translated column structure - recalculate when language changes
+  const baseColumns = useMemo(() => getDefinedColumnStructure(t), [t, i18n.language]);
+  const [columns, setColumns] = useState<TableColumn[]>(baseColumns);
+  
+  // Update columns when language changes
+  useEffect(() => {
+    setColumns(getDefinedColumnStructure(t));
+  }, [t, i18n.language]);
+  
   // ✅ Features implemented following Wix standards:
   // - Table with proper Page.Sticky header (Wix pattern)
   // - Pagination instead of infinite scroll (better UX for product tables)
@@ -76,6 +83,7 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
   }, [searchTerm]);
 
   // Detect catalog version and disable sorting for V3
+  // Also re-run when language changes to update column titles
   useEffect(() => {
     const detectCatalogVersion = async () => {
       try {
@@ -83,10 +91,13 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
         const isV3 = catalogVersion === "V3_CATALOG";
         setIsV3Catalog(isV3);
         
+        // Get fresh columns with current translations
+        const baseCols = getDefinedColumnStructure(t);
+        
         // If V3, disable sorting on all sortable columns
         if (isV3) {
-          setColumns(prevColumns => 
-            prevColumns.map(column => ({
+          setColumns(
+            baseCols.map(column => ({
               ...column,
               sortable: false, // Disable sorting for V3
               sortDescending: undefined
@@ -95,8 +106,8 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
           // Clear any existing sort state for V3
           setSort(undefined);
         } else {
-          // For V1, ensure original sortable state is restored
-          setColumns(getDefinedColumnStructure(t));
+          // For V1, ensure original sortable state is restored with current translations
+          setColumns(baseCols);
         }
       } catch (error) {
         console.error("Error detecting catalog version:", error);
@@ -107,7 +118,7 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
     };
 
     detectCatalogVersion();
-  }, []); // Run once on component mount
+  }, [t, i18n.language]); // Run once on component mount
 
   // Use hooks with server-side search, pagination, and sorting
   const wixStoreProductsQuery = useWixStoreProductsPaginated(
