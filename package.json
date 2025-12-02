@@ -1,0 +1,49 @@
+{
+  "name": "ai-packshots-cli",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@tanstack/react-query": "^4.36.1",
+    "@wix/app-management": "^1.0.122",
+    "@wix/business-tools": "^1.0.198",
+    "@wix/dashboard": "^1.3.40",
+    "@wix/design-system": "^1.220.1",
+    "@wix/ecom": "^1.0.1411",
+    "@wix/essentials": "^0.1.28",
+    "@wix/sdk": "^1.17.1",
+    "@wix/site-site": "^1.26.0",
+    "@wix/stores": "^1.0.532",
+    "@wix/wix-ui-icons-common": "^3.96.1",
+    "axios": "^1.9.0",
+    "fabric": "^6.7.0",
+    "lodash": "^4.17.21",
+    "logrocket": "^10.0.0",
+    "react-draggable": "^4.4.6",
+    "react-router-dom": "^6.27.0",
+    "react-use-intercom": "^5.4.3",
+    "recoil": "^0.7.7",
+    "uuid": "^11.1.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.19",
+    "@types/react": "^16.0.0",
+    "@types/react-dom": "^16.0.0",
+    "@wix/cli": "^1.1.131",
+    "@wix/cli-app": "^1.1.131",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "sass": "^1.87.0",
+    "typescript": "~5.8.2"
+  },
+  "scripts": {
+    "wix": "wix",
+    "build": "wix app build",
+    "release": "wix app release",
+    "dev": "wix app dev",
+    "preview": "wix app preview",
+    "generate": "wix app generate",
+    "logs": "wix app logs",
+    "typecheck": "tsc --noEmit"
+  }
+}

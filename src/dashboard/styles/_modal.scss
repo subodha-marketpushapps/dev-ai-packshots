@@ -1,0 +1,10 @@
+/* Common styles for the entire dashboard - start*/
+div {
+  box-sizing: border-box;
+}
+
+.segmented-toggle-mini button {
+  flex: auto;
+  padding-inline: 12px !important;
+}
+

@@ -1,0 +1,23 @@
+.iframe-container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 99999;
+  box-sizing: border-box;
+  padding-bottom: calc(55.43981481481482% - 1px);
+
+  margin-bottom: 24px;
+  border-radius: 6px;
+  .iframe-inner-wrapper {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.info-wrapper {
+  background-color: rgb(240 246 255);
+  border-left: 4px solid rgb(171 202 255);
+  padding: 0.5rem 12px 0.5rem 14px;
+  border-radius: 0.25rem;
+}

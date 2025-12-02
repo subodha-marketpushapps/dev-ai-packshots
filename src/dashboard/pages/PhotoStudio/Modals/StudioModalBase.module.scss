@@ -1,0 +1,25 @@
+.studio-modal-base-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  height: calc(100% - 55px);
+  transform: translateY(55px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  border-radius: 0 0 8px 8px;
+}
+
+.studio-modal-base-container-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  height: 100%;
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  border-radius: 0 0 8px 8px;
+}

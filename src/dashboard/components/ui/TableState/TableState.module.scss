@@ -1,0 +1,19 @@
+.medium-plus {
+  font-size: 18px !important;
+  line-height: normal !important;
+}
+
+.gray-color {
+  color: var(
+    --wds-color-text-disabled,
+    var(--wsr-color-D10-42, rgba(0, 6, 36, 0.42))
+  ) !important;
+}
+
+.empty-state {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -24px;
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/dashboard-page.json",
+  "id": "74c3107b-a7f9-42d7-86dd-d3c314217980",
+  "title": "[DEV] AI Product Images",
+  "sidebar": {
+    "whenActive": {
+      "hideSidebar": false
+    }
+  }
+}

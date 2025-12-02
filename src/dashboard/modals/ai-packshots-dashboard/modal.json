@@ -1,0 +1,7 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/dashboard-modal.json",
+  "id": "8d40e10f-a842-4056-a06f-994014b0db3d",
+  "title": "AI Product Images Dashboard",
+  "width": 1200,
+  "height": 820
+}

@@ -1,0 +1,25 @@
+.footer {
+  padding: 10px 24px 11px 24px;
+  border-top: 1px solid var(--wsr-color-D60, #dfe5eb);
+  position: absolute;
+  bottom: 0px;
+  background-color: var(
+    --wds-color-fill-surface-sunken,
+    var(--wsr-color-D70, #f0f4f7)
+  );
+  width: calc(100% - 48px);
+  .footer-content {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.disabled-text {
+  color: var(
+    --wds-color-text-disabled,
+    var(--wsr-color-D10-42, rgba(0, 6, 36, 0.42))
+  ) !important;
+  font-size: 13px !important;
+  line-height: normal !important;
+}

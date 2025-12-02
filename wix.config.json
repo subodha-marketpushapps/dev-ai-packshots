@@ -1,0 +1,10 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/wix-config.json",
+  "appId": "680f3108-07b3-474a-a631-df9fd783b2a2",
+  "projectId": "ai-packshots-cli",
+  "monitoring": {
+    "sentry": {
+      "dsn": "https://623783ae73305b01e3b94a4c47cbdfab@o4508980227604480.ingest.de.sentry.io/4509277915643984"
+    }
+  }
+}

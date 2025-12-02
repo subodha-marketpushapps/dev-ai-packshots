@@ -1,0 +1,12 @@
+.gallery-product {
+  &:hover {
+    .gallery-product-prompt-preview {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.gallery-product-prompt-preview {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}

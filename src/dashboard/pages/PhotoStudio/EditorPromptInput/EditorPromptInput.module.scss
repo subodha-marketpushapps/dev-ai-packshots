@@ -1,0 +1,19 @@
+.collapsed-icon {
+  display: none;
+  pointer-events: auto;
+}
+
+@media (max-height: 850px) {
+  .collapsed-icon {
+    display: flex;
+  }
+}
+
+.original-preview-dismiss {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.box-original-preview:hover .original-preview-dismiss {
+  opacity: 1;
+}
