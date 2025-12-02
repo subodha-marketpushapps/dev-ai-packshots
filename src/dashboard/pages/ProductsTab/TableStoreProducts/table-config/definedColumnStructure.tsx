@@ -1,4 +1,5 @@
 import { TableColumn } from "@wix/design-system";
+import i18n from "../../../../../i18n";
 
 export const definedColumnStructure: TableColumn[] = [
   {
@@ -8,20 +9,20 @@ export const definedColumnStructure: TableColumn[] = [
   },
   {
     key: "name",
-    title: "Product Name",
+    title: i18n.t('productsTab.columnProductName', {defaultValue: "Product Name"}),
     render: (row: any) => row.cellProductDetails,
     sortable: true,
     width: "40%",
   },
   {
     key: "liveImages",
-    title: "Product Images",
+    title: i18n.t('productsTab.columnProductImages', {defaultValue: "Product Images"}),
     render: (row: any) => row.cellLiveImages,
     width: "30%",
   },
   {
     key: "generatedImages",
-    title: "Generated Images",
+    title: i18n.t('productsTab.columnGeneratedImages', {defaultValue: "Generated Images"}),
     render: (row: any) => row.cellGeneratedImages,
     width: "30%",
   },

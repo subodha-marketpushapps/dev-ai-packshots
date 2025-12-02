@@ -81,7 +81,18 @@
     "storeProducts": "Productos de la tienda",
     "searchPlaceholder": "Buscar productos...",
     "refreshData": "Actualizar datos",
-    "tableInfo": "Use esta tabla para ver y editar las imágenes de productos relacionadas con los productos de la tienda."
+    "tableInfo": "Use esta tabla para ver y editar las imágenes de productos relacionadas con los productos de la tienda.",
+    "columnProductName": "Nombre del producto",
+    "columnProductImages": "Imágenes de productos",
+    "columnGeneratedImages": "Imágenes generadas",
+    "viewAllGeneratedImages": "Ver todas las imágenes generadas",
+    "liveImageAlt": "Imagen en vivo",
+    "generatedImageAlt": "Imagen generada"
+  },
+  "statisticsTab": {
+    "title": "Estadísticas",
+    "subtitle": "Monitoree las ventas generadas por la aplicación Descuentos por cantidad y volumen.",
+    "content": "El contenido de estadísticas va aquí"
   },
   "galleryTab": {
     "title": "Imágenes borrador",
@@ -210,7 +221,9 @@
     "subscriptionInfo": "Información de suscripción",
     "showSubscriptionInfo": "Mostrar información de suscripción",
     "chooseProduct": "Elegir un producto...",
-    "viewAllLiveProductImages": "Ver todas las imágenes de productos en vivo"
+    "viewAllLiveProductImages": "Ver todas las imágenes de productos en vivo",
+    "copy": "Copiar",
+    "copied": "¡Copiado!"
   }
 }
 

@@ -81,7 +81,18 @@
     "storeProducts": "Produits du magasin",
     "searchPlaceholder": "Rechercher des produits...",
     "refreshData": "Actualiser les données",
-    "tableInfo": "Utilisez ce tableau pour afficher et modifier les images produits liées aux produits du magasin."
+    "tableInfo": "Utilisez ce tableau pour afficher et modifier les images produits liées aux produits du magasin.",
+    "columnProductName": "Nom du produit",
+    "columnProductImages": "Images produits",
+    "columnGeneratedImages": "Images générées",
+    "viewAllGeneratedImages": "Voir toutes les images générées",
+    "liveImageAlt": "Image en direct",
+    "generatedImageAlt": "Image générée"
+  },
+  "statisticsTab": {
+    "title": "Statistiques",
+    "subtitle": "Surveillez les ventes générées par l'application Remises sur quantité et volume.",
+    "content": "Le contenu des statistiques va ici"
   },
   "galleryTab": {
     "title": "Images brouillons",
@@ -210,7 +221,9 @@
     "subscriptionInfo": "Informations d'abonnement",
     "showSubscriptionInfo": "Afficher les informations d'abonnement",
     "chooseProduct": "Choisir un produit...",
-    "viewAllLiveProductImages": "Voir toutes les images produits en direct"
+    "viewAllLiveProductImages": "Voir toutes les images produits en direct",
+    "copy": "Copier",
+    "copied": "Copié !"
   }
 }
 

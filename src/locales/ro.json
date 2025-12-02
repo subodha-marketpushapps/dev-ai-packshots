@@ -81,7 +81,18 @@
     "storeProducts": "Produse magazin",
     "searchPlaceholder": "Căutați produse...",
     "refreshData": "Actualizați datele",
-    "tableInfo": "Folosiți acest tabel pentru a vizualiza și edita imaginile produselor legate de produsele magazinului."
+    "tableInfo": "Folosiți acest tabel pentru a vizualiza și edita imaginile produselor legate de produsele magazinului.",
+    "columnProductName": "Nume produs",
+    "columnProductImages": "Imagini produse",
+    "columnGeneratedImages": "Imagini generate",
+    "viewAllGeneratedImages": "Vizualizați toate imaginile generate",
+    "liveImageAlt": "Imagine live",
+    "generatedImageAlt": "Imagine generată"
+  },
+  "statisticsTab": {
+    "title": "Statistici",
+    "subtitle": "Monitorizați vânzările generate de aplicația Reduceri cantitate și volum.",
+    "content": "Conținutul statisticilor merge aici"
   },
   "galleryTab": {
     "title": "Imagini de schiță",
@@ -210,7 +221,9 @@
     "subscriptionInfo": "Informații abonament",
     "showSubscriptionInfo": "Afișați informațiile despre abonament",
     "chooseProduct": "Alegeți un produs...",
-    "viewAllLiveProductImages": "Vizualizați toate imaginile produselor live"
+    "viewAllLiveProductImages": "Vizualizați toate imaginile produselor live",
+    "copy": "Copiați",
+    "copied": "Copiat!"
   }
 }
 

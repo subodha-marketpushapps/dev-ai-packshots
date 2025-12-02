@@ -81,7 +81,18 @@
     "storeProducts": "Shop-Produkte",
     "searchPlaceholder": "Produkte suchen...",
     "refreshData": "Daten aktualisieren",
-    "tableInfo": "Verwenden Sie diese Tabelle, um produktbezogene Produktbilder anzuzeigen und zu bearbeiten."
+    "tableInfo": "Verwenden Sie diese Tabelle, um produktbezogene Produktbilder anzuzeigen und zu bearbeiten.",
+    "columnProductName": "Produktname",
+    "columnProductImages": "Produktbilder",
+    "columnGeneratedImages": "Generierte Bilder",
+    "viewAllGeneratedImages": "Alle generierten Bilder anzeigen",
+    "liveImageAlt": "Live-Bild",
+    "generatedImageAlt": "Generiertes Bild"
+  },
+  "statisticsTab": {
+    "title": "Statistiken",
+    "subtitle": "Überwachen Sie die von der App Mengen- und Volumenrabatte generierten Verkäufe.",
+    "content": "Statistikinhalt geht hier"
   },
   "galleryTab": {
     "title": "Entwurfsbilder",
@@ -210,7 +221,9 @@
     "subscriptionInfo": "Abonnement-Informationen",
     "showSubscriptionInfo": "Abonnement-Informationen anzeigen",
     "chooseProduct": "Produkt auswählen...",
-    "viewAllLiveProductImages": "Alle Live-Produktbilder anzeigen"
+    "viewAllLiveProductImages": "Alle Live-Produktbilder anzeigen",
+    "copy": "Kopieren",
+    "copied": "Kopiert!"
   }
 }
 

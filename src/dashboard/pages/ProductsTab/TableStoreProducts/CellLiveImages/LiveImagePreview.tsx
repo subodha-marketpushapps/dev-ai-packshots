@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Image, Box, Tooltip } from "@wix/design-system";
 
 import classes from "./CellLiveImages.module.scss";
@@ -14,6 +15,7 @@ const LiveImagePreview: React.FC<{
   onOpenCLick = () => {}, // Default no-op function if not provided
   size = 48,
 }) => {
+  const { t } = useTranslation();
   return (
     <Tooltip
       className={classes["cell-stack-product-tooltip"]}
@@ -56,7 +58,7 @@ const LiveImagePreview: React.FC<{
           src={image?.thumbnailUrl || image?.imageUrl || ""}
           width={size}
           height={size}
-          alt={image?.altText || image?.id || "Live Image"}
+          alt={image?.altText || image?.id || t('productsTab.liveImageAlt', {defaultValue: "Live Image"})}
           className={classes["cell-stack-product-image"]}
           onClick={onOpenCLick}
         />

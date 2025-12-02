@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   Image,
   Box,
@@ -20,6 +21,7 @@ const GeneratedImagePreview: React.FC<{
   onOpenCLick = () => {}, // Default no-op function if not provided
   size = 48,
 }) => {
+  const { t } = useTranslation();
   return (
     <Tooltip
       className={classes["cell-stack-product-tooltip"]}
@@ -57,7 +59,7 @@ const GeneratedImagePreview: React.FC<{
                 <CopyClipboard value={image.enhancedPrompt || ""}>
                   {({ isCopied, copyToClipboard, reset }) => (
                     <Tooltip
-                      content={!isCopied ? "Copy" : "Copied!"}
+                      content={!isCopied ? t('common.copy', {defaultValue: "Copy"}) : t('common.copied', {defaultValue: "Copied!"})}
                       size="small"
                     >
                       <IconButton
@@ -108,7 +110,7 @@ const GeneratedImagePreview: React.FC<{
           src={image?.thumbnails?.thumbnail60 || image?.imageUrl || ""}
           width={size}
           height={size}
-          alt={image?.id || "Generated Image"}
+          alt={image?.id || t('productsTab.generatedImageAlt', {defaultValue: "Generated Image"})}
           className={classes["cell-stack-product-image"]}
           onClick={onOpenCLick}
         />

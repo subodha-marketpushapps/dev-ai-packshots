@@ -43,6 +43,9 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
 }) => {
   const { t } = useTranslation();
   // 🎯 Following Wix Design System patterns with PAGINATION (better for data tables)
+  
+  // Get translated column structure
+  const [columns, setColumns] = useState<TableColumn[]>(definedColumnStructure);
   // ✅ Features implemented following Wix standards:
   // - Table with proper Page.Sticky header (Wix pattern)
   // - Pagination instead of infinite scroll (better UX for product tables)
@@ -59,7 +62,6 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
 
   // State for table functionality
   const [sort, setSort] = useState<SortOptions | undefined>();
-  const [columns, setColumns] = useState<TableColumn[]>(definedColumnStructure);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [currentPage, setCurrentPage] = useState(1); // Pagination state
@@ -94,13 +96,13 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
           setSort(undefined);
         } else {
           // For V1, ensure original sortable state is restored
-          setColumns(definedColumnStructure);
+          setColumns(getDefinedColumnStructure(t));
         }
       } catch (error) {
         console.error("Error detecting catalog version:", error);
         // Default to V1 behavior on error
         setIsV3Catalog(false);
-        setColumns(definedColumnStructure);
+        setColumns(getDefinedColumnStructure(t));
       }
     };
 

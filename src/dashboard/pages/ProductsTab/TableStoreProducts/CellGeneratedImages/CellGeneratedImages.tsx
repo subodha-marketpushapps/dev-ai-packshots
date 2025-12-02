@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Text, Tooltip, Cell } from "@wix/design-system";
 
 import classes from "./CellGeneratedImages.module.scss";
@@ -16,6 +17,7 @@ const CellGeneratedImages: React.FC<CellGeneratedImagesListProps> = ({
   generatedImages,
   productId,
 }) => {
+  const { t } = useTranslation();
   const { openPhotoStudio } = usePhotoStudio();
   // Dynamically set max visible images based on window width
   const getMaxVisibleImages = () => {
@@ -58,7 +60,7 @@ const CellGeneratedImages: React.FC<CellGeneratedImagesListProps> = ({
             productId && openPhotoStudio({ type: "product", productId });
           }}
         >
-          <Tooltip content="View all generated images" size="small">
+          <Tooltip content={t('productsTab.viewAllGeneratedImages', {defaultValue: "View all generated images"})} size="small">
             <Box
               align="center"
               verticalAlign="middle"
