@@ -6,6 +6,7 @@ import React, {
   useCallback,
   useEffect,
 } from "react";
+import { useTranslation } from "react-i18next";
 
 import { NormalizedProduct } from "../../utils/catalogNormalizer";
 import { WixSiteData } from "../../../interfaces";
@@ -116,11 +117,13 @@ export const WixDataProvider: React.FC<WixDataProviderProps> = ({
     return <EmptyStateLoading loadingText="" />;
   }
 
+  const { t } = useTranslation();
+
   if (isDataLoaded && isDataError) {
     return (
       <EmptyStateError
-        title="We couldn't sync with the Wix Site data"
-        subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
+        title={t('errors.wixDataSyncError.title', {defaultValue: "We couldn't sync with the Wix Site data"})}
+        subtitle={t('errors.wixDataSyncError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
         refreshActions={() => {
           refreshProduct();
           refreshFetchWixSiteData();
@@ -133,8 +136,8 @@ export const WixDataProvider: React.FC<WixDataProviderProps> = ({
   if (isDataLoaded && !productId) {
     return (
       <EmptyStateError
-        title="No product selected"
-        subtitle="Please select a product to open the photo studio."
+        title={t('emptyStates.noProductSelected.title', {defaultValue: "No product selected"})}
+        subtitle={t('emptyStates.noProductSelected.subtitle', {defaultValue: "Please select a product to open the photo studio."})}
         refreshActions={() => {
           refreshFetchWixSiteData();
         }}
@@ -145,8 +148,8 @@ export const WixDataProvider: React.FC<WixDataProviderProps> = ({
   if (isDataLoaded && productId && !product) {
     return (
       <EmptyStateError
-        title="Product not found"
-        subtitle="The selected product could not be found. Please try again or select a different product."
+        title={t('emptyStates.productNotFound.title', {defaultValue: "Product not found"})}
+        subtitle={t('emptyStates.productNotFound.subtitle', {defaultValue: "The selected product could not be found. Please try again or select a different product."})}
         refreshActions={() => {
           refreshProduct();
           refreshFetchWixSiteData();

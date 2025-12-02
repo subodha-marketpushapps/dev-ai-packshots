@@ -1,0 +1,216 @@
+{
+  "homePage": {
+    "pageTitle": "AI Product Images - [Dev]",
+    "pageSubtitle": "Elevate Your Product Visuals Using AI-Driven Image Enhancement.",
+    "openDModal": "Open D Modal"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "We couldn't load the Settings data",
+      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+    },
+    "wixDataSyncError": {
+      "title": "We couldn't sync with the Wix Site data",
+      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+    },
+    "imagesLoadError": {
+      "title": "We couldn't load your images",
+      "subtitle": "There was a problem fetching your generated images. Please try again later."
+    },
+    "draftImagesLoadError": {
+      "title": "We couldn't load the Draft Image data",
+      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+    },
+    "instanceUpdateError": {
+      "title": "We couldn't update your instance",
+      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+    },
+    "tableLoadError": {
+      "title": "We couldn't load this table",
+      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again.",
+      "intercomMessage": "I having a data loading issue with the 'Store Products' table. Can you help me with this?",
+      "intercomButtonLabel": "Contact Support"
+    },
+    "genericError": {
+      "title": "We couldn't load the data",
+      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "No product selected",
+      "subtitle": "Please select a product to open the photo studio."
+    },
+    "productNotFound": {
+      "title": "Product not found",
+      "subtitle": "The selected product could not be found. Please try again or select a different product."
+    },
+    "noDraftImages": {
+      "title": "No Draft Images",
+      "subtitle": "Generate your first image with Photo Studio."
+    },
+    "noStoreProducts": {
+      "title": "No Store Products",
+      "subtitle": "Once you add store products, they will appear here."
+    },
+    "startTypingToSearch": {
+      "title": "Start typing to search products",
+      "subtitle": "Enter at least 3 characters to search through your product catalog"
+    },
+    "noSearchResults": {
+      "title": "No search results",
+      "subtitle": "No items match your search criteria. Try to search by another keyword"
+    },
+    "noLiveImages": "No live images found",
+    "noDraftImagesFound": "No draft images found"
+  },
+  "loading": {
+    "loadingData": "Loading data...",
+    "loadingImages": "Loading Images...",
+    "loading": "Loading..."
+  },
+  "tabs": {
+    "products": "Products",
+    "draftImages": "Draft Images"
+  },
+  "productsTab": {
+    "title": "Store Products",
+    "subtitle": "Manage, Edit, and Enhance your product images to match your brand perfectly.",
+    "generateImage": "Generate Image",
+    "createNewProduct": "Create New Product",
+    "storeProducts": "Store Products",
+    "searchPlaceholder": "Search products...",
+    "refreshData": "Refresh data",
+    "tableInfo": "Use this table to view and edit store product related product images."
+  },
+  "galleryTab": {
+    "title": "Draft Images",
+    "subtitle": "Explore a collection of your generated images.",
+    "loadMore": "Load More"
+  },
+  "settingsTab": {
+    "title": "Settings",
+    "subtitle": "Add or change details registered in Quantity and Volume Discount app.",
+    "cancel": "Cancel",
+    "saveSettings": "Save Settings",
+    "notifications": "Notifications",
+    "receiveStatsEmails": "Receive Stats and Conversion Emails",
+    "onWeeklyBasis": "On a Weekly Basis",
+    "never": "Never",
+    "notificationEmail": "Notification Email",
+    "emailPlaceholder": "sample@mail.com",
+    "settingsSaved": "Settings saved successfully!",
+    "settingsSaveFailed": "Failed to save settings. Please try again.",
+    "invalidEmailFormat": "Invalid email format",
+    "emailRequired": "Email is required"
+  },
+  "photoStudio": {
+    "showProductImages": "Show Product Images",
+    "productImages": {
+      "title": "Product Images",
+      "subtitle": "Edit and update your product images."
+    },
+    "generatedImages": {
+      "title": "Generated Images",
+      "subtitle": "Edit and update your draft images."
+    },
+    "infoIconDescription": "Info icon gives more information about a section.",
+    "liveImages": "Live Images",
+    "draftImages": "Draft Images",
+    "allDraftImages": "All Draft Images",
+    "changeOrderOfLiveImages": "Change order of Live Images",
+    "liveImagesInfo": "Please note that the images from Live Images will be directly published & visible to your customers on your live site.",
+    "draftImagesInfo": "Draft Images are visible only to you. Feel free to experiment until you find the right fit and are ready to Publish it to the Live Images.",
+    "noLiveImagesMessage": "You can publish draft images to make them live.",
+    "draftImagesEmptyMessage": "You can select live images or upload new images to start editing.",
+    "draftImagesEmptyMessageNoLive": "You can upload images to start editing.",
+    "uploadImage": "Upload Image",
+    "uploadMultipleImages": "Upload Multiple Images",
+    "copyEditHint": "Select one or more images to apply Copy Edit, or click \"Upload Image\" to upload new ones.",
+    "imageCurrentlyPublishing": "This image is currently being published.",
+    "maxReferenceImages": "You can select or upload up to 6 images for copy edits.",
+    "dashboard": "Dashboard",
+    "imageStudio": "Image Studio",
+    "compareChanges": "Compare Changes",
+    "removeImage": "Remove Image",
+    "removeUploadedImage": "Remove uploaded image",
+    "goBack": "Go back (Esc)",
+    "fullscreen": "Fullscreen",
+    "compare": "Compare",
+    "details": "Details",
+    "editModes": {
+      "label": "Edit Modes",
+      "infoContent": "Choose how you want to edit your image"
+    },
+    "openDashboard": "Open AI Product Images Dashboard",
+    "dismiss": "Dismiss",
+    "generateInfo": "Generate info",
+    "copyImage": "Copy image",
+    "delete": "Delete",
+    "unpublishGuide": "Unpublish Guide",
+    "addRectangleHint": "Add rectangle hint",
+    "addCircleHint": "Add circle hint",
+    "showEditorPanel": "Show Editor Panel",
+    "minimizeEditorPanel": "Minimize Editor Panel",
+    "collapseEditorPanel": "Collapse Editor Panel",
+    "cancelCopyEdit": "Cancel Copy Edit",
+    "prevProduct": "Prev Product",
+    "nextProduct": "Next Product",
+    "searchAndSelectProduct": "Search and select a product...",
+    "openEditProductDashboardPage": "Open Edit Product Dashboard Page",
+    "viewLiveProductPage": "View Live Product Page"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Upgrade Your AI Product Images Plan",
+      "primaryButton": "Upgrade",
+      "secondaryButton": "Not Now",
+      "exhaustedCredits": "You've exhausted your plan credits. Upgrade to a higher plan to generate new images.",
+      "upgradeForMoreCredits": "Upgrade your plan to get more credits."
+    },
+    "unpublish": {
+      "title": "Live Image Unpublish",
+      "primaryButton": "Edit Product Page",
+      "secondaryButton": "Cancel",
+      "content": "At this moment you cannot delete/unpublish images directly from AI Product Images. Please visit the Edit Product Page and remove it from there.",
+      "refreshNote": "Refresh your page to see the changes.",
+      "refresh": "Refresh"
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Images Generated",
+      "infoContent": "Select the number of images to generate"
+    },
+    "autoUpscaling": {
+      "label": "Auto Upscaling",
+      "infoContent": "When enabled, images smaller than 1000px will be automatically upscaled to x2 for better quality."
+    },
+    "setOutputDimensions": {
+      "label": "Set output dimensions",
+      "infoContent": "Select the aspect ratio for the generated images."
+    },
+    "photoQuality": {
+      "label": "Photo quality",
+      "infoContent": "Add quality tags to enhance your image"
+    },
+    "productPositioning": {
+      "infoContent": "Choose how the product is positioned in the image"
+    },
+    "backgroundType": {
+      "infoContent": "Select the background type for your image"
+    }
+  },
+  "feedback": {
+    "overallExperience": "How was your overall experience with AI Product Images?"
+  },
+  "common": {
+    "refresh": "Refresh",
+    "openSupportCenter": "Open support center",
+    "subscriptionInfo": "Subscription Info",
+    "showSubscriptionInfo": "Show Subscription Info",
+    "chooseProduct": "Choose a product...",
+    "viewAllLiveProductImages": "View all live Product images"
+  }
+}
+

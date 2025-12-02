@@ -1,4 +1,5 @@
 import React, { createContext, ReactNode, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useSettings } from "../../hooks/useSettings";
 import { useWixData } from "./WixDataProvider";
 import { useModalWixData } from "./ModalWixDataProvider";
@@ -19,6 +20,7 @@ export const UserInstanceProvider: React.FC<UserInstanceProviderProps> = ({
   children,
   context = "page", // Default to page for backward compatibility
 }) => {
+  const { t } = useTranslation();
   // Get wixSiteData from the appropriate provider based on context
   let wixSiteData = null;
 
@@ -63,8 +65,8 @@ export const UserInstanceProvider: React.FC<UserInstanceProviderProps> = ({
   if (error) {
     return (
       <EmptyStateError
-        title="We couldn't update your instance"
-        subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
+        title={t('errors.instanceUpdateError.title', {defaultValue: "We couldn't update your instance"})}
+        subtitle={t('errors.instanceUpdateError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
         refreshActions={
           wixSiteData?.instanceId
             ? () => sendRequest(wixSiteData.instanceId)

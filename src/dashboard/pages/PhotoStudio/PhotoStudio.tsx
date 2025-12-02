@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, Modal } from "@wix/design-system";
 
 import StudioHeader from "./StudioHeader";
@@ -25,6 +26,7 @@ const PhotoStudio: React.FC<PhotoStudioProps> = ({
   showCloseButton = true,
   onCustomClose,
 }) => {
+  const { t } = useTranslation();
   const {
     apiLoading,
     isPhotoStudioOpen,
@@ -90,12 +92,12 @@ const PhotoStudio: React.FC<PhotoStudioProps> = ({
           transform={mode === "absolute" ? "translateY(0)" : "translateY(54px)"}
         >
           {isLoadingImages && (
-            <EmptyStateLoading loadingText="Loading images..." />
+            <EmptyStateLoading loadingText={t('loading.loadingImages', {defaultValue: "Loading images..."})} />
           )}
           {imagesError && (
             <EmptyStateError
-              title="We couldn't load your images"
-              subtitle="There was a problem fetching your generated images. Please try again later."
+              title={t('errors.imagesLoadError.title', {defaultValue: "We couldn't load your images"})}
+              subtitle={t('errors.imagesLoadError.subtitle', {defaultValue: "There was a problem fetching your generated images. Please try again later."})}
               refreshActions={mode === "absolute" && onCustomClose ? onCustomClose : closePhotoStudio}
             />
           )}

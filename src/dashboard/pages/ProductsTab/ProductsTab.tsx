@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Page,
   Cell,
@@ -18,6 +19,7 @@ import { NormalizedProduct } from "../../utils/catalogNormalizer";
 import { useWixStoreProducts } from "../../hooks/useWixStoreProducts";
 
 export default function ProductsTab() {
+  const { t } = useTranslation();
   const { openPhotoStudio } = usePhotoStudio();
   const storeProducts = useRecoilValue(wixStoreProductsState);
   // Use the paginated hook to get real-time product availability
@@ -56,8 +58,8 @@ export default function ProductsTab() {
       <Layout>
         <Cell>
           <Page.Section
-            title="Store Products"
-            subtitle="Manage, Edit, and Enhance your product images to match your brand perfectly."
+            title={t('productsTab.title', {defaultValue: "Store Products"})}
+            subtitle={t('productsTab.subtitle', {defaultValue: "Manage, Edit, and Enhance your product images to match your brand perfectly."})}
             actionsBar={
               <Box gap="SP1">
                 <Button
@@ -68,7 +70,7 @@ export default function ProductsTab() {
                   // priority="secondary"
                   disabled={isGenerateButtonDisabled}
                 >
-                  Generate Image
+                  {t('productsTab.generateImage', {defaultValue: "Generate Image"})}
                 </Button>
                 <PopoverMenu
                   triggerElement={
@@ -83,12 +85,12 @@ export default function ProductsTab() {
                   textSize="small"
                 >
                   <PopoverMenu.MenuItem
-                    text="Create New Product"
+                    text={t('productsTab.createNewProduct', {defaultValue: "Create New Product"})}
                     prefixIcon={<Icons.Add />}
                     onClick={() => openWixProductsPage(true)}
                   />
                   <PopoverMenu.MenuItem
-                    text="Store Products"
+                    text={t('productsTab.storeProducts', {defaultValue: "Store Products"})}
                     prefixIcon={<Icons.ExternalLink />}
                     onClick={openWixProductsPage}
                   />

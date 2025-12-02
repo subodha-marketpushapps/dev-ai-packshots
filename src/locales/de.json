@@ -1,0 +1,216 @@
+{
+  "homePage": {
+    "pageTitle": "KI-Produktbilder - [Dev]",
+    "pageSubtitle": "Verbessern Sie Ihre Produktbilder mit KI-gestützter Bildverbesserung.",
+    "openDModal": "Modal D öffnen"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Wir konnten die Einstellungsdaten nicht laden",
+      "subtitle": "Es scheint ein technisches Problem auf unserer Seite gegeben zu haben. Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+    },
+    "wixDataSyncError": {
+      "title": "Wir konnten nicht mit den Wix-Site-Daten synchronisieren",
+      "subtitle": "Es scheint ein technisches Problem auf unserer Seite gegeben zu haben. Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+    },
+    "imagesLoadError": {
+      "title": "Wir konnten Ihre Bilder nicht laden",
+      "subtitle": "Beim Abrufen Ihrer generierten Bilder ist ein Problem aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "draftImagesLoadError": {
+      "title": "Wir konnten die Entwurfsbilddaten nicht laden",
+      "subtitle": "Es scheint ein technisches Problem auf unserer Seite gegeben zu haben. Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+    },
+    "instanceUpdateError": {
+      "title": "Wir konnten Ihre Instanz nicht aktualisieren",
+      "subtitle": "Es scheint ein technisches Problem auf unserer Seite gegeben zu haben. Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+    },
+    "tableLoadError": {
+      "title": "Wir konnten diese Tabelle nicht laden",
+      "subtitle": "Es scheint ein technisches Problem auf unserer Seite gegeben zu haben. Bitte warten Sie einige Minuten und versuchen Sie es erneut.",
+      "intercomMessage": "Ich habe ein Problem beim Laden der Daten mit der Tabelle 'Shop-Produkte'. Können Sie mir dabei helfen?",
+      "intercomButtonLabel": "Support kontaktieren"
+    },
+    "genericError": {
+      "title": "Wir konnten die Daten nicht laden",
+      "subtitle": "Es scheint ein technisches Problem auf unserer Seite gegeben zu haben. Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Kein Produkt ausgewählt",
+      "subtitle": "Bitte wählen Sie ein Produkt aus, um das Fotostudio zu öffnen."
+    },
+    "productNotFound": {
+      "title": "Produkt nicht gefunden",
+      "subtitle": "Das ausgewählte Produkt konnte nicht gefunden werden. Bitte versuchen Sie es erneut oder wählen Sie ein anderes Produkt."
+    },
+    "noDraftImages": {
+      "title": "Keine Entwurfsbilder",
+      "subtitle": "Generieren Sie Ihr erstes Bild mit dem Fotostudio."
+    },
+    "noStoreProducts": {
+      "title": "Keine Shop-Produkte",
+      "subtitle": "Sobald Sie Shop-Produkte hinzufügen, werden sie hier angezeigt."
+    },
+    "startTypingToSearch": {
+      "title": "Beginnen Sie mit der Eingabe, um Produkte zu suchen",
+      "subtitle": "Geben Sie mindestens 3 Zeichen ein, um in Ihrem Produktkatalog zu suchen"
+    },
+    "noSearchResults": {
+      "title": "Keine Suchergebnisse",
+      "subtitle": "Keine Elemente entsprechen Ihren Suchkriterien. Versuchen Sie, mit einem anderen Schlüsselwort zu suchen"
+    },
+    "noLiveImages": "Keine Live-Bilder gefunden",
+    "noDraftImagesFound": "Keine Entwurfsbilder gefunden"
+  },
+  "loading": {
+    "loadingData": "Daten werden geladen...",
+    "loadingImages": "Bilder werden geladen...",
+    "loading": "Wird geladen..."
+  },
+  "tabs": {
+    "products": "Produkte",
+    "draftImages": "Entwurfsbilder"
+  },
+  "productsTab": {
+    "title": "Shop-Produkte",
+    "subtitle": "Verwalten, bearbeiten und verbessern Sie Ihre Produktbilder, damit sie perfekt zu Ihrer Marke passen.",
+    "generateImage": "Bild generieren",
+    "createNewProduct": "Neues Produkt erstellen",
+    "storeProducts": "Shop-Produkte",
+    "searchPlaceholder": "Produkte suchen...",
+    "refreshData": "Daten aktualisieren",
+    "tableInfo": "Verwenden Sie diese Tabelle, um produktbezogene Produktbilder anzuzeigen und zu bearbeiten."
+  },
+  "galleryTab": {
+    "title": "Entwurfsbilder",
+    "subtitle": "Erkunden Sie eine Sammlung Ihrer generierten Bilder.",
+    "loadMore": "Mehr laden"
+  },
+  "settingsTab": {
+    "title": "Einstellungen",
+    "subtitle": "Hinzufügen oder Ändern von Details, die in der App Mengen- und Volumenrabatte registriert sind.",
+    "cancel": "Abbrechen",
+    "saveSettings": "Einstellungen speichern",
+    "notifications": "Benachrichtigungen",
+    "receiveStatsEmails": "Statistik- und Konversions-E-Mails erhalten",
+    "onWeeklyBasis": "Wöchentlich",
+    "never": "Nie",
+    "notificationEmail": "Benachrichtigungs-E-Mail",
+    "emailPlaceholder": "beispiel@mail.com",
+    "settingsSaved": "Einstellungen erfolgreich gespeichert!",
+    "settingsSaveFailed": "Fehler beim Speichern der Einstellungen. Bitte versuchen Sie es erneut.",
+    "invalidEmailFormat": "Ungültiges E-Mail-Format",
+    "emailRequired": "E-Mail ist erforderlich"
+  },
+  "photoStudio": {
+    "showProductImages": "Produktbilder anzeigen",
+    "productImages": {
+      "title": "Produktbilder",
+      "subtitle": "Bearbeiten und aktualisieren Sie Ihre Produktbilder."
+    },
+    "generatedImages": {
+      "title": "Generierte Bilder",
+      "subtitle": "Bearbeiten und aktualisieren Sie Ihre Entwurfsbilder."
+    },
+    "infoIconDescription": "Das Info-Symbol liefert weitere Informationen zu einem Abschnitt.",
+    "liveImages": "Live-Bilder",
+    "draftImages": "Entwurfsbilder",
+    "allDraftImages": "Alle Entwurfsbilder",
+    "changeOrderOfLiveImages": "Reihenfolge der Live-Bilder ändern",
+    "liveImagesInfo": "Bitte beachten Sie, dass die Bilder aus Live-Bildern direkt veröffentlicht und für Ihre Kunden auf Ihrer Live-Site sichtbar sind.",
+    "draftImagesInfo": "Entwurfsbilder sind nur für Sie sichtbar. Experimentieren Sie frei, bis Sie die richtige Passform finden und bereit sind, sie in Live-Bilder zu veröffentlichen.",
+    "noLiveImagesMessage": "Sie können Entwurfsbilder veröffentlichen, um sie live zu schalten.",
+    "draftImagesEmptyMessage": "Sie können Live-Bilder auswählen oder neue Bilder hochladen, um mit der Bearbeitung zu beginnen.",
+    "draftImagesEmptyMessageNoLive": "Sie können Bilder hochladen, um mit der Bearbeitung zu beginnen.",
+    "uploadImage": "Bild hochladen",
+    "uploadMultipleImages": "Mehrere Bilder hochladen",
+    "copyEditHint": "Wählen Sie ein oder mehrere Bilder aus, um Kopierbearbeitung anzuwenden, oder klicken Sie auf \"Bild hochladen\", um neue hochzuladen.",
+    "imageCurrentlyPublishing": "Dieses Bild wird derzeit veröffentlicht.",
+    "maxReferenceImages": "Sie können bis zu 6 Bilder für Kopierbearbeitungen auswählen oder hochladen.",
+    "dashboard": "Dashboard",
+    "imageStudio": "Bildstudio",
+    "compareChanges": "Änderungen vergleichen",
+    "removeImage": "Bild entfernen",
+    "removeUploadedImage": "Hochgeladenes Bild entfernen",
+    "goBack": "Zurück (Esc)",
+    "fullscreen": "Vollbild",
+    "compare": "Vergleichen",
+    "details": "Details",
+    "editModes": {
+      "label": "Bearbeitungsmodi",
+      "infoContent": "Wählen Sie, wie Sie Ihr Bild bearbeiten möchten"
+    },
+    "openDashboard": "KI-Produktbilder-Dashboard öffnen",
+    "dismiss": "Verwerfen",
+    "generateInfo": "Informationen generieren",
+    "copyImage": "Bild kopieren",
+    "delete": "Löschen",
+    "unpublishGuide": "Veröffentlichungsaufhebung-Anleitung",
+    "addRectangleHint": "Rechteckigen Hinweis hinzufügen",
+    "addCircleHint": "Kreisförmigen Hinweis hinzufügen",
+    "showEditorPanel": "Editor-Panel anzeigen",
+    "minimizeEditorPanel": "Editor-Panel minimieren",
+    "collapseEditorPanel": "Editor-Panel einklappen",
+    "cancelCopyEdit": "Kopierbearbeitung abbrechen",
+    "prevProduct": "Vorheriges Produkt",
+    "nextProduct": "Nächstes Produkt",
+    "searchAndSelectProduct": "Produkt suchen und auswählen...",
+    "openEditProductDashboardPage": "Produktbearbeitungs-Dashboard-Seite öffnen",
+    "viewLiveProductPage": "Live-Produktseite anzeigen"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Aktualisieren Sie Ihren KI-Produktbilder-Plan",
+      "primaryButton": "Aktualisieren",
+      "secondaryButton": "Nicht jetzt",
+      "exhaustedCredits": "Sie haben Ihre Plan-Credits aufgebraucht. Aktualisieren Sie auf einen höheren Plan, um neue Bilder zu generieren.",
+      "upgradeForMoreCredits": "Aktualisieren Sie Ihren Plan, um mehr Credits zu erhalten."
+    },
+    "unpublish": {
+      "title": "Live-Bild-Veröffentlichung aufheben",
+      "primaryButton": "Produktseite bearbeiten",
+      "secondaryButton": "Abbrechen",
+      "content": "Derzeit können Sie Bilder nicht direkt aus KI-Produktbildern löschen/die Veröffentlichung aufheben. Bitte besuchen Sie die Seite Produkt bearbeiten und entfernen Sie es von dort.",
+      "refreshNote": "Aktualisieren Sie Ihre Seite, um die Änderungen zu sehen.",
+      "refresh": "Aktualisieren"
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Generierte Bilder",
+      "infoContent": "Wählen Sie die Anzahl der zu generierenden Bilder"
+    },
+    "autoUpscaling": {
+      "label": "Automatische Vergrößerung",
+      "infoContent": "Wenn aktiviert, werden Bilder kleiner als 1000px automatisch x2 vergrößert, um eine bessere Qualität zu erzielen."
+    },
+    "setOutputDimensions": {
+      "label": "Ausgabedimensionen festlegen",
+      "infoContent": "Wählen Sie das Seitenverhältnis für die generierten Bilder."
+    },
+    "photoQuality": {
+      "label": "Fotoqualität",
+      "infoContent": "Fügen Sie Qualitäts-Tags hinzu, um Ihr Bild zu verbessern"
+    },
+    "productPositioning": {
+      "infoContent": "Wählen Sie, wie das Produkt im Bild positioniert ist"
+    },
+    "backgroundType": {
+      "infoContent": "Wählen Sie den Hintergrundtyp für Ihr Bild"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Wie war Ihre Gesamterfahrung mit KI-Produktbildern?"
+  },
+  "common": {
+    "refresh": "Aktualisieren",
+    "openSupportCenter": "Support-Center öffnen",
+    "subscriptionInfo": "Abonnement-Informationen",
+    "showSubscriptionInfo": "Abonnement-Informationen anzeigen",
+    "chooseProduct": "Produkt auswählen...",
+    "viewAllLiveProductImages": "Alle Live-Produktbilder anzeigen"
+  }
+}
+

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Page,
   Cell,
@@ -24,6 +25,7 @@ import { NormalizedProduct } from "../../utils/catalogNormalizer";
 const IMAGES_PER_BATCH = 20;
 
 export default function GalleryTab() {
+  const { t } = useTranslation();
   // --- Data & State ---
   const { getAllGeneratedImages } = useGeneratedImages();
   const storeProducts = useRecoilValue(wixStoreProductsState);
@@ -66,13 +68,13 @@ export default function GalleryTab() {
 
   // --- Render helpers ---
   const renderLoading = () => (
-    <EmptyStateLoading loadingText="Loading Images..." />
+    <EmptyStateLoading loadingText={t('loading.loadingImages', {defaultValue: "Loading Images..."})} />
   );
 
   const renderError = () => (
     <EmptyStateError
-      title="We couldn't load the Draft Image data"
-      subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
+      title={t('errors.draftImagesLoadError.title', {defaultValue: "We couldn't load the Draft Image data"})}
+      subtitle={t('errors.draftImagesLoadError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
       refreshActions={refetch}
     />
   );
@@ -83,14 +85,14 @@ export default function GalleryTab() {
       image={
         <Image width="120px" height="120px" src={ImageNoData} transparent />
       }
-      title="No Draft Images"
-      subtitle="Generate your first image with Photo Studio."
+      title={t('emptyStates.noDraftImages.title', {defaultValue: "No Draft Images"})}
+      subtitle={t('emptyStates.noDraftImages.subtitle', {defaultValue: "Generate your first image with Photo Studio."})}
     >
       <TextButton
         prefixIcon={<Icons.Add />}
         onClick={() => handleOnPhotoEditClick(storeProducts[0] as any)}
       >
-        Generate Image
+        {t('productsTab.generateImage', {defaultValue: "Generate Image"})}
       </TextButton>
     </EmptyState>
   );
@@ -106,7 +108,7 @@ export default function GalleryTab() {
       </Layout>
       {visibleCount < sortedImages.length && (
         <div style={{ textAlign: "center", margin: "24px 0" }}>
-          <Button onClick={handleLoadMore}>Load More</Button>
+          <Button onClick={handleLoadMore}>{t('galleryTab.loadMore', {defaultValue: "Load More"})}</Button>
         </div>
       )}
     </>
@@ -118,9 +120,9 @@ export default function GalleryTab() {
       <Layout>
         <Cell>
           <Page.Section
-            title={`Draft Images ${generatedImages ? `(${generatedImages.length})` : ""
+            title={`${t('galleryTab.title', {defaultValue: "Draft Images"})} ${generatedImages ? `(${generatedImages.length})` : ""
               }`}
-            subtitle="Explore a collection of your generated images."
+            subtitle={t('galleryTab.subtitle', {defaultValue: "Explore a collection of your generated images."})}
           />
         </Cell>
         <Cell>

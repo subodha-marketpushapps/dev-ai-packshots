@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import StudioModalBase from "./StudioModalBase";
 import { Box, Text, MessageModalLayout } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
@@ -14,6 +15,7 @@ import { useRecoilValue } from "recoil";
 // import ImageEnhancedPhoto from "../../../../assets/images/image_modal-upgrade-packshot.png";
 
 const ModalRequestUpgrade: React.FC<{ studioMode?: "modal" | "absolute" }> = ({ studioMode = "modal" }) => {
+  const { t } = useTranslation();
   const { hideUpgradeModal, subscription, isUpgradeModalOpen } =
     usePhotoStudio();
   const { showNewMessage } = useIntercom();
@@ -45,16 +47,16 @@ const ModalRequestUpgrade: React.FC<{ studioMode?: "modal" | "absolute" }> = ({ 
       <Box align="center" verticalAlign="middle" width="100%" height="100%">
         <MessageModalLayout
           onCloseButtonClick={handleOnClose}
-          primaryButtonText="Upgrade"
+          primaryButtonText={t('modals.upgrade.primaryButton', {defaultValue: "Upgrade"})}
           secondaryButtonOnClick={handleOnClose}
           primaryButtonOnClick={handleOpenWixUpgradePage}
-          secondaryButtonText="Not Now"
-          title="Upgrade Your AI Product Images Plan"
+          secondaryButtonText={t('modals.upgrade.secondaryButton', {defaultValue: "Not Now"})}
+          title={t('modals.upgrade.title', {defaultValue: "Upgrade Your AI Product Images Plan"})}
           content={
             <Text>
               {showUpgrade
-                ? "You've exhausted your plan credits. Upgrade to a higher plan to generate new images."
-                : "Upgrade your plan to get more credits."}
+                ? t('modals.upgrade.exhaustedCredits', {defaultValue: "You've exhausted your plan credits. Upgrade to a higher plan to generate new images."})
+                : t('modals.upgrade.upgradeForMoreCredits', {defaultValue: "Upgrade your plan to get more credits."})}
             </Text>
           }
           theme="premium"

@@ -1,4 +1,5 @@
 import React, { useCallback, useMemo, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Text,
@@ -75,6 +76,7 @@ const StudioImageExplorer: React.FC<{
   onBackClick?: () => void;
 }> = React.memo(
   ({ hideProductNavigator = false, showBackButton = false, onBackClick }) => {
+    const { t } = useTranslation();
     const {
       editingImage,
       referenceImage,
@@ -141,7 +143,7 @@ const StudioImageExplorer: React.FC<{
         // Do not allow any action on publishing images
         if (imageObj.imageState === PROCESS_STATES.PUBLISHING) {
           addToast({
-            content: "This image is currently being published.",
+            content: t('photoStudio.imageCurrentlyPublishing', {defaultValue: "This image is currently being published."}),
             status: "warning",
           });
           return;
@@ -152,8 +154,7 @@ const StudioImageExplorer: React.FC<{
             imageObj.imageState !== PROCESS_STATES.SELECTED
           ) {
             addToast({
-              content:
-                "You can select or upload up to 6 images for copy edits.",
+              content: t('photoStudio.maxReferenceImages', {defaultValue: "You can select or upload up to 6 images for copy edits."}),
               status: "warning",
             });
             return;
@@ -229,8 +230,8 @@ const StudioImageExplorer: React.FC<{
           <Box marginTop={"-12px"} marginLeft={"-6px"}>
             <Breadcrumbs
               items={[
-                { id: "dashboard", value: "Dashboard" },
-                { id: "studio", value: "Image Studio" },
+                { id: "dashboard", value: t('photoStudio.dashboard', {defaultValue: "Dashboard"}) },
+                { id: "studio", value: t('photoStudio.imageStudio', {defaultValue: "Image Studio"}) },
               ]}
               size="medium"
               activeId="studio"
@@ -254,7 +255,7 @@ const StudioImageExplorer: React.FC<{
             }
             style={{ zIndex: 99 }}
           >
-            <Tooltip content="Show Product Images" placement="top">
+            <Tooltip content={t('photoStudio.showProductImages', {defaultValue: "Show Product Images"})} placement="top">
               <Text skin="primary">
                 <Box
                   width={"48px"}
@@ -311,20 +312,20 @@ const StudioImageExplorer: React.FC<{
           >
             {studioType == "product" && (
               <SidePanel.Header
-                title="Product Images"
-                subtitle="Edit and update your product images."
+                title={t('photoStudio.productImages.title', {defaultValue: "Product Images"})}
+                subtitle={t('photoStudio.productImages.subtitle', {defaultValue: "Edit and update your product images."})}
                 showDivider={true}
               />
             )}
             {studioType === "general" && (
               <SidePanel.Header
-                title="Generated Images"
-                subtitle="Edit and update your draft images."
+                title={t('photoStudio.generatedImages.title', {defaultValue: "Generated Images"})}
+                subtitle={t('photoStudio.generatedImages.subtitle', {defaultValue: "Edit and update your draft images."})}
                 showDivider={true}
                 suffix={
                   <InfoIcon
                     size="small"
-                    content="Info icon gives more information about a section."
+                    content={t('photoStudio.infoIconDescription', {defaultValue: "Info icon gives more information about a section."})}
                   />
                 }
               />
@@ -336,22 +337,21 @@ const StudioImageExplorer: React.FC<{
                 layout="horizontal"
                 skin="standard"
               >
-                Select one or more images to apply Copy Edit, or click “Upload
-                Image” to upload new ones.
+                {t('photoStudio.copyEditHint', {defaultValue: "Select one or more images to apply Copy Edit, or click \"Upload Image\" to upload new ones."})}
               </SectionHelper>
             )}
             <SidePanel.Content noPadding>
               <Box direction="vertical" maxHeight="100%" overflow="auto">
                 {studioType == "product" && (
                   <SidePanel.Section
-                    title={`Live Images (${shortedLiveImages.length})`}
+                    title={`${t('photoStudio.liveImages', {defaultValue: "Live Images"})} (${shortedLiveImages.length})`}
                     suffix={
                       <Box
                         verticalAlign="middle"
                         direction="horizontal"
                         gap="SP1"
                       >
-                        <Tooltip content="Change order of Live Images">
+                        <Tooltip content={t('photoStudio.changeOrderOfLiveImages', {defaultValue: "Change order of Live Images"})}>
                           <IconButton
                             size="tiny"
                             priority="tertiary"
@@ -371,7 +371,7 @@ const StudioImageExplorer: React.FC<{
 
                         <InfoIcon
                           size="small"
-                          content="Please note that the images from Live Images will be directly published & visible to your customers on your live site."
+                          content={t('photoStudio.liveImagesInfo', {defaultValue: "Please note that the images from Live Images will be directly published & visible to your customers on your live site."})}
                         />
                       </Box>
                     }
@@ -401,7 +401,7 @@ const StudioImageExplorer: React.FC<{
                           direction="vertical"
                         >
                           <Text size="small" weight="thin" textAlign="center">
-                            No live images found
+                            {t('emptyStates.noLiveImages', {defaultValue: "No live images found"})}
                           </Text>
                           {shortedDraftImages.length > 0 && (
                             <Text
@@ -410,7 +410,7 @@ const StudioImageExplorer: React.FC<{
                               textAlign="center"
                               secondary
                             >
-                              You can publish draft images to make them live.
+                              {t('photoStudio.noLiveImagesMessage', {defaultValue: "You can publish draft images to make them live."})}
                             </Text>
                           )}
                         </Box>
@@ -420,12 +420,12 @@ const StudioImageExplorer: React.FC<{
                 )}
                 <SidePanel.Section
                   title={`${
-                    studioType == "product" ? "Draft" : "All Draft"
+                    studioType == "product" ? t('photoStudio.draftImages', {defaultValue: "Draft"}) : t('photoStudio.allDraftImages', {defaultValue: "All Draft"})
                   } Images (${shortedDraftImages.length})`}
                   suffix={
                     <InfoIcon
                       size="small"
-                      content="Draft Images are visible only to you. Feel free to experiment until you find the right fit and are ready to Publish it to the Live Images."
+                      content={t('photoStudio.draftImagesInfo', {defaultValue: "Draft Images are visible only to you. Feel free to experiment until you find the right fit and are ready to Publish it to the Live Images."})}
                     />
                   }
                 >
@@ -456,12 +456,12 @@ const StudioImageExplorer: React.FC<{
                         padding="SP4"
                       >
                         <Text size="small" weight="thin">
-                          No draft images found
+                          {t('emptyStates.noDraftImagesFound', {defaultValue: "No draft images found"})}
                         </Text>
                         <Text size="tiny" weight="thin" secondary>
                           {shortedLiveImages.length > 0
-                            ? "You can select live images or upload new images to start editing."
-                            : "You can upload images to start editing."}
+                            ? t('photoStudio.draftImagesEmptyMessage', {defaultValue: "You can select live images or upload new images to start editing."})
+                            : t('photoStudio.draftImagesEmptyMessageNoLive', {defaultValue: "You can upload images to start editing."})}
                         </Text>
                       </Box>
                     )}
@@ -474,7 +474,7 @@ const StudioImageExplorer: React.FC<{
                 <Box direction="vertical" gap={1}>
                   <ImageUpload
                     label={
-                      referenceImage ? "Upload Multiple Images" : "Upload Image"
+                      referenceImage ? t('photoStudio.uploadMultipleImages', {defaultValue: "Upload Multiple Images"}) : t('photoStudio.uploadImage', {defaultValue: "Upload Image"})
                     }
                   />
                 </Box>

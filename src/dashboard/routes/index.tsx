@@ -58,6 +58,8 @@ export const ROUTES: AppRoute[] = [
   // { id: 4, title: "Settings", path: "/settings", element: <SettingsTab /> },
 ];
 
+// Note: Route titles are used in TabNavigator, which will need i18next support if needed
+
 const AppRouter: React.FC = () => (
   <Layout>
     <HashRouter>

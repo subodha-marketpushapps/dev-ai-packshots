@@ -2,6 +2,11 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import Locize from 'i18next-locize-backend';
 import { LOCIZE_PROJECT_ID, LOCIZE_API_KEY, LOCIZE_VERSION, _DEV } from './constants';
+import enTranslations from './locales/en.json';
+import frTranslations from './locales/fr.json';
+import roTranslations from './locales/ro.json';
+import esTranslations from './locales/es.json';
+import deTranslations from './locales/de.json';
 
 i18n
   // Load translations from Locize
@@ -17,6 +22,25 @@ i18n
     ns: ['translation'],
     // Preload all namespaces
     load: 'languageOnly', // or 'all' to load all languages
+
+    // Local resources as fallback
+    resources: {
+      en: {
+        translation: enTranslations,
+      },
+      fr: {
+        translation: frTranslations,
+      },
+      ro: {
+        translation: roTranslations,
+      },
+      es: {
+        translation: esTranslations,
+      },
+      de: {
+        translation: deTranslations,
+      },
+    },
 
     // Locize backend configuration
     backend: {

@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { useRecoilState } from "recoil";
+import { useTranslation } from "react-i18next";
 import { dashboard } from "@wix/dashboard";
 import {
   Page,
@@ -25,6 +26,7 @@ import usePost from "../../hooks/usePost";
 import { updateSettings } from "../../services/api";
 
 export default function SettingsTab() {
+  const { t } = useTranslation();
   const [settings, setSettings] = useRecoilState(settingsState);
   const [unsavedChanges, setUnsavedChanges] = useState(false);
 
@@ -39,8 +41,8 @@ export default function SettingsTab() {
   let userSchema = Yup.object({
     statsEmailEnabled: Yup.boolean(),
     email: Yup.string()
-      .email("Invalid email format")
-      .required("Email is required"),
+      .email(t('settingsTab.invalidEmailFormat', {defaultValue: "Invalid email format"}))
+      .required(t('settingsTab.emailRequired', {defaultValue: "Email is required"})),
   });
 
   const {
@@ -60,7 +62,7 @@ export default function SettingsTab() {
       await onUpdateSettings({ statsEmailEnabled, email });
 
       dashboard.showToast({
-        message: "Settings saved successfully!",
+        message: t('settingsTab.settingsSaved', {defaultValue: "Settings saved successfully!"}),
         type: "success",
       });
     } catch (err) {
@@ -102,11 +104,11 @@ export default function SettingsTab() {
   useEffect(() => {
     if (settingsUpdateError) {
       dashboard.showToast({
-        message: "Failed to save settings. Please try again.",
+        message: t('settingsTab.settingsSaveFailed', {defaultValue: "Failed to save settings. Please try again."}),
         type: "error",
       });
     }
-  }, [settingsUpdateError]);
+  }, [settingsUpdateError, t]);
 
   // Clear error when user starts typing
   useEffect(() => {
@@ -120,8 +122,8 @@ export default function SettingsTab() {
       <Layout>
         <Cell>
           <Page.Section
-            title="Settings"
-            subtitle="Add or change details registered in Quantity and Volume Discount app."
+            title={t('settingsTab.title', {defaultValue: "Settings"})}
+            subtitle={t('settingsTab.subtitle', {defaultValue: "Add or change details registered in Quantity and Volume Discount app."})}
             actionsBar={
               <Box gap="12px">
                 <Button
@@ -129,7 +131,7 @@ export default function SettingsTab() {
                   onClick={clearUnsavedChanges}
                   disabled={isSettingsUpdating || !unsavedChanges}
                 >
-                  Cancel
+                  {t('settingsTab.cancel', {defaultValue: "Cancel"})}
                 </Button>
                 <Button
                   onClick={() => onSaveSettings()}
@@ -138,7 +140,7 @@ export default function SettingsTab() {
                   {isSettingsUpdating ? (
                     <Loader size="tiny" />
                   ) : (
-                    "Save Settings"
+                    t('settingsTab.saveSettings', {defaultValue: "Save Settings"})
                   )}
                 </Button>
               </Box>
@@ -150,21 +152,21 @@ export default function SettingsTab() {
           <Layout>
             <Cell>
               <Card>
-                <Card.Header title="Notifications"></Card.Header>
+                <Card.Header title={t('settingsTab.notifications', {defaultValue: "Notifications"})}></Card.Header>
                 <Card.Divider />
                 <Card.Content>
                   <Layout>
                     <Cell span={8}>
-                      <FormField label="Receive Stats and Conversion Emails">
+                      <FormField label={t('settingsTab.receiveStatsEmails', {defaultValue: "Receive Stats and Conversion Emails"})}>
                         <Radio
                           checked={statsEmailEnabled}
                           onChange={() => setStatsEmailEnabled(true)}
-                          label="On a Weekly Basis"
+                          label={t('settingsTab.onWeeklyBasis', {defaultValue: "On a Weekly Basis"})}
                         />
                         <Radio
                           checked={!statsEmailEnabled}
                           onChange={() => setStatsEmailEnabled(false)}
-                          label="Never"
+                          label={t('settingsTab.never', {defaultValue: "Never"})}
                         />
                       </FormField>
                     </Cell>
@@ -173,13 +175,13 @@ export default function SettingsTab() {
                     </Cell>
                     <Cell span={8}>
                       <FormField
-                        label="Notification Email"
+                        label={t('settingsTab.notificationEmail', {defaultValue: "Notification Email"})}
                         status={errors.email ? "error" : undefined}
                         statusMessage={errors.email}
                         required
                       >
                         <Input
-                          placeholder="sample@mail.com"
+                          placeholder={t('settingsTab.emailPlaceholder', {defaultValue: "sample@mail.com"})}
                           value={email}
                           onChange={(val) => setEmail(val.target.value)}
                         />

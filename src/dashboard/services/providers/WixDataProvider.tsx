@@ -1,4 +1,5 @@
 import React, { createContext, useContext, ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 import { NormalizedProduct } from "../../utils/catalogNormalizer";
 import { WixSiteData } from "../../../interfaces";
@@ -35,6 +36,7 @@ interface WixDataProviderProps {
 export const WixDataProvider: React.FC<WixDataProviderProps> = ({
   children,
 }) => {
+  const { t } = useTranslation();
   const {
     isLoading: isProductsFetching,
     error: productFetchError,
@@ -60,8 +62,8 @@ export const WixDataProvider: React.FC<WixDataProviderProps> = ({
   if (isDataLoaded && isDataError) {
     return (
       <EmptyStateError
-        title="We couldn't sync with the Wix Site data"
-        subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
+        title={t('errors.wixDataSyncError.title', {defaultValue: "We couldn't sync with the Wix Site data"})}
+        subtitle={t('errors.wixDataSyncError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
         refreshActions={() => {
           refreshFetchWixStoreProducts();
           refreshFetchWixSiteData();

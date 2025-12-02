@@ -1,0 +1,216 @@
+{
+  "homePage": {
+    "pageTitle": "Imágenes de Producto IA - [Dev]",
+    "pageSubtitle": "Mejore sus imágenes de productos con mejora de imágenes impulsada por IA.",
+    "openDModal": "Abrir modal D"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "No pudimos cargar los datos de Configuración",
+      "subtitle": "Parece que hubo un problema técnico de nuestra parte. Espere unos minutos e intente nuevamente."
+    },
+    "wixDataSyncError": {
+      "title": "No pudimos sincronizar con los datos del sitio Wix",
+      "subtitle": "Parece que hubo un problema técnico de nuestra parte. Espere unos minutos e intente nuevamente."
+    },
+    "imagesLoadError": {
+      "title": "No pudimos cargar sus imágenes",
+      "subtitle": "Hubo un problema al obtener sus imágenes generadas. Por favor, intente nuevamente más tarde."
+    },
+    "draftImagesLoadError": {
+      "title": "No pudimos cargar los datos de imágenes borrador",
+      "subtitle": "Parece que hubo un problema técnico de nuestra parte. Espere unos minutos e intente nuevamente."
+    },
+    "instanceUpdateError": {
+      "title": "No pudimos actualizar su instancia",
+      "subtitle": "Parece que hubo un problema técnico de nuestra parte. Espere unos minutos e intente nuevamente."
+    },
+    "tableLoadError": {
+      "title": "No pudimos cargar esta tabla",
+      "subtitle": "Parece que hubo un problema técnico de nuestra parte. Espere unos minutos e intente nuevamente.",
+      "intercomMessage": "Tengo un problema de carga de datos con la tabla 'Productos de la tienda'. ¿Puede ayudarme con esto?",
+      "intercomButtonLabel": "Contactar soporte"
+    },
+    "genericError": {
+      "title": "No pudimos cargar los datos",
+      "subtitle": "Parece que hubo un problema técnico de nuestra parte. Espere unos minutos e intente nuevamente."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Ningún producto seleccionado",
+      "subtitle": "Por favor, seleccione un producto para abrir el estudio de fotos."
+    },
+    "productNotFound": {
+      "title": "Producto no encontrado",
+      "subtitle": "No se pudo encontrar el producto seleccionado. Por favor, intente nuevamente o seleccione un producto diferente."
+    },
+    "noDraftImages": {
+      "title": "Sin imágenes borrador",
+      "subtitle": "Genere su primera imagen con el Estudio de Fotos."
+    },
+    "noStoreProducts": {
+      "title": "Sin productos de la tienda",
+      "subtitle": "Una vez que agregue productos de la tienda, aparecerán aquí."
+    },
+    "startTypingToSearch": {
+      "title": "Comience a escribir para buscar productos",
+      "subtitle": "Ingrese al menos 3 caracteres para buscar en su catálogo de productos"
+    },
+    "noSearchResults": {
+      "title": "Sin resultados de búsqueda",
+      "subtitle": "Ningún elemento coincide con sus criterios de búsqueda. Intente buscar con otra palabra clave"
+    },
+    "noLiveImages": "No se encontraron imágenes en vivo",
+    "noDraftImagesFound": "No se encontraron imágenes borrador"
+  },
+  "loading": {
+    "loadingData": "Cargando datos...",
+    "loadingImages": "Cargando imágenes...",
+    "loading": "Cargando..."
+  },
+  "tabs": {
+    "products": "Productos",
+    "draftImages": "Imágenes borrador"
+  },
+  "productsTab": {
+    "title": "Productos de la tienda",
+    "subtitle": "Gestione, edite y mejore sus imágenes de productos para que coincidan perfectamente con su marca.",
+    "generateImage": "Generar imagen",
+    "createNewProduct": "Crear nuevo producto",
+    "storeProducts": "Productos de la tienda",
+    "searchPlaceholder": "Buscar productos...",
+    "refreshData": "Actualizar datos",
+    "tableInfo": "Use esta tabla para ver y editar las imágenes de productos relacionadas con los productos de la tienda."
+  },
+  "galleryTab": {
+    "title": "Imágenes borrador",
+    "subtitle": "Explore una colección de sus imágenes generadas.",
+    "loadMore": "Cargar más"
+  },
+  "settingsTab": {
+    "title": "Configuración",
+    "subtitle": "Agregue o cambie los detalles registrados en la aplicación Descuentos por cantidad y volumen.",
+    "cancel": "Cancelar",
+    "saveSettings": "Guardar configuración",
+    "notifications": "Notificaciones",
+    "receiveStatsEmails": "Recibir correos electrónicos de estadísticas y conversión",
+    "onWeeklyBasis": "Semanalmente",
+    "never": "Nunca",
+    "notificationEmail": "Correo electrónico de notificación",
+    "emailPlaceholder": "ejemplo@mail.com",
+    "settingsSaved": "¡Configuración guardada exitosamente!",
+    "settingsSaveFailed": "Error al guardar la configuración. Por favor, intente nuevamente.",
+    "invalidEmailFormat": "Formato de correo electrónico inválido",
+    "emailRequired": "El correo electrónico es obligatorio"
+  },
+  "photoStudio": {
+    "showProductImages": "Mostrar imágenes de productos",
+    "productImages": {
+      "title": "Imágenes de productos",
+      "subtitle": "Edite y actualice sus imágenes de productos."
+    },
+    "generatedImages": {
+      "title": "Imágenes generadas",
+      "subtitle": "Edite y actualice sus imágenes borrador."
+    },
+    "infoIconDescription": "El icono de información proporciona más información sobre una sección.",
+    "liveImages": "Imágenes en vivo",
+    "draftImages": "Imágenes borrador",
+    "allDraftImages": "Todas las imágenes borrador",
+    "changeOrderOfLiveImages": "Cambiar el orden de las imágenes en vivo",
+    "liveImagesInfo": "Tenga en cuenta que las imágenes de Imágenes en vivo se publicarán directamente y serán visibles para sus clientes en su sitio en vivo.",
+    "draftImagesInfo": "Las imágenes borrador son visibles solo para usted. Siéntase libre de experimentar hasta encontrar el ajuste correcto y estar listo para publicarlo en Imágenes en vivo.",
+    "noLiveImagesMessage": "Puede publicar imágenes borrador para hacerlas en vivo.",
+    "draftImagesEmptyMessage": "Puede seleccionar imágenes en vivo o cargar nuevas imágenes para comenzar a editar.",
+    "draftImagesEmptyMessageNoLive": "Puede cargar imágenes para comenzar a editar.",
+    "uploadImage": "Cargar imagen",
+    "uploadMultipleImages": "Cargar múltiples imágenes",
+    "copyEditHint": "Seleccione una o más imágenes para aplicar Edición de copia, o haga clic en \"Cargar imagen\" para cargar otras nuevas.",
+    "imageCurrentlyPublishing": "Esta imagen se está publicando actualmente.",
+    "maxReferenceImages": "Puede seleccionar o cargar hasta 6 imágenes para ediciones de copia.",
+    "dashboard": "Panel de control",
+    "imageStudio": "Estudio de imágenes",
+    "compareChanges": "Comparar cambios",
+    "removeImage": "Eliminar imagen",
+    "removeUploadedImage": "Eliminar imagen cargada",
+    "goBack": "Volver (Esc)",
+    "fullscreen": "Pantalla completa",
+    "compare": "Comparar",
+    "details": "Detalles",
+    "editModes": {
+      "label": "Modos de edición",
+      "infoContent": "Elija cómo desea editar su imagen"
+    },
+    "openDashboard": "Abrir panel de control de Imágenes de Producto IA",
+    "dismiss": "Descartar",
+    "generateInfo": "Generar información",
+    "copyImage": "Copiar imagen",
+    "delete": "Eliminar",
+    "unpublishGuide": "Guía de despublicación",
+    "addRectangleHint": "Agregar sugerencia rectangular",
+    "addCircleHint": "Agregar sugerencia circular",
+    "showEditorPanel": "Mostrar panel de edición",
+    "minimizeEditorPanel": "Minimizar panel de edición",
+    "collapseEditorPanel": "Contraer panel de edición",
+    "cancelCopyEdit": "Cancelar edición de copia",
+    "prevProduct": "Producto anterior",
+    "nextProduct": "Producto siguiente",
+    "searchAndSelectProduct": "Buscar y seleccionar un producto...",
+    "openEditProductDashboardPage": "Abrir página del panel de control de edición de producto",
+    "viewLiveProductPage": "Ver página de producto en vivo"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Actualice su plan de Imágenes de Producto IA",
+      "primaryButton": "Actualizar",
+      "secondaryButton": "Ahora no",
+      "exhaustedCredits": "Ha agotado los créditos de su plan. Actualice a un plan superior para generar nuevas imágenes.",
+      "upgradeForMoreCredits": "Actualice su plan para obtener más créditos."
+    },
+    "unpublish": {
+      "title": "Despublicar imagen en vivo",
+      "primaryButton": "Editar página de producto",
+      "secondaryButton": "Cancelar",
+      "content": "En este momento no puede eliminar/despublicar imágenes directamente desde Imágenes de Producto IA. Por favor, visite la página Editar producto y elimínela desde allí.",
+      "refreshNote": "Actualice su página para ver los cambios.",
+      "refresh": "Actualizar"
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Imágenes generadas",
+      "infoContent": "Seleccione el número de imágenes a generar"
+    },
+    "autoUpscaling": {
+      "label": "Ampliación automática",
+      "infoContent": "Cuando está habilitado, las imágenes más pequeñas de 1000px se ampliarán automáticamente x2 para una mejor calidad."
+    },
+    "setOutputDimensions": {
+      "label": "Establecer dimensiones de salida",
+      "infoContent": "Seleccione la relación de aspecto para las imágenes generadas."
+    },
+    "photoQuality": {
+      "label": "Calidad de foto",
+      "infoContent": "Agregue etiquetas de calidad para mejorar su imagen"
+    },
+    "productPositioning": {
+      "infoContent": "Elija cómo se posiciona el producto en la imagen"
+    },
+    "backgroundType": {
+      "infoContent": "Seleccione el tipo de fondo para su imagen"
+    }
+  },
+  "feedback": {
+    "overallExperience": "¿Cómo fue su experiencia general con Imágenes de Producto IA?"
+  },
+  "common": {
+    "refresh": "Actualizar",
+    "openSupportCenter": "Abrir centro de soporte",
+    "subscriptionInfo": "Información de suscripción",
+    "showSubscriptionInfo": "Mostrar información de suscripción",
+    "chooseProduct": "Elegir un producto...",
+    "viewAllLiveProductImages": "Ver todas las imágenes de productos en vivo"
+  }
+}
+

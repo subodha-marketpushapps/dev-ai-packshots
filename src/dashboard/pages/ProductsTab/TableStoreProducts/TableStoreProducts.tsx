@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect, useCallback, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   InfoIcon,
@@ -40,6 +41,7 @@ interface TableStoreProductsProps {
 const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
   onProductsUpdate
 }) => {
+  const { t } = useTranslation();
   // 🎯 Following Wix Design System patterns with PAGINATION (better for data tables)
   // ✅ Features implemented following Wix standards:
   // - Table with proper Page.Sticky header (Wix pattern)
@@ -309,8 +311,8 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
                   <TableToolbar.Title>
                     {isTableReadyToRender && (
                       <Box align="center" verticalAlign="middle" gap={0.5}>
-                        Store Products
-                        <InfoIcon content="Use this table to view and edit store product related product images." />
+                        {t('productsTab.title', {defaultValue: "Store Products"})}
+                        <InfoIcon content={t('productsTab.tableInfo', {defaultValue: "Use this table to view and edit store product related product images."})} />
                       </Box>
                     )}
                     {!isTableReadyToRender && (
@@ -331,14 +333,14 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
                       onChange={(e) => setSearchTerm(e.target.value)}
                       value={searchTerm}
                       onClear={() => setSearchTerm("")}
-                      placeholder="Search products..."
+                      placeholder={t('productsTab.searchPlaceholder', {defaultValue: "Search products..."})}
                       expandable={false}
                       debounceMs={800}
                     />
                   </TableToolbar.Item>
                   <TableToolbar.Item>
                     <Tooltip
-                      content="Refresh data"
+                      content={t('productsTab.refreshData', {defaultValue: "Refresh data"})}
                       size="small"
                       placement="top"
                     >
@@ -392,17 +394,17 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
 
           {/* Loading state */}
           {!isTableReadyToRender && (
-            <TableState stateType="loading" title="Loading..." />
+            <TableState stateType="loading" title={t('loading.loading', {defaultValue: "Loading..."})} />
           )}
 
           {/* Error state */}
           {isTableReadyToRender && error && (
             <TableState
               stateType="error"
-              title="We couldn't load this table"
-              subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
-              intercomMessage="I having a data loading issue with the 'Store Products' table. Can you help me with this?"
-              intercomButtonLabel="Contact Support"
+              title={t('errors.tableLoadError.title', {defaultValue: "We couldn't load this table"})}
+              subtitle={t('errors.tableLoadError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
+              intercomMessage={t('errors.tableLoadError.intercomMessage', {defaultValue: "I having a data loading issue with the 'Store Products' table. Can you help me with this?"})}
+              intercomButtonLabel={t('errors.tableLoadError.intercomButtonLabel', {defaultValue: "Contact Support"})}
             />
           )}
 
@@ -410,8 +412,8 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
           {isTableReadyToRender && !error && showEmptyState && (
             <TableState
               stateType="empty"
-              title="No Store Products"
-              subtitle="Once you add store products, they will appear here."
+              title={t('emptyStates.noStoreProducts.title', {defaultValue: "No Store Products"})}
+              subtitle={t('emptyStates.noStoreProducts.subtitle', {defaultValue: "Once you add store products, they will appear here."})}
             />
           )}
 
@@ -419,8 +421,8 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
           {isTableReadyToRender && !error && showSearchHint && (
             <TableState
               stateType="empty"
-              title="Start typing to search products"
-              subtitle="Enter at least 3 characters to search through your product catalog"
+              title={t('emptyStates.startTypingToSearch.title', {defaultValue: "Start typing to search products"})}
+              subtitle={t('emptyStates.startTypingToSearch.subtitle', {defaultValue: "Enter at least 3 characters to search through your product catalog"})}
             />
           )}
 
@@ -428,8 +430,8 @@ const TableStoreProducts: React.FC<TableStoreProductsProps> = ({
           {isTableReadyToRender && !error && hasNoSearchResults && (
             <TableState
               stateType="noSearchResults"
-              title="No search results"
-              subtitle="No items match your search criteria. Try to search by another keyword"
+              title={t('emptyStates.noSearchResults.title', {defaultValue: "No search results"})}
+              subtitle={t('emptyStates.noSearchResults.subtitle', {defaultValue: "No items match your search criteria. Try to search by another keyword"})}
               innerActionFunction={() => setSearchTerm("")}
             />
           )}

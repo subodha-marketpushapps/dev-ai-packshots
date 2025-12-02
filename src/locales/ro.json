@@ -1,0 +1,216 @@
+{
+  "homePage": {
+    "pageTitle": "Imagini Produs AI - [Dev]",
+    "pageSubtitle": "Îmbunătățiți-vă imaginile produselor folosind îmbunătățirea imaginilor bazată pe IA.",
+    "openDModal": "Deschide modalul D"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Nu am putut încărca datele Setărilor",
+      "subtitle": "Se pare că a fost o problemă tehnică din partea noastră. Așteptați câteva minute și încercați din nou."
+    },
+    "wixDataSyncError": {
+      "title": "Nu am putut sincroniza cu datele site-ului Wix",
+      "subtitle": "Se pare că a fost o problemă tehnică din partea noastră. Așteptați câteva minute și încercați din nou."
+    },
+    "imagesLoadError": {
+      "title": "Nu am putut încărca imaginile dvs.",
+      "subtitle": "A existat o problemă la preluarea imaginilor dvs. generate. Vă rugăm să încercați din nou mai târziu."
+    },
+    "draftImagesLoadError": {
+      "title": "Nu am putut încărca datele imaginilor de schiță",
+      "subtitle": "Se pare că a fost o problemă tehnică din partea noastră. Așteptați câteva minute și încercați din nou."
+    },
+    "instanceUpdateError": {
+      "title": "Nu am putut actualiza instanța dvs.",
+      "subtitle": "Se pare că a fost o problemă tehnică din partea noastră. Așteptați câteva minute și încercați din nou."
+    },
+    "tableLoadError": {
+      "title": "Nu am putut încărca acest tabel",
+      "subtitle": "Se pare că a fost o problemă tehnică din partea noastră. Așteptați câteva minute și încercați din nou.",
+      "intercomMessage": "Am o problemă la încărcarea datelor cu tabelul 'Produse magazin'. Mă puteți ajuta cu asta?",
+      "intercomButtonLabel": "Contactați suportul"
+    },
+    "genericError": {
+      "title": "Nu am putut încărca datele",
+      "subtitle": "Se pare că a fost o problemă tehnică din partea noastră. Așteptați câteva minute și încercați din nou."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Niciun produs selectat",
+      "subtitle": "Vă rugăm să selectați un produs pentru a deschide studioul foto."
+    },
+    "productNotFound": {
+      "title": "Produs negăsit",
+      "subtitle": "Produsul selectat nu a putut fi găsit. Vă rugăm să încercați din nou sau să selectați un alt produs."
+    },
+    "noDraftImages": {
+      "title": "Fără imagini de schiță",
+      "subtitle": "Generați-vă prima imagine cu Studioul Foto."
+    },
+    "noStoreProducts": {
+      "title": "Fără produse magazin",
+      "subtitle": "Odată ce adăugați produse magazin, acestea vor apărea aici."
+    },
+    "startTypingToSearch": {
+      "title": "Începeți să tastați pentru a căuta produse",
+      "subtitle": "Introduceți cel puțin 3 caractere pentru a căuta în catalogul dvs. de produse"
+    },
+    "noSearchResults": {
+      "title": "Fără rezultate de căutare",
+      "subtitle": "Niciun element nu se potrivește cu criteriile dvs. de căutare. Încercați să căutați după un alt cuvânt cheie"
+    },
+    "noLiveImages": "Nu s-au găsit imagini live",
+    "noDraftImagesFound": "Nu s-au găsit imagini de schiță"
+  },
+  "loading": {
+    "loadingData": "Se încarcă datele...",
+    "loadingImages": "Se încarcă imaginile...",
+    "loading": "Se încarcă..."
+  },
+  "tabs": {
+    "products": "Produse",
+    "draftImages": "Imagini de schiță"
+  },
+  "productsTab": {
+    "title": "Produse magazin",
+    "subtitle": "Gestionați, editați și îmbunătățiți-vă imaginile produselor pentru a se potrivi perfect cu marca dvs.",
+    "generateImage": "Generați imagine",
+    "createNewProduct": "Creați produs nou",
+    "storeProducts": "Produse magazin",
+    "searchPlaceholder": "Căutați produse...",
+    "refreshData": "Actualizați datele",
+    "tableInfo": "Folosiți acest tabel pentru a vizualiza și edita imaginile produselor legate de produsele magazinului."
+  },
+  "galleryTab": {
+    "title": "Imagini de schiță",
+    "subtitle": "Explorați o colecție de imagini dvs. generate.",
+    "loadMore": "Încărcați mai multe"
+  },
+  "settingsTab": {
+    "title": "Setări",
+    "subtitle": "Adăugați sau modificați detaliile înregistrate în aplicația Reduceri cantitate și volum.",
+    "cancel": "Anulați",
+    "saveSettings": "Salvați setările",
+    "notifications": "Notificări",
+    "receiveStatsEmails": "Primiți e-mailuri de statistici și conversie",
+    "onWeeklyBasis": "Săptămânal",
+    "never": "Niciodată",
+    "notificationEmail": "E-mail notificare",
+    "emailPlaceholder": "exemplu@mail.com",
+    "settingsSaved": "Setările au fost salvate cu succes!",
+    "settingsSaveFailed": "Salvarea setărilor a eșuat. Vă rugăm să încercați din nou.",
+    "invalidEmailFormat": "Format e-mail invalid",
+    "emailRequired": "E-mailul este obligatoriu"
+  },
+  "photoStudio": {
+    "showProductImages": "Afișați imaginile produselor",
+    "productImages": {
+      "title": "Imagini produse",
+      "subtitle": "Editați și actualizați imaginile produselor dvs."
+    },
+    "generatedImages": {
+      "title": "Imagini generate",
+      "subtitle": "Editați și actualizați imaginile dvs. de schiță."
+    },
+    "infoIconDescription": "Pictograma de informații oferă mai multe informații despre o secțiune.",
+    "liveImages": "Imagini live",
+    "draftImages": "Imagini de schiță",
+    "allDraftImages": "Toate imaginile de schiță",
+    "changeOrderOfLiveImages": "Schimbați ordinea imaginilor live",
+    "liveImagesInfo": "Vă rugăm să rețineți că imaginile din Imagini live vor fi publicate direct și vizibile pentru clienții dvs. pe site-ul dvs. live.",
+    "draftImagesInfo": "Imaginile de schiță sunt vizibile doar pentru dvs. Simțiți-vă liber să experimentați până găsiți potrivirea potrivită și sunteți gata să o publicați în Imagini live.",
+    "noLiveImagesMessage": "Puteți publica imagini de schiță pentru a le face live.",
+    "draftImagesEmptyMessage": "Puteți selecta imagini live sau încărca imagini noi pentru a începe editarea.",
+    "draftImagesEmptyMessageNoLive": "Puteți încărca imagini pentru a începe editarea.",
+    "uploadImage": "Încărcați imagine",
+    "uploadMultipleImages": "Încărcați mai multe imagini",
+    "copyEditHint": "Selectați una sau mai multe imagini pentru a aplica Editare copie, sau faceți clic pe \"Încărcați imagine\" pentru a încărca altele noi.",
+    "imageCurrentlyPublishing": "Această imagine este în prezent în curs de publicare.",
+    "maxReferenceImages": "Puteți selecta sau încărca până la 6 imagini pentru editările de copie.",
+    "dashboard": "Tablou de bord",
+    "imageStudio": "Studioul de imagini",
+    "compareChanges": "Comparați modificările",
+    "removeImage": "Eliminați imaginea",
+    "removeUploadedImage": "Eliminați imaginea încărcată",
+    "goBack": "Înapoi (Esc)",
+    "fullscreen": "Ecran complet",
+    "compare": "Comparați",
+    "details": "Detalii",
+    "editModes": {
+      "label": "Moduri de editare",
+      "infoContent": "Alegeți cum doriți să vă editați imaginea"
+    },
+    "openDashboard": "Deschideți tabloul de bord Imagini Produs AI",
+    "dismiss": "Respingeți",
+    "generateInfo": "Generați informații",
+    "copyImage": "Copiați imaginea",
+    "delete": "Ștergeți",
+    "unpublishGuide": "Ghid de nepublicare",
+    "addRectangleHint": "Adăugați indiciu dreptunghiular",
+    "addCircleHint": "Adăugați indiciu circular",
+    "showEditorPanel": "Afișați panoul de editare",
+    "minimizeEditorPanel": "Minimizați panoul de editare",
+    "collapseEditorPanel": "Restrângeți panoul de editare",
+    "cancelCopyEdit": "Anulați editarea copiei",
+    "prevProduct": "Produs anterior",
+    "nextProduct": "Produs următor",
+    "searchAndSelectProduct": "Căutați și selectați un produs...",
+    "openEditProductDashboardPage": "Deschideți pagina tabloului de bord de editare produs",
+    "viewLiveProductPage": "Vizualizați pagina produs live"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Actualizați-vă planul Imagini Produs AI",
+      "primaryButton": "Actualizați",
+      "secondaryButton": "Nu acum",
+      "exhaustedCredits": "Ați epuizat creditele planului dvs. Actualizați-vă la un plan superior pentru a genera imagini noi.",
+      "upgradeForMoreCredits": "Actualizați-vă planul pentru a obține mai multe credite."
+    },
+    "unpublish": {
+      "title": "Nepublicare imagine live",
+      "primaryButton": "Editați pagina produs",
+      "secondaryButton": "Anulați",
+      "content": "În acest moment nu puteți șterge/nepublica imagini direct din Imagini Produs AI. Vă rugăm să vizitați pagina Editați produs și să o eliminați de acolo.",
+      "refreshNote": "Actualizați-vă pagina pentru a vedea modificările.",
+      "refresh": "Actualizați"
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Imagini generate",
+      "infoContent": "Selectați numărul de imagini de generat"
+    },
+    "autoUpscaling": {
+      "label": "Mărire automată",
+      "infoContent": "Când este activată, imaginile mai mici de 1000px vor fi mărite automat x2 pentru o calitate mai bună."
+    },
+    "setOutputDimensions": {
+      "label": "Setați dimensiunile de ieșire",
+      "infoContent": "Selectați raportul de aspect pentru imaginile generate."
+    },
+    "photoQuality": {
+      "label": "Calitate foto",
+      "infoContent": "Adăugați etichete de calitate pentru a vă îmbunătăți imaginea"
+    },
+    "productPositioning": {
+      "infoContent": "Alegeți modul în care produsul este poziționat în imagine"
+    },
+    "backgroundType": {
+      "infoContent": "Selectați tipul de fundal pentru imaginea dvs."
+    }
+  },
+  "feedback": {
+    "overallExperience": "Cum a fost experiența dvs. generală cu Imagini Produs AI?"
+  },
+  "common": {
+    "refresh": "Actualizați",
+    "openSupportCenter": "Deschideți centrul de asistență",
+    "subscriptionInfo": "Informații abonament",
+    "showSubscriptionInfo": "Afișați informațiile despre abonament",
+    "chooseProduct": "Alegeți un produs...",
+    "viewAllLiveProductImages": "Vizualizați toate imaginile produselor live"
+  }
+}
+

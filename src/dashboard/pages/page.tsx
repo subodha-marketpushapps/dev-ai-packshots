@@ -3,6 +3,7 @@ import "@wix/design-system/styles.global.css";
 
 import { useRecoilState } from "recoil";
 import LogRocket from "logrocket";
+import { useTranslation } from "react-i18next";
 
 import { Box, Button, Tooltip, Page, IconButton } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
@@ -47,6 +48,7 @@ import SubscriptionInfo from "../components/common/SubscriptionInfo/Subscription
 function PageContent() {
   // Fetch subscription data on first load
   useSubscription();
+  const { t } = useTranslation();
 
   // console.log("Main Page");
 
@@ -142,8 +144,8 @@ function PageContent() {
       {!isDataLoaded && <EmptyStateLoading loadingText="" />}
       {isDataLoaded && isDataError && (
         <EmptyStateError
-          title="We couldn't load the Settings data"
-          subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
+          title={t('errors.settingsLoadError.title', {defaultValue: "We couldn't load the Settings data"})}
+          subtitle={t('errors.settingsLoadError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
           refreshActions={refreshFetchSettings}
         />
       )}
@@ -154,6 +156,7 @@ function PageContent() {
 
 function MainPage() {
   // console.log("Main Page");
+  const { t } = useTranslation();
 
   const baseModals = useBaseModal();
   const photoStudio = usePhotoStudio();
@@ -168,8 +171,8 @@ function MainPage() {
 
   return (
     <PageLayout
-      title="AI Product Images - [Dev]"
-      subtitle="Elevate Your Product Visuals Using AI-Driven Image Enhancement."
+      title={t('homePage.pageTitle', {defaultValue: "AI Product Images - [Dev]"})}
+      subtitle={t('homePage.pageSubtitle', {defaultValue: "Elevate Your Product Visuals Using AI-Driven Image Enhancement."})}
       actionBar={
         <Box gap={2}>
           {/* Product Selector Component */}
@@ -186,7 +189,7 @@ function MainPage() {
               skin="premium"
               size="small"
             >
-              Open D Modal
+              {t('homePage.openDModal', {defaultValue: "Open D Modal"})}
             </Button>
           )}
 
