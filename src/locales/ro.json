@@ -225,6 +225,12 @@
     "viewAllLiveProductImages": "Vizualizați toate imaginile produselor live",
     "copy": "Copiați",
     "copied": "Copiat!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Selectați produs",
+    "openModal": "Deschide modal",
+    "noProductsAvailable": "Nu există produse disponibile în magazinul dvs.",
+    "chooseProductPlaceholder": "Alegeți un produs..."
   }
 }
 

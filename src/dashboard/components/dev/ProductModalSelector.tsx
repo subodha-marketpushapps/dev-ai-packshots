@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Box, Button, Dropdown, FormField, Text } from "@wix/design-system";
 import { dashboard } from "@wix/dashboard";
 import { useRecoilValue } from "recoil";
+import { useTranslation } from "react-i18next";
 
 import { wixStoreProductsState } from "../../services/state";
 import { NormalizedProduct } from "../../utils/catalogNormalizer";
@@ -20,8 +21,8 @@ interface ProductModalSelectorProps {
 
 const ProductModalSelector: React.FC<ProductModalSelectorProps> = ({
   modalId,
-  label = "Select Product",
-  buttonText = "Open Modal",
+  label,
+  buttonText,
   buttonSize = "small",
   buttonPriority = "primary",
   disabled = false,
@@ -29,9 +30,15 @@ const ProductModalSelector: React.FC<ProductModalSelectorProps> = ({
   onProductSelect,
   onModalOpen,
 }) => {
+  const { t } = useTranslation();
+  
   // Get products from Recoil state instead of fetching
   const allProducts = useRecoilValue(wixStoreProductsState);
   const [selectedProductId, setSelectedProductId] = useState<string>("");
+  
+  // Use translations with fallback to props or defaults
+  const labelText = label || t('productModalSelector.selectProduct', {defaultValue: "Select Product"});
+  const buttonTextTranslated = buttonText || t('productModalSelector.openModal', {defaultValue: "Open Modal"});
 
   // Get the first N products based on maxProducts prop
   const products = allProducts.slice(0, maxProducts);
@@ -83,9 +90,9 @@ const ProductModalSelector: React.FC<ProductModalSelectorProps> = ({
   if (products.length === 0) {
     return (
       <Box gap={2} direction="vertical">
-        <FormField label={label} labelSize="small">
+        <FormField label={labelText} labelSize="small">
           <Text skin="disabled" size="small">
-            No products available in your store
+            {t('productModalSelector.noProductsAvailable', {defaultValue: "No products available in your store"})}
           </Text>
         </FormField>
       </Box>
@@ -95,7 +102,7 @@ const ProductModalSelector: React.FC<ProductModalSelectorProps> = ({
   return (
     <Box gap={2}>
       <Dropdown
-        placeholder="Choose a product..."
+        placeholder={t('productModalSelector.chooseProductPlaceholder', {defaultValue: "Choose a product..."})}
         options={productOptions}
         selectedId={selectedProductId}
         onSelect={handleProductSelect}
@@ -109,7 +116,7 @@ const ProductModalSelector: React.FC<ProductModalSelectorProps> = ({
         disabled={disabled || !selectedProductId}
         size={buttonSize}
       >
-        {buttonText}
+        {buttonTextTranslated}
       </Button>
     </Box>
   );

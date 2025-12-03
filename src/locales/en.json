@@ -225,6 +225,12 @@
     "viewAllLiveProductImages": "View all live Product images",
     "copy": "Copy",
     "copied": "Copied!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Select Product",
+    "openModal": "Open Modal",
+    "noProductsAvailable": "No products available in your store",
+    "chooseProductPlaceholder": "Choose a product..."
   }
 }
 

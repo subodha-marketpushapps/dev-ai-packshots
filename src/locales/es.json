@@ -225,6 +225,12 @@
     "viewAllLiveProductImages": "Ver todas las imágenes de productos en vivo",
     "copy": "Copiar",
     "copied": "¡Copiado!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Seleccionar producto",
+    "openModal": "Abrir modal",
+    "noProductsAvailable": "No hay productos disponibles en su tienda",
+    "chooseProductPlaceholder": "Elegir un producto..."
   }
 }
 
