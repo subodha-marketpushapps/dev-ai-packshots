@@ -331,6 +331,57 @@
       "uploadFromComputer": "Ou téléchargez une image depuis votre ordinateur",
       "uploadMultipleFromComputer": "Ou téléchargez plusieurs images depuis votre ordinateur"
     }
+  },
+  "editorPhotoActions": {
+    "edit": "Modifier",
+    "copyEdits": "Copier les modifications",
+    "publish": "Publier",
+    "discard": "Abandonner",
+    "generateInfo": "Informations de génération",
+    "copyImage": "Copier l'image",
+    "delete": "Supprimer",
+    "unpublishGuide": "Guide de dépublication",
+    "reportProblem": "Signaler un problème",
+    "noProductIdForPublishing": "Aucun ID de produit disponible pour la publication.",
+    "failedToPublish": "Échec de la publication de l'image.",
+    "noProductIdForUnpublishing": "Aucun ID de produit disponible pour la dépublication.",
+    "failedToUnpublish": "Échec de la dépublication de l'image.",
+    "failedToDelete": "Échec de la suppression de l'image.",
+    "imageUploadCleared": "Téléchargement d'image annulé.",
+    "noImageToCopy": "Aucune image à copier.",
+    "couldNotGetCanvasContext": "Impossible d'obtenir le contexte du canevas",
+    "imageCopiedToClipboard": "Image copiée dans le presse-papiers !",
+    "clipboardWriteFailed": "Échec de l'écriture dans le presse-papiers.",
+    "failedToCreateImageBlob": "Échec de la création du blob d'image.",
+    "failedToLoadImageForCopying": "Échec du chargement de l'image pour la copie.",
+    "failedToCopyImage": "Échec de la copie de l'image.",
+    "noImageSelectedForGenerateInfo": "Aucune image sélectionnée pour afficher les informations de génération."
+  },
+  "panelFeedback": {
+    "feedback": "Commentaires",
+    "overallQualityBad": "La qualité globale est mauvaise",
+    "didNotRespectPrompt": "Il n'a pas respecté mon prompt",
+    "notRelevantToProduct": "L'image n'est pas pertinente pour le produit",
+    "imageNotClear": "L'image n'est pas claire",
+    "other": "Autre",
+    "additionalFeedbackPlaceholder": "Veuillez fournir des commentaires supplémentaires",
+    "submit": "Soumettre",
+    "feedbackSubmittedSuccessfully": "Commentaires soumis avec succès.",
+    "additional": "Supplémentaire"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Dessiner un rectangle",
+    "drawing": "Dessin en cours...",
+    "deleteSelectedLayer": "Supprimer la couche sélectionnée",
+    "resetImage": "Réinitialiser l'image",
+    "downloadPreviewImage": "Télécharger l'image d'aperçu"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Impossible de générer l'image.",
+    "retry": "Réessayer",
+    "deleting": "Suppression en cours...",
+    "uploadedImage": "Image téléchargée",
+    "removeImage": "Supprimer l'image"
   }
 }
 

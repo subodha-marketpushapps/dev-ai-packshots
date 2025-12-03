@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import {
   Box,
   Button,
@@ -8,6 +8,7 @@ import {
   Heading,
   Loader,
 } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import { useGeneratedImages } from "../../../hooks/useGeneratedImages";
 import { useStatusToast } from "../../../services/providers/StatusToastProvider";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
@@ -21,39 +22,62 @@ const PanelFeedback: React.FC<PanelFeedbackProps> = ({
   onBackButtonClick,
   taskId,
 }) => {
+  const { t } = useTranslation();
   const { addToast } = useStatusToast();
   const { updateFileExplorerImage, updateLayerState } = usePhotoStudio();
 
   const [additionalFeedback, setAdditionalFeedback] = useState("");
   const { updateGeneratedImage } = useGeneratedImages();
 
-  const [feedbackOptions, setFeedbackOptions] = useState([
+  const feedbackOptionsLabels = useMemo(() => ({
+    overallQualityBad: t('panelFeedback.overallQualityBad', {defaultValue: "The overall quality is bad"}),
+    didNotRespectPrompt: t('panelFeedback.didNotRespectPrompt', {defaultValue: "It didn't respect my prompt"}),
+    notRelevantToProduct: t('panelFeedback.notRelevantToProduct', {defaultValue: "The image is not relevant to the product"}),
+    imageNotClear: t('panelFeedback.imageNotClear', {defaultValue: "The image is not clear"}),
+    other: t('panelFeedback.other', {defaultValue: "Other"}),
+  }), [t]);
+
+  const [feedbackOptionsState, setFeedbackOptionsState] = useState([
     {
       id: "1",
-      label: "The overall quality is bad",
+      label: feedbackOptionsLabels.overallQualityBad,
       isChecked: false,
     },
     {
       id: "2",
-      label: "It didn't respect my prompt",
+      label: feedbackOptionsLabels.didNotRespectPrompt,
       isChecked: false,
     },
     {
       id: "3",
-      label: "The image is not relevant to the product",
+      label: feedbackOptionsLabels.notRelevantToProduct,
       isChecked: false,
     },
     {
       id: "4",
-      label: "The image is not clear",
+      label: feedbackOptionsLabels.imageNotClear,
       isChecked: false,
     },
     {
       id: "5",
-      label: "Other",
+      label: feedbackOptionsLabels.other,
       isChecked: false,
     },
   ]);
+
+  // Update labels when translations change
+  React.useEffect(() => {
+    setFeedbackOptionsState(prev => prev.map((opt, idx) => {
+      const labels = [
+        feedbackOptionsLabels.overallQualityBad,
+        feedbackOptionsLabels.didNotRespectPrompt,
+        feedbackOptionsLabels.notRelevantToProduct,
+        feedbackOptionsLabels.imageNotClear,
+        feedbackOptionsLabels.other,
+      ];
+      return { ...opt, label: labels[idx] };
+    }));
+  }, [feedbackOptionsLabels]);
 
   const submitFeedback = (feedback: string) => {
     if (!taskId) {
@@ -80,7 +104,7 @@ const PanelFeedback: React.FC<PanelFeedbackProps> = ({
             comments: feedback,
           });
           addToast({
-            content: "Feedback submitted successfully.",
+            content: t('panelFeedback.feedbackSubmittedSuccessfully', {defaultValue: "Feedback submitted successfully."}),
             status: "success",
           });
           onBackButtonClick && onBackButtonClick();
@@ -94,21 +118,21 @@ const PanelFeedback: React.FC<PanelFeedbackProps> = ({
   };
 
   const handleOnSubmit = () => {
-    const selectedFeedback = feedbackOptions
-      .filter((opt) => opt.isChecked && opt.label !== "Other")
+    const selectedFeedback = feedbackOptionsState
+      .filter((opt) => opt.isChecked && opt.id !== "5")
       .map((opt) => opt.label)
       .join(", ");
 
     submitFeedback(
-      `${selectedFeedback}${selectedFeedback && ". "}Additional: ${
-        additionalFeedback ? additionalFeedback : "N/A"
+      `${selectedFeedback}${selectedFeedback && ". "}${t('panelFeedback.additional', {defaultValue: "Additional"})}: ${
+        additionalFeedback ? additionalFeedback : t('modals.imageDetails.notAvailable', {defaultValue: "N/A"})
       }`
     );
   };
   // Only allow submit if at least one non-Other is checked, or if 'Other' is checked and additionalFeedback is not empty
-  const isOtherChecked = feedbackOptions[4].isChecked;
+  const isOtherChecked = feedbackOptionsState[4].isChecked;
   const canSubmit =
-    feedbackOptions.some((opt, idx) => idx !== 4 && opt.isChecked) ||
+    feedbackOptionsState.some((opt, idx) => idx !== 4 && opt.isChecked) ||
     (isOtherChecked && additionalFeedback.trim() !== "");
 
   return (
@@ -127,15 +151,15 @@ const PanelFeedback: React.FC<PanelFeedbackProps> = ({
               weight="normal"
               dataHook="panel-feedback-heading"
             >
-              Feedback
+              {t('panelFeedback.feedback', {defaultValue: "Feedback"})}
             </Heading>
-            {feedbackOptions.map((item) => (
+            {feedbackOptionsState.map((item) => (
               <Checkbox
                 key={item.id}
                 id={item.id}
                 checked={item.isChecked}
                 onChange={() =>
-                  setFeedbackOptions((prev) =>
+                  setFeedbackOptionsState((prev) =>
                     prev.map((opt) =>
                       opt.id === item.id
                         ? { ...opt, isChecked: !opt.isChecked }
@@ -149,9 +173,9 @@ const PanelFeedback: React.FC<PanelFeedbackProps> = ({
                 {item.label}
               </Checkbox>
             ))}
-            {feedbackOptions[4].isChecked && ( // Check if "Other" option is selected
+            {feedbackOptionsState[4].isChecked && ( // Check if "Other" option is selected
               <InputArea
-                placeholder="Please provide additional feedback"
+                placeholder={t('panelFeedback.additionalFeedbackPlaceholder', {defaultValue: "Please provide additional feedback"})}
                 rows={3}
                 maxLength={2000}
                 resizable
@@ -166,7 +190,7 @@ const PanelFeedback: React.FC<PanelFeedbackProps> = ({
 
         <SidePanel.Field divider={false}>
           <Button onClick={handleOnSubmit} disabled={!canSubmit} size="small">
-            {updateGeneratedImage.isLoading ? <Loader size="tiny" /> : "Submit"}
+            {updateGeneratedImage.isLoading ? <Loader size="tiny" /> : t('panelFeedback.submit', {defaultValue: "Submit"})}
           </Button>
         </SidePanel.Field>
         <Box height={14}></Box>

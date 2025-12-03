@@ -8,6 +8,7 @@ import {
   Tooltip,
   IconButton,
 } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import EditingPhotoActions from "../EditorPhotoActions";
 import * as Icons from "@wix/wix-ui-icons-common";
 
@@ -43,10 +44,12 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
     image,
     isSingleImage = true,
     aspectRatio = "1/1",
-    errorMessage = "Unable to generate image.",
+    errorMessage,
     onRetry,
   }) => {
+    const { t } = useTranslation();
     const { showImageDetails, deleteFileExplorerImage } = usePhotoStudio();
+    const errorMessageText = errorMessage || t('imagePreviewer.unableToGenerateImage', {defaultValue: "Unable to generate image."});
     const imgSrc = image?.imageUrl || undefined;
     const state = image?.imageState || "confirm";
     const width = isSingleImage ? "auto" : "25vw";
@@ -108,10 +111,10 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
             aspectRatio={aspectRatio}
             height={height}
           >
-            <Text>{errorMessage}</Text>
+            <Text>{errorMessageText}</Text>
             {onRetry && (
               <Button size="small" onClick={onRetry} skin="standard">
-                Retry
+                {t('imagePreviewer.retry', {defaultValue: "Retry"})}
               </Button>
             )}
           </Box>
@@ -159,7 +162,7 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
               gap="SP2"
             >
               <Loader size="large" color="white" />
-              <Text light>Deleting...</Text>
+              <Text light>{t('imagePreviewer.deleting', {defaultValue: "Deleting..."})}</Text>
             </Box>
           </Box>
         )}
@@ -168,7 +171,7 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
             <Box {...imageBoxProps}>
               {imgSrc && <RenderImage imageSrc={imgSrc} styles={imgStyle} />}
               <Box position="absolute" top={0} right={0} padding="SP2" zIndex={99}>
-                <Tooltip content="Compare Changes" placement="top" size="small">
+                <Tooltip content={t('photoStudio.compareChanges', {defaultValue: "Compare Changes"})} placement="top" size="small">
                   <IconButton
                     priority="secondary"
                     size="tiny"
@@ -206,7 +209,7 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
               gap={1}
             >
               <Tooltip
-                content={"Uploaded Image"}
+                content={t('imagePreviewer.uploadedImage', {defaultValue: "Uploaded Image"})}
                 appendTo="scrollParent"
                 size="small"
               >
@@ -223,7 +226,7 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
             </Box>
             <Box position="absolute" top={0} right={0} padding="SP2" zIndex={1}>
               <Tooltip
-                content="Remove Image"
+                content={t('imagePreviewer.removeImage', {defaultValue: "Remove Image"})}
                 appendTo="scrollParent"
                 size="small"
               >

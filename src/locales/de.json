@@ -331,6 +331,57 @@
       "uploadFromComputer": "Oder laden Sie ein Bild von Ihrem Computer hoch",
       "uploadMultipleFromComputer": "Oder laden Sie mehrere Bilder von Ihrem Computer hoch"
     }
+  },
+  "editorPhotoActions": {
+    "edit": "Bearbeiten",
+    "copyEdits": "Bearbeitungen kopieren",
+    "publish": "Veröffentlichen",
+    "discard": "Verwerfen",
+    "generateInfo": "Generierungsinformationen",
+    "copyImage": "Bild kopieren",
+    "delete": "Löschen",
+    "unpublishGuide": "Veröffentlichung aufheben - Anleitung",
+    "reportProblem": "Problem melden",
+    "noProductIdForPublishing": "Keine Produkt-ID für die Veröffentlichung verfügbar.",
+    "failedToPublish": "Fehler beim Veröffentlichen des Bildes.",
+    "noProductIdForUnpublishing": "Keine Produkt-ID für die Aufhebung der Veröffentlichung verfügbar.",
+    "failedToUnpublish": "Fehler beim Aufheben der Veröffentlichung des Bildes.",
+    "failedToDelete": "Fehler beim Löschen des Bildes.",
+    "imageUploadCleared": "Bildupload gelöscht.",
+    "noImageToCopy": "Kein Bild zum Kopieren.",
+    "couldNotGetCanvasContext": "Canvas-Kontext konnte nicht abgerufen werden",
+    "imageCopiedToClipboard": "Bild in die Zwischenablage kopiert!",
+    "clipboardWriteFailed": "Fehler beim Schreiben in die Zwischenablage.",
+    "failedToCreateImageBlob": "Fehler beim Erstellen des Bild-Blobs.",
+    "failedToLoadImageForCopying": "Fehler beim Laden des Bildes zum Kopieren.",
+    "failedToCopyImage": "Fehler beim Kopieren des Bildes.",
+    "noImageSelectedForGenerateInfo": "Kein Bild ausgewählt, um Generierungsinformationen anzuzeigen."
+  },
+  "panelFeedback": {
+    "feedback": "Feedback",
+    "overallQualityBad": "Die Gesamtqualität ist schlecht",
+    "didNotRespectPrompt": "Es hat meinen Prompt nicht respektiert",
+    "notRelevantToProduct": "Das Bild ist nicht relevant für das Produkt",
+    "imageNotClear": "Das Bild ist nicht klar",
+    "other": "Andere",
+    "additionalFeedbackPlaceholder": "Bitte geben Sie zusätzliches Feedback an",
+    "submit": "Einreichen",
+    "feedbackSubmittedSuccessfully": "Feedback erfolgreich übermittelt.",
+    "additional": "Zusätzlich"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Rechteck zeichnen",
+    "drawing": "Zeichnen...",
+    "deleteSelectedLayer": "Ausgewählte Ebene löschen",
+    "resetImage": "Bild zurücksetzen",
+    "downloadPreviewImage": "Vorschaubild herunterladen"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Bild kann nicht generiert werden.",
+    "retry": "Wiederholen",
+    "deleting": "Löschen...",
+    "uploadedImage": "Hochgeladenes Bild",
+    "removeImage": "Bild entfernen"
   }
 }
 

@@ -336,6 +336,7 @@ const EditorCanvas = forwardRef<EditorCanvasHandle, EditorCanvasProps>(
       // Prevent deletion if the selected object is the image
       const objects = canvas.getObjects("image");
       if (objects.includes(activeObject)) {
+        // Using window.alert as a fallback - translations would require a modal/toast
         alert("You cannot delete the main image layer.");
         return;
       }

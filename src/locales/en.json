@@ -331,6 +331,57 @@
       "uploadFromComputer": "Or upload an image from your computer",
       "uploadMultipleFromComputer": "Or upload multiple images from your computer"
     }
+  },
+  "editorPhotoActions": {
+    "edit": "Edit",
+    "copyEdits": "Copy Edits",
+    "publish": "Publish",
+    "discard": "Discard",
+    "generateInfo": "Generate info",
+    "copyImage": "Copy image",
+    "delete": "Delete",
+    "unpublishGuide": "Unpublish Guide",
+    "reportProblem": "Report a problem",
+    "noProductIdForPublishing": "No product ID available for publishing.",
+    "failedToPublish": "Failed to publish image.",
+    "noProductIdForUnpublishing": "No product ID available for unpublishing.",
+    "failedToUnpublish": "Failed to unpublish image.",
+    "failedToDelete": "Failed to delete image.",
+    "imageUploadCleared": "Image upload cleared.",
+    "noImageToCopy": "No image to copy.",
+    "couldNotGetCanvasContext": "Could not get canvas context",
+    "imageCopiedToClipboard": "Image copied to clipboard!",
+    "clipboardWriteFailed": "Clipboard write failed.",
+    "failedToCreateImageBlob": "Failed to create image blob.",
+    "failedToLoadImageForCopying": "Failed to load image for copying.",
+    "failedToCopyImage": "Failed to copy image.",
+    "noImageSelectedForGenerateInfo": "No image selected to show generate info."
+  },
+  "panelFeedback": {
+    "feedback": "Feedback",
+    "overallQualityBad": "The overall quality is bad",
+    "didNotRespectPrompt": "It didn't respect my prompt",
+    "notRelevantToProduct": "The image is not relevant to the product",
+    "imageNotClear": "The image is not clear",
+    "other": "Other",
+    "additionalFeedbackPlaceholder": "Please provide additional feedback",
+    "submit": "Submit",
+    "feedbackSubmittedSuccessfully": "Feedback submitted successfully.",
+    "additional": "Additional"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Draw Rectangle",
+    "drawing": "Drawing...",
+    "deleteSelectedLayer": "Delete Selected Layer",
+    "resetImage": "Reset Image",
+    "downloadPreviewImage": "Download Preview Image"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Unable to generate image.",
+    "retry": "Retry",
+    "deleting": "Deleting...",
+    "uploadedImage": "Uploaded Image",
+    "removeImage": "Remove Image"
   }
 }
 

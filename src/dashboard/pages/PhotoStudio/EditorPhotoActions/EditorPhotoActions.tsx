@@ -9,6 +9,7 @@ import {
   Tooltip,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { usePopover } from "../../../hooks/usePopover";
 import PanelFeedback from "./PanelFeedback";
 import { GeneratedImagePreview } from "../../../../interfaces";
@@ -24,6 +25,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
   mode,
   imageObject,
 }) => {
+  const { t } = useTranslation();
   const {
     showImageDetails,
     setEditingImage,
@@ -63,7 +65,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
     if (isPublishing) return;
     if (!productId) {
       addToast({
-        content: "No product ID available for publishing.",
+        content: t('editorPhotoActions.noProductIdForPublishing', {defaultValue: "No product ID available for publishing."}),
         status: "error",
       });
       return;
@@ -73,7 +75,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
       await publishImage(imageObject, productId);
     } catch (err: any) {
       addToast({
-        content: err.message || "Failed to publish image.",
+        content: err.message || t('editorPhotoActions.failedToPublish', {defaultValue: "Failed to publish image."}),
         status: "error",
       });
     }
@@ -83,7 +85,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
     if (isPublishing) return;
     if (!productId) {
       addToast({
-        content: "No product ID available for unpublishing.",
+        content: t('editorPhotoActions.noProductIdForUnpublishing', {defaultValue: "No product ID available for unpublishing."}),
         status: "error",
       });
       return;
@@ -94,7 +96,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
       // await unpublishImage(imageObject, productId);
     } catch (err: any) {
       addToast({
-        content: err.message || "Failed to unpublish image.",
+        content: err.message || t('editorPhotoActions.failedToUnpublish', {defaultValue: "Failed to unpublish image."}),
         status: "error",
       });
     }
@@ -110,7 +112,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
       await deleteImage(imageObject);
     } catch (err: any) {
       addToast({
-        content: err.message || "Failed to delete image.",
+        content: err.message || t('editorPhotoActions.failedToDelete', {defaultValue: "Failed to delete image."}),
         status: "error",
       });
     }
@@ -120,18 +122,18 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
     if (isPublishing) return;
     setEditingImage(null);
     addToast({
-      content: "Image upload cleared.",
+      content: t('editorPhotoActions.imageUploadCleared', {defaultValue: "Image upload cleared."}),
       status: "success",
     });
   };
 
   const handleCopyImage = async () => {
     if (isPublishing) return;
-    if (!imageObject.imageUrl) {
-      if (isMounted.current)
-        addToast({ content: "No image to copy.", status: "error" });
-      return;
-    }
+      if (!imageObject.imageUrl) {
+        if (isMounted.current)
+          addToast({ content: t('editorPhotoActions.noImageToCopy', {defaultValue: "No image to copy."}), status: "error" });
+        return;
+      }
     try {
       const img = new window.Image();
       img.crossOrigin = "anonymous";
@@ -144,7 +146,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
         if (!ctx) {
           if (isMounted.current)
             addToast({
-              content: "Could not get canvas context",
+              content: t('editorPhotoActions.couldNotGetCanvasContext', {defaultValue: "Could not get canvas context"}),
               status: "error",
             });
           return;
@@ -158,21 +160,21 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
               ]);
               if (isMounted.current) {
                 addToast({
-                  content: "Image copied to clipboard!",
+                  content: t('editorPhotoActions.imageCopiedToClipboard', {defaultValue: "Image copied to clipboard!"}),
                   status: "success",
                 });
               }
             } catch (err) {
               if (isMounted.current)
                 addToast({
-                  content: "Clipboard write failed.",
+                  content: t('editorPhotoActions.clipboardWriteFailed', {defaultValue: "Clipboard write failed."}),
                   status: "error",
                 });
             }
           } else {
             if (isMounted.current) {
               addToast({
-                content: "Failed to create image blob.",
+                content: t('editorPhotoActions.failedToCreateImageBlob', {defaultValue: "Failed to create image blob."}),
                 status: "error",
               });
             }
@@ -182,14 +184,14 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
       img.onerror = () => {
         if (isMounted.current) {
           addToast({
-            content: "Failed to load image for copying.",
+            content: t('editorPhotoActions.failedToLoadImageForCopying', {defaultValue: "Failed to load image for copying."}),
             status: "error",
           });
         }
       };
     } catch (err) {
       if (isMounted.current)
-        addToast({ content: "Failed to copy image.", status: "error" });
+        addToast({ content: t('editorPhotoActions.failedToCopyImage', {defaultValue: "Failed to copy image."}), status: "error" });
     }
   };
 
@@ -197,7 +199,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
     if (isPublishing) return;
     if (!imageObject) {
       addToast({
-        content: "No image selected to show generate info.",
+        content: t('editorPhotoActions.noImageSelectedForGenerateInfo', {defaultValue: "No image selected to show generate info."}),
         status: "error",
       });
       return;
@@ -218,7 +220,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
       <Popover.Element>
         <Tooltip
           content={
-            imageObject?.comments ? imageObject?.comments : "Report a problem"
+            imageObject?.comments ? imageObject?.comments : t('editorPhotoActions.reportProblem', {defaultValue: "Report a problem"})
           }
           appendTo="scrollParent"
           disabled={false}
@@ -266,7 +268,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
           skin="ai"
           disabled={apiLoading}
         >
-          Edit
+          {t('editorPhotoActions.edit', {defaultValue: "Edit"})}
         </Button>
       )}
       {mode == "draft" && (
@@ -278,7 +280,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
           skin="ai"
           disabled={apiLoading}
         >
-          Copy Edits
+          {t('editorPhotoActions.copyEdits', {defaultValue: "Copy Edits"})}
         </Button>
       )}
       {(mode == "processing" || mode == "draft") && (
@@ -292,7 +294,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
           priority="secondary"
           disabled={apiLoading}
         >
-          Publish
+          {t('editorPhotoActions.publish', {defaultValue: "Publish"})}
         </Button>
       )}
       {mode == "uploaded" && (
@@ -303,7 +305,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
           priority="secondary"
           disabled={apiLoading}
         >
-          Discard
+          {t('editorPhotoActions.discard', {defaultValue: "Discard"})}
         </Button>
       )}
 
@@ -327,14 +329,14 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
             {mode == "draft" && (
               <PopoverMenu.MenuItem
                 prefixIcon={<Icons.PageSparklesSmall />}
-                text="Generate info"
+                text={t('editorPhotoActions.generateInfo', {defaultValue: "Generate info"})}
                 onClick={handleShowGenerateInfo}
               />
             )}
 
             <PopoverMenu.MenuItem
               prefixIcon={<Icons.DuplicateSmall />}
-              text="Copy image"
+              text={t('editorPhotoActions.copyImage', {defaultValue: "Copy image"})}
               onClick={handleCopyImage}
             />
             <PopoverMenu.Divider />
@@ -342,7 +344,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
               <PopoverMenu.MenuItem
                 prefixIcon={<Icons.DeleteSmall />}
                 skin="destructive"
-                text="Delete"
+                text={t('editorPhotoActions.delete', {defaultValue: "Delete"})}
                 onClick={handleDeleteImageClick}
                 disabled={apiLoading}
               />
@@ -352,7 +354,7 @@ const EditorPhotoActions: React.FC<EditorPhotoActionsProps> = ({
                 prefixIcon={<Icons.Article />}
                 onClick={handleUnpublishClick}
                 disabled={apiLoading}
-                text="Unpublish Guide"
+                text={t('editorPhotoActions.unpublishGuide', {defaultValue: "Unpublish Guide"})}
               />
             )}
           </PopoverMenu>

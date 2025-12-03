@@ -331,6 +331,57 @@
       "uploadFromComputer": "O cargue una imagen desde su computadora",
       "uploadMultipleFromComputer": "O cargue múltiples imágenes desde su computadora"
     }
+  },
+  "editorPhotoActions": {
+    "edit": "Editar",
+    "copyEdits": "Copiar ediciones",
+    "publish": "Publicar",
+    "discard": "Descartar",
+    "generateInfo": "Información de generación",
+    "copyImage": "Copiar imagen",
+    "delete": "Eliminar",
+    "unpublishGuide": "Guía de despublicación",
+    "reportProblem": "Reportar un problema",
+    "noProductIdForPublishing": "No hay ID de producto disponible para publicar.",
+    "failedToPublish": "Error al publicar la imagen.",
+    "noProductIdForUnpublishing": "No hay ID de producto disponible para despublicar.",
+    "failedToUnpublish": "Error al despublicar la imagen.",
+    "failedToDelete": "Error al eliminar la imagen.",
+    "imageUploadCleared": "Carga de imagen cancelada.",
+    "noImageToCopy": "No hay imagen para copiar.",
+    "couldNotGetCanvasContext": "No se pudo obtener el contexto del lienzo",
+    "imageCopiedToClipboard": "¡Imagen copiada al portapapeles!",
+    "clipboardWriteFailed": "Error al escribir en el portapapeles.",
+    "failedToCreateImageBlob": "Error al crear el blob de imagen.",
+    "failedToLoadImageForCopying": "Error al cargar la imagen para copiar.",
+    "failedToCopyImage": "Error al copiar la imagen.",
+    "noImageSelectedForGenerateInfo": "No hay imagen seleccionada para mostrar información de generación."
+  },
+  "panelFeedback": {
+    "feedback": "Comentarios",
+    "overallQualityBad": "La calidad general es mala",
+    "didNotRespectPrompt": "No respetó mi prompt",
+    "notRelevantToProduct": "La imagen no es relevante para el producto",
+    "imageNotClear": "La imagen no es clara",
+    "other": "Otro",
+    "additionalFeedbackPlaceholder": "Por favor proporcione comentarios adicionales",
+    "submit": "Enviar",
+    "feedbackSubmittedSuccessfully": "Comentarios enviados exitosamente.",
+    "additional": "Adicional"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Dibujar rectángulo",
+    "drawing": "Dibujando...",
+    "deleteSelectedLayer": "Eliminar capa seleccionada",
+    "resetImage": "Restablecer imagen",
+    "downloadPreviewImage": "Descargar imagen de vista previa"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "No se puede generar la imagen.",
+    "retry": "Reintentar",
+    "deleting": "Eliminando...",
+    "uploadedImage": "Imagen cargada",
+    "removeImage": "Eliminar imagen"
   }
 }
 

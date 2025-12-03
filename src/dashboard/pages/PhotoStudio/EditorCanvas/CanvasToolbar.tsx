@@ -8,6 +8,7 @@ import {
   Divider,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 
 interface CanvasToolbarProps {
   error?: string;
@@ -49,7 +50,9 @@ const CanvasToolbar: React.FC<CanvasToolbarProps> = ({
   onChangeObjColor,
   colorOptions = [],
   maxWidth = "100%",
-}) => (
+}) => {
+  const { t } = useTranslation();
+  return (
   <Box
     direction="vertical"
     gap="SP2"
@@ -82,7 +85,7 @@ const CanvasToolbar: React.FC<CanvasToolbarProps> = ({
           size="tiny"
           onMouseDown={(e) => e.stopPropagation()}
         >
-          {drawRectMode ? "Drawing..." : "Draw Rectangle"}
+          {drawRectMode ? t('canvasToolbar.drawing', {defaultValue: "Drawing..."}) : t('canvasToolbar.drawRectangle', {defaultValue: "Draw Rectangle"})}
         </Button>
       )}
       {showColorPalette &&
@@ -132,7 +135,7 @@ const CanvasToolbar: React.FC<CanvasToolbarProps> = ({
       {showDeleteButton &&
         selectedObjectType &&
         selectedObjectType !== "image" && (
-          <Tooltip content="Delete Selected Layer" placement="top" size="small">
+          <Tooltip content={t('canvasToolbar.deleteSelectedLayer', {defaultValue: "Delete Selected Layer"})} placement="top" size="small">
             <IconButton
               skin="inverted"
               size="tiny"
@@ -155,12 +158,12 @@ const CanvasToolbar: React.FC<CanvasToolbarProps> = ({
           onClick={onReset}
           onMouseDown={(e) => e.stopPropagation()}
         >
-          Reset Image
+          {t('canvasToolbar.resetImage', {defaultValue: "Reset Image"})}
         </Button>
       )}
 
       {showCompareButton && (
-        <Tooltip content="Compare Changes" placement="top" size="small">
+        <Tooltip content={t('photoStudio.compareChanges', {defaultValue: "Compare Changes"})} placement="top" size="small">
           <IconButton
             priority="secondary"
             size="tiny"
@@ -173,7 +176,7 @@ const CanvasToolbar: React.FC<CanvasToolbarProps> = ({
       )}
       {showDownloadButton && (
         <Tooltip
-          content="Download Preview Image"
+          content={t('canvasToolbar.downloadPreviewImage', {defaultValue: "Download Preview Image"})}
           placement="top"
           disabled={false}
           size="small"
@@ -190,6 +193,7 @@ const CanvasToolbar: React.FC<CanvasToolbarProps> = ({
       )}
     </Box>
   </Box>
-);
+  );
+};
 
 export default CanvasToolbar;

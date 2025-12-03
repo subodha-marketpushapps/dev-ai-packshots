@@ -331,6 +331,57 @@
       "uploadFromComputer": "Sau încărcați o imagine de pe computerul dvs.",
       "uploadMultipleFromComputer": "Sau încărcați mai multe imagini de pe computerul dvs."
     }
+  },
+  "editorPhotoActions": {
+    "edit": "Editați",
+    "copyEdits": "Copiați modificările",
+    "publish": "Publicați",
+    "discard": "Renunțați",
+    "generateInfo": "Informații de generare",
+    "copyImage": "Copiați imaginea",
+    "delete": "Ștergeți",
+    "unpublishGuide": "Ghid de nepublicare",
+    "reportProblem": "Raportați o problemă",
+    "noProductIdForPublishing": "Nu există ID de produs disponibil pentru publicare.",
+    "failedToPublish": "Eșec la publicarea imaginii.",
+    "noProductIdForUnpublishing": "Nu există ID de produs disponibil pentru nepublicare.",
+    "failedToUnpublish": "Eșec la nepublicarea imaginii.",
+    "failedToDelete": "Eșec la ștergerea imaginii.",
+    "imageUploadCleared": "Încărcarea imaginii a fost anulată.",
+    "noImageToCopy": "Nu există imagine de copiat.",
+    "couldNotGetCanvasContext": "Nu s-a putut obține contextul canvas-ului",
+    "imageCopiedToClipboard": "Imagine copiată în clipboard!",
+    "clipboardWriteFailed": "Eșec la scrierea în clipboard.",
+    "failedToCreateImageBlob": "Eșec la crearea blob-ului de imagine.",
+    "failedToLoadImageForCopying": "Eșec la încărcarea imaginii pentru copiere.",
+    "failedToCopyImage": "Eșec la copierea imaginii.",
+    "noImageSelectedForGenerateInfo": "Nu există imagine selectată pentru a afișa informațiile de generare."
+  },
+  "panelFeedback": {
+    "feedback": "Feedback",
+    "overallQualityBad": "Calitatea generală este proastă",
+    "didNotRespectPrompt": "Nu a respectat promptul meu",
+    "notRelevantToProduct": "Imaginea nu este relevantă pentru produs",
+    "imageNotClear": "Imaginea nu este clară",
+    "other": "Altele",
+    "additionalFeedbackPlaceholder": "Vă rugăm să furnizați feedback suplimentar",
+    "submit": "Trimiteți",
+    "feedbackSubmittedSuccessfully": "Feedback trimis cu succes.",
+    "additional": "Suplimentar"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Desenați un dreptunghi",
+    "drawing": "Desenare...",
+    "deleteSelectedLayer": "Ștergeți stratul selectat",
+    "resetImage": "Resetați imaginea",
+    "downloadPreviewImage": "Descărcați imaginea de previzualizare"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Nu se poate genera imaginea.",
+    "retry": "Reîncercați",
+    "deleting": "Ștergere...",
+    "uploadedImage": "Imagine încărcată",
+    "removeImage": "Eliminați imaginea"
   }
 }
 
