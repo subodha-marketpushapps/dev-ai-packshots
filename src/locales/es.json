@@ -187,6 +187,15 @@
       "content": "En este momento no puede eliminar/despublicar imágenes directamente desde Imágenes de Producto IA. Por favor, visite la página Editar producto y elimínela desde allí.",
       "refreshNote": "Actualice su página para ver los cambios.",
       "refresh": "Actualizar"
+    },
+    "aiPackshotsDashboard": {
+      "title": "Imágenes de Producto IA",
+      "subtitle": "Mejore y refine sus imágenes de productos sin esfuerzo con herramientas impulsadas por IA.",
+      "dismiss": "Descartar",
+      "unknownUser": "Imágenes de Producto IA(Usuario desconocido)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Por favor, espere a que termine la operación actual."
     }
   },
   "editor": {

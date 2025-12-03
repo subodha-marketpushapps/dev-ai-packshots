@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Tooltip, IconButton, InfoIcon, Heading, Divider } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import StudioSubscriptionInfo from "../../../pages/PhotoStudio/StudioHeader/StudioSubscriptionInfo";
 
 interface CompactHeaderProps {
@@ -11,9 +12,14 @@ interface CompactHeaderProps {
 
 const CompactHeader: React.FC<CompactHeaderProps> = ({
   onClose,
-  title = "AI Product Images",
-  subtitle = "Enhance and refine your product images effortlessly with AI-powered tools."
+  title,
+  subtitle,
 }) => {
+  const { t } = useTranslation();
+  
+  const titleText = title || t('modals.aiPackshotsDashboard.title', {defaultValue: "AI Product Images"});
+  const subtitleText = subtitle || t('modals.aiPackshotsDashboard.subtitle', {defaultValue: "Enhance and refine your product images effortlessly with AI-powered tools."});
+  
   return (
     <Box
       padding="SP2"
@@ -41,8 +47,8 @@ const CompactHeader: React.FC<CompactHeaderProps> = ({
         marginRight={"SP2"}
       >
         <Box gap="SP1">
-          <Heading size="medium">{title}</Heading>
-          <InfoIcon content={subtitle} />
+          <Heading size="medium">{titleText}</Heading>
+          <InfoIcon content={subtitleText} />
         </Box>
 
         <Box align="right" flexGrow={1}>
@@ -54,7 +60,7 @@ const CompactHeader: React.FC<CompactHeaderProps> = ({
         <Divider direction="vertical" />
       </Box>
       <Box>
-        <Tooltip content="Dismiss" size="small" enterDelay={1000}>
+        <Tooltip content={t('modals.aiPackshotsDashboard.dismiss', {defaultValue: "Dismiss"})} size="small" enterDelay={1000}>
           <IconButton
             size="small"
             skin="dark"

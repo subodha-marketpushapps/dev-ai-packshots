@@ -187,6 +187,15 @@
       "content": "At this moment you cannot delete/unpublish images directly from AI Product Images. Please visit the Edit Product Page and remove it from there.",
       "refreshNote": "Refresh your page to see the changes.",
       "refresh": "Refresh"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI Product Images",
+      "subtitle": "Enhance and refine your product images effortlessly with AI-powered tools.",
+      "dismiss": "Dismiss",
+      "unknownUser": "AI Product Images(Unknown user)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Please wait for the current operation to finish."
     }
   },
   "editor": {

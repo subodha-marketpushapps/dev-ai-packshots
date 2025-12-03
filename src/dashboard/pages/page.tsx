@@ -166,7 +166,7 @@ function MainPage() {
   }
 
   function openDashboardModal() {
-    dashboard.openModal('ec9ae22f-52e5-4964-b99c-e144cfd80df2');
+    dashboard.openModal('8d40e10f-a842-4056-a06f-994014b0db3d');
   }
 
   return (
@@ -178,7 +178,7 @@ function MainPage() {
           {/* Product Selector Component */}
           {_DEV && (
             <ProductModalSelector
-              modalId="8d40e10f-a842-4056-a06f-994014b0db3d"
+              modalId="ec6862e7-3df3-40b1-8c96-d5bf7054e900"
               maxProducts={10}
             />
           )}

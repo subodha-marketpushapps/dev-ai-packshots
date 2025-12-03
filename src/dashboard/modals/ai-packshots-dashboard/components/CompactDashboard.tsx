@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import { useRecoilState } from "recoil";
 import LogRocket from "logrocket";
+import { useTranslation } from "react-i18next";
 
 import { Box, Button, Tooltip, Page, IconButton } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
@@ -46,6 +47,7 @@ import SubscriptionInfo from "../../../components/common/SubscriptionInfo/Subscr
 function PageContent() {
     // Fetch subscription data on first load
     useSubscription();
+    const { t } = useTranslation();
 
     // console.log("Main Page");
 
@@ -95,7 +97,7 @@ function PageContent() {
             name:
                 wixSiteData?.siteDisplayName ??
                 settings?.businessName ??
-                "AI Product Images(Unknown user)",
+                t('modals.aiPackshotsDashboard.unknownUser', {defaultValue: "AI Product Images(Unknown user)"}),
             email: settings?.email || wixSiteData?.email,
             verticalPadding: 52,
             customAttributes: {
@@ -141,8 +143,8 @@ function PageContent() {
             {!isDataLoaded && <EmptyStateLoading loadingText="" />}
             {isDataLoaded && isDataError && (
                 <EmptyStateError
-                    title="We couldn't load the Settings data"
-                    subtitle="Looks like there was a technical issue on our end. Wait a few minutes and try again."
+                    title={t('errors.settingsLoadError.title', {defaultValue: "We couldn't load the Settings data"})}
+                    subtitle={t('errors.settingsLoadError.subtitle', {defaultValue: "Looks like there was a technical issue on our end. Wait a few minutes and try again."})}
                     refreshActions={refreshFetchSettings}
                 />
             )}

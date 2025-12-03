@@ -16,7 +16,7 @@ const TabNavigator: React.FC<TabNavigatorProps> = ({ size = "medium" }) => {
 
   const filteredTabs = ROUTES.filter((tab) => tab.id !== 0);
   const items = filteredTabs.map((item) => {
-    return { id: item.id, title: t(item.titleKey, {defaultValue: item.titleKey}) };
+    return { id: item.id, title: t(item.titleKey, {defaultValue: item.title}) };
   });
 
   const onTabChange = (tabId: number) => {

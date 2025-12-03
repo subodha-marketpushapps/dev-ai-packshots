@@ -46,6 +46,7 @@ const SyncRecoilWithRouter: React.FC = () => {
 interface AppRoute {
   id: number;
   titleKey: string; // Translation key instead of hardcoded title
+  title: string;
   path: string;
   element: React.ReactElement;
 }
@@ -53,8 +54,8 @@ interface AppRoute {
 // Define all available routes with translation keys
 export const ROUTES: AppRoute[] = [
   // { id: 1, titleKey: "tabs.overview", path: "/", element: <StatisticsTab /> },
-  { id: 2, titleKey: "tabs.products", path: "/products", element: <ProductsTab /> },
-  { id: 3, titleKey: "tabs.draftImages", path: "/gallery", element: <GalleryTab /> },
+  { id: 2, titleKey: "tabs.products", title: "Products", path: "/products", element: <ProductsTab /> },
+  { id: 3, titleKey: "tabs.draftImages", title: "Draft Images", path: "/gallery", element: <GalleryTab /> },
   // { id: 4, titleKey: "tabs.settings", path: "/settings", element: <SettingsTab /> },
 ];
 

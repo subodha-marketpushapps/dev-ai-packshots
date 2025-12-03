@@ -187,6 +187,15 @@
       "content": "În acest moment nu puteți șterge/nepublica imagini direct din Imagini Produs AI. Vă rugăm să vizitați pagina Editați produs și să o eliminați de acolo.",
       "refreshNote": "Actualizați-vă pagina pentru a vedea modificările.",
       "refresh": "Actualizați"
+    },
+    "aiPackshotsDashboard": {
+      "title": "Imagini Produs AI",
+      "subtitle": "Îmbunătățiți și rafinați-vă imaginile produselor fără efort cu instrumente alimentate de IA.",
+      "dismiss": "Respingeți",
+      "unknownUser": "Imagini Produs AI(Utilizator necunoscut)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Vă rugăm să așteptați ca operațiunea curentă să se termine."
     }
   },
   "editor": {

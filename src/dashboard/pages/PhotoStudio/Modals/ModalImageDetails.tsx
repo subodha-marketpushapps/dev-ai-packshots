@@ -155,6 +155,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
     if (!isModalOpened || !image) return null;
     const isLiveImage = image.isLiveImage || false;
 
+    console.log("image data", image);
     return (
       <StudioModalBase isOpen={isModalOpened} mode={studioMode}>
         <Box

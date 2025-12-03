@@ -187,6 +187,15 @@
       "content": "Derzeit können Sie Bilder nicht direkt aus KI-Produktbildern löschen/die Veröffentlichung aufheben. Bitte besuchen Sie die Seite Produkt bearbeiten und entfernen Sie es von dort.",
       "refreshNote": "Aktualisieren Sie Ihre Seite, um die Änderungen zu sehen.",
       "refresh": "Aktualisieren"
+    },
+    "aiPackshotsDashboard": {
+      "title": "KI-Produktbilder",
+      "subtitle": "Verbessern und verfeinern Sie Ihre Produktbilder mühelos mit KI-gestützten Tools.",
+      "dismiss": "Verwerfen",
+      "unknownUser": "KI-Produktbilder(Unbekannter Benutzer)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Bitte warten Sie, bis der aktuelle Vorgang abgeschlossen ist."
     }
   },
   "editor": {

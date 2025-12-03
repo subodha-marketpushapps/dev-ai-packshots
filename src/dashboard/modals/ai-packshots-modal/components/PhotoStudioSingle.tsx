@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { Box, Modal } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 
 import StudioHeader from "../../../pages/PhotoStudio/StudioHeader";
 import PanelImageExplorer from "../../../pages/PhotoStudio/StudioImageExplorer";
@@ -19,6 +20,7 @@ interface PhotoStudioSingleProps {
 }
 
 const PhotoStudio: React.FC<PhotoStudioSingleProps> = ({ onRequestClose }) => {
+  const { t } = useTranslation();
   const {
     apiLoading,
     isPhotoStudioOpen,
@@ -43,7 +45,7 @@ const PhotoStudio: React.FC<PhotoStudioSingleProps> = ({ onRequestClose }) => {
     if (editorSettings.isModalImageDetailsOpen) return;
     if (apiLoading) {
       addToast({
-        content: "Please wait for the current operation to finish.",
+        content: t('modals.aiPackshotsModal.waitForOperation', {defaultValue: "Please wait for the current operation to finish."}),
         status: "warning",
       });
       return;
@@ -86,12 +88,12 @@ const PhotoStudio: React.FC<PhotoStudioSingleProps> = ({ onRequestClose }) => {
           transform="translateY(55px)"
         >
           {isLoadingImages && (
-            <EmptyStateLoading loadingText="Loading images..." />
+            <EmptyStateLoading loadingText={t('loading.loadingImages', {defaultValue: "Loading Images..."})} />
           )}
           {imagesError && (
             <EmptyStateError
-              title="We couldn't load your images"
-              subtitle="There was a problem fetching your generated images. Please try again later."
+              title={t('errors.imagesLoadError.title', {defaultValue: "We couldn't load your images"})}
+              subtitle={t('errors.imagesLoadError.subtitle', {defaultValue: "There was a problem fetching your generated images. Please try again later."})}
               refreshActions={closePhotoStudio}
             />
           )}

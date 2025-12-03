@@ -187,6 +187,15 @@
       "content": "Pour le moment, vous ne pouvez pas supprimer/dépublier des images directement depuis Images Produit IA. Veuillez visiter la page Modifier le produit et la supprimer de là.",
       "refreshNote": "Actualisez votre page pour voir les modifications.",
       "refresh": "Actualiser"
+    },
+    "aiPackshotsDashboard": {
+      "title": "Images Produit IA",
+      "subtitle": "Améliorez et affinez vos images produits sans effort grâce à des outils alimentés par l'IA.",
+      "dismiss": "Ignorer",
+      "unknownUser": "Images Produit IA(Utilisateur inconnu)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Veuillez attendre que l'opération en cours se termine."
     }
   },
   "editor": {

@@ -54,6 +54,9 @@ export const WixDataProvider: React.FC<WixDataProviderProps> = ({
   children,
   productId,
 }) => {
+  // Translation hook must be called unconditionally before any returns
+  const { t } = useTranslation();
+  
   // State for single product
   const [product, setProduct] = useState<NormalizedProduct | null>(null);
   const [isProductLoading, setIsProductLoading] = useState<boolean>(false);
@@ -116,8 +119,6 @@ export const WixDataProvider: React.FC<WixDataProviderProps> = ({
   if (!isDataLoaded) {
     return <EmptyStateLoading loadingText="" />;
   }
-
-  const { t } = useTranslation();
 
   if (isDataLoaded && isDataError) {
     return (
