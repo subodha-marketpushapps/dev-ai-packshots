@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Image, Text, IconButton, Tooltip } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import { GeneratedImagePreview } from "../../../../interfaces";
 import * as Icons from "@wix/wix-ui-icons-common";
 import classes from "./EditorPromptInput.module.scss";
@@ -13,6 +14,7 @@ const OriginalPreview: React.FC<ReferencePreviewProps> = ({
   lastEditImage: image,
   onDismiss,
 }) => {
+  const { t } = useTranslation();
   return (
     <Box
       border="1px solid"
@@ -34,7 +36,7 @@ const OriginalPreview: React.FC<ReferencePreviewProps> = ({
         className={classes["original-preview-dismiss"]}
         zIndex={999999}
       >
-        <Tooltip content="Go Back to Original">
+        <Tooltip content={t('editorPromptInput.originalPreview.goBack', {defaultValue: "Go Back to Original"})}>
           <IconButton onClick={() => onDismiss(image)} skin="transparent">
             <Icons.Dismiss />
           </IconButton>

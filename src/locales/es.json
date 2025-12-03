@@ -188,6 +188,14 @@
       "refreshNote": "Actualice su página para ver los cambios.",
       "refresh": "Actualizar"
     },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "ID de generación",
+      "createdAt": "Creado en",
+      "notAvailable": "N/D",
+      "initialImage": "Imagen inicial",
+      "generatedImage": "Imagen generada"
+    },
     "aiPackshotsDashboard": {
       "title": "Imágenes de Producto IA",
       "subtitle": "Mejore y refine sus imágenes de productos sin esfuerzo con herramientas impulsadas por IA.",
@@ -240,6 +248,89 @@
     "openModal": "Abrir modal",
     "noProductsAvailable": "No hay productos disponibles en su tienda",
     "chooseProductPlaceholder": "Elegir un producto..."
+  },
+  "editorPromptInput": {
+    "editImage": "Editar imagen",
+    "enhanceImage": "Mejorar imagen",
+    "enhanceSettingsButton": "Configuración de mejora",
+    "promptInput": "Entrada de prompt",
+    "placeholder": {
+      "edit": "Describe lo que quieres cambiar",
+      "enhance": "Describe la escena de tu fondo"
+    },
+    "blankPromptHint": "Deja esto en blanco para que la IA elija el mejor fondo para tu producto",
+    "tooltip": {
+      "selectImage": "Debes seleccionar una imagen antes de generar.",
+      "providePrompt": "Debes proporcionar un prompt antes de generar.",
+      "applyChanges": "Aplicar cambios (⌘ + ↵)",
+      "regenerateImage": "Regenerar imagen (⌘ + ↵)",
+      "generateImage": "Generar imagen (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Mejorar imagen",
+      "enhanceImageDescription": "Personaliza la calidad de tu foto y haz que la salida final coincida con tu visión.",
+      "editImage": "Editar imagen",
+      "editImageDescription": "Edita imágenes con instrucciones de texto y obtén la salida deseada."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Agregar mejora",
+      "productPosition": "Posición del producto",
+      "photoBackground": "Fondo de foto",
+      "original": "Original",
+      "color": "Color",
+      "aiGenerated": "Generado por IA",
+      "qualityOptions": {
+        "clarity": "Claridad de imagen",
+        "sharpness": "Nitidez",
+        "lighting": "Iluminación",
+        "shadows": "Sombras",
+        "color": "Balance de color"
+      }
+    },
+    "outputSettings": {
+      "costs": "Cuesta",
+      "imageCredits": "Créditos de imagen",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "sin prompt",
+      "matchReference": "Genera resultados que coinciden estrechamente con esta imagen de referencia"
+    },
+    "originalPreview": {
+      "goBack": "Volver al original"
+    },
+    "feedback": {
+      "terrible": "Terrible",
+      "bad": "Malo",
+      "okay": "Regular",
+      "good": "Bueno",
+      "great": "Excelente",
+      "skip": "Omitir",
+      "continue": "Continuar",
+      "negativeExperienceMessage": "¡Hola! Tuve una experiencia negativa con Imágenes de Producto IA. ¿Puedes ayudarme con esto?",
+      "okExperienceMessage": "¡Hola! Tuve una experiencia regular con Imágenes de Producto IA. Pero ¿puedes ayudarme con [Razón]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "La IA puede cometer errores, por favor revise sus imágenes cuidadosamente.",
+    "subscriptionNotAvailable": "Suscripción no disponible. Por favor, actualice o contacte al soporte.",
+    "imageUpload": {
+      "canOnlyAdd": "Solo puede agregar {{count}} imagen(es) más.",
+      "fileSizeExceeded": "El archivo {{fileName}} excede el límite de 10 MB.",
+      "failedToRead": "Error al leer el archivo de imagen {{fileName}}.",
+      "failedToLoad": "Error al cargar la imagen {{fileName}}. Por favor, pruebe con otro archivo.",
+      "errorReading": "Error al leer el archivo de imagen {{fileName}}.",
+      "maxReferenceImagesReached": "Ha alcanzado el máximo de 6 imágenes de referencia.",
+      "maxReachedOrProcessing": "Ha alcanzado el máximo de 6 imágenes de referencia o las cargas están en proceso.",
+      "dropImageHere": "Suelte su imagen aquí",
+      "dropImagesHere": "Suelte sus imágenes aquí",
+      "dragImageHere": "Arrastre su imagen aquí",
+      "dragImagesHere": "Arrastre sus imágenes aquí",
+      "uploadFromComputer": "O cargue una imagen desde su computadora",
+      "uploadMultipleFromComputer": "O cargue múltiples imágenes desde su computadora"
+    }
   }
 }
 

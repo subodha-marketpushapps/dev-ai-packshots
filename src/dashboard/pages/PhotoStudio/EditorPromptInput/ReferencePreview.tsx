@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Image, Text, IconButton, Tooltip } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import { GeneratedImagePreview } from "../../../../interfaces";
 import * as Icons from "@wix/wix-ui-icons-common";
 
@@ -12,6 +13,7 @@ const ReferencePreview: React.FC<ReferencePreviewProps> = ({
   image,
   onDismiss,
 }) => {
+  const { t } = useTranslation();
   return (
     <Box
       border="1px solid"
@@ -23,7 +25,7 @@ const ReferencePreview: React.FC<ReferencePreviewProps> = ({
       height={136}
     >
       <Box position="absolute" top={4} right={4}>
-        <Tooltip content="Cancel Copy Edit">
+        <Tooltip content={t('photoStudio.cancelCopyEdit', {defaultValue: "Cancel Copy Edit"})}>
           <IconButton
             onClick={() => onDismiss(image)}
             skin="dark"
@@ -55,7 +57,7 @@ const ReferencePreview: React.FC<ReferencePreviewProps> = ({
             disabled={!!image?.enhancedPrompt}
             ellipsis
           >
-            {image?.enhancedPrompt || "no prompt"}
+            {image?.enhancedPrompt || t('editorPromptInput.referencePreview.noPrompt', {defaultValue: "no prompt"})}
           </Text>
         </Box>
         <Box
@@ -68,7 +70,7 @@ const ReferencePreview: React.FC<ReferencePreviewProps> = ({
         >
           <Icons.SparklesFilled size="14px" />
           <Text size="tiny">
-            Generates results that closely match this reference image
+            {t('editorPromptInput.referencePreview.matchReference', {defaultValue: "Generates results that closely match this reference image"})}
           </Text>
         </Box>
       </Box>

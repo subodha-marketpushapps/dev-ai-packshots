@@ -188,6 +188,14 @@
       "refreshNote": "Actualisez votre page pour voir les modifications.",
       "refresh": "Actualiser"
     },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "ID de génération",
+      "createdAt": "Créé le",
+      "notAvailable": "N/D",
+      "initialImage": "Image initiale",
+      "generatedImage": "Image générée"
+    },
     "aiPackshotsDashboard": {
       "title": "Images Produit IA",
       "subtitle": "Améliorez et affinez vos images produits sans effort grâce à des outils alimentés par l'IA.",
@@ -240,6 +248,89 @@
     "openModal": "Ouvrir le modal",
     "noProductsAvailable": "Aucun produit disponible dans votre magasin",
     "chooseProductPlaceholder": "Choisir un produit..."
+  },
+  "editorPromptInput": {
+    "editImage": "Modifier l'image",
+    "enhanceImage": "Améliorer l'image",
+    "enhanceSettingsButton": "Paramètres d'amélioration",
+    "promptInput": "Saisie de prompt",
+    "placeholder": {
+      "edit": "Décrivez ce que vous souhaitez modifier",
+      "enhance": "Décrivez la scène de votre arrière-plan"
+    },
+    "blankPromptHint": "Laissez ce champ vide pour laisser l'IA choisir le meilleur arrière-plan pour votre produit",
+    "tooltip": {
+      "selectImage": "Vous devez sélectionner une image avant de générer.",
+      "providePrompt": "Vous devez fournir un prompt avant de générer.",
+      "applyChanges": "Appliquer les modifications (⌘ + ↵)",
+      "regenerateImage": "Régénérer l'image (⌘ + ↵)",
+      "generateImage": "Générer l'image (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Améliorer l'image",
+      "enhanceImageDescription": "Personnalisez la qualité de votre photo et faites correspondre le résultat final à votre vision.",
+      "editImage": "Modifier l'image",
+      "editImageDescription": "Modifiez les images avec des instructions textuelles et obtenez le résultat souhaité."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Ajouter une amélioration",
+      "productPosition": "Position du produit",
+      "photoBackground": "Arrière-plan photo",
+      "original": "Original",
+      "color": "Couleur",
+      "aiGenerated": "Généré par IA",
+      "qualityOptions": {
+        "clarity": "Clarté de l'image",
+        "sharpness": "Netteté",
+        "lighting": "Éclairage",
+        "shadows": "Ombres",
+        "color": "Équilibre des couleurs"
+      }
+    },
+    "outputSettings": {
+      "costs": "Coûte",
+      "imageCredits": "Crédits d'image",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "aucun prompt",
+      "matchReference": "Génère des résultats qui correspondent étroitement à cette image de référence"
+    },
+    "originalPreview": {
+      "goBack": "Revenir à l'original"
+    },
+    "feedback": {
+      "terrible": "Terrible",
+      "bad": "Mauvais",
+      "okay": "Correct",
+      "good": "Bon",
+      "great": "Excellent",
+      "skip": "Ignorer",
+      "continue": "Continuer",
+      "negativeExperienceMessage": "Bonjour ! J'ai eu une expérience négative avec Images Produit IA. Pouvez-vous m'aider ?",
+      "okExperienceMessage": "Bonjour ! J'ai eu une expérience correcte avec Images Produit IA. Mais pouvez-vous m'aider avec [Raison] ?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "L'IA peut faire des erreurs, veuillez examiner attentivement vos images.",
+    "subscriptionNotAvailable": "Abonnement non disponible. Veuillez actualiser ou contacter le support.",
+    "imageUpload": {
+      "canOnlyAdd": "Vous ne pouvez ajouter que {{count}} image(s) de plus.",
+      "fileSizeExceeded": "Le fichier {{fileName}} dépasse la limite de 10 Mo.",
+      "failedToRead": "Échec de la lecture du fichier image {{fileName}}.",
+      "failedToLoad": "Échec du chargement de l'image {{fileName}}. Veuillez essayer un autre fichier.",
+      "errorReading": "Erreur lors de la lecture du fichier image {{fileName}}.",
+      "maxReferenceImagesReached": "Vous avez atteint le maximum de 6 images de référence.",
+      "maxReachedOrProcessing": "Vous avez atteint le maximum de 6 images de référence ou les téléchargements sont en cours.",
+      "dropImageHere": "Déposez votre image ici",
+      "dropImagesHere": "Déposez vos images ici",
+      "dragImageHere": "Glissez votre image ici",
+      "dragImagesHere": "Glissez vos images ici",
+      "uploadFromComputer": "Ou téléchargez une image depuis votre ordinateur",
+      "uploadMultipleFromComputer": "Ou téléchargez plusieurs images depuis votre ordinateur"
+    }
   }
 }
 

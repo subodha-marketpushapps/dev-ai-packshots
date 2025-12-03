@@ -8,6 +8,7 @@ import {
 } from "@wix/design-system";
 import React, { useCallback, useState } from "react";
 import { useIntercom } from "react-use-intercom";
+import { useTranslation } from "react-i18next";
 
 import { useBaseModal } from "../../../services/providers/BaseModalProvider";
 
@@ -20,15 +21,16 @@ const FeedbackChecker: React.FC<FeedbackCheckerProps> = ({
   onSkip,
   onSubmit,
 }) => {
+  const { t } = useTranslation();
   const { openFeedbackModal } = useBaseModal(); // Assuming useBaseModal is a custom hook to handle modal state
   type FacesRatingBarValue = 1 | 2 | 3 | 4 | 5;
   const [value, setValue] = useState<FacesRatingBarValue>(4);
   const descriptionValues: [string, string, string?, string?, string?] = [
-    "Terrible",
-    "Bad",
-    "Okay",
-    "Good",
-    "Great",
+    t('editorPromptInput.feedback.terrible', {defaultValue: "Terrible"}),
+    t('editorPromptInput.feedback.bad', {defaultValue: "Bad"}),
+    t('editorPromptInput.feedback.okay', {defaultValue: "Okay"}),
+    t('editorPromptInput.feedback.good', {defaultValue: "Good"}),
+    t('editorPromptInput.feedback.great', {defaultValue: "Great"}),
   ];
 
   const { showNewMessage } = useIntercom();
@@ -42,15 +44,15 @@ const FeedbackChecker: React.FC<FeedbackCheckerProps> = ({
     (value) => {
       if (value < 3) {
         openIntercomWithContent(
-          `Hi there! I had a negative experience with the AI Product Images. Can you help me with this?`
+          t('editorPromptInput.feedback.negativeExperienceMessage', {defaultValue: "Hi there! I had a negative experience with the AI Product Images. Can you help me with this?"})
         );
       } else {
         openIntercomWithContent(
-          `Hi there! I had a OK experience with the AI Product Images. But can you help me with [Reason]?`
+          t('editorPromptInput.feedback.okExperienceMessage', {defaultValue: "Hi there! I had a OK experience with the AI Product Images. But can you help me with [Reason]?"})
         );
       }
     },
-    [openIntercomWithContent]
+    [openIntercomWithContent, t]
   );
   const onContinue = () => {
     if (value >= 4) {
@@ -65,7 +67,7 @@ const FeedbackChecker: React.FC<FeedbackCheckerProps> = ({
   return (
     <Layout>
       <Cell>
-  <FormField label="How was your overall experience with AI Product Images?">
+  <FormField label={t('feedback.overallExperience', {defaultValue: "How was your overall experience with AI Product Images?"})}>
           <FacesRatingBar
             value={value}
             descriptionValues={descriptionValues}
@@ -76,10 +78,10 @@ const FeedbackChecker: React.FC<FeedbackCheckerProps> = ({
       <Cell>
         <Box gap={"SP2"} marginTop="SP4" align="right">
           <Button priority="secondary" onClick={onSkip} size="small">
-            Skip
+            {t('editorPromptInput.feedback.skip', {defaultValue: "Skip"})}
           </Button>
           <Button onClick={onContinue} size="small">
-            Continue
+            {t('editorPromptInput.feedback.continue', {defaultValue: "Continue"})}
           </Button>
         </Box>
       </Cell>

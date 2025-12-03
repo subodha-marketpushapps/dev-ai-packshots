@@ -188,6 +188,14 @@
       "refreshNote": "Actualizați-vă pagina pentru a vedea modificările.",
       "refresh": "Actualizați"
     },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "ID generare",
+      "createdAt": "Creat la",
+      "notAvailable": "N/D",
+      "initialImage": "Imagine inițială",
+      "generatedImage": "Imagine generată"
+    },
     "aiPackshotsDashboard": {
       "title": "Imagini Produs AI",
       "subtitle": "Îmbunătățiți și rafinați-vă imaginile produselor fără efort cu instrumente alimentate de IA.",
@@ -240,6 +248,89 @@
     "openModal": "Deschide modal",
     "noProductsAvailable": "Nu există produse disponibile în magazinul dvs.",
     "chooseProductPlaceholder": "Alegeți un produs..."
+  },
+  "editorPromptInput": {
+    "editImage": "Editați imaginea",
+    "enhanceImage": "Îmbunătățiți imaginea",
+    "enhanceSettingsButton": "Setări de îmbunătățire",
+    "promptInput": "Intrare prompt",
+    "placeholder": {
+      "edit": "Descrieți ce doriți să schimbați",
+      "enhance": "Descrieți scena fundalului dvs."
+    },
+    "blankPromptHint": "Lăsați acest câmp gol pentru a permite IA să aleagă cel mai bun fundal pentru produsul dvs.",
+    "tooltip": {
+      "selectImage": "Trebuie să selectați o imagine înainte de a genera.",
+      "providePrompt": "Trebuie să furnizați un prompt înainte de a genera.",
+      "applyChanges": "Aplicați modificările (⌘ + ↵)",
+      "regenerateImage": "Regenerați imaginea (⌘ + ↵)",
+      "generateImage": "Generați imaginea (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Îmbunătățiți imaginea",
+      "enhanceImageDescription": "Personalizați calitatea fotografiei dvs. și faceți ca rezultatul final să se potrivească viziunii dvs.",
+      "editImage": "Editați imaginea",
+      "editImageDescription": "Editați imaginile cu instrucțiuni text și obțineți rezultatul dorit."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Adăugați îmbunătățire",
+      "productPosition": "Poziția produsului",
+      "photoBackground": "Fundal foto",
+      "original": "Original",
+      "color": "Culoare",
+      "aiGenerated": "Generat de IA",
+      "qualityOptions": {
+        "clarity": "Claritate imagine",
+        "sharpness": "Claritate",
+        "lighting": "Iluminare",
+        "shadows": "Umbre",
+        "color": "Echilibrul culorilor"
+      }
+    },
+    "outputSettings": {
+      "costs": "Costă",
+      "imageCredits": "Credite imagine",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "fără prompt",
+      "matchReference": "Generează rezultate care se potrivesc strâns cu această imagine de referință"
+    },
+    "originalPreview": {
+      "goBack": "Reveniți la original"
+    },
+    "feedback": {
+      "terrible": "Teribil",
+      "bad": "Rău",
+      "okay": "Acceptabil",
+      "good": "Bun",
+      "great": "Excelent",
+      "skip": "Omiteți",
+      "continue": "Continuați",
+      "negativeExperienceMessage": "Bună! Am avut o experiență negativă cu Imagini Produs AI. Mă puteți ajuta cu asta?",
+      "okExperienceMessage": "Bună! Am avut o experiență acceptabilă cu Imagini Produs AI. Dar mă puteți ajuta cu [Motiv]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "IA poate face greșeli, vă rugăm să examinați cu atenție imaginile dvs.",
+    "subscriptionNotAvailable": "Abonament indisponibil. Vă rugăm să actualizați sau să contactați suportul.",
+    "imageUpload": {
+      "canOnlyAdd": "Puteți adăuga doar {{count}} imagine(uri) în plus.",
+      "fileSizeExceeded": "Fișierul {{fileName}} depășește limita de 10 MB.",
+      "failedToRead": "Eșec la citirea fișierului imagine {{fileName}}.",
+      "failedToLoad": "Eșec la încărcarea imaginii {{fileName}}. Vă rugăm să încercați un alt fișier.",
+      "errorReading": "Eroare la citirea fișierului imagine {{fileName}}.",
+      "maxReferenceImagesReached": "Ați atins maximul de 6 imagini de referință.",
+      "maxReachedOrProcessing": "Ați atins maximul de 6 imagini de referință sau încărcările sunt în procesare.",
+      "dropImageHere": "Plasați imaginea dvs. aici",
+      "dropImagesHere": "Plasați imaginile dvs. aici",
+      "dragImageHere": "Trageți imaginea dvs. aici",
+      "dragImagesHere": "Trageți imaginile dvs. aici",
+      "uploadFromComputer": "Sau încărcați o imagine de pe computerul dvs.",
+      "uploadMultipleFromComputer": "Sau încărcați mai multe imagini de pe computerul dvs."
+    }
   }
 }
 

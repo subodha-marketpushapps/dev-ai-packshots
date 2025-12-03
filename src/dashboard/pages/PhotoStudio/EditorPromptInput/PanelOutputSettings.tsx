@@ -11,6 +11,7 @@ import {
   ToggleSwitch,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { AspectRatio } from "../../../../interfaces";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
 
@@ -26,8 +27,9 @@ const PanelOutputSettings: React.FC<PanelOutputSettingsProps> = ({
   const { referenceImage, selectedImages, outputSettings, setOutputSettings } =
     usePhotoStudio();
 
+  const { t } = useTranslation();
   const aspectRatioOptions = [
-    { id: "original", value: "Original" },
+    { id: "original", value: t('editorPromptInput.outputSettings.aspectRatio.original', {defaultValue: "Original"}) },
     { id: "21:9", value: "21:9" },
     { id: "16:9", value: "16:9" },
     { id: "4:3", value: "4:3" },
@@ -49,8 +51,8 @@ const PanelOutputSettings: React.FC<PanelOutputSettingsProps> = ({
         {!isReferenceImageAvailable && (
           <SidePanel.Field>
             <FormField
-              label="Images Generated"
-              infoContent="Select the number of images to generate"
+              label={t('editor.imagesGenerated.label', {defaultValue: "Images Generated"})}
+              infoContent={t('editor.imagesGenerated.infoContent', {defaultValue: "Select the number of images to generate"})}
               charCount={outputSettings.batchSize}
             >
               <Slider
@@ -78,11 +80,11 @@ const PanelOutputSettings: React.FC<PanelOutputSettingsProps> = ({
             >
               <Icons.SparklesFilled size={18} />
               <Text size="tiny" weight="normal">
-                Costs{" "}
+                {t('editorPromptInput.outputSettings.costs', {defaultValue: "Costs"})}{" "}
                 {referenceImage
                   ? selectedImages.length
                   : outputSettings.batchSize}{" "}
-                Image Credits
+                {t('editorPromptInput.outputSettings.imageCredits', {defaultValue: "Image Credits"})}
               </Text>
             </Box>
           </SidePanel.Field>
@@ -90,8 +92,8 @@ const PanelOutputSettings: React.FC<PanelOutputSettingsProps> = ({
         <SidePanel.Field>
           <FormField
             labelPlacement="right"
-            label="Auto Upscaling"
-            infoContent="When enabled, images smaller than 1000px will be automatically upscaled to x2 for better quality."
+            label={t('editor.autoUpscaling.label', {defaultValue: "Auto Upscaling"})}
+            infoContent={t('editor.autoUpscaling.infoContent', {defaultValue: "When enabled, images smaller than 1000px will be automatically upscaled to x2 for better quality."})}
             stretchContent={false}
           >
             <ToggleSwitch
@@ -109,8 +111,8 @@ const PanelOutputSettings: React.FC<PanelOutputSettingsProps> = ({
 
         <SidePanel.Field divider={false}>
           <FormField
-            label="Set output dimensions"
-            infoContent="Select the aspect ratio for the generated images."
+            label={t('editor.setOutputDimensions.label', {defaultValue: "Set output dimensions"})}
+            infoContent={t('editor.setOutputDimensions.infoContent', {defaultValue: "Select the aspect ratio for the generated images."})}
           >
             <Box marginTop={1}>
               <Layout gap={"12px"}>

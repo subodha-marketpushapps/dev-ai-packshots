@@ -188,6 +188,14 @@
       "refreshNote": "Refresh your page to see the changes.",
       "refresh": "Refresh"
     },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "Generate Id",
+      "createdAt": "Created at",
+      "notAvailable": "N/A",
+      "initialImage": "Initial Image",
+      "generatedImage": "Generated Image"
+    },
     "aiPackshotsDashboard": {
       "title": "AI Product Images",
       "subtitle": "Enhance and refine your product images effortlessly with AI-powered tools.",
@@ -240,6 +248,89 @@
     "openModal": "Open Modal",
     "noProductsAvailable": "No products available in your store",
     "chooseProductPlaceholder": "Choose a product..."
+  },
+  "editorPromptInput": {
+    "editImage": "Edit Image",
+    "enhanceImage": "Enhance Image",
+    "enhanceSettingsButton": "Enhance Settings",
+    "promptInput": "Prompt Input",
+    "placeholder": {
+      "edit": "Describe what you want to change",
+      "enhance": "Describe the scene of your background"
+    },
+    "blankPromptHint": "Leave this blank to let AI choose the best background for your product",
+    "tooltip": {
+      "selectImage": "You must select an image before generating.",
+      "providePrompt": "You must provide a prompt before generating.",
+      "applyChanges": "Apply Changes (⌘ + ↵)",
+      "regenerateImage": "Regenerate Image (⌘ + ↵)",
+      "generateImage": "Generate Image (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Enhance Image",
+      "enhanceImageDescription": "Customize your photo quality and make the final output match your vision.",
+      "editImage": "Edit Image",
+      "editImageDescription": "Edit images with text instructions and get the desired output."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Add Improvement",
+      "productPosition": "Product position",
+      "photoBackground": "Photo Background",
+      "original": "Original",
+      "color": "Color",
+      "aiGenerated": "AI Generated",
+      "qualityOptions": {
+        "clarity": "Image clarity",
+        "sharpness": "Sharpness",
+        "lighting": "Lighting",
+        "shadows": "Shadows",
+        "color": "Color Balance"
+      }
+    },
+    "outputSettings": {
+      "costs": "Costs",
+      "imageCredits": "Image Credits",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "no prompt",
+      "matchReference": "Generates results that closely match this reference image"
+    },
+    "originalPreview": {
+      "goBack": "Go Back to Original"
+    },
+    "feedback": {
+      "terrible": "Terrible",
+      "bad": "Bad",
+      "okay": "Okay",
+      "good": "Good",
+      "great": "Great",
+      "skip": "Skip",
+      "continue": "Continue",
+      "negativeExperienceMessage": "Hi there! I had a negative experience with the AI Product Images. Can you help me with this?",
+      "okExperienceMessage": "Hi there! I had a OK experience with the AI Product Images. But can you help me with [Reason]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI can make mistakes, please review your images carefully.",
+    "subscriptionNotAvailable": "Subscription not available. Please refresh or contact support.",
+    "imageUpload": {
+      "canOnlyAdd": "You can only add {{count}} more image(s).",
+      "fileSizeExceeded": "File {{fileName}} exceeds 10 MB limit.",
+      "failedToRead": "Failed to read image file {{fileName}}.",
+      "failedToLoad": "Failed to load image {{fileName}}. Please try another file.",
+      "errorReading": "Error reading image file {{fileName}}.",
+      "maxReferenceImagesReached": "You have reached the maximum of 6 reference images.",
+      "maxReachedOrProcessing": "You have reached the maximum of 6 reference images or uploads are processing.",
+      "dropImageHere": "Drop your image here",
+      "dropImagesHere": "Drop your images here",
+      "dragImageHere": "Drag your image here",
+      "dragImagesHere": "Drag your images here",
+      "uploadFromComputer": "Or upload an image from your computer",
+      "uploadMultipleFromComputer": "Or upload multiple images from your computer"
+    }
   }
 }
 

@@ -12,6 +12,7 @@ import {
   Badge,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
 import { ImageDetailsMode } from "../../../../interfaces";
 
@@ -37,6 +38,7 @@ const LoadingSpinner: React.FC = React.memo(() => (
 
 const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
   React.memo(({ studioMode = "modal" }) => {
+    const { t } = useTranslation();
     const { editorSettings, setEditorSettings } = usePhotoStudio();
     const image = editorSettings.selectedImageDetails;
     const isModalOpened = editorSettings.isModalImageDetailsOpen;
@@ -101,7 +103,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
           direction="vertical"
         >
           <Box padding="18px 24px" width="100%">
-            <Heading size="medium">Generate Info</Heading>
+            <Heading size="medium">{t('photoStudio.generateInfo', {defaultValue: "Generate info"})}</Heading>
           </Box>
           <Divider />
           <Box
@@ -127,23 +129,23 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
               />
             </Box>
             <Box direction="vertical">
-              <Heading size="tiny">Prompt</Heading>
+              <Heading size="tiny">{t('modals.imageDetails.prompt', {defaultValue: "Prompt"})}</Heading>
               <Text size="small" secondary>
-                {image?.enhancedPrompt ? image.enhancedPrompt : "N/A"}
+                {image?.enhancedPrompt ? image.enhancedPrompt : t('modals.imageDetails.notAvailable', {defaultValue: "N/A"})}
               </Text>
             </Box>
             <Box direction="vertical">
-              <Heading size="tiny">Generate Id</Heading>
+              <Heading size="tiny">{t('modals.imageDetails.generateId', {defaultValue: "Generate Id"})}</Heading>
               <Text size="small" secondary>
                 {image?.seed}
               </Text>
             </Box>
             <Box direction="vertical">
-              <Heading size="tiny">Created at</Heading>
+              <Heading size="tiny">{t('modals.imageDetails.createdAt', {defaultValue: "Created at"})}</Heading>
               <Text size="small" secondary>
                 {image?.createdAt
                   ? new Date(image.createdAt).toLocaleString()
-                  : "N/A"}
+                  : t('modals.imageDetails.notAvailable', {defaultValue: "N/A"})}
               </Text>
             </Box>
           </Box>
@@ -186,7 +188,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
                   style={inputImageLoading ? { display: "none" } : {}}
                 />
                 <Box position="absolute" bottom={0} left={0} padding="SP2">
-                  <Badge>Initial Image</Badge>
+                  <Badge>{t('modals.imageDetails.initialImage', {defaultValue: "Initial Image"})}</Badge>
                 </Box>
               </Box>
             )}
@@ -200,7 +202,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
               />
               <Box position="absolute" bottom={0} left={0} padding="SP2">
                 <Badge prefixIcon={<Icons.SparklesFilledSmall />}>
-                  Generated Image
+                  {t('modals.imageDetails.generatedImage', {defaultValue: "Generated Image"})}
                 </Badge>
               </Box>
             </Box>
@@ -214,7 +216,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
           {/* Top left: Close/back button */}
           <Box position="absolute" top={0} left={0} padding="SP2">
             <Tooltip
-              content="Go back (Esc)"
+              content={t('photoStudio.goBack', {defaultValue: "Go back (Esc)"})}
               placement="bottom"
               size="small"
               appendTo="window"
@@ -234,7 +236,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
           {!isLiveImage && (
             <Box position="absolute" top={0} right={0} padding="SP2" gap="SP2">
               <Tooltip
-                content="Fullscreen"
+                content={t('photoStudio.fullscreen', {defaultValue: "Fullscreen"})}
                 placement="bottom"
                 size="small"
                 appendTo="window"
@@ -252,7 +254,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
                 </IconButton>
               </Tooltip>
               <Tooltip
-                content="Compare"
+                content={t('photoStudio.compare', {defaultValue: "Compare"})}
                 placement="bottom"
                 size="small"
                 appendTo="window"
@@ -270,7 +272,7 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
                 </IconButton>
               </Tooltip>
               <Tooltip
-                content="Details"
+                content={t('photoStudio.details', {defaultValue: "Details"})}
                 placement="bottom"
                 size="small"
                 appendTo="window"

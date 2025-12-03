@@ -1,5 +1,6 @@
 import React, { useCallback, useState, useEffect, useRef } from "react";
 import { Box } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import ErrorBoundary from "../ErrorBoundary";
 import { ImageDropZone } from "./ImageUpload";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
@@ -11,6 +12,7 @@ import EditorCanvas from "../EditorCanvas";
 import { useStatusToast } from "../../../services/providers/StatusToastProvider";
 
 const StudioEditor: React.FC = () => {
+  const { t } = useTranslation();
   const {
     confirmImages,
     selectedImages,
@@ -73,8 +75,7 @@ const StudioEditor: React.FC = () => {
   const handleFlexEditWithReferenceImage = async () => {
     if (!subscription) {
       addToast({
-        content:
-          "Subscription not available. Please refresh or contact support.",
+        content: t('studioEditor.subscriptionNotAvailable', {defaultValue: "Subscription not available. Please refresh or contact support."}),
         status: "error",
       });
       return;
@@ -117,8 +118,7 @@ const StudioEditor: React.FC = () => {
   const handleFluxEdit = async () => {
     if (!subscription) {
       addToast({
-        content:
-          "Subscription not available. Please refresh or contact support.",
+        content: t('studioEditor.subscriptionNotAvailable', {defaultValue: "Subscription not available. Please refresh or contact support."}),
         status: "error",
       });
       return;

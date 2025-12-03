@@ -188,6 +188,14 @@
       "refreshNote": "Aktualisieren Sie Ihre Seite, um die Änderungen zu sehen.",
       "refresh": "Aktualisieren"
     },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "Generierungs-ID",
+      "createdAt": "Erstellt am",
+      "notAvailable": "N/V",
+      "initialImage": "Ausgangsbild",
+      "generatedImage": "Generiertes Bild"
+    },
     "aiPackshotsDashboard": {
       "title": "KI-Produktbilder",
       "subtitle": "Verbessern und verfeinern Sie Ihre Produktbilder mühelos mit KI-gestützten Tools.",
@@ -240,6 +248,89 @@
     "openModal": "Modal öffnen",
     "noProductsAvailable": "Keine Produkte in Ihrem Shop verfügbar",
     "chooseProductPlaceholder": "Produkt auswählen..."
+  },
+  "editorPromptInput": {
+    "editImage": "Bild bearbeiten",
+    "enhanceImage": "Bild verbessern",
+    "enhanceSettingsButton": "Verbesserungseinstellungen",
+    "promptInput": "Prompt-Eingabe",
+    "placeholder": {
+      "edit": "Beschreiben Sie, was Sie ändern möchten",
+      "enhance": "Beschreiben Sie die Szene Ihres Hintergrunds"
+    },
+    "blankPromptHint": "Lassen Sie dies leer, damit die KI den besten Hintergrund für Ihr Produkt auswählt",
+    "tooltip": {
+      "selectImage": "Sie müssen ein Bild auswählen, bevor Sie generieren.",
+      "providePrompt": "Sie müssen einen Prompt angeben, bevor Sie generieren.",
+      "applyChanges": "Änderungen anwenden (⌘ + ↵)",
+      "regenerateImage": "Bild regenerieren (⌘ + ↵)",
+      "generateImage": "Bild generieren (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Bild verbessern",
+      "enhanceImageDescription": "Passen Sie Ihre Fotoqualität an und lassen Sie die endgültige Ausgabe Ihrer Vision entsprechen.",
+      "editImage": "Bild bearbeiten",
+      "editImageDescription": "Bearbeiten Sie Bilder mit Textanweisungen und erhalten Sie die gewünschte Ausgabe."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Verbesserung hinzufügen",
+      "productPosition": "Produktposition",
+      "photoBackground": "Fotohintergrund",
+      "original": "Original",
+      "color": "Farbe",
+      "aiGenerated": "KI-generiert",
+      "qualityOptions": {
+        "clarity": "Bildklarheit",
+        "sharpness": "Schärfe",
+        "lighting": "Beleuchtung",
+        "shadows": "Schatten",
+        "color": "Farbbalance"
+      }
+    },
+    "outputSettings": {
+      "costs": "Kostet",
+      "imageCredits": "Bild-Credits",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "kein Prompt",
+      "matchReference": "Generiert Ergebnisse, die diesem Referenzbild sehr nahe kommen"
+    },
+    "originalPreview": {
+      "goBack": "Zurück zum Original"
+    },
+    "feedback": {
+      "terrible": "Schrecklich",
+      "bad": "Schlecht",
+      "okay": "Okay",
+      "good": "Gut",
+      "great": "Großartig",
+      "skip": "Überspringen",
+      "continue": "Fortfahren",
+      "negativeExperienceMessage": "Hallo! Ich hatte eine negative Erfahrung mit KI-Produktbildern. Können Sie mir dabei helfen?",
+      "okExperienceMessage": "Hallo! Ich hatte eine OK-Erfahrung mit KI-Produktbildern. Aber können Sie mir bei [Grund] helfen?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "KI kann Fehler machen, bitte überprüfen Sie Ihre Bilder sorgfältig.",
+    "subscriptionNotAvailable": "Abonnement nicht verfügbar. Bitte aktualisieren Sie die Seite oder kontaktieren Sie den Support.",
+    "imageUpload": {
+      "canOnlyAdd": "Sie können nur noch {{count}} Bild(er) hinzufügen.",
+      "fileSizeExceeded": "Die Datei {{fileName}} überschreitet das Limit von 10 MB.",
+      "failedToRead": "Fehler beim Lesen der Bilddatei {{fileName}}.",
+      "failedToLoad": "Fehler beim Laden des Bildes {{fileName}}. Bitte versuchen Sie eine andere Datei.",
+      "errorReading": "Fehler beim Lesen der Bilddatei {{fileName}}.",
+      "maxReferenceImagesReached": "Sie haben das Maximum von 6 Referenzbildern erreicht.",
+      "maxReachedOrProcessing": "Sie haben das Maximum von 6 Referenzbildern erreicht oder Uploads werden verarbeitet.",
+      "dropImageHere": "Legen Sie Ihr Bild hier ab",
+      "dropImagesHere": "Legen Sie Ihre Bilder hier ab",
+      "dragImageHere": "Ziehen Sie Ihr Bild hierher",
+      "dragImagesHere": "Ziehen Sie Ihre Bilder hierher",
+      "uploadFromComputer": "Oder laden Sie ein Bild von Ihrem Computer hoch",
+      "uploadMultipleFromComputer": "Oder laden Sie mehrere Bilder von Ihrem Computer hoch"
+    }
   }
 }
 

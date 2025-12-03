@@ -9,6 +9,7 @@ import {
   TextButton,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
 import { useStatusToast } from "../../../services/providers/StatusToastProvider";
 import UploadImage from "../../../../assets/images/image_file-upload.svg";
@@ -23,8 +24,9 @@ interface ImageUploadProps {
 }
 
 export const ImageUpload: React.FC<ImageUploadProps> = ({
-  label = "Upload Image",
+  label,
 }) => {
+  const { t } = useTranslation();
   const {
     referenceImage,
     updateCanvasImage,
@@ -36,6 +38,8 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
     getReferenceImageCount,
   } = usePhotoStudio();
   const { addToast } = useStatusToast();
+  
+  const labelText = label || t('photoStudio.uploadImage', {defaultValue: "Upload Image"});
 
   const allowed = 6 - getReferenceImageCount();
   const isAtLimit = allowed <= 0;
@@ -47,9 +51,10 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
     // console.log("🚀 ~ isAtLimit:", isAtLimit)
     if (fileArray.length > allowed) {
       addToast({
-        content: `You can only add ${allowed} more image${
-          allowed === 1 ? "" : "s"
-        }.`,
+        content: t('studioEditor.imageUpload.canOnlyAdd', {
+          defaultValue: `You can only add ${allowed} more image${allowed === 1 ? "" : "s"}.`,
+          count: allowed
+        }),
         status: "warning",
       });
     }
@@ -58,7 +63,7 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
       if (processed >= allowed) break;
       if (!canAddReferenceImage()) {
         addToast({
-          content: "You can select or upload up to 6 images for copy edits.",
+          content: t('photoStudio.maxReferenceImages', {defaultValue: "You can select or upload up to 6 images for copy edits."}),
           status: "warning",
         });
         break;
@@ -66,7 +71,10 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
       const file = fileArray[i];
       if (file.size > MAX_FILE_SIZE) {
         addToast({
-          content: `File ${file.name} exceeds 10 MB limit.`,
+          content: t('studioEditor.imageUpload.fileSizeExceeded', {
+            defaultValue: `File ${file.name} exceeds 10 MB limit.`,
+            fileName: file.name
+          }),
           status: "error",
         });
         continue;
@@ -75,7 +83,10 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
       reader.onload = () => {
         if (typeof reader.result !== "string") {
           addToast({
-            content: `Failed to read image file ${file.name}.`,
+            content: t('studioEditor.imageUpload.failedToRead', {
+              defaultValue: `Failed to read image file ${file.name}.`,
+              fileName: file.name
+            }),
             status: "error",
           });
           return;
@@ -115,14 +126,20 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
         };
         img.onerror = () => {
           addToast({
-            content: `Failed to load image ${file.name}. Please try another file.`,
+            content: t('studioEditor.imageUpload.failedToLoad', {
+              defaultValue: `Failed to load image ${file.name}. Please try another file.`,
+              fileName: file.name
+            }),
             status: "error",
           });
         };
       };
       reader.onerror = () => {
         addToast({
-          content: `Error reading image file ${file.name}.`,
+          content: t('studioEditor.imageUpload.errorReading', {
+            defaultValue: `Error reading image file ${file.name}.`,
+            fileName: file.name
+          }),
           status: "error",
         });
       };
@@ -146,8 +163,7 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
               onClick={(e) => {
                 if (isAtLimit) {
                   addToast({
-                    content:
-                      "You have reached the maximum of 6 reference images.",
+                    content: t('studioEditor.imageUpload.maxReferenceImagesReached', {defaultValue: "You have reached the maximum of 6 reference images."}),
                     status: "warning",
                   });
                   return;
@@ -159,7 +175,7 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
               disabled={processingImages.length > 0}
               fullWidth
             >
-              {label}
+              {labelText}
             </Button>
           </Box>
         )}
@@ -169,6 +185,7 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
 };
 
 export const ImageDropZone: React.FC = () => {
+  const { t } = useTranslation();
   const {
     referenceImage,
     updateCanvasImage,
@@ -189,9 +206,10 @@ export const ImageDropZone: React.FC = () => {
     let fileArray = Array.from(files);
     if (fileArray.length > allowed) {
       addToast({
-        content: `You can only add ${allowed} more image${
-          allowed === 1 ? "" : "s"
-        }.`,
+        content: t('studioEditor.imageUpload.canOnlyAdd', {
+          defaultValue: `You can only add ${allowed} more image${allowed === 1 ? "" : "s"}.`,
+          count: allowed
+        }),
         status: "warning",
       });
     }
@@ -200,7 +218,7 @@ export const ImageDropZone: React.FC = () => {
       if (processed >= allowed) break;
       if (!canAddReferenceImage()) {
         addToast({
-          content: "You can select or upload up to 6 images for copy edits.",
+          content: t('photoStudio.maxReferenceImages', {defaultValue: "You can select or upload up to 6 images for copy edits."}),
           status: "warning",
         });
         break;
@@ -208,7 +226,10 @@ export const ImageDropZone: React.FC = () => {
       const file = fileArray[i];
       if (file.size > MAX_FILE_SIZE) {
         addToast({
-          content: `File ${file.name} exceeds 10 MB limit.`,
+          content: t('studioEditor.imageUpload.fileSizeExceeded', {
+            defaultValue: `File ${file.name} exceeds 10 MB limit.`,
+            fileName: file.name
+          }),
           status: "error",
         });
         continue;
@@ -217,7 +238,10 @@ export const ImageDropZone: React.FC = () => {
       reader.onload = () => {
         if (typeof reader.result !== "string") {
           addToast({
-            content: `Failed to read image file ${file.name}.`,
+            content: t('studioEditor.imageUpload.failedToRead', {
+              defaultValue: `Failed to read image file ${file.name}.`,
+              fileName: file.name
+            }),
             status: "error",
           });
           return;
@@ -257,14 +281,20 @@ export const ImageDropZone: React.FC = () => {
         };
         img.onerror = () => {
           addToast({
-            content: `Failed to load image ${file.name}. Please try another file.`,
+            content: t('studioEditor.imageUpload.failedToLoad', {
+              defaultValue: `Failed to load image ${file.name}. Please try another file.`,
+              fileName: file.name
+            }),
             status: "error",
           });
         };
       };
       reader.onerror = () => {
         addToast({
-          content: `Error reading image file ${file.name}.`,
+          content: t('studioEditor.imageUpload.errorReading', {
+            defaultValue: `Error reading image file ${file.name}.`,
+            fileName: file.name
+          }),
           status: "error",
         });
       };
@@ -293,8 +323,8 @@ export const ImageDropZone: React.FC = () => {
           >
             <AddItem skin="filled" size="large">
               {referenceImage
-                ? "Drop your images here"
-                : "Drop your image here"}
+                ? t('studioEditor.imageUpload.dropImagesHere', {defaultValue: "Drop your images here"})
+                : t('studioEditor.imageUpload.dropImageHere', {defaultValue: "Drop your image here"})}
             </AddItem>
           </Box>
         </Dropzone.Overlay>
@@ -312,13 +342,13 @@ export const ImageDropZone: React.FC = () => {
             <EmptyState
               title={
                 referenceImage
-                  ? "Drag your images here"
-                  : "Drag your image here"
+                  ? t('studioEditor.imageUpload.dragImagesHere', {defaultValue: "Drag your images here"})
+                  : t('studioEditor.imageUpload.dragImageHere', {defaultValue: "Drag your image here"})
               }
               subtitle={
                 referenceImage
-                  ? "Or upload multiple images from your computer"
-                  : "Or upload an image from your computer"
+                  ? t('studioEditor.imageUpload.uploadMultipleFromComputer', {defaultValue: "Or upload multiple images from your computer"})
+                  : t('studioEditor.imageUpload.uploadFromComputer', {defaultValue: "Or upload an image from your computer"})
               }
               image={UploadImage}
             >
@@ -333,8 +363,7 @@ export const ImageDropZone: React.FC = () => {
                     onClick={(e: React.MouseEvent) => {
                       if (allowed <= 0 || processingImages.length > 0) {
                         addToast({
-                          content:
-                            "You have reached the maximum of 6 reference images or uploads are processing.",
+                          content: t('studioEditor.imageUpload.maxReachedOrProcessing', {defaultValue: "You have reached the maximum of 6 reference images or uploads are processing."}),
                           status: "warning",
                         });
                         return;
@@ -347,8 +376,8 @@ export const ImageDropZone: React.FC = () => {
                     disabled={allowed <= 0}
                   >
                     {referenceImage
-                      ? " Upload Multiple Images"
-                      : " Upload Image"}
+                      ? t('photoStudio.uploadMultipleImages', {defaultValue: "Upload Multiple Images"})
+                      : t('photoStudio.uploadImage', {defaultValue: "Upload Image"})}
                   </TextButton>
                 )}
               </FileUpload>

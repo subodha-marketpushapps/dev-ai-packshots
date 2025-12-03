@@ -9,6 +9,7 @@ import {
   TextButton,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
 
 interface PanelEnhanceSettingsProps {
@@ -18,14 +19,15 @@ interface PanelEnhanceSettingsProps {
 const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
   onCloseButtonClick,
 }) => {
+  const { t } = useTranslation();
   const { setPromptSettings, promptSettings } = usePhotoStudio();
 
   const qualityOptions = [
-    { id: "clarity", value: "Image clarity" },
-    { id: "sharpness", value: "Sharpness" },
-    { id: "lighting", value: "Lighting" },
-    { id: "shadows", value: "Shadows" },
-    { id: "color", value: "Color Balance" },
+    { id: "clarity", value: t('editorPromptInput.enhanceSettings.qualityOptions.clarity', {defaultValue: "Image clarity"}) },
+    { id: "sharpness", value: t('editorPromptInput.enhanceSettings.qualityOptions.sharpness', {defaultValue: "Sharpness"}) },
+    { id: "lighting", value: t('editorPromptInput.enhanceSettings.qualityOptions.lighting', {defaultValue: "Lighting"}) },
+    { id: "shadows", value: t('editorPromptInput.enhanceSettings.qualityOptions.shadows', {defaultValue: "Shadows"}) },
+    { id: "color", value: t('editorPromptInput.enhanceSettings.qualityOptions.color', {defaultValue: "Color Balance"}) },
   ];
   return (
     <SidePanel
@@ -37,8 +39,8 @@ const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
         <Box height={6}></Box>
         <SidePanel.Field divider={false}>
           <FormField
-            label="Photo quality"
-            infoContent="Add quality tags to enhance your image"
+            label={t('editor.photoQuality.label', {defaultValue: "Photo quality"})}
+            infoContent={t('editor.photoQuality.infoContent', {defaultValue: "Add quality tags to enhance your image"})}
           >
             <MultiSelect
               tags={(promptSettings?.qualityTags ?? []).map((tag) => {
@@ -51,7 +53,7 @@ const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
                 (promptSettings.qualityTags ?? []).length < 5 ? (
                   <Box>
                     <TextButton size="small" prefixIcon={<Icons.Add />}>
-                      Add Improvement
+                      {t('editorPromptInput.enhanceSettings.addImprovement', {defaultValue: "Add Improvement"})}
                     </TextButton>
                   </Box>
                 ) : null
@@ -78,9 +80,9 @@ const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
         </SidePanel.Field>
         <SidePanel.Field divider={false}>
           <FieldSet
-            legend="Product position"
+            legend={t('editorPromptInput.enhanceSettings.productPosition', {defaultValue: "Product position"})}
             direction="horizontal"
-            infoContent="Choose how the product is positioned in the image"
+            infoContent={t('editor.productPositioning.infoContent', {defaultValue: "Choose how the product is positioned in the image"})}
           >
             <Box className="segmented-toggle-mini">
               <SegmentedToggle
@@ -94,10 +96,10 @@ const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
                 }}
               >
                 <SegmentedToggle.Button value="original" size="small">
-                  Original
+                  {t('editorPromptInput.enhanceSettings.original', {defaultValue: "Original"})}
                 </SegmentedToggle.Button>
                 <SegmentedToggle.Button value="ai" size="small">
-                  AI Generated
+                  {t('editorPromptInput.enhanceSettings.aiGenerated', {defaultValue: "AI Generated"})}
                 </SegmentedToggle.Button>
               </SegmentedToggle>
             </Box>
@@ -105,9 +107,9 @@ const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
         </SidePanel.Field>
         <SidePanel.Field divider={false}>
           <FieldSet
-            legend="Photo Background"
+            legend={t('editorPromptInput.enhanceSettings.photoBackground', {defaultValue: "Photo Background"})}
             direction="horizontal"
-            infoContent="Select the background type for your image"
+            infoContent={t('editor.backgroundType.infoContent', {defaultValue: "Select the background type for your image"})}
           >
             <Box className="segmented-toggle-mini">
               <SegmentedToggle
@@ -121,13 +123,13 @@ const PanelEnhanceSettings: React.FC<PanelEnhanceSettingsProps> = ({
                 }}
               >
                 <SegmentedToggle.Button value="original" size="small">
-                  Original
+                  {t('editorPromptInput.enhanceSettings.original', {defaultValue: "Original"})}
                 </SegmentedToggle.Button>
                 <SegmentedToggle.Button value="color" size="small">
-                  Color
+                  {t('editorPromptInput.enhanceSettings.color', {defaultValue: "Color"})}
                 </SegmentedToggle.Button>
                 <SegmentedToggle.Button value="ai" size="small">
-                  AI Generated
+                  {t('editorPromptInput.enhanceSettings.aiGenerated', {defaultValue: "AI Generated"})}
                 </SegmentedToggle.Button>
               </SegmentedToggle>
             </Box>

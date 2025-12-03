@@ -13,6 +13,7 @@ import {
   Loader,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { usePopover } from "../../../hooks/usePopover";
 import PanelEditModes from "./PanelEditModes";
 import PanelEnhanceSettings from "./PanelEnhanceSettings";
@@ -40,6 +41,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
   promptInputState,
   setPromptInputState,
 }) => {
+  const { t } = useTranslation();
   // Hooks
   const {
     fileExplorerImages,
@@ -138,8 +140,8 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
             }
           >
             {outputSettings.editingMode === "edit"
-              ? "Edit Image"
-              : "Enhance Image"}
+              ? t('editorPromptInput.editImage', {defaultValue: "Edit Image"})
+              : t('editorPromptInput.enhanceImage', {defaultValue: "Enhance Image"})}
           </Button>
         </Popover.Element>
         <Popover.Content>
@@ -153,7 +155,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
   const DrawingTools = useMemo(
     () => (
       <Box verticalAlign="middle">
-        <Tooltip content="Add rectangle hint">
+        <Tooltip content={t('photoStudio.addRectangleHint', {defaultValue: "Add rectangle hint"})}>
           <IconButton
             size="small"
             skin="standard"
@@ -163,7 +165,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
             <Icons.RectangleLarge />
           </IconButton>
         </Tooltip>
-        <Tooltip content="Add circle hint">
+        <Tooltip content={t('photoStudio.addCircleHint', {defaultValue: "Add circle hint"})}>
           <IconButton
             size="small"
             skin="standard"
@@ -195,7 +197,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
             prefixIcon={<Icons.Settings />}
             onClick={enhanceSettingsPopover.togglePopover}
           >
-            Enhance Settings
+            {t('editorPromptInput.enhanceSettingsButton', {defaultValue: "Enhance Settings"})}
           </TextButton>
         </Popover.Element>
         <Popover.Content>
@@ -281,7 +283,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
         width={"100%"}
       >
         <Tooltip
-          content="Show Editor Panel"
+          content={t('photoStudio.showEditorPanel', {defaultValue: "Show Editor Panel"})}
           placement="top"
           size="small"
           enterDelay={1000}
@@ -295,7 +297,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
             prefixIcon={<Icons.Sparkles />}
             suffixIcon={<Icons.ChevronUp />}
           >
-            {referenceImage ? "Copy Edit" : "Prompt Input"}
+            {referenceImage ? t('photoStudio.copyImage', {defaultValue: "Copy image"}) : t('editorPromptInput.promptInput', {defaultValue: "Prompt Input"})}
           </Button>
         </Tooltip>
       </Box>
@@ -384,8 +386,8 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
                 <InputArea
                   placeholder={
                     outputSettings.editingMode === "edit"
-                      ? "Describe what you want to change"
-                      : "Describe the scene of your background"
+                      ? t('editorPromptInput.placeholder.edit', {defaultValue: "Describe what you want to change"})
+                      : t('editorPromptInput.placeholder.enhance', {defaultValue: "Describe the scene of your background"})
                   }
                   size="small"
                   maxLength={2000}
@@ -422,8 +424,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
                   >
                     <Icons.SparklesFilled size="14px" />
                     <Text size="tiny">
-                      Leave this blank to let AI choose the best background for
-                      your product
+                      {t('editorPromptInput.blankPromptHint', {defaultValue: "Leave this blank to let AI choose the best background for your product"})}
                     </Text>
                   </Box>
                 )}
@@ -445,14 +446,14 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
             <Tooltip
               content={
                 noSelectedImage
-                  ? "You must select an image before generating."
+                  ? t('editorPromptInput.tooltip.selectImage', {defaultValue: "You must select an image before generating."})
                   : promptIsEmpty
-                  ? "You must provide a prompt before generating."
+                  ? t('editorPromptInput.tooltip.providePrompt', {defaultValue: "You must provide a prompt before generating."})
                   : outputSettings.editingMode === "edit"
-                  ? "Apply Changes (⌘ + ↵)"
+                  ? t('editorPromptInput.tooltip.applyChanges', {defaultValue: "Apply Changes (⌘ + ↵)"})
                   : showRegenerateActions && !referenceImage
-                  ? "Regenerate Image (⌘ + ↵)"
-                  : "Generate Image (⌘ + ↵)"
+                  ? t('editorPromptInput.tooltip.regenerateImage', {defaultValue: "Regenerate Image (⌘ + ↵)"})
+                  : t('editorPromptInput.tooltip.generateImage', {defaultValue: "Generate Image (⌘ + ↵)"})
               }
               size="small"
               disabled={false}
@@ -466,10 +467,10 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
                 }}
                 title={
                   outputSettings.editingMode === "edit"
-                    ? "Apply Changes (⌘ + ↵)"
+                    ? t('editorPromptInput.tooltip.applyChanges', {defaultValue: "Apply Changes (⌘ + ↵)"})
                     : showRegenerateActions && !referenceImage
-                    ? "Regenerate Image (⌘ + ↵)"
-                    : "Generate Image (⌘ + ↵)"
+                    ? t('editorPromptInput.tooltip.regenerateImage', {defaultValue: "Regenerate Image (⌘ + ↵)"})
+                    : t('editorPromptInput.tooltip.generateImage', {defaultValue: "Generate Image (⌘ + ↵)"})
                 }
                 disabled={notAllowed || apiLoading}
               >
@@ -491,7 +492,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
           className={classes["collapsed-icon"]}
         >
           <Tooltip
-            content="Minimize Editor Panel"
+            content={t('photoStudio.minimizeEditorPanel', {defaultValue: "Minimize Editor Panel"})}
             placement="bottom"
             size="small"
             enterDelay={1000}
@@ -503,7 +504,7 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
               onClick={() =>
                 setPromptInputState((prev) => ({ ...prev, collapsed: true }))
               }
-              aria-label="Collapse Editor Panel"
+              aria-label={t('photoStudio.collapseEditorPanel', {defaultValue: "Collapse Editor Panel"})}
             >
               <Icons.ChevronDown />
             </IconButton>
