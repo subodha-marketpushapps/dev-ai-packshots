@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "Hình ảnh Sản phẩm AI - [Dev]",
+    "pageSubtitle": "Nâng tầm hình ảnh sản phẩm của bạn bằng Công nghệ Cải thiện Hình ảnh dựa trên AI.",
+    "openDModal": "Mở Modal D"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Chúng tôi không thể tải dữ liệu Cài đặt",
+      "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại."
+    },
+    "wixDataSyncError": {
+      "title": "Chúng tôi không thể đồng bộ hóa với dữ liệu Trang web Wix",
+      "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại."
+    },
+    "imagesLoadError": {
+      "title": "Chúng tôi không thể tải hình ảnh của bạn",
+      "subtitle": "Đã xảy ra sự cố khi tìm nạp hình ảnh bạn đã tạo. Vui lòng thử lại sau."
+    },
+    "draftImagesLoadError": {
+      "title": "Chúng tôi không thể tải dữ liệu Hình ảnh Bản nháp",
+      "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại."
+    },
+    "instanceUpdateError": {
+      "title": "Chúng tôi không thể cập nhật phiên bản của bạn",
+      "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại."
+    },
+    "tableLoadError": {
+      "title": "Chúng tôi không thể tải bảng này",
+      "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại.",
+      "intercomMessage": "Tôi đang gặp sự cố tải dữ liệu với bảng 'Sản phẩm Cửa hàng'. Bạn có thể giúp tôi việc này không?",
+      "intercomButtonLabel": "Liên hệ Hỗ trợ"
+    },
+    "genericError": {
+      "title": "Chúng tôi không thể tải dữ liệu",
+      "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Chưa chọn sản phẩm nào",
+      "subtitle": "Vui lòng chọn một sản phẩm để mở studio ảnh."
+    },
+    "productNotFound": {
+      "title": "Không tìm thấy sản phẩm",
+      "subtitle": "Không tìm thấy sản phẩm đã chọn. Vui lòng thử lại hoặc chọn một sản phẩm khác."
+    },
+    "noDraftImages": {
+      "title": "Không có Hình ảnh Bản nháp",
+      "subtitle": "Tạo hình ảnh đầu tiên của bạn với Photo Studio."
+    },
+    "noStoreProducts": {
+      "title": "Không có Sản phẩm Cửa hàng",
+      "subtitle": "Sau khi bạn thêm sản phẩm vào cửa hàng, chúng sẽ xuất hiện ở đây."
+    },
+    "startTypingToSearch": {
+      "title": "Bắt đầu gõ để tìm kiếm sản phẩm",
+      "subtitle": "Nhập ít nhất 3 ký tự để tìm kiếm trong danh mục sản phẩm của bạn"
+    },
+    "noSearchResults": {
+      "title": "Không có kết quả tìm kiếm",
+      "subtitle": "Không có mục nào khớp với tiêu chí tìm kiếm của bạn. Hãy thử tìm kiếm bằng một từ khóa khác"
+    },
+    "noLiveImages": "Không tìm thấy hình ảnh trực tiếp nào",
+    "noDraftImagesFound": "Không tìm thấy hình ảnh bản nháp nào"
+  },
+  "loading": {
+    "loadingData": "Đang tải dữ liệu...",
+    "loadingImages": "Đang tải Hình ảnh...",
+    "loading": "Đang tải..."
+  },
+  "tabs": {
+    "products": "Sản phẩm",
+    "draftImages": "Hình ảnh Bản nháp"
+  },
+  "productsTab": {
+    "title": "Sản phẩm Cửa hàng",
+    "subtitle": "Quản lý, Chỉnh sửa và Nâng cao hình ảnh sản phẩm của bạn để phù hợp hoàn hảo với thương hiệu của bạn.",
+    "generateImage": "Tạo Hình ảnh",
+    "createNewProduct": "Tạo Sản phẩm Mới",
+    "storeProducts": "Sản phẩm Cửa hàng",
+    "searchPlaceholder": "Tìm kiếm sản phẩm...",
+    "refreshData": "Làm mới dữ liệu",
+    "tableInfo": "Sử dụng bảng này để xem và chỉnh sửa hình ảnh sản phẩm liên quan đến sản phẩm cửa hàng.",
+    "columnProductName": "Tên sản phẩm",
+    "columnProductImages": "Hình ảnh Sản phẩm",
+    "columnGeneratedImages": "Hình ảnh Đã tạo",
+    "viewAllGeneratedImages": "Xem tất cả hình ảnh đã tạo",
+    "liveImageAlt": "Hình ảnh Trực tiếp",
+    "generatedImageAlt": "Hình ảnh Đã tạo",
+    "edit": "Chỉnh sửa"
+  },
+  "statisticsTab": {
+    "title": "Thống kê",
+    "subtitle": "Giám sát doanh số bán hàng được tạo bởi ứng dụng Chiết khấu Số lượng và Khối lượng.",
+    "content": "Nội dung thống kê sẽ ở đây"
+  },
+  "galleryTab": {
+    "title": "Hình ảnh Bản nháp",
+    "subtitle": "Khám phá bộ sưu tập hình ảnh bạn đã tạo.",
+    "loadMore": "Tải thêm"
+  },
+  "settingsTab": {
+    "title": "Cài đặt",
+    "subtitle": "Thêm hoặc thay đổi chi tiết đã đăng ký trong ứng dụng Chiết khấu Số lượng và Khối lượng.",
+    "cancel": "Hủy",
+    "saveSettings": "Lưu Cài đặt",
+    "notifications": "Thông báo",
+    "receiveStatsEmails": "Nhận Email Thống kê và Chuyển đổi",
+    "onWeeklyBasis": "Hàng tuần",
+    "never": "Không bao giờ",
+    "notificationEmail": "Email Thông báo",
+    "emailPlaceholder": "sample@mail.com",
+    "settingsSaved": "Đã lưu cài đặt thành công!",
+    "settingsSaveFailed": "Lưu cài đặt không thành công. Vui lòng thử lại.",
+    "invalidEmailFormat": "Định dạng email không hợp lệ",
+    "emailRequired": "Email là bắt buộc"
+  },
+  "photoStudio": {
+    "showProductImages": "Hiển thị Hình ảnh Sản phẩm",
+    "productImages": {
+      "title": "Hình ảnh Sản phẩm",
+      "subtitle": "Chỉnh sửa và cập nhật hình ảnh sản phẩm của bạn."
+    },
+    "generatedImages": {
+      "title": "Hình ảnh Đã tạo",
+      "subtitle": "Chỉnh sửa và cập nhật hình ảnh bản nháp của bạn."
+    },
+    "infoIconDescription": "Biểu tượng thông tin cung cấp thêm thông tin về một phần.",
+    "liveImages": "Hình ảnh Trực tiếp",
+    "draftImages": "Hình ảnh Bản nháp",
+    "allDraftImages": "Tất cả Hình ảnh Bản nháp",
+    "changeOrderOfLiveImages": "Thay đổi thứ tự Hình ảnh Trực tiếp",
+    "liveImagesInfo": "Xin lưu ý rằng hình ảnh từ Hình ảnh Trực tiếp sẽ được xuất bản trực tiếp và hiển thị cho khách hàng của bạn trên trang web hoạt động của bạn.",
+    "draftImagesInfo": "Hình ảnh Bản nháp chỉ hiển thị với bạn. Thoải mái thử nghiệm cho đến khi bạn tìm thấy hình ảnh phù hợp và sẵn sàng Xuất bản nó thành Hình ảnh Trực tiếp.",
+    "noLiveImagesMessage": "Bạn có thể xuất bản hình ảnh bản nháp để làm cho chúng trực tiếp.",
+    "draftImagesEmptyMessage": "Bạn có thể chọn hình ảnh trực tiếp hoặc tải lên hình ảnh mới để bắt đầu chỉnh sửa.",
+    "draftImagesEmptyMessageNoLive": "Bạn có thể tải lên hình ảnh để bắt đầu chỉnh sửa.",
+    "uploadImage": "Tải lên Hình ảnh",
+    "uploadMultipleImages": "Tải lên Nhiều Hình ảnh",
+    "copyEditHint": "Chọn một hoặc nhiều hình ảnh để áp dụng Sao chép Chỉnh sửa, hoặc nhấp vào \"Tải lên Hình ảnh\" để tải lên hình ảnh mới.",
+    "imageCurrentlyPublishing": "Hình ảnh này hiện đang được xuất bản.",
+    "maxReferenceImages": "Bạn có thể chọn hoặc tải lên tối đa 6 hình ảnh để sao chép chỉnh sửa.",
+    "dashboard": "Bảng điều khiển",
+    "imageStudio": "Studio Hình ảnh",
+    "compareChanges": "So sánh Thay đổi",
+    "removeImage": "Xóa Hình ảnh",
+    "removeUploadedImage": "Xóa hình ảnh đã tải lên",
+    "goBack": "Quay lại (Esc)",
+    "fullscreen": "Toàn màn hình",
+    "compare": "So sánh",
+    "details": "Chi tiết",
+    "editModes": {
+      "label": "Chế độ Chỉnh sửa",
+      "infoContent": "Chọn cách bạn muốn chỉnh sửa hình ảnh của mình"
+    },
+    "openDashboard": "Mở Bảng điều khiển Hình ảnh Sản phẩm AI",
+    "dismiss": "Bỏ qua",
+    "generateInfo": "Thông tin tạo",
+    "copyImage": "Sao chép hình ảnh",
+    "delete": "Xóa",
+    "unpublishGuide": "Hướng dẫn Hủy xuất bản",
+    "addRectangleHint": "Thêm gợi ý hình chữ nhật",
+    "addCircleHint": "Thêm gợi ý hình tròn",
+    "showEditorPanel": "Hiển thị Bảng điều khiển Trình chỉnh sửa",
+    "minimizeEditorPanel": "Thu nhỏ Bảng điều khiển Trình chỉnh sửa",
+    "collapseEditorPanel": "Thu gọn Bảng điều khiển Trình chỉnh sửa",
+    "cancelCopyEdit": "Hủy Sao chép Chỉnh sửa",
+    "prevProduct": "Sản phẩm Trước",
+    "nextProduct": "Sản phẩm Tiếp theo",
+    "searchAndSelectProduct": "Tìm kiếm và chọn một sản phẩm...",
+    "openEditProductDashboardPage": "Mở Trang Bảng điều khiển Chỉnh sửa Sản phẩm",
+    "viewLiveProductPage": "Xem Trang Sản phẩm Trực tiếp"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Nâng cấp Gói Hình ảnh Sản phẩm AI của Bạn",
+      "primaryButton": "Nâng cấp",
+      "secondaryButton": "Không phải Bây giờ",
+      "exhaustedCredits": "Bạn đã hết tín dụng gói của mình. Nâng cấp lên gói cao hơn để tạo hình ảnh mới.",
+      "upgradeForMoreCredits": "Nâng cấp gói của bạn để nhận thêm tín dụng."
+    },
+    "unpublish": {
+      "title": "Hủy xuất bản Hình ảnh Trực tiếp",
+      "primaryButton": "Chỉnh sửa Trang Sản phẩm",
+      "secondaryButton": "Hủy",
+      "content": "Hiện tại bạn không thể xóa/hủy xuất bản hình ảnh trực tiếp từ Hình ảnh Sản phẩm AI. Vui lòng truy cập Trang Chỉnh sửa Sản phẩm và xóa nó khỏi đó.",
+      "refreshNote": "Làm mới trang của bạn để xem các thay đổi.",
+      "refresh": "Làm mới"
+    },
+    "imageDetails": {
+      "prompt": "Lời nhắc (Prompt)",
+      "generateId": "ID tạo (Generate Id)",
+      "createdAt": "Được tạo lúc",
+      "notAvailable": "Không có sẵn",
+      "initialImage": "Hình ảnh Ban đầu",
+      "generatedImage": "Hình ảnh Đã tạo"
+    },
+    "aiPackshotsDashboard": {
+      "title": "Hình ảnh Sản phẩm AI",
+      "subtitle": "Nâng cao và tinh chỉnh hình ảnh sản phẩm của bạn dễ dàng bằng các công cụ hỗ trợ AI.",
+      "dismiss": "Bỏ qua",
+      "unknownUser": "Hình ảnh Sản phẩm AI (Người dùng không xác định)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Vui lòng đợi thao tác hiện tại hoàn tất."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Hình ảnh Đã tạo",
+      "infoContent": "Chọn số lượng hình ảnh cần tạo"
+    },
+    "autoUpscaling": {
+      "label": "Tự động Nâng cấp độ phân giải (Auto Upscaling)",
+      "infoContent": "Khi được bật, hình ảnh nhỏ hơn 1000px sẽ tự động được nâng cấp lên x2 để có chất lượng tốt hơn."
+    },
+    "setOutputDimensions": {
+      "label": "Đặt kích thước đầu ra",
+      "infoContent": "Chọn tỷ lệ khung hình cho các hình ảnh đã tạo."
+    },
+    "photoQuality": {
+      "label": "Chất lượng ảnh",
+      "infoContent": "Thêm thẻ chất lượng để nâng cao hình ảnh của bạn"
+    },
+    "productPositioning": {
+      "infoContent": "Chọn cách đặt sản phẩm trong hình ảnh"
+    },
+    "backgroundType": {
+      "infoContent": "Chọn loại nền cho hình ảnh của bạn"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Trải nghiệm tổng thể của bạn với Hình ảnh Sản phẩm AI như thế nào?"
+  },
+  "common": {
+    "refresh": "Làm mới",
+    "openSupportCenter": "Mở trung tâm hỗ trợ",
+    "subscriptionInfo": "Thông tin Đăng ký",
+    "showSubscriptionInfo": "Hiển thị Thông tin Đăng ký",
+    "chooseProduct": "Chọn một sản phẩm...",
+    "viewAllLiveProductImages": "Xem tất cả hình ảnh Sản phẩm trực tiếp",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Chọn Sản phẩm",
+    "openModal": "Mở Modal",
+    "noProductsAvailable": "Không có sản phẩm nào có sẵn trong cửa hàng của bạn",
+    "chooseProductPlaceholder": "Chọn một sản phẩm..."
+  },
+  "editorPromptInput": {
+    "editImage": "Chỉnh sửa Hình ảnh",
+    "enhanceImage": "Nâng cao Hình ảnh",
+    "enhanceSettingsButton": "Cài đặt Nâng cao",
+    "promptInput": "Nhập Lời nhắc (Prompt)",
+    "placeholder": {
+      "edit": "Mô tả những gì bạn muốn thay đổi",
+      "enhance": "Mô tả cảnh nền của bạn"
+    },
+    "blankPromptHint": "Để trống phần này để AI chọn nền tốt nhất cho sản phẩm của bạn",
+    "tooltip": {
+      "selectImage": "Bạn phải chọn một hình ảnh trước khi tạo.",
+      "providePrompt": "Bạn phải cung cấp lời nhắc (prompt) trước khi tạo.",
+      "applyChanges": "Áp dụng Thay đổi (⌘ + ↵)",
+      "regenerateImage": "Tạo lại Hình ảnh (⌘ + ↵)",
+      "generateImage": "Tạo Hình ảnh (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Nâng cao Hình ảnh",
+      "enhanceImageDescription": "Tùy chỉnh chất lượng ảnh của bạn và làm cho đầu ra cuối cùng phù hợp với tầm nhìn của bạn.",
+      "editImage": "Chỉnh sửa Hình ảnh",
+      "editImageDescription": "Chỉnh sửa hình ảnh bằng hướng dẫn văn bản và nhận được đầu ra mong muốn."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Thêm Cải thiện",
+      "productPosition": "Vị trí sản phẩm",
+      "photoBackground": "Nền Ảnh",
+      "original": "Nguyên bản",
+      "color": "Màu sắc",
+      "aiGenerated": "Được tạo bởi AI",
+      "qualityOptions": {
+        "clarity": "Độ rõ của hình ảnh",
+        "sharpness": "Độ sắc nét",
+        "lighting": "Ánh sáng",
+        "shadows": "Bóng",
+        "color": "Cân bằng Màu sắc"
+      }
+    },
+    "outputSettings": {
+      "costs": "Chi phí",
+      "imageCredits": "Tín dụng Hình ảnh",
+      "aspectRatio": {
+        "original": "Nguyên bản"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "không có lời nhắc (prompt)",
+      "matchReference": "Tạo ra kết quả khớp sát với hình ảnh tham chiếu này"
+    },
+    "originalPreview": {
+      "goBack": "Quay lại Bản gốc"
+    },
+    "feedback": {
+      "terrible": "Rất tệ",
+      "bad": "Tệ",
+      "okay": "Ổn",
+      "good": "Tốt",
+      "great": "Tuyệt vời",
+      "skip": "Bỏ qua",
+      "continue": "Tiếp tục",
+      "negativeExperienceMessage": "Xin chào! Tôi đã có trải nghiệm tiêu cực với Hình ảnh Sản phẩm AI. Bạn có thể giúp tôi việc này không?",
+      "okExperienceMessage": "Xin chào! Tôi đã có trải nghiệm 'Ổn' với Hình ảnh Sản phẩm AI. Nhưng bạn có thể giúp tôi về [Lý do] không?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI có thể mắc lỗi, vui lòng xem xét kỹ hình ảnh của bạn.",
+    "subscriptionNotAvailable": "Đăng ký không khả dụng. Vui lòng làm mới hoặc liên hệ hỗ trợ.",
+    "imageUpload": {
+      "canOnlyAdd": "Bạn chỉ có thể thêm tối đa {{count}} hình ảnh nữa.",
+      "fileSizeExceeded": "Tệp {{fileName}} vượt quá giới hạn 10 MB.",
+      "failedToRead": "Không đọc được tệp hình ảnh {{fileName}}.",
+      "failedToLoad": "Không tải được hình ảnh {{fileName}}. Vui lòng thử một tệp khác.",
+      "errorReading": "Lỗi khi đọc tệp hình ảnh {{fileName}}.",
+      "maxReferenceImagesReached": "Bạn đã đạt đến tối đa 6 hình ảnh tham chiếu.",
+      "maxReachedOrProcessing": "Bạn đã đạt đến tối đa 6 hình ảnh tham chiếu hoặc quá trình tải lên đang được xử lý.",
+      "dropImageHere": "Thả hình ảnh của bạn vào đây",
+      "dropImagesHere": "Thả các hình ảnh của bạn vào đây",
+      "dragImageHere": "Kéo hình ảnh của bạn vào đây",
+      "dragImagesHere": "Kéo các hình ảnh của bạn vào đây",
+      "uploadFromComputer": "Hoặc tải lên hình ảnh từ máy tính của bạn",
+      "uploadMultipleFromComputer": "Hoặc tải lên nhiều hình ảnh từ máy tính của bạn"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Chỉnh sửa",
+    "copyEdits": "Sao chép Chỉnh sửa",
+    "publish": "Xuất bản",
+    "discard": "Hủy bỏ",
+    "generateInfo": "Thông tin tạo",
+    "copyImage": "Sao chép hình ảnh",
+    "delete": "Xóa",
+    "unpublishGuide": "Hướng dẫn Hủy xuất bản",
+    "reportProblem": "Báo cáo sự cố",
+    "noProductIdForPublishing": "Không có ID sản phẩm để xuất bản.",
+    "failedToPublish": "Không thể xuất bản hình ảnh.",
+    "noProductIdForUnpublishing": "Không có ID sản phẩm để hủy xuất bản.",
+    "failedToUnpublish": "Không thể hủy xuất bản hình ảnh.",
+    "failedToDelete": "Không thể xóa hình ảnh.",
+    "imageUploadCleared": "Đã xóa tải lên hình ảnh.",
+    "noImageToCopy": "Không có hình ảnh nào để sao chép.",
+    "couldNotGetCanvasContext": "Không thể lấy ngữ cảnh canvas",
+    "imageCopiedToClipboard": "Đã sao chép hình ảnh vào khay nhớ tạm!",
+    "clipboardWriteFailed": "Ghi vào khay nhớ tạm thất bại.",
+    "failedToCreateImageBlob": "Không thể tạo blob hình ảnh.",
+    "failedToLoadImageForCopying": "Không thể tải hình ảnh để sao chép.",
+    "failedToCopyImage": "Không thể sao chép hình ảnh.",
+    "noImageSelectedForGenerateInfo": "Chưa chọn hình ảnh nào để hiển thị thông tin tạo."
+  },
+  "panelFeedback": {
+    "feedback": "Phản hồi",
+    "overallQualityBad": "Chất lượng tổng thể kém",
+    "didNotRespectPrompt": "Nó không tôn trọng lời nhắc (prompt) của tôi",
+    "notRelevantToProduct": "Hình ảnh không liên quan đến sản phẩm",
+    "imageNotClear": "Hình ảnh không rõ ràng",
+    "other": "Khác",
+    "additionalFeedbackPlaceholder": "Vui lòng cung cấp phản hồi bổ sung",
+    "submit": "Gửi",
+    "feedbackSubmittedSuccessfully": "Đã gửi phản hồi thành công.",
+    "additional": "Bổ sung"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Vẽ Hình chữ nhật",
+    "drawing": "Đang vẽ...",
+    "deleteSelectedLayer": "Xóa Lớp đã chọn",
+    "resetImage": "Đặt lại Hình ảnh",
+    "downloadPreviewImage": "Tải xuống Hình ảnh Xem trước"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Không thể tạo hình ảnh.",
+    "retry": "Thử lại",
+    "deleting": "Đang xóa...",
+    "uploadedImage": "Hình ảnh Đã tải lên",
+    "removeImage": "Xóa Hình ảnh"
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "Imagens de Produto IA - [Dev]",
+    "pageSubtitle": "Eleve seus visuais de produto usando aprimoramento de imagem baseado em IA.",
+    "openDModal": "Abrir modal D"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Não foi possível carregar os dados de Configurações",
+      "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente."
+    },
+    "wixDataSyncError": {
+      "title": "Não foi possível sincronizar com os dados do site Wix",
+      "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente."
+    },
+    "imagesLoadError": {
+      "title": "Não foi possível carregar suas imagens",
+      "subtitle": "Houve um problema ao buscar suas imagens geradas. Por favor, tente novamente mais tarde."
+    },
+    "draftImagesLoadError": {
+      "title": "Não foi possível carregar os dados de Imagens Rascunho",
+      "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente."
+    },
+    "instanceUpdateError": {
+      "title": "Não foi possível atualizar sua instância",
+      "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente."
+    },
+    "tableLoadError": {
+      "title": "Não foi possível carregar esta tabela",
+      "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente.",
+      "intercomMessage": "Estou tendo um problema de carregamento de dados com a tabela 'Produtos da Loja'. Você pode me ajudar com isso?",
+      "intercomButtonLabel": "Contatar Suporte"
+    },
+    "genericError": {
+      "title": "Não foi possível carregar os dados",
+      "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Nenhum produto selecionado",
+      "subtitle": "Por favor, selecione um produto para abrir o estúdio de fotos."
+    },
+    "productNotFound": {
+      "title": "Produto não encontrado",
+      "subtitle": "O produto selecionado não pôde ser encontrado. Por favor, tente novamente ou selecione um produto diferente."
+    },
+    "noDraftImages": {
+      "title": "Sem Imagens Rascunho",
+      "subtitle": "Gere sua primeira imagem com o Estúdio de Fotos."
+    },
+    "noStoreProducts": {
+      "title": "Sem Produtos da Loja",
+      "subtitle": "Quando você adicionar produtos à loja, eles aparecerão aqui."
+    },
+    "startTypingToSearch": {
+      "title": "Comece a digitar para buscar produtos",
+      "subtitle": "Digite pelo menos 3 caracteres para buscar em seu catálogo de produtos"
+    },
+    "noSearchResults": {
+      "title": "Sem resultados de busca",
+      "subtitle": "Nenhum item corresponde aos seus critérios de busca. Tente buscar por outra palavra-chave"
+    },
+    "noLiveImages": "Nenhuma imagem ao vivo encontrada",
+    "noDraftImagesFound": "Nenhuma imagem rascunho encontrada"
+  },
+  "loading": {
+    "loadingData": "Carregando dados...",
+    "loadingImages": "Carregando Imagens...",
+    "loading": "Carregando..."
+  },
+  "tabs": {
+    "products": "Produtos",
+    "draftImages": "Imagens Rascunho"
+  },
+  "productsTab": {
+    "title": "Produtos da Loja",
+    "subtitle": "Gerencie, edite e melhore suas imagens de produtos para corresponder perfeitamente à sua marca.",
+    "generateImage": "Gerar Imagem",
+    "createNewProduct": "Criar Novo Produto",
+    "storeProducts": "Produtos da Loja",
+    "searchPlaceholder": "Buscar produtos...",
+    "refreshData": "Atualizar dados",
+    "tableInfo": "Use esta tabela para visualizar e editar imagens de produtos relacionadas aos produtos da loja.",
+    "columnProductName": "Nome do Produto",
+    "columnProductImages": "Imagens do Produto",
+    "columnGeneratedImages": "Imagens Geradas",
+    "viewAllGeneratedImages": "Ver todas as imagens geradas",
+    "liveImageAlt": "Imagem ao Vivo",
+    "generatedImageAlt": "Imagem Gerada",
+    "edit": "Editar"
+  },
+  "statisticsTab": {
+    "title": "Estatísticas",
+    "subtitle": "Monitore as vendas geradas pelo aplicativo de Desconto por Quantidade e Volume.",
+    "content": "O conteúdo de estatísticas vai aqui"
+  },
+  "galleryTab": {
+    "title": "Imagens Rascunho",
+    "subtitle": "Explore uma coleção de suas imagens geradas.",
+    "loadMore": "Carregar Mais"
+  },
+  "settingsTab": {
+    "title": "Configurações",
+    "subtitle": "Adicione ou altere detalhes registrados no aplicativo de Desconto por Quantidade e Volume.",
+    "cancel": "Cancelar",
+    "saveSettings": "Salvar Configurações",
+    "notifications": "Notificações",
+    "receiveStatsEmails": "Receber Emails de Estatísticas e Conversão",
+    "onWeeklyBasis": "Semanalmente",
+    "never": "Nunca",
+    "notificationEmail": "Email de Notificação",
+    "emailPlaceholder": "exemplo@mail.com",
+    "settingsSaved": "Configurações salvas com sucesso!",
+    "settingsSaveFailed": "Falha ao salvar as configurações. Por favor, tente novamente.",
+    "invalidEmailFormat": "Formato de email inválido",
+    "emailRequired": "O email é obrigatório"
+  },
+  "photoStudio": {
+    "showProductImages": "Mostrar Imagens do Produto",
+    "productImages": {
+      "title": "Imagens do Produto",
+      "subtitle": "Edite e atualize suas imagens de produtos."
+    },
+    "generatedImages": {
+      "title": "Imagens Geradas",
+      "subtitle": "Edite e atualize suas imagens rascunho."
+    },
+    "infoIconDescription": "O ícone de informação fornece mais informações sobre uma seção.",
+    "liveImages": "Imagens ao Vivo",
+    "draftImages": "Imagens Rascunho",
+    "allDraftImages": "Todas as Imagens Rascunho",
+    "changeOrderOfLiveImages": "Alterar ordem das Imagens ao Vivo",
+    "liveImagesInfo": "Por favor, note que as imagens de Imagens ao Vivo serão publicadas diretamente e visíveis para seus clientes em seu site ao vivo.",
+    "draftImagesInfo": "Imagens Rascunho são visíveis apenas para você. Sinta-se à vontade para experimentar até encontrar o ajuste certo e estar pronto para Publicar nas Imagens ao Vivo.",
+    "noLiveImagesMessage": "Você pode publicar imagens rascunho para torná-las ao vivo.",
+    "draftImagesEmptyMessage": "Você pode selecionar imagens ao vivo ou fazer upload de novas imagens para começar a editar.",
+    "draftImagesEmptyMessageNoLive": "Você pode fazer upload de imagens para começar a editar.",
+    "uploadImage": "Fazer Upload de Imagem",
+    "uploadMultipleImages": "Fazer Upload de Múltiplas Imagens",
+    "copyEditHint": "Selecione uma ou mais imagens para aplicar Edição de Cópia, ou clique em \"Fazer Upload de Imagem\" para fazer upload de novas.",
+    "imageCurrentlyPublishing": "Esta imagem está sendo publicada no momento.",
+    "maxReferenceImages": "Você pode selecionar ou fazer upload de até 6 imagens para edições de cópia.",
+    "dashboard": "Painel",
+    "imageStudio": "Estúdio de Imagens",
+    "compareChanges": "Comparar Alterações",
+    "removeImage": "Remover Imagem",
+    "removeUploadedImage": "Remover imagem enviada",
+    "goBack": "Voltar (Esc)",
+    "fullscreen": "Tela Cheia",
+    "compare": "Comparar",
+    "details": "Detalhes",
+    "editModes": {
+      "label": "Modos de Edição",
+      "infoContent": "Escolha como deseja editar sua imagem"
+    },
+    "openDashboard": "Abrir Painel de Imagens de Produto IA",
+    "dismiss": "Descartar",
+    "generateInfo": "Gerar informações",
+    "copyImage": "Copiar imagem",
+    "delete": "Excluir",
+    "unpublishGuide": "Guia de Despublicação",
+    "addRectangleHint": "Adicionar dica retangular",
+    "addCircleHint": "Adicionar dica circular",
+    "showEditorPanel": "Mostrar Painel do Editor",
+    "minimizeEditorPanel": "Minimizar Painel do Editor",
+    "collapseEditorPanel": "Recolher Painel do Editor",
+    "cancelCopyEdit": "Cancelar Edição de Cópia",
+    "prevProduct": "Produto Anterior",
+    "nextProduct": "Próximo Produto",
+    "searchAndSelectProduct": "Buscar e selecionar um produto...",
+    "openEditProductDashboardPage": "Abrir Página do Painel de Edição de Produto",
+    "viewLiveProductPage": "Ver Página de Produto ao Vivo"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Atualize Seu Plano de Imagens de Produto IA",
+      "primaryButton": "Atualizar",
+      "secondaryButton": "Agora Não",
+      "exhaustedCredits": "Você esgotou os créditos do seu plano. Atualize para um plano superior para gerar novas imagens.",
+      "upgradeForMoreCredits": "Atualize seu plano para obter mais créditos."
+    },
+    "unpublish": {
+      "title": "Despublicar Imagem ao Vivo",
+      "primaryButton": "Editar Página do Produto",
+      "secondaryButton": "Cancelar",
+      "content": "Neste momento você não pode excluir/despublicar imagens diretamente do Imagens de Produto IA. Por favor, visite a Página de Edição do Produto e remova-a de lá.",
+      "refreshNote": "Atualize sua página para ver as alterações.",
+      "refresh": "Atualizar"
+    },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "ID de Geração",
+      "createdAt": "Criado em",
+      "notAvailable": "N/D",
+      "initialImage": "Imagem Inicial",
+      "generatedImage": "Imagem Gerada"
+    },
+    "aiPackshotsDashboard": {
+      "title": "Imagens de Produto IA",
+      "subtitle": "Melhore e refine suas imagens de produtos sem esforço com ferramentas alimentadas por IA.",
+      "dismiss": "Descartar",
+      "unknownUser": "Imagens de Produto IA(Usuário desconhecido)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Por favor, aguarde a conclusão da operação atual."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Imagens Geradas",
+      "infoContent": "Selecione o número de imagens para gerar"
+    },
+    "autoUpscaling": {
+      "label": "Ampliação Automática",
+      "infoContent": "Quando habilitado, imagens menores que 1000px serão automaticamente ampliadas para x2 para melhor qualidade."
+    },
+    "setOutputDimensions": {
+      "label": "Definir dimensões de saída",
+      "infoContent": "Selecione a proporção para as imagens geradas."
+    },
+    "photoQuality": {
+      "label": "Qualidade da foto",
+      "infoContent": "Adicione tags de qualidade para melhorar sua imagem"
+    },
+    "productPositioning": {
+      "infoContent": "Escolha como o produto está posicionado na imagem"
+    },
+    "backgroundType": {
+      "infoContent": "Selecione o tipo de fundo para sua imagem"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Como foi sua experiência geral com Imagens de Produto IA?"
+  },
+  "common": {
+    "refresh": "Atualizar",
+    "openSupportCenter": "Abrir centro de suporte",
+    "subscriptionInfo": "Informações da Assinatura",
+    "showSubscriptionInfo": "Mostrar Informações da Assinatura",
+    "chooseProduct": "Escolher um produto...",
+    "viewAllLiveProductImages": "Ver todas as imagens de produtos ao vivo",
+    "copy": "Copiar",
+    "copied": "Copiado!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Selecionar Produto",
+    "openModal": "Abrir Modal",
+    "noProductsAvailable": "Nenhum produto disponível em sua loja",
+    "chooseProductPlaceholder": "Escolher um produto..."
+  },
+  "editorPromptInput": {
+    "editImage": "Editar Imagem",
+    "enhanceImage": "Melhorar Imagem",
+    "enhanceSettingsButton": "Configurações de Melhoria",
+    "promptInput": "Entrada de Prompt",
+    "placeholder": {
+      "edit": "Descreva o que você deseja alterar",
+      "enhance": "Descreva a cena do seu fundo"
+    },
+    "blankPromptHint": "Deixe isso em branco para permitir que a IA escolha o melhor fundo para seu produto",
+    "tooltip": {
+      "selectImage": "Você deve selecionar uma imagem antes de gerar.",
+      "providePrompt": "Você deve fornecer um prompt antes de gerar.",
+      "applyChanges": "Aplicar Alterações (⌘ + ↵)",
+      "regenerateImage": "Regenerar Imagem (⌘ + ↵)",
+      "generateImage": "Gerar Imagem (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Melhorar Imagem",
+      "enhanceImageDescription": "Personalize a qualidade da sua foto e faça a saída final corresponder à sua visão.",
+      "editImage": "Editar Imagem",
+      "editImageDescription": "Edite imagens com instruções de texto e obtenha a saída desejada."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Adicionar Melhoria",
+      "productPosition": "Posição do produto",
+      "photoBackground": "Fundo da Foto",
+      "original": "Original",
+      "color": "Cor",
+      "aiGenerated": "Gerado por IA",
+      "qualityOptions": {
+        "clarity": "Nitidez da imagem",
+        "sharpness": "Nitidez",
+        "lighting": "Iluminação",
+        "shadows": "Sombras",
+        "color": "Balanço de Cores"
+      }
+    },
+    "outputSettings": {
+      "costs": "Custos",
+      "imageCredits": "Créditos de Imagem",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "sem prompt",
+      "matchReference": "Gera resultados que correspondem de perto a esta imagem de referência"
+    },
+    "originalPreview": {
+      "goBack": "Voltar ao Original"
+    },
+    "feedback": {
+      "terrible": "Terrível",
+      "bad": "Ruim",
+      "okay": "Ok",
+      "good": "Bom",
+      "great": "Ótimo",
+      "skip": "Pular",
+      "continue": "Continuar",
+      "negativeExperienceMessage": "Olá! Tive uma experiência negativa com Imagens de Produto IA. Você pode me ajudar com isso?",
+      "okExperienceMessage": "Olá! Tive uma experiência OK com Imagens de Produto IA. Mas você pode me ajudar com [Motivo]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "A IA pode cometer erros, por favor revise suas imagens cuidadosamente.",
+    "subscriptionNotAvailable": "Assinatura não disponível. Por favor, atualize ou entre em contato com o suporte.",
+    "imageUpload": {
+      "canOnlyAdd": "Você só pode adicionar {{count}} imagem(ns) a mais.",
+      "fileSizeExceeded": "O arquivo {{fileName}} excede o limite de 10 MB.",
+      "failedToRead": "Falha ao ler o arquivo de imagem {{fileName}}.",
+      "failedToLoad": "Falha ao carregar a imagem {{fileName}}. Por favor, tente outro arquivo.",
+      "errorReading": "Erro ao ler o arquivo de imagem {{fileName}}.",
+      "maxReferenceImagesReached": "Você atingiu o máximo de 6 imagens de referência.",
+      "maxReachedOrProcessing": "Você atingiu o máximo de 6 imagens de referência ou os uploads estão sendo processados.",
+      "dropImageHere": "Solte sua imagem aqui",
+      "dropImagesHere": "Solte suas imagens aqui",
+      "dragImageHere": "Arraste sua imagem aqui",
+      "dragImagesHere": "Arraste suas imagens aqui",
+      "uploadFromComputer": "Ou faça upload de uma imagem do seu computador",
+      "uploadMultipleFromComputer": "Ou faça upload de múltiplas imagens do seu computador"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Editar",
+    "copyEdits": "Copiar Edições",
+    "publish": "Publicar",
+    "discard": "Descartar",
+    "generateInfo": "Gerar informações",
+    "copyImage": "Copiar imagem",
+    "delete": "Excluir",
+    "unpublishGuide": "Guia de Despublicação",
+    "reportProblem": "Reportar um problema",
+    "noProductIdForPublishing": "Nenhum ID de produto disponível para publicação.",
+    "failedToPublish": "Falha ao publicar imagem.",
+    "noProductIdForUnpublishing": "Nenhum ID de produto disponível para despublicação.",
+    "failedToUnpublish": "Falha ao despublicar imagem.",
+    "failedToDelete": "Falha ao excluir imagem.",
+    "imageUploadCleared": "Upload de imagem cancelado.",
+    "noImageToCopy": "Nenhuma imagem para copiar.",
+    "couldNotGetCanvasContext": "Não foi possível obter o contexto da tela",
+    "imageCopiedToClipboard": "Imagem copiada para a área de transferência!",
+    "clipboardWriteFailed": "Falha ao escrever na área de transferência.",
+    "failedToCreateImageBlob": "Falha ao criar o blob de imagem.",
+    "failedToLoadImageForCopying": "Falha ao carregar imagem para copiar.",
+    "failedToCopyImage": "Falha ao copiar imagem.",
+    "noImageSelectedForGenerateInfo": "Nenhuma imagem selecionada para mostrar informações de geração."
+  },
+  "panelFeedback": {
+    "feedback": "Feedback",
+    "overallQualityBad": "A qualidade geral é ruim",
+    "didNotRespectPrompt": "Não respeitou meu prompt",
+    "notRelevantToProduct": "A imagem não é relevante para o produto",
+    "imageNotClear": "A imagem não está clara",
+    "other": "Outro",
+    "additionalFeedbackPlaceholder": "Por favor, forneça feedback adicional",
+    "submit": "Enviar",
+    "feedbackSubmittedSuccessfully": "Feedback enviado com sucesso.",
+    "additional": "Adicional"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Desenhar Retângulo",
+    "drawing": "Desenhando...",
+    "deleteSelectedLayer": "Excluir Camada Selecionada",
+    "resetImage": "Redefinir Imagem",
+    "downloadPreviewImage": "Baixar Imagem de Prévia"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Não foi possível gerar a imagem.",
+    "retry": "Tentar Novamente",
+    "deleting": "Excluindo...",
+    "uploadedImage": "Imagem Enviada",
+    "removeImage": "Remover Imagem"
+  }
+}

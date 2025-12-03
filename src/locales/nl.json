@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI Productafbeeldingen - [Dev]",
+    "pageSubtitle": "Verbeter uw productafbeeldingen met AI-gestuurde beeldverbetering.",
+    "openDModal": "Open D-modal"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "We konden de instellingsgegevens niet laden",
+      "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw."
+    },
+    "wixDataSyncError": {
+      "title": "We konden niet synchroniseren met de Wix Site-gegevens",
+      "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw."
+    },
+    "imagesLoadError": {
+      "title": "We konden uw afbeeldingen niet laden",
+      "subtitle": "Er was een probleem bij het ophalen van uw gegenereerde afbeeldingen. Probeer het later opnieuw."
+    },
+    "draftImagesLoadError": {
+      "title": "We konden de conceptafbeeldingsgegevens niet laden",
+      "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw."
+    },
+    "instanceUpdateError": {
+      "title": "We konden uw instantie niet bijwerken",
+      "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw."
+    },
+    "tableLoadError": {
+      "title": "We konden deze tabel niet laden",
+      "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw.",
+      "intercomMessage": "Ik heb een probleem met het laden van gegevens met de tabel 'Winkelproducten'. Kunt u mij hiermee helpen?",
+      "intercomButtonLabel": "Contact opnemen met ondersteuning"
+    },
+    "genericError": {
+      "title": "We konden de gegevens niet laden",
+      "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Geen product geselecteerd",
+      "subtitle": "Selecteer een product om de fotostudio te openen."
+    },
+    "productNotFound": {
+      "title": "Product niet gevonden",
+      "subtitle": "Het geselecteerde product kon niet worden gevonden. Probeer het opnieuw of selecteer een ander product."
+    },
+    "noDraftImages": {
+      "title": "Geen Conceptafbeeldingen",
+      "subtitle": "Genereer uw eerste afbeelding met de Fotostudio."
+    },
+    "noStoreProducts": {
+      "title": "Geen Winkelproducten",
+      "subtitle": "Zodra u winkelproducten toevoegt, verschijnen ze hier."
+    },
+    "startTypingToSearch": {
+      "title": "Begin met typen om producten te zoeken",
+      "subtitle": "Voer minstens 3 tekens in om uw productcatalogus te doorzoeken"
+    },
+    "noSearchResults": {
+      "title": "Geen zoekresultaten",
+      "subtitle": "Geen items komen overeen met uw zoekcriteria. Probeer te zoeken op een ander trefwoord"
+    },
+    "noLiveImages": "Geen live afbeeldingen gevonden",
+    "noDraftImagesFound": "Geen conceptafbeeldingen gevonden"
+  },
+  "loading": {
+    "loadingData": "Gegevens laden...",
+    "loadingImages": "Afbeeldingen laden...",
+    "loading": "Laden..."
+  },
+  "tabs": {
+    "products": "Producten",
+    "draftImages": "Conceptafbeeldingen"
+  },
+  "productsTab": {
+    "title": "Winkelproducten",
+    "subtitle": "Beheer, bewerk en verbeter uw productafbeeldingen zodat ze perfect bij uw merk passen.",
+    "generateImage": "Afbeelding genereren",
+    "createNewProduct": "Nieuw product aanmaken",
+    "storeProducts": "Winkelproducten",
+    "searchPlaceholder": "Producten zoeken...",
+    "refreshData": "Gegevens vernieuwen",
+    "tableInfo": "Gebruik deze tabel om productafbeeldingen met betrekking tot winkelproducten te bekijken en te bewerken.",
+    "columnProductName": "Productnaam",
+    "columnProductImages": "Productafbeeldingen",
+    "columnGeneratedImages": "Gegenereerde Afbeeldingen",
+    "viewAllGeneratedImages": "Bekijk alle gegenereerde afbeeldingen",
+    "liveImageAlt": "Live Afbeelding",
+    "generatedImageAlt": "Gegenereerde Afbeelding",
+    "edit": "Bewerken"
+  },
+  "statisticsTab": {
+    "title": "Statistieken",
+    "subtitle": "Bewaak de verkoop gegenereerd door de Kwantiteits- en Volumekorting-app.",
+    "content": "Statistiekeninhoud komt hier"
+  },
+  "galleryTab": {
+    "title": "Conceptafbeeldingen",
+    "subtitle": "Ontdek een verzameling van uw gegenereerde afbeeldingen.",
+    "loadMore": "Meer laden"
+  },
+  "settingsTab": {
+    "title": "Instellingen",
+    "subtitle": "Voeg details toe of wijzig details die zijn geregistreerd in de Kwantiteits- en Volumekorting-app.",
+    "cancel": "Annuleren",
+    "saveSettings": "Instellingen opslaan",
+    "notifications": "Meldingen",
+    "receiveStatsEmails": "Statistieken en conversie-e-mails ontvangen",
+    "onWeeklyBasis": "Op wekelijkse basis",
+    "never": "Nooit",
+    "notificationEmail": "Meldings-e-mail",
+    "emailPlaceholder": "voorbeeld@mail.com",
+    "settingsSaved": "Instellingen succesvol opgeslagen!",
+    "settingsSaveFailed": "Opslaan van instellingen mislukt. Probeer het opnieuw.",
+    "invalidEmailFormat": "Ongeldige e-mailindeling",
+    "emailRequired": "E-mail is vereist"
+  },
+  "photoStudio": {
+    "showProductImages": "Toon Productafbeeldingen",
+    "productImages": {
+      "title": "Productafbeeldingen",
+      "subtitle": "Bewerk en werk uw productafbeeldingen bij."
+    },
+    "generatedImages": {
+      "title": "Gegenereerde Afbeeldingen",
+      "subtitle": "Bewerk en werk uw conceptafbeeldingen bij."
+    },
+    "infoIconDescription": "Het informatie-icoon geeft meer informatie over een sectie.",
+    "liveImages": "Live Afbeeldingen",
+    "draftImages": "Conceptafbeeldingen",
+    "allDraftImages": "Alle Conceptafbeeldingen",
+    "changeOrderOfLiveImages": "Volgorde van Live Afbeeldingen wijzigen",
+    "liveImagesInfo": "Houd er rekening mee dat de afbeeldingen van Live Afbeeldingen direct worden gepubliceerd en zichtbaar zijn voor uw klanten op uw live site.",
+    "draftImagesInfo": "Conceptafbeeldingen zijn alleen voor u zichtbaar. Experimenteer totdat u de juiste pasvorm vindt en klaar bent om deze te publiceren naar de Live Afbeeldingen.",
+    "noLiveImagesMessage": "U kunt conceptafbeeldingen publiceren om ze live te maken.",
+    "draftImagesEmptyMessage": "U kunt live afbeeldingen selecteren of nieuwe afbeeldingen uploaden om te beginnen met bewerken.",
+    "draftImagesEmptyMessageNoLive": "U kunt afbeeldingen uploaden om te beginnen met bewerken.",
+    "uploadImage": "Afbeelding uploaden",
+    "uploadMultipleImages": "Meerdere afbeeldingen uploaden",
+    "copyEditHint": "Selecteer een of meer afbeeldingen om Kopiëren te bewerken toe te passen, of klik op \"Afbeelding uploaden\" om nieuwe te uploaden.",
+    "imageCurrentlyPublishing": "Deze afbeelding wordt momenteel gepubliceerd.",
+    "maxReferenceImages": "U kunt maximaal 6 afbeeldingen selecteren of uploaden voor kopieerbewerkingen.",
+    "dashboard": "Dashboard",
+    "imageStudio": "Beeldstudio",
+    "compareChanges": "Wijzigingen vergelijken",
+    "removeImage": "Afbeelding verwijderen",
+    "removeUploadedImage": "Geüploade afbeelding verwijderen",
+    "goBack": "Terug (Esc)",
+    "fullscreen": "Volledig scherm",
+    "compare": "Vergelijken",
+    "details": "Details",
+    "editModes": {
+      "label": "Bewerken modi",
+      "infoContent": "Kies hoe u uw afbeelding wilt bewerken"
+    },
+    "openDashboard": "Open AI Productafbeeldingen Dashboard",
+    "dismiss": "Sluiten",
+    "generateInfo": "Genereer info",
+    "copyImage": "Afbeelding kopiëren",
+    "delete": "Verwijderen",
+    "unpublishGuide": "Handleiding voor depublicatie",
+    "addRectangleHint": "Rechthoekige hint toevoegen",
+    "addCircleHint": "Cirkelhint toevoegen",
+    "showEditorPanel": "Bewerkingspaneel tonen",
+    "minimizeEditorPanel": "Bewerkingspaneel minimaliseren",
+    "collapseEditorPanel": "Bewerkingspaneel inklappen",
+    "cancelCopyEdit": "Kopieerbewerking annuleren",
+    "prevProduct": "Vorig Product",
+    "nextProduct": "Volgend Product",
+    "searchAndSelectProduct": "Zoek en selecteer een product...",
+    "openEditProductDashboardPage": "Bewerk Product Dashboard Pagina openen",
+    "viewLiveProductPage": "Bekijk Live Product Pagina"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Upgrade uw AI Productafbeeldingen Plan",
+      "primaryButton": "Upgraden",
+      "secondaryButton": "Niet nu",
+      "exhaustedCredits": "U hebt uw plancredits uitgeput. Upgrade naar een hoger plan om nieuwe afbeeldingen te genereren.",
+      "upgradeForMoreCredits": "Upgrade uw plan om meer credits te krijgen."
+    },
+    "unpublish": {
+      "title": "Live Afbeelding Depubliceren",
+      "primaryButton": "Productpagina bewerken",
+      "secondaryButton": "Annuleren",
+      "content": "Op dit moment kunt u afbeeldingen niet rechtstreeks vanuit AI Productafbeeldingen verwijderen/depubliceren. Ga naar de Productpagina bewerken en verwijder ze daar.",
+      "refreshNote": "Vernieuw uw pagina om de wijzigingen te zien.",
+      "refresh": "Vernieuwen"
+    },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "Genereer-ID",
+      "createdAt": "Aangemaakt op",
+      "notAvailable": "N.v.t.",
+      "initialImage": "Initiële Afbeelding",
+      "generatedImage": "Gegenereerde Afbeelding"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI Productafbeeldingen",
+      "subtitle": "Verbeter en verfijn uw productafbeeldingen moeiteloos met AI-gestuurde tools.",
+      "dismiss": "Sluiten",
+      "unknownUser": "AI Productafbeeldingen (Onbekende gebruiker)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Wacht tot de huidige bewerking is voltooid."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Gegenereerde Afbeeldingen",
+      "infoContent": "Selecteer het aantal te genereren afbeeldingen"
+    },
+    "autoUpscaling": {
+      "label": "Auto Opschaling",
+      "infoContent": "Indien ingeschakeld, worden afbeeldingen kleiner dan 1000px automatisch opgeschaald naar x2 voor betere kwaliteit."
+    },
+    "setOutputDimensions": {
+      "label": "Uitvoerdimensies instellen",
+      "infoContent": "Selecteer de beeldverhouding voor de gegenereerde afbeeldingen."
+    },
+    "photoQuality": {
+      "label": "Fotokwaliteit",
+      "infoContent": "Voeg kwaliteitstags toe om uw afbeelding te verbeteren"
+    },
+    "productPositioning": {
+      "infoContent": "Kies hoe het product in de afbeelding wordt gepositioneerd"
+    },
+    "backgroundType": {
+      "infoContent": "Selecteer het achtergrondtype voor uw afbeelding"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Hoe was uw algehele ervaring met AI Productafbeeldingen?"
+  },
+  "common": {
+    "refresh": "Vernieuwen",
+    "openSupportCenter": "Ondersteuningscentrum openen",
+    "subscriptionInfo": "Abonnementsinfo",
+    "showSubscriptionInfo": "Toon Abonnementsinfo",
+    "chooseProduct": "Kies een product...",
+    "viewAllLiveProductImages": "Bekijk alle live Productafbeeldingen",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Selecteer Product",
+    "openModal": "Open Modal",
+    "noProductsAvailable": "Geen producten beschikbaar in uw winkel",
+    "chooseProductPlaceholder": "Kies een product..."
+  },
+  "editorPromptInput": {
+    "editImage": "Afbeelding bewerken",
+    "enhanceImage": "Afbeelding verbeteren",
+    "enhanceSettingsButton": "Verbeteringsinstellingen",
+    "promptInput": "Prompt Invoer",
+    "placeholder": {
+      "edit": "Beschrijf wat u wilt veranderen",
+      "enhance": "Beschrijf de scène van uw achtergrond"
+    },
+    "blankPromptHint": "Laat dit leeg om AI de beste achtergrond voor uw product te laten kiezen",
+    "tooltip": {
+      "selectImage": "U moet een afbeelding selecteren voordat u genereert.",
+      "providePrompt": "U moet een prompt opgeven voordat u genereert.",
+      "applyChanges": "Wijzigingen toepassen (⌘ + ↵)",
+      "regenerateImage": "Afbeelding opnieuw genereren (⌘ + ↵)",
+      "generateImage": "Afbeelding genereren (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Afbeelding verbeteren",
+      "enhanceImageDescription": "Pas uw fotokwaliteit aan en zorg ervoor dat de uiteindelijke uitvoer overeenkomt met uw visie.",
+      "editImage": "Afbeelding bewerken",
+      "editImageDescription": "Bewerk afbeeldingen met tekstinstructies en krijg de gewenste uitvoer."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Verbetering toevoegen",
+      "productPosition": "Productpositie",
+      "photoBackground": "Foto Achtergrond",
+      "original": "Origineel",
+      "color": "Kleur",
+      "aiGenerated": "AI Gegenereerd",
+      "qualityOptions": {
+        "clarity": "Beeldhelderheid",
+        "sharpness": "Scherpte",
+        "lighting": "Belichting",
+        "shadows": "Schaduwen",
+        "color": "Kleurbalans"
+      }
+    },
+    "outputSettings": {
+      "costs": "Kosten",
+      "imageCredits": "Beeldcredits",
+      "aspectRatio": {
+        "original": "Origineel"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "geen prompt",
+      "matchReference": "Genereert resultaten die nauw overeenkomen met deze referentieafbeelding"
+    },
+    "originalPreview": {
+      "goBack": "Terug naar Origineel"
+    },
+    "feedback": {
+      "terrible": "Vreselijk",
+      "bad": "Slecht",
+      "okay": "Oké",
+      "good": "Goed",
+      "great": "Geweldig",
+      "skip": "Overslaan",
+      "continue": "Doorgaan",
+      "negativeExperienceMessage": "Hallo! Ik had een negatieve ervaring met de AI Productafbeeldingen. Kunt u mij hiermee helpen?",
+      "okExperienceMessage": "Hallo! Ik had een redelijke ervaring met de AI Productafbeeldingen. Maar kunt u mij helpen met [Reason]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI kan fouten maken, controleer uw afbeeldingen zorgvuldig.",
+    "subscriptionNotAvailable": "Abonnement niet beschikbaar. Vernieuw of neem contact op met ondersteuning.",
+    "imageUpload": {
+      "canOnlyAdd": "U kunt slechts {{count}} meer afbeelding(en) toevoegen.",
+      "fileSizeExceeded": "Bestand {{fileName}} overschrijdt de limiet van 10 MB.",
+      "failedToRead": "Lezen van afbeeldingsbestand {{fileName}} mislukt.",
+      "failedToLoad": "Laden van afbeelding {{fileName}} mislukt. Probeer een ander bestand.",
+      "errorReading": "Fout bij het lezen van afbeeldingsbestand {{fileName}}.",
+      "maxReferenceImagesReached": "U hebt het maximum van 6 referentieafbeeldingen bereikt.",
+      "maxReachedOrProcessing": "U hebt het maximum van 6 referentieafbeeldingen bereikt of uploads worden verwerkt.",
+      "dropImageHere": "Zet uw afbeelding hier neer",
+      "dropImagesHere": "Zet uw afbeeldingen hier neer",
+      "dragImageHere": "Sleep uw afbeelding hierheen",
+      "dragImagesHere": "Sleep uw afbeeldingen hierheen",
+      "uploadFromComputer": "Of upload een afbeelding vanaf uw computer",
+      "uploadMultipleFromComputer": "Of upload meerdere afbeeldingen vanaf uw computer"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Bewerken",
+    "copyEdits": "Kopieer bewerkingen",
+    "publish": "Publiceren",
+    "discard": "Verwijderen",
+    "generateInfo": "Genereer info",
+    "copyImage": "Afbeelding kopiëren",
+    "delete": "Verwijderen",
+    "unpublishGuide": "Handleiding voor depublicatie",
+    "reportProblem": "Een probleem melden",
+    "noProductIdForPublishing": "Geen product-ID beschikbaar voor publicatie.",
+    "failedToPublish": "Publiceren van afbeelding mislukt.",
+    "noProductIdForUnpublishing": "Geen product-ID beschikbaar voor depublicatie.",
+    "failedToUnpublish": "Depubliceren van afbeelding mislukt.",
+    "failedToDelete": "Verwijderen van afbeelding mislukt.",
+    "imageUploadCleared": "Afbeelding uploaden gewist.",
+    "noImageToCopy": "Geen afbeelding om te kopiëren.",
+    "couldNotGetCanvasContext": "Kon canvascontext niet ophalen",
+    "imageCopiedToClipboard": "Afbeelding naar klembord gekopieerd!",
+    "clipboardWriteFailed": "Schrijven naar klembord mislukt.",
+    "failedToCreateImageBlob": "Mislukt om afbeeldings-Blob aan te maken.",
+    "failedToLoadImageForCopying": "Mislukt om afbeelding te laden voor kopiëren.",
+    "failedToCopyImage": "Kopiëren van afbeelding mislukt.",
+    "noImageSelectedForGenerateInfo": "Geen afbeelding geselecteerd om generatie-info te tonen."
+  },
+  "panelFeedback": {
+    "feedback": "Feedback",
+    "overallQualityBad": "De algehele kwaliteit is slecht",
+    "didNotRespectPrompt": "Het respecteerde mijn prompt niet",
+    "notRelevantToProduct": "De afbeelding is niet relevant voor het product",
+    "imageNotClear": "De afbeelding is niet duidelijk",
+    "other": "Anders",
+    "additionalFeedbackPlaceholder": "Gelieve aanvullende feedback te geven",
+    "submit": "Verzenden",
+    "feedbackSubmittedSuccessfully": "Feedback succesvol ingediend.",
+    "additional": "Aanvullend"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Rechthoek tekenen",
+    "drawing": "Tekenen...",
+    "deleteSelectedLayer": "Geselecteerde laag verwijderen",
+    "resetImage": "Afbeelding resetten",
+    "downloadPreviewImage": "Voorbeeldafbeelding downloaden"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Kan afbeelding niet genereren.",
+    "retry": "Opnieuw proberen",
+    "deleting": "Verwijderen...",
+    "uploadedImage": "Geüploade Afbeelding",
+    "removeImage": "Afbeelding verwijderen"
+  }
+}

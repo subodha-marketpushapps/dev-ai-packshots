@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI製品画像 - [開発]",
+    "pageSubtitle": "AIを活用した画像補正で製品画像を向上させましょう。",
+    "openDModal": "Dモーダルを開く"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "設定データを読み込めませんでした",
+      "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。"
+    },
+    "wixDataSyncError": {
+      "title": "Wixサイトデータと同期できませんでした",
+      "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。"
+    },
+    "imagesLoadError": {
+      "title": "画像を読み込めませんでした",
+      "subtitle": "生成された画像の取得中に問題が発生しました。後でもう一度お試しください。"
+    },
+    "draftImagesLoadError": {
+      "title": "下書き画像データを読み込めませんでした",
+      "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。"
+    },
+    "instanceUpdateError": {
+      "title": "インスタンスを更新できませんでした",
+      "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。"
+    },
+    "tableLoadError": {
+      "title": "このテーブルを読み込めませんでした",
+      "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。",
+      "intercomMessage": "「ストア製品」テーブルのデータ読み込みで問題が発生しています。手伝っていただけますか？",
+      "intercomButtonLabel": "サポートに連絡"
+    },
+    "genericError": {
+      "title": "データを読み込めませんでした",
+      "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。"
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "製品が選択されていません",
+      "subtitle": "製品を選択してフォトスタジオを開いてください。"
+    },
+    "productNotFound": {
+      "title": "製品が見つかりません",
+      "subtitle": "選択した製品が見つかりませんでした。もう一度お試しいただくか、別の製品を選択してください。"
+    },
+    "noDraftImages": {
+      "title": "下書き画像はありません",
+      "subtitle": "フォトスタジオで最初の画像を生成しましょう。"
+    },
+    "noStoreProducts": {
+      "title": "ストア製品がありません",
+      "subtitle": "ストア製品を追加すると、ここに表示されます。"
+    },
+    "startTypingToSearch": {
+      "title": "製品を検索するには入力を開始してください",
+      "subtitle": "製品カタログを検索するには、3文字以上入力してください"
+    },
+    "noSearchResults": {
+      "title": "検索結果がありません",
+      "subtitle": "検索条件に一致するアイテムはありませんでした。別のキーワードで検索してみてください"
+    },
+    "noLiveImages": "ライブ画像が見つかりませんでした",
+    "noDraftImagesFound": "下書き画像が見つかりませんでした"
+  },
+  "loading": {
+    "loadingData": "データを読み込み中...",
+    "loadingImages": "画像を読み込み中...",
+    "loading": "読み込み中..."
+  },
+  "tabs": {
+    "products": "製品",
+    "draftImages": "下書き画像"
+  },
+  "productsTab": {
+    "title": "ストア製品",
+    "subtitle": "製品画像を管理、編集、強化して、ブランドに完全にマッチさせましょう。",
+    "generateImage": "画像を生成",
+    "createNewProduct": "新しい製品を作成",
+    "storeProducts": "ストア製品",
+    "searchPlaceholder": "製品を検索...",
+    "refreshData": "データを更新",
+    "tableInfo": "このテーブルを使用して、ストア製品に関連する製品画像を表示および編集できます。",
+    "columnProductName": "製品名",
+    "columnProductImages": "製品画像",
+    "columnGeneratedImages": "生成された画像",
+    "viewAllGeneratedImages": "生成されたすべての画像を表示",
+    "liveImageAlt": "ライブ画像",
+    "generatedImageAlt": "生成された画像",
+    "edit": "編集"
+  },
+  "statisticsTab": {
+    "title": "統計",
+    "subtitle": "数量・ボリューム割引アプリで生成された売上を監視します。",
+    "content": "ここに統計コンテンツが入ります"
+  },
+  "galleryTab": {
+    "title": "下書き画像",
+    "subtitle": "生成された画像のコレクションを探索します。",
+    "loadMore": "さらに読み込む"
+  },
+  "settingsTab": {
+    "title": "設定",
+    "subtitle": "数量・ボリューム割引アプリに登録されている詳細を追加または編集します。",
+    "cancel": "キャンセル",
+    "saveSettings": "設定を保存",
+    "notifications": "通知",
+    "receiveStatsEmails": "統計およびコンバージョンメールを受信する",
+    "onWeeklyBasis": "毎週",
+    "never": "しない",
+    "notificationEmail": "通知メール",
+    "emailPlaceholder": "例: example@mail.com",
+    "settingsSaved": "設定が正常に保存されました！",
+    "settingsSaveFailed": "設定の保存に失敗しました。もう一度お試しください。",
+    "invalidEmailFormat": "無効なメール形式です",
+    "emailRequired": "メールアドレスは必須です"
+  },
+  "photoStudio": {
+    "showProductImages": "製品画像を表示",
+    "productImages": {
+      "title": "製品画像",
+      "subtitle": "製品画像を編集および更新します。"
+    },
+    "generatedImages": {
+      "title": "生成された画像",
+      "subtitle": "下書き画像を編集および更新します。"
+    },
+    "infoIconDescription": "情報アイコンはセクションに関する詳細情報を提供します。",
+    "liveImages": "ライブ画像",
+    "draftImages": "下書き画像",
+    "allDraftImages": "すべての下書き画像",
+    "changeOrderOfLiveImages": "ライブ画像の順序を変更",
+    "liveImagesInfo": "ライブ画像は直接公開され、ライブサイトのお客様に表示されることにご注意ください。",
+    "draftImagesInfo": "下書き画像はあなただけに見えるものです。納得のいくまで試行錯誤し、ライブ画像として公開する準備が整うまで自由に編集してください。",
+    "noLiveImagesMessage": "下書き画像を公開してライブにすることができます。",
+    "draftImagesEmptyMessage": "ライブ画像を選択するか、新しい画像をアップロードして編集を開始できます。",
+    "draftImagesEmptyMessageNoLive": "画像をアップロードして編集を開始できます。",
+    "uploadImage": "画像をアップロード",
+    "uploadMultipleImages": "複数の画像をアップロード",
+    "copyEditHint": "1つ以上の画像を選択してコピー編集を適用するか、「画像をアップロード」をクリックして新しい画像をアップロードします。",
+    "imageCurrentlyPublishing": "この画像は現在公開処理中です。",
+    "maxReferenceImages": "コピー編集に使用できる参照画像は最大6枚まで選択またはアップロードできます。",
+    "dashboard": "ダッシュボード",
+    "imageStudio": "画像スタジオ",
+    "compareChanges": "変更を比較",
+    "removeImage": "画像を削除",
+    "removeUploadedImage": "アップロードした画像を削除",
+    "goBack": "戻る (Esc)",
+    "fullscreen": "全画面表示",
+    "compare": "比較",
+    "details": "詳細",
+    "editModes": {
+      "label": "編集モード",
+      "infoContent": "画像をどのように編集するかを選択します"
+    },
+    "openDashboard": "AI製品画像ダッシュボードを開く",
+    "dismiss": "閉じる",
+    "generateInfo": "生成情報",
+    "copyImage": "画像をコピー",
+    "delete": "削除",
+    "unpublishGuide": "非公開ガイド",
+    "addRectangleHint": "長方形のヒントを追加",
+    "addCircleHint": "円のヒントを追加",
+    "showEditorPanel": "エディターパネルを表示",
+    "minimizeEditorPanel": "エディターパネルを最小化",
+    "collapseEditorPanel": "エディターパネルを折りたたむ",
+    "cancelCopyEdit": "コピー編集をキャンセル",
+    "prevProduct": "前の製品",
+    "nextProduct": "次の製品",
+    "searchAndSelectProduct": "製品を検索して選択...",
+    "openEditProductDashboardPage": "製品編集ダッシュボードページを開く",
+    "viewLiveProductPage": "ライブ製品ページを表示"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "AI製品画像プランをアップグレード",
+      "primaryButton": "アップグレード",
+      "secondaryButton": "今はしない",
+      "exhaustedCredits": "プランのクレジットを使い果たしました。新しい画像を生成するには、より高いプランにアップグレードしてください。",
+      "upgradeForMoreCredits": "より多くのクレジットを得るためにプランをアップグレードしてください。"
+    },
+    "unpublish": {
+      "title": "ライブ画像の非公開",
+      "primaryButton": "製品ページを編集",
+      "secondaryButton": "キャンセル",
+      "content": "現在、AI製品画像から直接画像を削除/非公開にすることはできません。製品編集ページにアクセスして、そこから画像を削除してください。",
+      "refreshNote": "変更を表示するにはページを更新してください。",
+      "refresh": "更新"
+    },
+    "imageDetails": {
+      "prompt": "プロンプト",
+      "generateId": "生成ID",
+      "createdAt": "作成日",
+      "notAvailable": "N/A",
+      "initialImage": "初期画像",
+      "generatedImage": "生成された画像"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI製品画像",
+      "subtitle": "AI駆動型のツールで製品画像を簡単に強化・洗練させましょう。",
+      "dismiss": "閉じる",
+      "unknownUser": "AI製品画像（不明なユーザー）"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "現在の操作が完了するまでお待ちください。"
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "生成される画像",
+      "infoContent": "生成する画像の枚数を選択します"
+    },
+    "autoUpscaling": {
+      "label": "自動アップスケール",
+      "infoContent": "有効にすると、1000px未満の画像は、より良い品質のために自動的に2倍にアップスケールされます。"
+    },
+    "setOutputDimensions": {
+      "label": "出力サイズを設定",
+      "infoContent": "生成される画像の縦横比を選択します。"
+    },
+    "photoQuality": {
+      "label": "写真の品質",
+      "infoContent": "画像補正のための品質タグを追加します"
+    },
+    "productPositioning": {
+      "infoContent": "画像内で製品がどのように配置されるかを選択します"
+    },
+    "backgroundType": {
+      "infoContent": "画像の背景タイプを選択します"
+    }
+  },
+  "feedback": {
+    "overallExperience": "AI製品画像の全体的な使用感はいかがでしたか？"
+  },
+  "common": {
+    "refresh": "更新",
+    "openSupportCenter": "サポートセンターを開く",
+    "subscriptionInfo": "サブスクリプション情報",
+    "showSubscriptionInfo": "サブスクリプション情報を表示",
+    "chooseProduct": "製品を選択...",
+    "viewAllLiveProductImages": "すべてのライブ製品画像を表示",
+    "copy": "コピー",
+    "copied": "コピーしました！"
+  },
+  "productModalSelector": {
+    "selectProduct": "製品を選択",
+    "openModal": "モーダルを開く",
+    "noProductsAvailable": "ストアで利用可能な製品はありません",
+    "chooseProductPlaceholder": "製品を選択..."
+  },
+  "editorPromptInput": {
+    "editImage": "画像を編集",
+    "enhanceImage": "画像を補正",
+    "enhanceSettingsButton": "補正設定",
+    "promptInput": "プロンプト入力",
+    "placeholder": {
+      "edit": "変更したい内容を説明してください",
+      "enhance": "背景のシーンを説明してください"
+    },
+    "blankPromptHint": "空欄のままにすると、AIが製品に最適な背景を選択します",
+    "tooltip": {
+      "selectImage": "生成する前に画像を選択する必要があります。",
+      "providePrompt": "生成する前にプロンプトを入力する必要があります。",
+      "applyChanges": "変更を適用 (⌘ + ↵)",
+      "regenerateImage": "画像を再生成 (⌘ + ↵)",
+      "generateImage": "画像を生成 (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "画像を補正",
+      "enhanceImageDescription": "写真の品質をカスタマイズし、最終的な出力があなたのビジョンに合致するようにします。",
+      "editImage": "画像を編集",
+      "editImageDescription": "テキスト指示で画像を編集し、希望する出力を得ます。"
+    },
+    "enhanceSettings": {
+      "addImprovement": "改善を追加",
+      "productPosition": "製品の位置",
+      "photoBackground": "写真の背景",
+      "original": "オリジナル",
+      "color": "色",
+      "aiGenerated": "AI生成",
+      "qualityOptions": {
+        "clarity": "画像の鮮明さ",
+        "sharpness": "シャープネス",
+        "lighting": "照明",
+        "shadows": "影",
+        "color": "色バランス"
+      }
+    },
+    "outputSettings": {
+      "costs": "コスト",
+      "imageCredits": "画像クレジット",
+      "aspectRatio": {
+        "original": "オリジナル"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "プロンプトなし",
+      "matchReference": "この参照画像と密接に一致する結果を生成します"
+    },
+    "originalPreview": {
+      "goBack": "オリジナルに戻る"
+    },
+    "feedback": {
+      "terrible": "ひどい",
+      "bad": "悪い",
+      "okay": "まあまあ",
+      "good": "良い",
+      "great": "素晴らしい",
+      "skip": "スキップ",
+      "continue": "続行",
+      "negativeExperienceMessage": "こんにちは！AI製品画像でネガティブな体験をしました。助けていただけますか？",
+      "okExperienceMessage": "こんにちは！AI製品画像でまあまあの体験をしました。ですが、[理由]について手伝っていただけますか？"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AIは間違いを犯す可能性があります。画像を注意深く確認してください。",
+    "subscriptionNotAvailable": "サブスクリプションは利用できません。アップグレードするか、サポートに連絡してください。",
+    "imageUpload": {
+      "canOnlyAdd": "あと{{count}}枚の画像しか追加できません。",
+      "fileSizeExceeded": "{{fileName}}のファイルサイズが10MBの制限を超えています。",
+      "failedToRead": "画像ファイル{{fileName}}を読み込めませんでした。",
+      "failedToLoad": "画像{{fileName}}を読み込めませんでした。別のファイルを試してください。",
+      "errorReading": "画像ファイル{{fileName}}の読み取り中にエラーが発生しました。",
+      "maxReferenceImagesReached": "参照画像の最大数（6枚）に達しました。",
+      "maxReachedOrProcessing": "参照画像の最大数（6枚）に達したか、アップロード処理中です。",
+      "dropImageHere": "ここに画像をドロップ",
+      "dropImagesHere": "ここに画像をドロップ",
+      "dragImageHere": "ここに画像をドラッグ",
+      "dragImagesHere": "ここに画像をドラッグ",
+      "uploadFromComputer": "または、コンピューターから画像をアップロード",
+      "uploadMultipleFromComputer": "または、コンピューターから複数の画像をアップロード"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "編集",
+    "copyEdits": "コピー編集",
+    "publish": "公開",
+    "discard": "破棄",
+    "generateInfo": "生成情報",
+    "copyImage": "画像をコピー",
+    "delete": "削除",
+    "unpublishGuide": "非公開ガイド",
+    "reportProblem": "問題を報告",
+    "noProductIdForPublishing": "公開に利用できる製品IDがありません。",
+    "failedToPublish": "画像の公開に失敗しました。",
+    "noProductIdForUnpublishing": "非公開に利用できる製品IDがありません。",
+    "failedToUnpublish": "画像の非公開に失敗しました。",
+    "failedToDelete": "画像の削除に失敗しました。",
+    "imageUploadCleared": "画像アップロードがクリアされました。",
+    "noImageToCopy": "コピーする画像がありません。",
+    "couldNotGetCanvasContext": "キャンバスコンテキストを取得できませんでした",
+    "imageCopiedToClipboard": "画像をクリップボードにコピーしました！",
+    "clipboardWriteFailed": "クリップボードへの書き込みに失敗しました。",
+    "failedToCreateImageBlob": "画像ブロブの作成に失敗しました。",
+    "failedToLoadImageForCopying": "コピー用の画像の読み込みに失敗しました。",
+    "failedToCopyImage": "画像のコピーに失敗しました。",
+    "noImageSelectedForGenerateInfo": "生成情報を表示するために画像が選択されていません。"
+  },
+  "panelFeedback": {
+    "feedback": "フィードバック",
+    "overallQualityBad": "全体的な品質が悪い",
+    "didNotRespectPrompt": "プロンプトを尊重しなかった",
+    "notRelevantToProduct": "画像が製品と関連していない",
+    "imageNotClear": "画像が鮮明ではない",
+    "other": "その他",
+    "additionalFeedbackPlaceholder": "追加のフィードバックを提供",
+    "submit": "送信",
+    "feedbackSubmittedSuccessfully": "フィードバックが正常に送信されました。",
+    "additional": "追加"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "長方形を描画",
+    "drawing": "描画中...",
+    "deleteSelectedLayer": "選択したレイヤーを削除",
+    "resetImage": "画像をリセット",
+    "downloadPreviewImage": "プレビュー画像をダウンロード"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "画像を生成できませんでした。",
+    "retry": "再試行",
+    "deleting": "削除中...",
+    "uploadedImage": "アップロードされた画像",
+    "removeImage": "画像を削除"
+  }
+}

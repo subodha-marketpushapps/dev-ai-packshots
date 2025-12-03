@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI 产品图像 - [开发版]",
+    "pageSubtitle": "使用 AI 驱动的图像增强技术提升您的产品视觉效果。",
+    "openDModal": "打开 D 模态框"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "我们无法加载设置数据",
+      "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。"
+    },
+    "wixDataSyncError": {
+      "title": "我们无法与 Wix 站点数据同步",
+      "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。"
+    },
+    "imagesLoadError": {
+      "title": "我们无法加载您的图像",
+      "subtitle": "获取您生成的图像时出现问题。请稍后重试。"
+    },
+    "draftImagesLoadError": {
+      "title": "我们无法加载草稿图像数据",
+      "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。"
+    },
+    "instanceUpdateError": {
+      "title": "我们无法更新您的实例",
+      "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。"
+    },
+    "tableLoadError": {
+      "title": "我们无法加载此表格",
+      "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。",
+      "intercomMessage": "我的“商店产品”表格数据加载有问题。您能帮我解决吗？",
+      "intercomButtonLabel": "联系支持"
+    },
+    "genericError": {
+      "title": "我们无法加载数据",
+      "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。"
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "未选择产品",
+      "subtitle": "请选择一个产品以打开照片工作室。"
+    },
+    "productNotFound": {
+      "title": "未找到产品",
+      "subtitle": "找不到所选产品。请重试或选择不同的产品。"
+    },
+    "noDraftImages": {
+      "title": "没有草稿图像",
+      "subtitle": "使用照片工作室生成您的第一张图像。"
+    },
+    "noStoreProducts": {
+      "title": "没有商店产品",
+      "subtitle": "一旦您添加了商店产品，它们将出现在这里。"
+    },
+    "startTypingToSearch": {
+      "title": "开始输入以搜索产品",
+      "subtitle": "输入至少 3 个字符以搜索您的产品目录"
+    },
+    "noSearchResults": {
+      "title": "没有搜索结果",
+      "subtitle": "没有项目符合您的搜索条件。请尝试使用其他关键词搜索"
+    },
+    "noLiveImages": "未找到实时图像",
+    "noDraftImagesFound": "未找到草稿图像"
+  },
+  "loading": {
+    "loadingData": "正在加载数据...",
+    "loadingImages": "正在加载图像...",
+    "loading": "正在加载..."
+  },
+  "tabs": {
+    "products": "产品",
+    "draftImages": "草稿图像"
+  },
+  "productsTab": {
+    "title": "商店产品",
+    "subtitle": "管理、编辑和增强您的产品图像，使其完美匹配您的品牌。",
+    "generateImage": "生成图像",
+    "createNewProduct": "创建新产品",
+    "storeProducts": "商店产品",
+    "searchPlaceholder": "搜索产品...",
+    "refreshData": "刷新数据",
+    "tableInfo": "使用此表格查看和编辑与商店产品相关的产品图像。",
+    "columnProductName": "产品名称",
+    "columnProductImages": "产品图像",
+    "columnGeneratedImages": "已生成图像",
+    "viewAllGeneratedImages": "查看所有已生成图像",
+    "liveImageAlt": "实时图像",
+    "generatedImageAlt": "已生成图像",
+    "edit": "编辑"
+  },
+  "statisticsTab": {
+    "title": "统计数据",
+    "subtitle": "监控“数量和批量折扣”应用程序产生的销售额。",
+    "content": "统计数据内容在此"
+  },
+  "galleryTab": {
+    "title": "草稿图像",
+    "subtitle": "浏览您生成的图像集合。",
+    "loadMore": "加载更多"
+  },
+  "settingsTab": {
+    "title": "设置",
+    "subtitle": "添加或更改在“数量和批量折扣”应用程序中注册的详细信息。",
+    "cancel": "取消",
+    "saveSettings": "保存设置",
+    "notifications": "通知",
+    "receiveStatsEmails": "接收统计和转化邮件",
+    "onWeeklyBasis": "每周一次",
+    "never": "从不",
+    "notificationEmail": "通知邮箱",
+    "emailPlaceholder": "sample@mail.com",
+    "settingsSaved": "设置保存成功！",
+    "settingsSaveFailed": "保存设置失败。请重试。",
+    "invalidEmailFormat": "电子邮件格式无效",
+    "emailRequired": "电子邮件是必填项"
+  },
+  "photoStudio": {
+    "showProductImages": "显示产品图像",
+    "productImages": {
+      "title": "产品图像",
+      "subtitle": "编辑和更新您的产品图像。"
+    },
+    "generatedImages": {
+      "title": "已生成图像",
+      "subtitle": "编辑和更新您的草稿图像。"
+    },
+    "infoIconDescription": "信息图标提供有关某部分的更多信息。",
+    "liveImages": "实时图像",
+    "draftImages": "草稿图像",
+    "allDraftImages": "所有草稿图像",
+    "changeOrderOfLiveImages": "更改实时图像的顺序",
+    "liveImagesInfo": "请注意，来自实时图像的图像将直接发布并在您的实时站点上对您的客户可见。",
+    "draftImagesInfo": "草稿图像仅对您可见。请随意尝试，直到找到合适的，并准备好将其“发布”到实时图像。",
+    "noLiveImagesMessage": "您可以发布草稿图像以使其生效。",
+    "draftImagesEmptyMessage": "您可以选择实时图像或上传新图像开始编辑。",
+    "draftImagesEmptyMessageNoLive": "您可以上传图像开始编辑。",
+    "uploadImage": "上传图像",
+    "uploadMultipleImages": "上传多个图像",
+    "copyEditHint": "选择一个或多个图像以应用“复制编辑”，或点击“上传图像”以上传新图像。",
+    "imageCurrentlyPublishing": "此图像当前正在发布。",
+    "maxReferenceImages": "您最多可以选择或上传 6 张图像进行复制编辑。",
+    "dashboard": "仪表板",
+    "imageStudio": "图像工作室",
+    "compareChanges": "比较更改",
+    "removeImage": "移除图像",
+    "removeUploadedImage": "移除已上传图像",
+    "goBack": "返回 (Esc)",
+    "fullscreen": "全屏",
+    "compare": "比较",
+    "details": "详细信息",
+    "editModes": {
+      "label": "编辑模式",
+      "infoContent": "选择您希望如何编辑图像"
+    },
+    "openDashboard": "打开 AI 产品图像仪表板",
+    "dismiss": "关闭",
+    "generateInfo": "生成信息",
+    "copyImage": "复制图像",
+    "delete": "删除",
+    "unpublishGuide": "取消发布指南",
+    "addRectangleHint": "添加矩形提示",
+    "addCircleHint": "添加圆形提示",
+    "showEditorPanel": "显示编辑器面板",
+    "minimizeEditorPanel": "最小化编辑器面板",
+    "collapseEditorPanel": "折叠编辑器面板",
+    "cancelCopyEdit": "取消复制编辑",
+    "prevProduct": "上一个产品",
+    "nextProduct": "下一个产品",
+    "searchAndSelectProduct": "搜索并选择一个产品...",
+    "openEditProductDashboardPage": "打开编辑产品仪表板页面",
+    "viewLiveProductPage": "查看实时产品页面"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "升级您的 AI 产品图像计划",
+      "primaryButton": "升级",
+      "secondaryButton": "暂不",
+      "exhaustedCredits": "您的计划点数已用完。请升级到更高计划以生成新图像。",
+      "upgradeForMoreCredits": "升级您的计划以获得更多点数。"
+    },
+    "unpublish": {
+      "title": "实时图像取消发布",
+      "primaryButton": "编辑产品页面",
+      "secondaryButton": "取消",
+      "content": "目前您无法直接从 AI 产品图像中删除/取消发布图像。请访问“编辑产品页面”并从那里删除它。",
+      "refreshNote": "刷新您的页面以查看更改。",
+      "refresh": "刷新"
+    },
+    "imageDetails": {
+      "prompt": "提示 (Prompt)",
+      "generateId": "生成 ID",
+      "createdAt": "创建于",
+      "notAvailable": "不可用",
+      "initialImage": "初始图像",
+      "generatedImage": "已生成图像"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI 产品图像",
+      "subtitle": "使用 AI 驱动的工具轻松增强和优化您的产品图像。",
+      "dismiss": "关闭",
+      "unknownUser": "AI 产品图像（未知用户）"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "请等待当前操作完成。"
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "已生成图像",
+      "infoContent": "选择要生成的图像数量"
+    },
+    "autoUpscaling": {
+      "label": "自动放大 (Auto Upscaling)",
+      "infoContent": "启用后，小于 1000 像素的图像将自动放大 2 倍以获得更好的质量。"
+    },
+    "setOutputDimensions": {
+      "label": "设置输出尺寸",
+      "infoContent": "选择生成图像的纵横比。"
+    },
+    "photoQuality": {
+      "label": "照片质量",
+      "infoContent": "添加质量标签以增强您的图像"
+    },
+    "productPositioning": {
+      "infoContent": "选择产品在图像中的定位方式"
+    },
+    "backgroundType": {
+      "infoContent": "选择图像的背景类型"
+    }
+  },
+  "feedback": {
+    "overallExperience": "您对 AI 产品图像的整体体验如何？"
+  },
+  "common": {
+    "refresh": "刷新",
+    "openSupportCenter": "打开支持中心",
+    "subscriptionInfo": "订阅信息",
+    "showSubscriptionInfo": "显示订阅信息",
+    "chooseProduct": "选择一个产品...",
+    "viewAllLiveProductImages": "查看所有实时产品图像",
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "productModalSelector": {
+    "selectProduct": "选择产品",
+    "openModal": "打开模态框",
+    "noProductsAvailable": "您的商店中没有可用的产品",
+    "chooseProductPlaceholder": "选择一个产品..."
+  },
+  "editorPromptInput": {
+    "editImage": "编辑图像",
+    "enhanceImage": "增强图像",
+    "enhanceSettingsButton": "增强设置",
+    "promptInput": "提示输入 (Prompt Input)",
+    "placeholder": {
+      "edit": "描述您想更改的内容",
+      "enhance": "描述您的背景场景"
+    },
+    "blankPromptHint": "留空可让 AI 为您的产品选择最佳背景",
+    "tooltip": {
+      "selectImage": "您必须在生成前选择一张图像。",
+      "providePrompt": "您必须在生成前提供一个提示。",
+      "applyChanges": "应用更改 (⌘ + ↵)",
+      "regenerateImage": "重新生成图像 (⌘ + ↵)",
+      "generateImage": "生成图像 (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "增强图像",
+      "enhanceImageDescription": "自定义您的照片质量，使最终输出符合您的愿景。",
+      "editImage": "编辑图像",
+      "editImageDescription": "使用文本指令编辑图像并获得所需的输出。"
+    },
+    "enhanceSettings": {
+      "addImprovement": "添加改进",
+      "productPosition": "产品位置",
+      "photoBackground": "照片背景",
+      "original": "原始",
+      "color": "颜色",
+      "aiGenerated": "AI 生成",
+      "qualityOptions": {
+        "clarity": "图像清晰度",
+        "sharpness": "锐度",
+        "lighting": "光照",
+        "shadows": "阴影",
+        "color": "色彩平衡"
+      }
+    },
+    "outputSettings": {
+      "costs": "费用",
+      "imageCredits": "图像点数",
+      "aspectRatio": {
+        "original": "原始"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "无提示",
+      "matchReference": "生成的结果与此参考图像高度匹配"
+    },
+    "originalPreview": {
+      "goBack": "返回原始图像"
+    },
+    "feedback": {
+      "terrible": "极差",
+      "bad": "差",
+      "okay": "一般",
+      "good": "好",
+      "great": "极好",
+      "skip": "跳过",
+      "continue": "继续",
+      "negativeExperienceMessage": "您好！我对 AI 产品图像的体验不佳。您能帮我解决这个问题吗？",
+      "okExperienceMessage": "您好！我对 AI 产品图像的体验还 '一般'。但您能帮我解决 [原因] 吗？"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI 可能会犯错，请仔细查看您的图像。",
+    "subscriptionNotAvailable": "订阅不可用。请刷新或联系支持。",
+    "imageUpload": {
+      "canOnlyAdd": "您只能再添加 {{count}} 张图像。",
+      "fileSizeExceeded": "文件 {{fileName}} 超过 10 MB 的限制。",
+      "failedToRead": "读取图像文件 {{fileName}} 失败。",
+      "failedToLoad": "加载图像 {{fileName}} 失败。请尝试另一个文件。",
+      "errorReading": "读取图像文件 {{fileName}} 时出错。",
+      "maxReferenceImagesReached": "您已达到 6 张参考图像的最大限制。",
+      "maxReachedOrProcessing": "您已达到 6 张参考图像的最大限制或正在处理上传。",
+      "dropImageHere": "将您的图像拖放到此处",
+      "dropImagesHere": "将您的图像拖放到此处",
+      "dragImageHere": "将您的图像拖到此处",
+      "dragImagesHere": "将您的图像拖到此处",
+      "uploadFromComputer": "或从您的计算机上传图像",
+      "uploadMultipleFromComputer": "或从您的计算机上传多张图像"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "编辑",
+    "copyEdits": "复制编辑",
+    "publish": "发布",
+    "discard": "放弃",
+    "generateInfo": "生成信息",
+    "copyImage": "复制图像",
+    "delete": "删除",
+    "unpublishGuide": "取消发布指南",
+    "reportProblem": "报告问题",
+    "noProductIdForPublishing": "没有可用于发布的任何产品 ID。",
+    "failedToPublish": "发布图像失败。",
+    "noProductIdForUnpublishing": "没有可用于取消发布的任何产品 ID。",
+    "failedToUnpublish": "取消发布图像失败。",
+    "failedToDelete": "删除图像失败。",
+    "imageUploadCleared": "已清除图像上传。",
+    "noImageToCopy": "没有可复制的图像。",
+    "couldNotGetCanvasContext": "无法获取画布上下文",
+    "imageCopiedToClipboard": "图像已复制到剪贴板！",
+    "clipboardWriteFailed": "写入剪贴板失败。",
+    "failedToCreateImageBlob": "创建图像 Blob 失败。",
+    "failedToLoadImageForCopying": "加载用于复制的图像失败。",
+    "failedToCopyImage": "复制图像失败。",
+    "noImageSelectedForGenerateInfo": "未选择图像来显示生成信息。"
+  },
+  "panelFeedback": {
+    "feedback": "反馈",
+    "overallQualityBad": "整体质量差",
+    "didNotRespectPrompt": "它没有遵循我的提示",
+    "notRelevantToProduct": "图像与产品不相关",
+    "imageNotClear": "图像不清晰",
+    "other": "其他",
+    "additionalFeedbackPlaceholder": "请提供额外反馈",
+    "submit": "提交",
+    "feedbackSubmittedSuccessfully": "反馈提交成功。",
+    "additional": "额外"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "绘制矩形",
+    "drawing": "正在绘制...",
+    "deleteSelectedLayer": "删除所选图层",
+    "resetImage": "重置图像",
+    "downloadPreviewImage": "下载预览图像"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "无法生成图像。",
+    "retry": "重试",
+    "deleting": "正在删除...",
+    "uploadedImage": "已上传图像",
+    "removeImage": "移除图像"
+  }
+}

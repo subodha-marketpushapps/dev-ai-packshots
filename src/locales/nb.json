@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI Produktbilder - [Utvikling]",
+    "pageSubtitle": "Forbedre produktbildene dine med AI-drevet bildeforbedring.",
+    "openDModal": "Åpne D-modal"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Kunne ikke laste inn innstillingsdata",
+      "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter."
+    },
+    "wixDataSyncError": {
+      "title": "Kunne ikke synkronisere med Wix nettsteddata",
+      "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter."
+    },
+    "imagesLoadError": {
+      "title": "Kunne ikke laste inn bilder",
+      "subtitle": "Det oppstod et problem under henting av genererte bilder. Prøv igjen senere."
+    },
+    "draftImagesLoadError": {
+      "title": "Kunne ikke laste inn utkastbildedata",
+      "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter."
+    },
+    "instanceUpdateError": {
+      "title": "Kunne ikke oppdatere instansen",
+      "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter."
+    },
+    "tableLoadError": {
+      "title": "Kunne ikke laste inn denne tabellen",
+      "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter.",
+      "intercomMessage": "Det er et problem med innlasting av data for 'Butikkprodukter'-tabellen. Kan du hjelpe meg?",
+      "intercomButtonLabel": "Kontakt kundestøtte"
+    },
+    "genericError": {
+      "title": "Kunne ikke laste inn data",
+      "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Ingen produkter valgt",
+      "subtitle": "Velg et produkt for å åpne fotostudioet."
+    },
+    "productNotFound": {
+      "title": "Produktet ble ikke funnet",
+      "subtitle": "Det valgte produktet kunne ikke bli funnet. Prøv igjen eller velg et annet produkt."
+    },
+    "noDraftImages": {
+      "title": "Ingen utkastbilder",
+      "subtitle": "Generer ditt første bilde i fotostudioet."
+    },
+    "noStoreProducts": {
+      "title": "Ingen butikkprodukter",
+      "subtitle": "Legg til butikkprodukter, og de vil vises her."
+    },
+    "startTypingToSearch": {
+      "title": "Begynn å skrive for å søke etter produkter",
+      "subtitle": "Skriv inn minst 3 tegn for å søke i produktkatalogen"
+    },
+    "noSearchResults": {
+      "title": "Ingen søkeresultater",
+      "subtitle": "Ingen elementer samsvarte med søket ditt. Prøv å søke med et annet nøkkelord"
+    },
+    "noLiveImages": "Finner ingen live-bilder",
+    "noDraftImagesFound": "Finner ingen utkastbilder"
+  },
+  "loading": {
+    "loadingData": "Laster inn data...",
+    "loadingImages": "Laster inn bilder...",
+    "loading": "Laster inn..."
+  },
+  "tabs": {
+    "products": "Produkter",
+    "draftImages": "Utkastbilder"
+  },
+  "productsTab": {
+    "title": "Butikkprodukter",
+    "subtitle": "Administrer, rediger og forbedre produktbildene dine for å matche merkevaren din perfekt.",
+    "generateImage": "Generer bilde",
+    "createNewProduct": "Opprett nytt produkt",
+    "storeProducts": "Butikkprodukter",
+    "searchPlaceholder": "Søk etter produkt...",
+    "refreshData": "Oppdater data",
+    "tableInfo": "Bruk denne tabellen til å se og redigere produktbilder relatert til butikkproduktene dine.",
+    "columnProductName": "Produktnavn",
+    "columnProductImages": "Produktbilder",
+    "columnGeneratedImages": "Genererte bilder",
+    "viewAllGeneratedImages": "Vis alle genererte bilder",
+    "liveImageAlt": "Live-bilde",
+    "generatedImageAlt": "Generert bilde",
+    "edit": "Rediger"
+  },
+  "statisticsTab": {
+    "title": "Statistikk",
+    "subtitle": "Overvåk salget generert av Kvantums- og Volumrabatt-appen.",
+    "content": "Statistikk innhold kommer her"
+  },
+  "galleryTab": {
+    "title": "Utkastbilder",
+    "subtitle": "Utforsk samlingen av genererte bilder.",
+    "loadMore": "Last inn mer"
+  },
+  "settingsTab": {
+    "title": "Innstillinger",
+    "subtitle": "Legg til eller rediger detaljer registrert med Kvantums- og Volumrabatt-appen.",
+    "cancel": "Avbryt",
+    "saveSettings": "Lagre innstillinger",
+    "notifications": "Varsler",
+    "receiveStatsEmails": "Motta e-post for statistikk og konverteringer",
+    "onWeeklyBasis": "Ukentlig",
+    "never": "Aldri",
+    "notificationEmail": "Varslings-e-post",
+    "emailPlaceholder": "Eks: example@mail.com",
+    "settingsSaved": "Innstillinger lagret!",
+    "settingsSaveFailed": "Klarte ikke å lagre innstillingene. Prøv igjen.",
+    "invalidEmailFormat": "Ugyldig e-postformat",
+    "emailRequired": "E-post er påkrevd"
+  },
+  "photoStudio": {
+    "showProductImages": "Vis produktbilder",
+    "productImages": {
+      "title": "Produktbilder",
+      "subtitle": "Rediger og oppdater produktbildene dine."
+    },
+    "generatedImages": {
+      "title": "Genererte bilder",
+      "subtitle": "Rediger og oppdater utkastbildene dine."
+    },
+    "infoIconDescription": "Informasjonsikonet gir mer detaljert informasjon om seksjonen.",
+    "liveImages": "Live-bilder",
+    "draftImages": "Utkastbilder",
+    "allDraftImages": "Alle utkastbilder",
+    "changeOrderOfLiveImages": "Endre rekkefølgen på live-bilder",
+    "liveImagesInfo": "Vær oppmerksom på at live-bilder publiseres direkte og er synlige for kunder på nettstedet.",
+    "draftImagesInfo": "Utkastbilder er kun synlige for deg. Eksperimenter fritt til du er fornøyd, og rediger dem til de er klare til å publiseres som live-bilder.",
+    "noLiveImagesMessage": "Du kan publisere utkastbilder for å gjøre dem til live-bilder.",
+    "draftImagesEmptyMessage": "Du kan velge live-bilder eller laste opp nye for å begynne å redigere.",
+    "draftImagesEmptyMessageNoLive": "Du kan laste opp bilder for å starte redigeringen.",
+    "uploadImage": "Last opp bilde",
+    "uploadMultipleImages": "Last opp flere bilder",
+    "copyEditHint": "Velg ett eller flere bilder for å bruke kopiredigering, eller klikk 'Last opp bilde' for å laste opp et nytt.",
+    "imageCurrentlyPublishing": "Dette bildet publiseres for øyeblikket.",
+    "maxReferenceImages": "Du kan velge eller laste opp opptil 6 referansebilder for kopiredigering.",
+    "dashboard": "Dashbord",
+    "imageStudio": "Bildestudio",
+    "compareChanges": "Sammenlign endringer",
+    "removeImage": "Fjern bilde",
+    "removeUploadedImage": "Fjern opplastet bilde",
+    "goBack": "Gå tilbake (Esc)",
+    "fullscreen": "Fullskjerm",
+    "compare": "Sammenlign",
+    "details": "Detaljer",
+    "editModes": {
+      "label": "Redigeringsmodus",
+      "infoContent": "Velg hvordan du vil redigere bildet ditt"
+    },
+    "openDashboard": "Åpne AI Produktbilde dashbord",
+    "dismiss": "Lukk",
+    "generateInfo": "Genereringsinfo",
+    "copyImage": "Kopier bilde",
+    "delete": "Slett",
+    "unpublishGuide": "Veiledning for oppheving av publisering",
+    "addRectangleHint": "Legg til rektangelhint",
+    "addCircleHint": "Legg til sirkelhint",
+    "showEditorPanel": "Vis redigeringspanel",
+    "minimizeEditorPanel": "Minimer redigeringspanel",
+    "collapseEditorPanel": "Skjul redigeringspanel",
+    "cancelCopyEdit": "Avbryt kopiredigering",
+    "prevProduct": "Forrige produkt",
+    "nextProduct": "Neste produkt",
+    "searchAndSelectProduct": "Søk og velg produkt...",
+    "openEditProductDashboardPage": "Åpne dashbordsiden for produktredigering",
+    "viewLiveProductPage": "Vis live produktside"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Oppgrader AI Produktbilde-planen",
+      "primaryButton": "Oppgrader",
+      "secondaryButton": "Ikke nå",
+      "exhaustedCredits": "Du har brukt opp kredittene dine. Oppgrader til en høyere plan for å generere nye bilder.",
+      "upgradeForMoreCredits": "Oppgrader planen din for å få flere kreditter."
+    },
+    "unpublish": {
+      "title": "Opphev publisering av live-bilde",
+      "primaryButton": "Rediger produktside",
+      "secondaryButton": "Avbryt",
+      "content": "Det er for øyeblikket ikke mulig å slette/oppheve publisering av bilder direkte fra AI Produktbilder. Vennligst gå til produktredigeringssiden for å fjerne dem derfra.",
+      "refreshNote": "Last inn siden på nytt for å se endringene.",
+      "refresh": "Last inn på nytt"
+    },
+    "imageDetails": {
+      "prompt": "Ledetekst (Prompt)",
+      "generateId": "Genererings-ID",
+      "createdAt": "Opprettet dato",
+      "notAvailable": "Ikke tilgjengelig",
+      "initialImage": "Opprinnelig bilde",
+      "generatedImage": "Generert bilde"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI Produktbilder",
+      "subtitle": "Forbedre og foredle produktbildene dine enkelt med AI-drevne verktøy.",
+      "dismiss": "Lukk",
+      "unknownUser": "AI Produktbilder (Ukjent bruker)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Vent til gjeldende operasjon er fullført."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Bilder som skal genereres",
+      "infoContent": "Velg antall bilder som skal genereres"
+    },
+    "autoUpscaling": {
+      "label": "Automatisk oppskalering",
+      "infoContent": "Når aktivert, blir bilder under 1000px automatisk oppskalert 2x for bedre kvalitet."
+    },
+    "setOutputDimensions": {
+      "label": "Angi utgangsdimensjoner",
+      "infoContent": "Velg størrelsesforholdet for bildene som skal genereres."
+    },
+    "photoQuality": {
+      "label": "Fotokvalitet",
+      "infoContent": "Legg til kvalitetstagger for bildeforbedring"
+    },
+    "productPositioning": {
+      "infoContent": "Velg hvordan produktet skal plasseres i bildet"
+    },
+    "backgroundType": {
+      "infoContent": "Velg bakgrunnstype for bildet"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Hvordan var din generelle opplevelse med AI Produktbilder?"
+  },
+  "common": {
+    "refresh": "Oppdater",
+    "openSupportCenter": "Åpne kundesenter",
+    "subscriptionInfo": "Abonnementsinformasjon",
+    "showSubscriptionInfo": "Vis abonnementsinformasjon",
+    "chooseProduct": "Velg produkt...",
+    "viewAllLiveProductImages": "Vis alle live produktbilder",
+    "copy": "Kopier",
+    "copied": "Kopiert!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Velg produkt",
+    "openModal": "Åpne modal",
+    "noProductsAvailable": "Ingen produkter tilgjengelig i butikken",
+    "chooseProductPlaceholder": "Velg produkt..."
+  },
+  "editorPromptInput": {
+    "editImage": "Rediger bilde",
+    "enhanceImage": "Forbedre bilde",
+    "enhanceSettingsButton": "Forbedringsinnstillinger",
+    "promptInput": "Ledetekst (Prompt) inndata",
+    "placeholder": {
+      "edit": "Beskriv hva du ønsker å endre",
+      "enhance": "Beskriv bakgrunnsscenen"
+    },
+    "blankPromptHint": "Hvis du lar det stå tomt, vil AI velge den beste bakgrunnen for produktet ditt",
+    "tooltip": {
+      "selectImage": "Du må velge et bilde før du genererer.",
+      "providePrompt": "Du må angi en ledetekst før du genererer.",
+      "applyChanges": "Bruk endringer (⌘ + ↵)",
+      "regenerateImage": "Generer bilde på nytt (⌘ + ↵)",
+      "generateImage": "Generer bilde (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Forbedre bilde",
+      "enhanceImageDescription": "Tilpass fotokvaliteten og sørg for at sluttresultatet samsvarer med din visjon.",
+      "editImage": "Rediger bilde",
+      "editImageDescription": "Rediger bildet med tekstinstruksjoner og få ønsket resultat."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Legg til forbedring",
+      "productPosition": "Produktposisjon",
+      "photoBackground": "Fotobakgrunn",
+      "original": "Original",
+      "color": "Farge",
+      "aiGenerated": "AI-generert",
+      "qualityOptions": {
+        "clarity": "Bildeklarhet",
+        "sharpness": "Skarphet",
+        "lighting": "Belysning",
+        "shadows": "Skygger",
+        "color": "Fargebalanse"
+      }
+    },
+    "outputSettings": {
+      "costs": "Kostnad",
+      "imageCredits": "Bildekreditter",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "Ingen ledetekst (Prompt)",
+      "matchReference": "Generer et resultat som er tett matchet med dette referansebildet"
+    },
+    "originalPreview": {
+      "goBack": "Gå tilbake til originalen"
+    },
+    "feedback": {
+      "terrible": "Forferdelig",
+      "bad": "Dårlig",
+      "okay": "Greit",
+      "good": "Bra",
+      "great": "Flott",
+      "skip": "Hopp over",
+      "continue": "Fortsett",
+      "negativeExperienceMessage": "Hei! Jeg hadde en negativ opplevelse med AI Produktbilder. Kan dere hjelpe meg?",
+      "okExperienceMessage": "Hei! Jeg hadde en grei opplevelse med AI Produktbilder, men kan dere hjelpe meg med [reason]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI kan gjøre feil. Vennligst se gjennom bildet nøye.",
+    "subscriptionNotAvailable": "Abonnement er ikke tilgjengelig. Oppgrader eller kontakt kundestøtte.",
+    "imageUpload": {
+      "canOnlyAdd": "Du kan kun legge til {{count}} flere bilder.",
+      "fileSizeExceeded": "Filstørrelsen for {{fileName}} overskrider grensen på 10MB.",
+      "failedToRead": "Klarte ikke å lese bildefilen {{fileName}}.",
+      "failedToLoad": "Klarte ikke å laste inn bildet {{fileName}}. Prøv en annen fil.",
+      "errorReading": "Feil ved lesing av bildefilen {{fileName}}.",
+      "maxReferenceImagesReached": "Maksimalt antall referansebilder (6) er nådd.",
+      "maxReachedOrProcessing": "Maksimalt antall referansebilder (6) er nådd eller opplasting pågår.",
+      "dropImageHere": "Slipp bildet her",
+      "dropImagesHere": "Slipp bildene her",
+      "dragImageHere": "Dra bildet hit",
+      "dragImagesHere": "Dra bildene hit",
+      "uploadFromComputer": "Eller last opp et bilde fra datamaskinen",
+      "uploadMultipleFromComputer": "Eller last opp flere bilder fra datamaskinen"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Rediger",
+    "copyEdits": "Kopiredigeringer",
+    "publish": "Publiser",
+    "discard": "Forkast",
+    "generateInfo": "Genereringsinfo",
+    "copyImage": "Kopier bilde",
+    "delete": "Slett",
+    "unpublishGuide": "Veiledning for oppheving av publisering",
+    "reportProblem": "Rapporter problem",
+    "noProductIdForPublishing": "Ingen produkt-ID tilgjengelig for publisering.",
+    "failedToPublish": "Klarte ikke å publisere bildet.",
+    "noProductIdForUnpublishing": "Ingen produkt-ID tilgjengelig for oppheving av publisering.",
+    "failedToUnpublish": "Klarte ikke å oppheve publiseringen av bildet.",
+    "failedToDelete": "Klarte ikke å slette bildet.",
+    "imageUploadCleared": "Bildeopplasting tømt.",
+    "noImageToCopy": "Ingen bilde å kopiere.",
+    "couldNotGetCanvasContext": "Kunne ikke hente lerretskontekst",
+    "imageCopiedToClipboard": "Bildet kopiert til utklippstavlen!",
+    "clipboardWriteFailed": "Klarte ikke å skrive til utklippstavlen.",
+    "failedToCreateImageBlob": "Klarte ikke å opprette bilde-Blob.",
+    "failedToLoadImageForCopying": "Klarte ikke å laste inn bilde for kopiering.",
+    "failedToCopyImage": "Klarte ikke å kopiere bilde.",
+    "noImageSelectedForGenerateInfo": "Ingen bilde valgt for å vise genereringsinfo."
+  },
+  "panelFeedback": {
+    "feedback": "Tilbakemelding",
+    "overallQualityBad": "Generell kvalitet er dårlig",
+    "didNotRespectPrompt": "Respekterte ikke ledeteksten (prompt)",
+    "notRelevantToProduct": "Bildet er ikke relevant for produktet",
+    "imageNotClear": "Bildet er ikke klart",
+    "other": "Annet",
+    "additionalFeedbackPlaceholder": "Gi ytterligere tilbakemelding",
+    "submit": "Send inn",
+    "feedbackSubmittedSuccessfully": "Tilbakemelding sendt.",
+    "additional": "Ytterligere"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Tegn rektangel",
+    "drawing": "Tegner...",
+    "deleteSelectedLayer": "Slett valgt lag",
+    "resetImage": "Tilbakestill bilde",
+    "downloadPreviewImage": "Last ned forhåndsvisningsbilde"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Kunne ikke generere bildet.",
+    "retry": "Prøv på nytt",
+    "deleting": "Sletter...",
+    "uploadedImage": "Opplastet bilde",
+    "removeImage": "Fjern bilde"
+  }
+}

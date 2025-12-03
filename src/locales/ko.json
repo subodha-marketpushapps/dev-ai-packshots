@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI 제품 이미지 - [개발]",
+    "pageSubtitle": "AI를 활용한 이미지 보정으로 제품 이미지를 향상시키세요.",
+    "openDModal": "D 모달 열기"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "설정 데이터를 불러올 수 없었습니다",
+      "subtitle": "기술적인 문제가 발생했습니다. 몇 분 후 다시 시도해 주세요."
+    },
+    "wixDataSyncError": {
+      "title": "Wix 사이트 데이터와 동기화할 수 없었습니다",
+      "subtitle": "기술적인 문제가 발생했습니다. 몇 분 후 다시 시도해 주세요."
+    },
+    "imagesLoadError": {
+      "title": "이미지를 불러올 수 없었습니다",
+      "subtitle": "생성된 이미지를 가져오는 중 문제가 발생했습니다. 나중에 다시 시도해 주세요."
+    },
+    "draftImagesLoadError": {
+      "title": "임시 이미지 데이터를 불러올 수 없었습니다",
+      "subtitle": "기술적인 문제가 발생했습니다. 몇 분 후 다시 시도해 주세요."
+    },
+    "instanceUpdateError": {
+      "title": "인스턴스를 업데이트할 수 없었습니다",
+      "subtitle": "기술적인 문제가 발생했습니다. 몇 분 후 다시 시도해 주세요."
+    },
+    "tableLoadError": {
+      "title": "이 테이블을 불러올 수 없었습니다",
+      "subtitle": "기술적인 문제가 발생했습니다. 몇 분 후 다시 시도해 주세요.",
+      "intercomMessage": "'스토어 제품' 테이블 데이터 로딩에 문제가 있습니다. 도와주실 수 있나요?",
+      "intercomButtonLabel": "지원팀에 문의"
+    },
+    "genericError": {
+      "title": "데이터를 불러올 수 없었습니다",
+      "subtitle": "기술적인 문제가 발생했습니다. 몇 분 후 다시 시도해 주세요."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "제품이 선택되지 않았습니다",
+      "subtitle": "제품을 선택하여 포토 스튜디오를 열어주세요."
+    },
+    "productNotFound": {
+      "title": "제품을 찾을 수 없습니다",
+      "subtitle": "선택한 제품을 찾을 수 없습니다. 다시 시도하거나 다른 제품을 선택해 주세요."
+    },
+    "noDraftImages": {
+      "title": "임시 이미지가 없습니다",
+      "subtitle": "포토 스튜디오에서 첫 번째 이미지를 생성하세요."
+    },
+    "noStoreProducts": {
+      "title": "스토어 제품이 없습니다",
+      "subtitle": "스토어 제품을 추가하면 여기에 표시됩니다."
+    },
+    "startTypingToSearch": {
+      "title": "제품 검색을 위해 입력을 시작하세요",
+      "subtitle": "제품 카탈로그를 검색하려면 3자 이상 입력하세요"
+    },
+    "noSearchResults": {
+      "title": "검색 결과가 없습니다",
+      "subtitle": "검색 조건과 일치하는 항목이 없습니다. 다른 키워드로 검색해 보세요"
+    },
+    "noLiveImages": "라이브 이미지를 찾을 수 없습니다",
+    "noDraftImagesFound": "임시 이미지를 찾을 수 없습니다"
+  },
+  "loading": {
+    "loadingData": "데이터 로드 중...",
+    "loadingImages": "이미지 로드 중...",
+    "loading": "로드 중..."
+  },
+  "tabs": {
+    "products": "제품",
+    "draftImages": "임시 이미지"
+  },
+  "productsTab": {
+    "title": "스토어 제품",
+    "subtitle": "제품 이미지를 관리, 편집 및 강화하여 브랜드에 완벽하게 일치시키세요.",
+    "generateImage": "이미지 생성",
+    "createNewProduct": "새 제품 생성",
+    "storeProducts": "스토어 제품",
+    "searchPlaceholder": "제품 검색...",
+    "refreshData": "데이터 새로고침",
+    "tableInfo": "이 테이블을 사용하여 스토어 제품과 관련된 제품 이미지를 보고 편집할 수 있습니다.",
+    "columnProductName": "제품 이름",
+    "columnProductImages": "제품 이미지",
+    "columnGeneratedImages": "생성된 이미지",
+    "viewAllGeneratedImages": "생성된 모든 이미지 보기",
+    "liveImageAlt": "라이브 이미지",
+    "generatedImageAlt": "생성된 이미지",
+    "edit": "편집"
+  },
+  "statisticsTab": {
+    "title": "통계",
+    "subtitle": "수량 및 볼륨 할인 앱으로 생성된 판매를 모니터링합니다.",
+    "content": "여기에 통계 콘텐츠가 들어갑니다"
+  },
+  "galleryTab": {
+    "title": "임시 이미지",
+    "subtitle": "생성된 이미지 컬렉션을 탐색합니다.",
+    "loadMore": "더 불러오기"
+  },
+  "settingsTab": {
+    "title": "설정",
+    "subtitle": "수량 및 볼륨 할인 앱에 등록된 세부 정보를 추가하거나 편집합니다.",
+    "cancel": "취소",
+    "saveSettings": "설정 저장",
+    "notifications": "알림",
+    "receiveStatsEmails": "통계 및 전환 이메일 수신",
+    "onWeeklyBasis": "매주",
+    "never": "안 함",
+    "notificationEmail": "알림 이메일",
+    "emailPlaceholder": "예: example@mail.com",
+    "settingsSaved": "설정이 성공적으로 저장되었습니다!",
+    "settingsSaveFailed": "설정 저장에 실패했습니다. 다시 시도해 주세요.",
+    "invalidEmailFormat": "잘못된 이메일 형식입니다",
+    "emailRequired": "이메일은 필수입니다"
+  },
+  "photoStudio": {
+    "showProductImages": "제품 이미지 표시",
+    "productImages": {
+      "title": "제품 이미지",
+      "subtitle": "제품 이미지를 편집하고 업데이트합니다."
+    },
+    "generatedImages": {
+      "title": "생성된 이미지",
+      "subtitle": "임시 이미지를 편집하고 업데이트합니다."
+    },
+    "infoIconDescription": "정보 아이콘은 섹션에 대한 자세한 정보를 제공합니다.",
+    "liveImages": "라이브 이미지",
+    "draftImages": "임시 이미지",
+    "allDraftImages": "모든 임시 이미지",
+    "changeOrderOfLiveImages": "라이브 이미지 순서 변경",
+    "liveImagesInfo": "라이브 이미지는 직접 게시되며 라이브 사이트에서 고객에게 표시됩니다.",
+    "draftImagesInfo": "임시 이미지는 사용자만 볼 수 있습니다. 적절한 이미지를 찾을 때까지 자유롭게 실험하고 라이브 이미지로 게시할 준비가 될 때까지 편집하세요.",
+    "noLiveImagesMessage": "임시 이미지를 게시하여 라이브로 만들 수 있습니다.",
+    "draftImagesEmptyMessage": "라이브 이미지를 선택하거나 새 이미지를 업로드하여 편집을 시작할 수 있습니다.",
+    "draftImagesEmptyMessageNoLive": "이미지를 업로드하여 편집을 시작할 수 있습니다.",
+    "uploadImage": "이미지 업로드",
+    "uploadMultipleImages": "여러 이미지 업로드",
+    "copyEditHint": "복사 편집을 적용하려면 하나 이상의 이미지를 선택하거나 '이미지 업로드'를 클릭하여 새 이미지를 업로드하세요.",
+    "imageCurrentlyPublishing": "이 이미지는 현재 게시 중입니다.",
+    "maxReferenceImages": "복사 편집에 사용할 참조 이미지를 최대 6개까지 선택하거나 업로드할 수 있습니다.",
+    "dashboard": "대시보드",
+    "imageStudio": "이미지 스튜디오",
+    "compareChanges": "변경 사항 비교",
+    "removeImage": "이미지 제거",
+    "removeUploadedImage": "업로드된 이미지 제거",
+    "goBack": "뒤로 가기 (Esc)",
+    "fullscreen": "전체 화면",
+    "compare": "비교",
+    "details": "상세 정보",
+    "editModes": {
+      "label": "편집 모드",
+      "infoContent": "이미지를 편집하는 방법을 선택하세요"
+    },
+    "openDashboard": "AI 제품 이미지 대시보드 열기",
+    "dismiss": "닫기",
+    "generateInfo": "생성 정보",
+    "copyImage": "이미지 복사",
+    "delete": "삭제",
+    "unpublishGuide": "게시 취소 가이드",
+    "addRectangleHint": "사각형 힌트 추가",
+    "addCircleHint": "원 힌트 추가",
+    "showEditorPanel": "편집기 패널 표시",
+    "minimizeEditorPanel": "편집기 패널 최소화",
+    "collapseEditorPanel": "편집기 패널 축소",
+    "cancelCopyEdit": "복사 편집 취소",
+    "prevProduct": "이전 제품",
+    "nextProduct": "다음 제품",
+    "searchAndSelectProduct": "제품 검색 및 선택...",
+    "openEditProductDashboardPage": "제품 편집 대시보드 페이지 열기",
+    "viewLiveProductPage": "라이브 제품 페이지 보기"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "AI 제품 이미지 플랜 업그레이드",
+      "primaryButton": "업그레이드",
+      "secondaryButton": "지금은 안 함",
+      "exhaustedCredits": "플랜 크레딧이 모두 소진되었습니다. 새 이미지를 생성하려면 더 높은 플랜으로 업그레이드하세요.",
+      "upgradeForMoreCredits": "더 많은 크레딧을 얻으려면 플랜을 업그레이드하세요."
+    },
+    "unpublish": {
+      "title": "라이브 이미지 게시 취소",
+      "primaryButton": "제품 페이지 편집",
+      "secondaryButton": "취소",
+      "content": "현재 AI 제품 이미지에서 이미지를 직접 삭제/게시 취소할 수 없습니다. 제품 편집 페이지로 이동하여 거기서 제거하세요.",
+      "refreshNote": "변경 사항을 보려면 페이지를 새로고침하세요.",
+      "refresh": "새로고침"
+    },
+    "imageDetails": {
+      "prompt": "프롬프트",
+      "generateId": "생성 ID",
+      "createdAt": "생성 날짜",
+      "notAvailable": "해당 없음",
+      "initialImage": "초기 이미지",
+      "generatedImage": "생성된 이미지"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI 제품 이미지",
+      "subtitle": "AI 기반 도구로 제품 이미지를 손쉽게 강화하고 정교하게 만드세요.",
+      "dismiss": "닫기",
+      "unknownUser": "AI 제품 이미지 (알 수 없는 사용자)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "현재 작업이 완료될 때까지 기다려 주세요."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "생성할 이미지",
+      "infoContent": "생성할 이미지 수를 선택합니다"
+    },
+    "autoUpscaling": {
+      "label": "자동 업스케일링",
+      "infoContent": "활성화하면 1000px 미만의 이미지는 더 나은 품질을 위해 자동으로 2배 업스케일링됩니다."
+    },
+    "setOutputDimensions": {
+      "label": "출력 치수 설정",
+      "infoContent": "생성할 이미지의 종횡비를 선택합니다."
+    },
+    "photoQuality": {
+      "label": "사진 품질",
+      "infoContent": "이미지 보정을 위한 품질 태그를 추가합니다"
+    },
+    "productPositioning": {
+      "infoContent": "이미지 내 제품 배치 방법을 선택합니다"
+    },
+    "backgroundType": {
+      "infoContent": "이미지의 배경 유형을 선택합니다"
+    }
+  },
+  "feedback": {
+    "overallExperience": "AI 제품 이미지에 대한 전반적인 경험은 어땠나요?"
+  },
+  "common": {
+    "refresh": "새로고침",
+    "openSupportCenter": "지원 센터 열기",
+    "subscriptionInfo": "구독 정보",
+    "showSubscriptionInfo": "구독 정보 표시",
+    "chooseProduct": "제품 선택...",
+    "viewAllLiveProductImages": "모든 라이브 제품 이미지 보기",
+    "copy": "복사",
+    "copied": "복사되었습니다!"
+  },
+  "productModalSelector": {
+    "selectProduct": "제품 선택",
+    "openModal": "모달 열기",
+    "noProductsAvailable": "스토어에서 사용 가능한 제품이 없습니다",
+    "chooseProductPlaceholder": "제품 선택..."
+  },
+  "editorPromptInput": {
+    "editImage": "이미지 편집",
+    "enhanceImage": "이미지 보정",
+    "enhanceSettingsButton": "보정 설정",
+    "promptInput": "프롬프트 입력",
+    "placeholder": {
+      "edit": "변경하려는 내용을 설명해 주세요",
+      "enhance": "배경 장면을 설명해 주세요"
+    },
+    "blankPromptHint": "비워두면 AI가 제품에 가장 적합한 배경을 선택합니다",
+    "tooltip": {
+      "selectImage": "생성 전에 이미지를 선택해야 합니다.",
+      "providePrompt": "생성 전에 프롬프트를 제공해야 합니다.",
+      "applyChanges": "변경 사항 적용 (⌘ + ↵)",
+      "regenerateImage": "이미지 다시 생성 (⌘ + ↵)",
+      "generateImage": "이미지 생성 (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "이미지 보정",
+      "enhanceImageDescription": "사진 품질을 사용자 정의하고 최종 출력이 사용자의 비전에 맞도록 하세요.",
+      "editImage": "이미지 편집",
+      "editImageDescription": "텍스트 지침으로 이미지를 편집하고 원하는 출력을 얻으세요."
+    },
+    "enhanceSettings": {
+      "addImprovement": "개선 사항 추가",
+      "productPosition": "제품 위치",
+      "photoBackground": "사진 배경",
+      "original": "원본",
+      "color": "색상",
+      "aiGenerated": "AI 생성",
+      "qualityOptions": {
+        "clarity": "이미지 선명도",
+        "sharpness": "선명도",
+        "lighting": "조명",
+        "shadows": "그림자",
+        "color": "색상 균형"
+      }
+    },
+    "outputSettings": {
+      "costs": "비용",
+      "imageCredits": "이미지 크레딧",
+      "aspectRatio": {
+        "original": "원본"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "프롬프트 없음",
+      "matchReference": "이 참조 이미지와 밀접하게 일치하는 결과를 생성합니다"
+    },
+    "originalPreview": {
+      "goBack": "원본으로 돌아가기"
+    },
+    "feedback": {
+      "terrible": "끔찍함",
+      "bad": "나쁨",
+      "okay": "괜찮음",
+      "good": "좋음",
+      "great": "훌륭함",
+      "skip": "건너뛰기",
+      "continue": "계속",
+      "negativeExperienceMessage": "안녕하세요! AI 제품 이미지 사용 중 부정적인 경험이 있었습니다. 도와주실 수 있나요?",
+      "okExperienceMessage": "안녕하세요! AI 제품 이미지 사용 중 그럭저럭 괜찮은 경험이었습니다. 그런데 [이유]에 대해 도와주실 수 있나요?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI는 실수를 할 수 있습니다. 이미지를 주의 깊게 검토해 주세요.",
+    "subscriptionNotAvailable": "구독을 사용할 수 없습니다. 업그레이드하거나 지원팀에 문의하세요.",
+    "imageUpload": {
+      "canOnlyAdd": "{{count}}개의 이미지만 더 추가할 수 있습니다.",
+      "fileSizeExceeded": "{{fileName}} 파일 크기가 10MB 제한을 초과합니다.",
+      "failedToRead": "이미지 파일 {{fileName}}을(를) 읽을 수 없었습니다.",
+      "failedToLoad": "이미지 {{fileName}}을(를) 불러올 수 없었습니다. 다른 파일을 시도해 보세요.",
+      "errorReading": "이미지 파일 {{fileName}}을(를) 읽는 중 오류가 발생했습니다.",
+      "maxReferenceImagesReached": "최대 참조 이미지 수(6개)에 도달했습니다.",
+      "maxReachedOrProcessing": "최대 참조 이미지 수(6개)에 도달했거나 업로드 처리 중입니다.",
+      "dropImageHere": "여기에 이미지를 드롭",
+      "dropImagesHere": "여기에 이미지를 드롭",
+      "dragImageHere": "여기에 이미지를 드래그",
+      "dragImagesHere": "여기에 이미지를 드래그",
+      "uploadFromComputer": "또는 컴퓨터에서 이미지 업로드",
+      "uploadMultipleFromComputer": "또는 컴퓨터에서 여러 이미지 업로드"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "편집",
+    "copyEdits": "복사 편집",
+    "publish": "게시",
+    "discard": "취소",
+    "generateInfo": "생성 정보",
+    "copyImage": "이미지 복사",
+    "delete": "삭제",
+    "unpublishGuide": "게시 취소 가이드",
+    "reportProblem": "문제 보고",
+    "noProductIdForPublishing": "게시할 제품 ID가 없습니다.",
+    "failedToPublish": "이미지 게시에 실패했습니다.",
+    "noProductIdForUnpublishing": "게시 취소할 제품 ID가 없습니다.",
+    "failedToUnpublish": "이미지 게시 취소에 실패했습니다.",
+    "failedToDelete": "이미지 삭제에 실패했습니다.",
+    "imageUploadCleared": "이미지 업로드가 지워졌습니다.",
+    "noImageToCopy": "복사할 이미지가 없습니다.",
+    "couldNotGetCanvasContext": "캔버스 컨텍스트를 가져올 수 없었습니다",
+    "imageCopiedToClipboard": "이미지가 클립보드에 복사되었습니다!",
+    "clipboardWriteFailed": "클립보드 쓰기에 실패했습니다.",
+    "failedToCreateImageBlob": "이미지 Blob 생성에 실패했습니다.",
+    "failedToLoadImageForCopying": "복사용 이미지 로드에 실패했습니다.",
+    "failedToCopyImage": "이미지 복사에 실패했습니다.",
+    "noImageSelectedForGenerateInfo": "생성 정보를 표시할 이미지가 선택되지 않았습니다."
+  },
+  "panelFeedback": {
+    "feedback": "피드백",
+    "overallQualityBad": "전반적인 품질이 나쁨",
+    "didNotRespectPrompt": "프롬프트를 따르지 않음",
+    "notRelevantToProduct": "이미지가 제품과 관련 없음",
+    "imageNotClear": "이미지가 선명하지 않음",
+    "other": "기타",
+    "additionalFeedbackPlaceholder": "추가 피드백 제공",
+    "submit": "제출",
+    "feedbackSubmittedSuccessfully": "피드백이 성공적으로 제출되었습니다.",
+    "additional": "추가"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "사각형 그리기",
+    "drawing": "그리는 중...",
+    "deleteSelectedLayer": "선택한 레이어 삭제",
+    "resetImage": "이미지 초기화",
+    "downloadPreviewImage": "미리보기 이미지 다운로드"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "이미지를 생성할 수 없었습니다.",
+    "retry": "다시 시도",
+    "deleting": "삭제 중...",
+    "uploadedImage": "업로드된 이미지",
+    "removeImage": "이미지 제거"
+  }
+}

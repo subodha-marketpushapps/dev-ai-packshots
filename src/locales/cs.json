@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI Obrázky produktů - [Dev]",
+    "pageSubtitle": "Povznesťe vizuály svých produktů pomocí vylepšení obrázků řízeného AI.",
+    "openDModal": "Otevřít modal D"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Nepodařilo se načíst data nastavení",
+      "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu."
+    },
+    "wixDataSyncError": {
+      "title": "Nepodařilo se synchronizovat s daty webu Wix",
+      "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu."
+    },
+    "imagesLoadError": {
+      "title": "Nepodařilo se načíst vaše obrázky",
+      "subtitle": "Při načítání vašich vygenerovaných obrázků došlo k problému. Zkuste to prosím později."
+    },
+    "draftImagesLoadError": {
+      "title": "Nepodařilo se načíst data konceptů obrázků",
+      "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu."
+    },
+    "instanceUpdateError": {
+      "title": "Nepodařilo se aktualizovat vaši instanci",
+      "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu."
+    },
+    "tableLoadError": {
+      "title": "Nepodařilo se načíst tuto tabulku",
+      "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu.",
+      "intercomMessage": "Mám problém s načítáním dat v tabulce 'Produkty obchodu'. Můžete mi s tím pomoci?",
+      "intercomButtonLabel": "Kontaktovat podporu"
+    },
+    "genericError": {
+      "title": "Nepodařilo se načíst data",
+      "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Není vybrán žádný produkt",
+      "subtitle": "Prosím vyberte produkt pro otevření fotostudia."
+    },
+    "productNotFound": {
+      "title": "Produkt nenalezen",
+      "subtitle": "Vybraný produkt se nepodařilo najít. Zkuste to prosím znovu nebo vyberte jiný produkt."
+    },
+    "noDraftImages": {
+      "title": "Žádné koncepty obrázků",
+      "subtitle": "Vygenerujte svůj první obrázek pomocí Fotostudia."
+    },
+    "noStoreProducts": {
+      "title": "Žádné produkty obchodu",
+      "subtitle": "Jakmile přidáte produkty obchodu, objeví se zde."
+    },
+    "startTypingToSearch": {
+      "title": "Začněte psát pro vyhledávání produktů",
+      "subtitle": "Zadejte alespoň 3 znaky pro prohledání vašeho katalogu produktů"
+    },
+    "noSearchResults": {
+      "title": "Žádné výsledky vyhledávání",
+      "subtitle": "Žádné položky neodpovídají vašim kritériím vyhledávání. Zkuste vyhledat jiným klíčovým slovem"
+    },
+    "noLiveImages": "Nebyly nalezeny žádné živé obrázky",
+    "noDraftImagesFound": "Nebyly nalezeny žádné koncepty obrázků"
+  },
+  "loading": {
+    "loadingData": "Načítání dat...",
+    "loadingImages": "Načítání obrázků...",
+    "loading": "Načítání..."
+  },
+  "tabs": {
+    "products": "Produkty",
+    "draftImages": "Koncepty obrázků"
+  },
+  "productsTab": {
+    "title": "Produkty obchodu",
+    "subtitle": "Spravujte, upravujte a vylepšujte obrázky svých produktů, aby dokonale odpovídaly vaší značce.",
+    "generateImage": "Vygenerovat obrázek",
+    "createNewProduct": "Vytvořit nový produkt",
+    "storeProducts": "Produkty obchodu",
+    "searchPlaceholder": "Hledat produkty...",
+    "refreshData": "Obnovit data",
+    "tableInfo": "Použijte tuto tabulku k zobrazení a úpravě obrázků produktů souvisejících s produkty obchodu.",
+    "columnProductName": "Název produktu",
+    "columnProductImages": "Obrázky produktu",
+    "columnGeneratedImages": "Vygenerované obrázky",
+    "viewAllGeneratedImages": "Zobrazit všechny vygenerované obrázky",
+    "liveImageAlt": "Živý obrázek",
+    "generatedImageAlt": "Vygenerovaný obrázek",
+    "edit": "Upravit"
+  },
+  "statisticsTab": {
+    "title": "Statistiky",
+    "subtitle": "Sledujte prodeje generované aplikací Slevy podle množství a objemu.",
+    "content": "Obsah statistik je zde"
+  },
+  "galleryTab": {
+    "title": "Koncepty obrázků",
+    "subtitle": "Prozkoumejte kolekci vašich vygenerovaných obrázků.",
+    "loadMore": "Načíst více"
+  },
+  "settingsTab": {
+    "title": "Nastavení",
+    "subtitle": "Přidejte nebo změňte údaje registrované v aplikaci Slevy podle množství a objemu.",
+    "cancel": "Zrušit",
+    "saveSettings": "Uložit nastavení",
+    "notifications": "Oznámení",
+    "receiveStatsEmails": "Přijímat e-maily se statistikami a konverzemi",
+    "onWeeklyBasis": "Týdně",
+    "never": "Nikdy",
+    "notificationEmail": "E-mail pro oznámení",
+    "emailPlaceholder": "priklad@mail.com",
+    "settingsSaved": "Nastavení bylo úspěšně uloženo!",
+    "settingsSaveFailed": "Nepodařilo se uložit nastavení. Zkuste to prosím znovu.",
+    "invalidEmailFormat": "Neplatný formát e-mailu",
+    "emailRequired": "E-mail je povinný"
+  },
+  "photoStudio": {
+    "showProductImages": "Zobrazit obrázky produktů",
+    "productImages": {
+      "title": "Obrázky produktů",
+      "subtitle": "Upravte a aktualizujte obrázky svých produktů."
+    },
+    "generatedImages": {
+      "title": "Vygenerované obrázky",
+      "subtitle": "Upravte a aktualizujte své koncepty obrázků."
+    },
+    "infoIconDescription": "Ikona informací poskytuje více informací o sekci.",
+    "liveImages": "Živé obrázky",
+    "draftImages": "Koncepty obrázků",
+    "allDraftImages": "Všechny koncepty obrázků",
+    "changeOrderOfLiveImages": "Změnit pořadí živých obrázků",
+    "liveImagesInfo": "Upozorňujeme, že obrázky ze živých obrázků budou přímo publikovány a viditelné pro vaše zákazníky na vašem živém webu.",
+    "draftImagesInfo": "Koncepty obrázků jsou viditelné pouze pro vás. Klidně experimentujte, dokud nenajdete správné řešení a budete připraveni je publikovat do živých obrázků.",
+    "noLiveImagesMessage": "Můžete publikovat koncepty obrázků, aby se staly živými.",
+    "draftImagesEmptyMessage": "Můžete vybrat živé obrázky nebo nahrát nové obrázky pro zahájení úprav.",
+    "draftImagesEmptyMessageNoLive": "Můžete nahrát obrázky pro zahájení úprav.",
+    "uploadImage": "Nahrát obrázek",
+    "uploadMultipleImages": "Nahrát více obrázků",
+    "copyEditHint": "Vyberte jeden nebo více obrázků pro aplikaci kopírování úprav, nebo klikněte na \"Nahrát obrázek\" pro nahrání nových.",
+    "imageCurrentlyPublishing": "Tento obrázek je právě publikován.",
+    "maxReferenceImages": "Můžete vybrat nebo nahrát až 6 obrázků pro kopírování úprav.",
+    "dashboard": "Nástěnka",
+    "imageStudio": "Studio obrázků",
+    "compareChanges": "Porovnat změny",
+    "removeImage": "Odebrat obrázek",
+    "removeUploadedImage": "Odebrat nahraný obrázek",
+    "goBack": "Zpět (Esc)",
+    "fullscreen": "Celá obrazovka",
+    "compare": "Porovnat",
+    "details": "Detaily",
+    "editModes": {
+      "label": "Režimy úprav",
+      "infoContent": "Vyberte, jak chcete upravit svůj obrázek"
+    },
+    "openDashboard": "Otevřít nástěnku AI Obrázky produktů",
+    "dismiss": "Zavřít",
+    "generateInfo": "Vygenerovat informace",
+    "copyImage": "Kopírovat obrázek",
+    "delete": "Smazat",
+    "unpublishGuide": "Průvodce zrušením publikace",
+    "addRectangleHint": "Přidat obdélníkovou nápovědu",
+    "addCircleHint": "Přidat kruhovou nápovědu",
+    "showEditorPanel": "Zobrazit panel editoru",
+    "minimizeEditorPanel": "Minimalizovat panel editoru",
+    "collapseEditorPanel": "Sbalit panel editoru",
+    "cancelCopyEdit": "Zrušit kopírování úprav",
+    "prevProduct": "Předchozí produkt",
+    "nextProduct": "Další produkt",
+    "searchAndSelectProduct": "Hledat a vybrat produkt...",
+    "openEditProductDashboardPage": "Otevřít stránku nástěnky pro úpravu produktu",
+    "viewLiveProductPage": "Zobrazit živou stránku produktu"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Upgradujte svůj plán AI Obrázky produktů",
+      "primaryButton": "Upgradovat",
+      "secondaryButton": "Teď ne",
+      "exhaustedCredits": "Vyčerpali jste kredity svého plánu. Upgradujte na vyšší plán pro generování nových obrázků.",
+      "upgradeForMoreCredits": "Upgradujte svůj plán pro získání více kreditů."
+    },
+    "unpublish": {
+      "title": "Zrušení publikace živého obrázku",
+      "primaryButton": "Upravit stránku produktu",
+      "secondaryButton": "Zrušit",
+      "content": "V tuto chvíli nemůžete mazat/zrušit publikaci obrázků přímo z AI Obrázky produktů. Navštivte prosím stránku Úprava produktu a odstraňte je odtud.",
+      "refreshNote": "Obnovte svou stránku pro zobrazení změn.",
+      "refresh": "Obnovit"
+    },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "ID generování",
+      "createdAt": "Vytvořeno v",
+      "notAvailable": "N/D",
+      "initialImage": "Počáteční obrázek",
+      "generatedImage": "Vygenerovaný obrázek"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI Obrázky produktů",
+      "subtitle": "Vylepšujte a upravujte obrázky svých produktů snadno pomocí nástrojů poháněných AI.",
+      "dismiss": "Zavřít",
+      "unknownUser": "AI Obrázky produktů (Neznámý uživatel)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Prosím počkejte, dokud se aktuální operace nedokončí."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Vygenerované obrázky",
+      "infoContent": "Vyberte počet obrázků k vygenerování"
+    },
+    "autoUpscaling": {
+      "label": "Automatické zvětšení",
+      "infoContent": "Když je povoleno, obrázky menší než 1000px budou automaticky zvětšeny na x2 pro lepší kvalitu."
+    },
+    "setOutputDimensions": {
+      "label": "Nastavit výstupní rozměry",
+      "infoContent": "Vyberte poměr stran pro vygenerované obrázky."
+    },
+    "photoQuality": {
+      "label": "Kvalita fotografie",
+      "infoContent": "Přidejte značky kvality pro vylepšení vašeho obrázku"
+    },
+    "productPositioning": {
+      "infoContent": "Vyberte, jak je produkt umístěn na obrázku"
+    },
+    "backgroundType": {
+      "infoContent": "Vyberte typ pozadí pro váš obrázek"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Jaká byla vaše celková zkušenost s AI Obrázky produktů?"
+  },
+  "common": {
+    "refresh": "Obnovit",
+    "openSupportCenter": "Otevřít centrum podpory",
+    "subscriptionInfo": "Informace o předplatném",
+    "showSubscriptionInfo": "Zobrazit informace o předplatném",
+    "chooseProduct": "Vybrat produkt...",
+    "viewAllLiveProductImages": "Zobrazit všechny živé obrázky produktů",
+    "copy": "Kopírovat",
+    "copied": "Zkopírováno!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Vybrat produkt",
+    "openModal": "Otevřít modal",
+    "noProductsAvailable": "Ve vašem obchodě nejsou k dispozici žádné produkty",
+    "chooseProductPlaceholder": "Vybrat produkt..."
+  },
+  "editorPromptInput": {
+    "editImage": "Upravit obrázek",
+    "enhanceImage": "Vylepšit obrázek",
+    "enhanceSettingsButton": "Nastavení vylepšení",
+    "promptInput": "Vstup promptu",
+    "placeholder": {
+      "edit": "Popište, co chcete změnit",
+      "enhance": "Popište scénu vašeho pozadí"
+    },
+    "blankPromptHint": "Ponechte toto prázdné, aby AI vybralo nejlepší pozadí pro váš produkt",
+    "tooltip": {
+      "selectImage": "Před generováním musíte vybrat obrázek.",
+      "providePrompt": "Před generováním musíte zadat prompt.",
+      "applyChanges": "Použít změny (⌘ + ↵)",
+      "regenerateImage": "Znovu vygenerovat obrázek (⌘ + ↵)",
+      "generateImage": "Vygenerovat obrázek (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Vylepšit obrázek",
+      "enhanceImageDescription": "Přizpůsobte kvalitu své fotografie a dosáhněte, aby finální výstup odpovídal vaší představě.",
+      "editImage": "Upravit obrázek",
+      "editImageDescription": "Upravujte obrázky pomocí textových instrukcí a získejte požadovaný výstup."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Přidat vylepšení",
+      "productPosition": "Pozice produktu",
+      "photoBackground": "Pozadí fotografie",
+      "original": "Originální",
+      "color": "Barva",
+      "aiGenerated": "Vygenerováno AI",
+      "qualityOptions": {
+        "clarity": "Jasnost obrázku",
+        "sharpness": "Ostrost",
+        "lighting": "Osvětlení",
+        "shadows": "Stíny",
+        "color": "Vyvážení barev"
+      }
+    },
+    "outputSettings": {
+      "costs": "Náklady",
+      "imageCredits": "Kredity obrázků",
+      "aspectRatio": {
+        "original": "Originální"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "žádný prompt",
+      "matchReference": "Generuje výsledky, které se blízce shodují s tímto referenčním obrázkem"
+    },
+    "originalPreview": {
+      "goBack": "Vrátit se k originálu"
+    },
+    "feedback": {
+      "terrible": "Hrozné",
+      "bad": "Špatné",
+      "okay": "Dobré",
+      "good": "Dobré",
+      "great": "Výborné",
+      "skip": "Přeskočit",
+      "continue": "Pokračovat",
+      "negativeExperienceMessage": "Ahoj! Měl jsem negativní zkušenost s AI Obrázky produktů. Můžete mi s tím pomoci?",
+      "okExperienceMessage": "Ahoj! Měl jsem průměrnou zkušenost s AI Obrázky produktů. Ale můžete mi pomoci s [Důvod]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI může dělat chyby, prosím pečlivě zkontrolujte své obrázky.",
+    "subscriptionNotAvailable": "Předplatné není k dispozici. Prosím obnovte stránku nebo kontaktujte podporu.",
+    "imageUpload": {
+      "canOnlyAdd": "Můžete přidat pouze {{count}} další obrázek(y).",
+      "fileSizeExceeded": "Soubor {{fileName}} překračuje limit 10 MB.",
+      "failedToRead": "Nepodařilo se přečíst soubor obrázku {{fileName}}.",
+      "failedToLoad": "Nepodařilo se načíst obrázek {{fileName}}. Zkuste prosím jiný soubor.",
+      "errorReading": "Chyba při čtení souboru obrázku {{fileName}}.",
+      "maxReferenceImagesReached": "Dosáhli jste maxima 6 referenčních obrázků.",
+      "maxReachedOrProcessing": "Dosáhli jste maxima 6 referenčních obrázků nebo se nahrávání stále zpracovávají.",
+      "dropImageHere": "Přetáhněte svůj obrázek sem",
+      "dropImagesHere": "Přetáhněte své obrázky sem",
+      "dragImageHere": "Přetáhněte svůj obrázek sem",
+      "dragImagesHere": "Přetáhněte své obrázky sem",
+      "uploadFromComputer": "Nebo nahrajte obrázek ze svého počítače",
+      "uploadMultipleFromComputer": "Nebo nahrajte více obrázků ze svého počítače"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Upravit",
+    "copyEdits": "Kopírovat úpravy",
+    "publish": "Publikovat",
+    "discard": "Zahodit",
+    "generateInfo": "Vygenerovat informace",
+    "copyImage": "Kopírovat obrázek",
+    "delete": "Smazat",
+    "unpublishGuide": "Průvodce zrušením publikace",
+    "reportProblem": "Nahlásit problém",
+    "noProductIdForPublishing": "Není k dispozici ID produktu pro publikování.",
+    "failedToPublish": "Nepodařilo se publikovat obrázek.",
+    "noProductIdForUnpublishing": "Není k dispozici ID produktu pro zrušení publikace.",
+    "failedToUnpublish": "Nepodařilo se zrušit publikaci obrázku.",
+    "failedToDelete": "Nepodařilo se smazat obrázek.",
+    "imageUploadCleared": "Nahrávání obrázku zrušeno.",
+    "noImageToCopy": "Žádný obrázek ke kopírování.",
+    "couldNotGetCanvasContext": "Nepodařilo se získat kontext plátna",
+    "imageCopiedToClipboard": "Obrázek zkopírován do schránky!",
+    "clipboardWriteFailed": "Zápis do schránky selhal.",
+    "failedToCreateImageBlob": "Nepodařilo se vytvořit blob obrázku.",
+    "failedToLoadImageForCopying": "Nepodařilo se načíst obrázek pro kopírování.",
+    "failedToCopyImage": "Nepodařilo se zkopírovat obrázek.",
+    "noImageSelectedForGenerateInfo": "Není vybrán žádný obrázek pro zobrazení informací o generování."
+  },
+  "panelFeedback": {
+    "feedback": "Zpětná vazba",
+    "overallQualityBad": "Celková kvalita je špatná",
+    "didNotRespectPrompt": "Nerespektovalo můj prompt",
+    "notRelevantToProduct": "Obrázek není relevantní k produktu",
+    "imageNotClear": "Obrázek není jasný",
+    "other": "Jiné",
+    "additionalFeedbackPlaceholder": "Prosím poskytněte další zpětnou vazbu",
+    "submit": "Odeslat",
+    "feedbackSubmittedSuccessfully": "Zpětná vazba byla úspěšně odeslána.",
+    "additional": "Dodatečné"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Nakreslit obdélník",
+    "drawing": "Kreslení...",
+    "deleteSelectedLayer": "Smazat vybranou vrstvu",
+    "resetImage": "Obnovit obrázek",
+    "downloadPreviewImage": "Stáhnout náhled obrázku"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Nepodařilo se vygenerovat obrázek.",
+    "retry": "Zkusit znovu",
+    "deleting": "Mazání...",
+    "uploadedImage": "Nahraný obrázek",
+    "removeImage": "Odebrat obrázek"
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI Ürün Görselleri - [Dev]",
+    "pageSubtitle": "AI destekli görüntü iyileştirme ile ürün görsellerinizi yükseltin.",
+    "openDModal": "D Modali Aç"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Ayarlar verisini yükleyemedik",
+      "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin."
+    },
+    "wixDataSyncError": {
+      "title": "Wix Site verisiyle senkronize olamadık",
+      "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin."
+    },
+    "imagesLoadError": {
+      "title": "Görsellerinizi yükleyemedik",
+      "subtitle": "Oluşturulan görseller getirilirken bir sorun oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "draftImagesLoadError": {
+      "title": "Taslak Görsel verisini yükleyemedik",
+      "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin."
+    },
+    "instanceUpdateError": {
+      "title": "Uygulama örneğinizi güncelleyemedik",
+      "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin."
+    },
+    "tableLoadError": {
+      "title": "Bu tabloyu yükleyemedik",
+      "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin.",
+      "intercomMessage": "'Mağaza Ürünleri' tablosunda veri yükleme sorunu yaşıyorum. Bana yardımcı olabilir misiniz?",
+      "intercomButtonLabel": "Destek ile İletişime Geç"
+    },
+    "genericError": {
+      "title": "Verileri yükleyemedik",
+      "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Ürün seçilmedi",
+      "subtitle": "Fotoğraf stüdyosunu açmak için lütfen bir ürün seçin."
+    },
+    "productNotFound": {
+      "title": "Ürün bulunamadı",
+      "subtitle": "Seçilen ürün bulunamadı. Lütfen tekrar deneyin veya farklı bir ürün seçin."
+    },
+    "noDraftImages": {
+      "title": "Taslak Görsel Yok",
+      "subtitle": "Fotoğraf Stüdyosu ile ilk görselinizi oluşturun."
+    },
+    "noStoreProducts": {
+      "title": "Mağaza Ürünü Yok",
+      "subtitle": "Mağaza ürünleri eklediğinizde burada görünecek."
+    },
+    "startTypingToSearch": {
+      "title": "Aramaya başlamak için yazmaya başlayın",
+      "subtitle": "Ürün kataloğunuzda arama yapmak için en az 3 karakter girin"
+    },
+    "noSearchResults": {
+      "title": "Arama sonucu yok",
+      "subtitle": "Arama kriterlerinize uygun öğe bulunamadı. Farklı bir anahtar kelime deneyin"
+    },
+    "noLiveImages": "Yayınlanmış görsel bulunamadı",
+    "noDraftImagesFound": "Taslak görsel bulunamadı"
+  },
+  "loading": {
+    "loadingData": "Veriler yükleniyor...",
+    "loadingImages": "Görseller yükleniyor...",
+    "loading": "Yükleniyor..."
+  },
+  "tabs": {
+    "products": "Ürünler",
+    "draftImages": "Taslak Görseller"
+  },
+  "productsTab": {
+    "title": "Mağaza Ürünleri",
+    "subtitle": "Ürün görsellerinizi yönetin, düzenleyin ve markanıza uygun şekilde geliştirin.",
+    "generateImage": "Görsel Oluştur",
+    "createNewProduct": "Yeni Ürün Oluştur",
+    "storeProducts": "Mağaza Ürünleri",
+    "searchPlaceholder": "Ürün ara...",
+    "refreshData": "Veriyi yenile",
+    "tableInfo": "Bu tabloyu mağaza ürünlerinize ait ürün görsellerini görüntülemek ve düzenlemek için kullanabilirsiniz.",
+    "columnProductName": "Ürün Adı",
+    "columnProductImages": "Ürün Görselleri",
+    "columnGeneratedImages": "Oluşturulan Görseller",
+    "viewAllGeneratedImages": "Tüm oluşturulan görselleri görüntüle",
+    "liveImageAlt": "Yayınlanmış Görsel",
+    "generatedImageAlt": "Oluşturulmuş Görsel",
+    "edit": "Düzenle"
+  },
+  "statisticsTab": {
+    "title": "İstatistikler",
+    "subtitle": "Quantity and Volume Discount uygulamasından elde edilen satışları takip edin.",
+    "content": "İstatistik içeriği buraya gelecek"
+  },
+  "galleryTab": {
+    "title": "Taslak Görseller",
+    "subtitle": "Oluşturduğunuz görseller koleksiyonunu keşfedin.",
+    "loadMore": "Daha fazla yükle"
+  },
+  "settingsTab": {
+    "title": "Ayarlar",
+    "subtitle": "Quantity and Volume Discount uygulamasındaki kayıtlı bilgileri ekleyin veya değiştirin.",
+    "cancel": "İptal",
+    "saveSettings": "Ayarları Kaydet",
+    "notifications": "Bildirimler",
+    "receiveStatsEmails": "İstatistik ve Dönüşüm E-postaları Al",
+    "onWeeklyBasis": "Haftalık Olarak",
+    "never": "Asla",
+    "notificationEmail": "Bildirim E-postası",
+    "emailPlaceholder": "ornek@mail.com",
+    "settingsSaved": "Ayarlar başarıyla kaydedildi!",
+    "settingsSaveFailed": "Ayarlar kaydedilemedi. Lütfen tekrar deneyin.",
+    "invalidEmailFormat": "Geçersiz e-posta formatı",
+    "emailRequired": "E-posta gereklidir"
+  },
+  "photoStudio": {
+    "showProductImages": "Ürün Görsellerini Göster",
+    "productImages": {
+      "title": "Ürün Görselleri",
+      "subtitle": "Ürün görsellerinizi düzenleyin ve güncelleyin."
+    },
+    "generatedImages": {
+      "title": "Oluşturulan Görseller",
+      "subtitle": "Taslak görsellerinizi düzenleyin ve güncelleyin."
+    },
+    "infoIconDescription": "Bilgi simgesi bir bölüm hakkında daha fazla bilgi sağlar.",
+    "liveImages": "Yayınlanmış Görseller",
+    "draftImages": "Taslak Görseller",
+    "allDraftImages": "Tüm Taslak Görseller",
+    "changeOrderOfLiveImages": "Yayınlanmış Görsellerin Sırasını Değiştir",
+    "liveImagesInfo": "Yayınlanmış Görseller’deki görseller doğrudan yayınlanır ve müşterilerinize görünür.",
+    "draftImagesInfo": "Taslak Görseller yalnızca size görünür. Doğru sonucu bulana kadar denemeler yapabilirsiniz.",
+    "noLiveImagesMessage": "Taslak görselleri yayınlayarak görünür hale getirebilirsiniz.",
+    "draftImagesEmptyMessage": "Düzenlemeye başlamak için yayınlanmış görselleri seçebilir veya yeni görseller yükleyebilirsiniz.",
+    "draftImagesEmptyMessageNoLive": "Düzenlemeye başlamak için görsel yükleyebilirsiniz.",
+    "uploadImage": "Görsel Yükle",
+    "uploadMultipleImages": "Birden Fazla Görsel Yükle",
+    "copyEditHint": "Kopya düzenlemeyi uygulamak için bir veya daha fazla görsel seçin ya da yeni görsel yüklemek için “Görsel Yükle”ye tıklayın.",
+    "imageCurrentlyPublishing": "Bu görsel şu anda yayınlanıyor.",
+    "maxReferenceImages": "Kopya düzenleme için en fazla 6 görsel seçebilir veya yükleyebilirsiniz.",
+    "dashboard": "Kontrol Paneli",
+    "imageStudio": "Görsel Stüdyosu",
+    "compareChanges": "Değişiklikleri Karşılaştır",
+    "removeImage": "Görseli Kaldır",
+    "removeUploadedImage": "Yüklenen görseli kaldır",
+    "goBack": "Geri dön (Esc)",
+    "fullscreen": "Tam ekran",
+    "compare": "Karşılaştır",
+    "details": "Detaylar",
+    "editModes": {
+      "label": "Düzenleme Modları",
+      "infoContent": "Görselinizi nasıl düzenlemek istediğinizi seçin"
+    },
+    "openDashboard": "AI Ürün Görselleri Panelini Aç",
+    "dismiss": "Kapat",
+    "generateInfo": "Oluşturma bilgisi",
+    "copyImage": "Görseli kopyala",
+    "delete": "Sil",
+    "unpublishGuide": "Yayından Kaldırma Rehberi",
+    "addRectangleHint": "Dikdörtgen ipucu ekle",
+    "addCircleHint": "Daire ipucu ekle",
+    "showEditorPanel": "Düzenleyici Panelini Göster",
+    "minimizeEditorPanel": "Düzenleyici Panelini Küçült",
+    "collapseEditorPanel": "Düzenleyici Panelini Daralt",
+    "cancelCopyEdit": "Kopya Düzenlemeyi İptal Et",
+    "prevProduct": "Önceki Ürün",
+    "nextProduct": "Sonraki Ürün",
+    "searchAndSelectProduct": "Ürün ara ve seç...",
+    "openEditProductDashboardPage": "Ürün Düzenleme Panel Sayfasını Aç",
+    "viewLiveProductPage": "Yayınlanmış Ürün Sayfasını Görüntüle"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "AI Ürün Görselleri Planınızı Yükseltin",
+      "primaryButton": "Yükselt",
+      "secondaryButton": "Şimdi Değil",
+      "exhaustedCredits": "Plan kredilerinizi tükettiniz. Yeni görseller oluşturmak için planınızı yükseltin.",
+      "upgradeForMoreCredits": "Daha fazla kredi almak için planınızı yükseltin."
+    },
+    "unpublish": {
+      "title": "Yayınlanmış Görseli Yayından Kaldır",
+      "primaryButton": "Ürün Sayfasını Düzenle",
+      "secondaryButton": "İptal",
+      "content": "Şu anda AI Ürün Görselleri üzerinden görselleri doğrudan silemez/yayından kaldıramazsınız. Lütfen Ürün Düzenleme Sayfasını ziyaret edin ve oradan kaldırın.",
+      "refreshNote": "Değişiklikleri görmek için sayfayı yenileyin.",
+      "refresh": "Yenile"
+    },
+    "imageDetails": {
+      "prompt": "İstem",
+      "generateId": "Oluşturma Id",
+      "createdAt": "Oluşturulma tarihi",
+      "notAvailable": "Mevcut değil",
+      "initialImage": "İlk Görsel",
+      "generatedImage": "Oluşturulan Görsel"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI Ürün Görselleri",
+      "subtitle": "Ürün görsellerinizi AI destekli araçlarla zahmetsizce geliştirin.",
+      "dismiss": "Kapat",
+      "unknownUser": "AI Ürün Görselleri (Bilinmeyen kullanıcı)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Lütfen mevcut işlemin bitmesini bekleyin."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Oluşturulan Görseller",
+      "infoContent": "Oluşturulacak görsel sayısını seçin"
+    },
+    "autoUpscaling": {
+      "label": "Otomatik Büyütme",
+      "infoContent": "Etkinleştirildiğinde, 1000px’den küçük görseller daha iyi kalite için otomatik olarak 2x büyütülür."
+    },
+    "setOutputDimensions": {
+      "label": "Çıktı boyutlarını ayarla",
+      "infoContent": "Oluşturulan görsellerin en-boy oranını seçin."
+    },
+    "photoQuality": {
+      "label": "Fotoğraf kalitesi",
+      "infoContent": "Görselinizi iyileştirmek için kalite etiketleri ekleyin"
+    },
+    "productPositioning": {
+      "infoContent": "Ürünün görseldeki konumunu seçin"
+    },
+    "backgroundType": {
+      "infoContent": "Görsel için arka plan türünü seçin"
+    }
+  },
+  "feedback": {
+    "overallExperience": "AI Ürün Görselleri ile genel deneyiminiz nasıldı?"
+  },
+  "common": {
+    "refresh": "Yenile",
+    "openSupportCenter": "Destek Merkezini Aç",
+    "subscriptionInfo": "Abonelik Bilgisi",
+    "showSubscriptionInfo": "Abonelik Bilgisini Göster",
+    "chooseProduct": "Bir ürün seçin...",
+    "viewAllLiveProductImages": "Tüm yayınlanmış ürün görsellerini görüntüle",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Ürün Seç",
+    "openModal": "Modal Aç",
+    "noProductsAvailable": "Mağazanızda ürün bulunmuyor",
+    "chooseProductPlaceholder": "Bir ürün seçin..."
+  },
+  "editorPromptInput": {
+    "editImage": "Görseli Düzenle",
+    "enhanceImage": "Görseli İyileştir",
+    "enhanceSettingsButton": "İyileştirme Ayarları",
+    "promptInput": "İstem Girişi",
+    "placeholder": {
+      "edit": "Değiştirmek istediğiniz şeyi açıklayın",
+      "enhance": "Arka plan sahnesini açıklayın"
+    },
+    "blankPromptHint": "AI’nın ürününüz için en iyi arka planı seçmesi için bunu boş bırakın",
+    "tooltip": {
+      "selectImage": "Oluşturmak için bir görsel seçmelisiniz.",
+      "providePrompt": "Oluşturmak için bir istem sağlamalısınız.",
+      "applyChanges": "Değişiklikleri Uygula (⌘ + ↵)",
+      "regenerateImage": "Görseli Yeniden Oluştur (⌘ + ↵)",
+      "generateImage": "Görsel Oluştur (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Görseli İyileştir",
+      "enhanceImageDescription": "Fotoğraf kalitesini özelleştirin ve çıktıların vizyonunuza uygun olmasını sağlayın.",
+      "editImage": "Görseli Düzenle",
+      "editImageDescription": "Görselleri metin talimatları ile düzenleyin ve istediğiniz sonucu elde edin."
+    },
+    "enhanceSettings": {
+      "addImprovement": "İyileştirme Ekle",
+      "productPosition": "Ürün konumu",
+      "photoBackground": "Fotoğraf Arka Planı",
+      "original": "Orijinal",
+      "color": "Renk",
+      "aiGenerated": "AI Üretimi",
+      "qualityOptions": {
+        "clarity": "Görsel netliği",
+        "sharpness": "Keskinlik",
+        "lighting": "Aydınlatma",
+        "shadows": "Gölgeler",
+        "color": "Renk Dengesi"
+      }
+    },
+    "outputSettings": {
+      "costs": "Maliyet",
+      "imageCredits": "Görsel Kredileri",
+      "aspectRatio": {
+        "original": "Orijinal"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "istem yok",
+      "matchReference": "Bu referans görseline yakın sonuçlar üretir"
+    },
+    "originalPreview": {
+      "goBack": "Orijinale Geri Dön"
+    },
+    "feedback": {
+      "terrible": "Berbat",
+      "bad": "Kötü",
+      "okay": "Fena Değil",
+      "good": "İyi",
+      "great": "Harika",
+      "skip": "Atla",
+      "continue": "Devam",
+      "negativeExperienceMessage": "Merhaba! AI Ürün Görselleri ile kötü bir deneyim yaşadım. Bana yardımcı olabilir misiniz?",
+      "okExperienceMessage": "Merhaba! AI Ürün Görselleri ile fena olmayan bir deneyim yaşadım. Ancak [Sebep] hakkında yardımcı olabilir misiniz?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI hata yapabilir, lütfen görsellerinizi dikkatle inceleyin.",
+    "subscriptionNotAvailable": "Abonelik mevcut değil. Lütfen yenileyin veya destekle iletişime geçin.",
+    "imageUpload": {
+      "canOnlyAdd": "Yalnızca {{count}} görsel daha ekleyebilirsiniz.",
+      "fileSizeExceeded": "{{fileName}} dosyası 10 MB sınırını aşıyor.",
+      "failedToRead": "{{fileName}} görüntü dosyası okunamadı.",
+      "failedToLoad": "{{fileName}} yüklenemedi. Lütfen başka bir dosya deneyin.",
+      "errorReading": "{{fileName}} görüntü dosyası okunurken hata oluştu.",
+      "maxReferenceImagesReached": "Maksimum 6 referans görsele ulaştınız.",
+      "maxReachedOrProcessing": "Maksimum referans görseline ulaştınız veya yüklemeler işleniyor.",
+      "dropImageHere": "Görseli buraya bırakın",
+      "dropImagesHere": "Görselleri buraya bırakın",
+      "dragImageHere": "Görseli buraya sürükleyin",
+      "dragImagesHere": "Görselleri buraya sürükleyin",
+      "uploadFromComputer": "Ya da bilgisayarınızdan görsel yükleyin",
+      "uploadMultipleFromComputer": "Ya da bilgisayarınızdan birden fazla görsel yükleyin"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Düzenle",
+    "copyEdits": "Kopya Düzenlemeler",
+    "publish": "Yayınla",
+    "discard": "Sil",
+    "generateInfo": "Oluşturma bilgisi",
+    "copyImage": "Görseli kopyala",
+    "delete": "Sil",
+    "unpublishGuide": "Yayından Kaldırma Rehberi",
+    "reportProblem": "Sorun bildir",
+    "noProductIdForPublishing": "Yayınlamak için ürün kimliği mevcut değil.",
+    "failedToPublish": "Görsel yayınlanamadı.",
+    "noProductIdForUnpublishing": "Yayından kaldırmak için ürün kimliği mevcut değil.",
+    "failedToUnpublish": "Görsel yayından kaldırılamadı.",
+    "failedToDelete": "Görsel silinemedi.",
+    "imageUploadCleared": "Görsel yüklemesi temizlendi.",
+    "noImageToCopy": "Kopyalanacak görsel yok.",
+    "couldNotGetCanvasContext": "Canvas bağlamı alınamadı",
+    "imageCopiedToClipboard": "Görsel panoya kopyalandı!",
+    "clipboardWriteFailed": "Pano yazma işlemi başarısız.",
+    "failedToCreateImageBlob": "Görsel blob oluşturulamadı.",
+    "failedToLoadImageForCopying": "Kopyalama için görsel yüklenemedi.",
+    "failedToCopyImage": "Görsel kopyalanamadı.",
+    "noImageSelectedForGenerateInfo": "Oluşturma bilgisi için seçili görsel yok."
+  },
+  "panelFeedback": {
+    "feedback": "Geri Bildirim",
+    "overallQualityBad": "Genel kalite kötü",
+    "didNotRespectPrompt": "İstemi dikkate almadı",
+    "notRelevantToProduct": "Görsel ürünle ilgili değil",
+    "imageNotClear": "Görsel net değil",
+    "other": "Diğer",
+    "additionalFeedbackPlaceholder": "Lütfen ek geri bildirim sağlayın",
+    "submit": "Gönder",
+    "feedbackSubmittedSuccessfully": "Geri bildirim başarıyla gönderildi.",
+    "additional": "Ek"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Dikdörtgen Çiz",
+    "drawing": "Çiziliyor...",
+    "deleteSelectedLayer": "Seçili Katmanı Sil",
+    "resetImage": "Görseli Sıfırla",
+    "downloadPreviewImage": "Önizleme Görselini İndir"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Görsel oluşturulamadı.",
+    "retry": "Tekrar dene",
+    "deleting": "Siliniyor...",
+    "uploadedImage": "Yüklenen Görsel",
+    "removeImage": "Görseli Kaldır"
+  }
+}

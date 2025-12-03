@@ -1,0 +1,386 @@
+{
+  "homePage": {
+    "pageTitle": "AI Produktbilder - [Dev]",
+    "pageSubtitle": "Förbättra dina produktbilder med AI-driven bildförbättring.",
+    "openDModal": "Öppna D-modal"
+  },
+  "errors": {
+    "settingsLoadError": {
+      "title": "Vi kunde inte ladda inställningsdata",
+      "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen."
+    },
+    "wixDataSyncError": {
+      "title": "Vi kunde inte synkronisera med Wix-webbplatsdata",
+      "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen."
+    },
+    "imagesLoadError": {
+      "title": "Vi kunde inte ladda dina bilder",
+      "subtitle": "Det uppstod ett problem med att hämta dina genererade bilder. Försök igen senare."
+    },
+    "draftImagesLoadError": {
+      "title": "Vi kunde inte ladda utkastbildsdata",
+      "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen."
+    },
+    "instanceUpdateError": {
+      "title": "Vi kunde inte uppdatera din instans",
+      "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen."
+    },
+    "tableLoadError": {
+      "title": "Vi kunde inte ladda den här tabellen",
+      "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen.",
+      "intercomMessage": "Jag har problem med att ladda data i tabellen 'Butiksprodukter'. Kan du hjälpa mig med detta?",
+      "intercomButtonLabel": "Kontakta support"
+    },
+    "genericError": {
+      "title": "Vi kunde inte ladda data",
+      "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen."
+    }
+  },
+  "emptyStates": {
+    "noProductSelected": {
+      "title": "Ingen produkt vald",
+      "subtitle": "Välj en produkt för att öppna fotostudion."
+    },
+    "productNotFound": {
+      "title": "Produkten hittades inte",
+      "subtitle": "Den valda produkten kunde inte hittas. Försök igen eller välj en annan produkt."
+    },
+    "noDraftImages": {
+      "title": "Inga utkastbilder",
+      "subtitle": "Generera din första bild med Fotostudion."
+    },
+    "noStoreProducts": {
+      "title": "Inga butiksprodukter",
+      "subtitle": "När du har lagt till butiksprodukter visas de här."
+    },
+    "startTypingToSearch": {
+      "title": "Börja skriva för att söka produkter",
+      "subtitle": "Ange minst 3 tecken för att söka igenom din produktkatalog"
+    },
+    "noSearchResults": {
+      "title": "Inga sökresultat",
+      "subtitle": "Inga artiklar matchar dina sökkriterier. Försök söka med ett annat nyckelord"
+    },
+    "noLiveImages": "Inga livebilder hittades",
+    "noDraftImagesFound": "Inga utkastbilder hittades"
+  },
+  "loading": {
+    "loadingData": "Laddar data...",
+    "loadingImages": "Laddar bilder...",
+    "loading": "Laddar..."
+  },
+  "tabs": {
+    "products": "Produkter",
+    "draftImages": "Utkastbilder"
+  },
+  "productsTab": {
+    "title": "Butiksprodukter",
+    "subtitle": "Hantera, redigera och förbättra dina produktbilder så att de matchar ditt varumärke perfekt.",
+    "generateImage": "Generera bild",
+    "createNewProduct": "Skapa ny produkt",
+    "storeProducts": "Butiksprodukter",
+    "searchPlaceholder": "Sök produkter...",
+    "refreshData": "Uppdatera data",
+    "tableInfo": "Använd den här tabellen för att visa och redigera produktbilder relaterade till butiksprodukter.",
+    "columnProductName": "Produktnamn",
+    "columnProductImages": "Produktbilder",
+    "columnGeneratedImages": "Genererade bilder",
+    "viewAllGeneratedImages": "Visa alla genererade bilder",
+    "liveImageAlt": "Livebild",
+    "generatedImageAlt": "Genererad bild",
+    "edit": "Redigera"
+  },
+  "statisticsTab": {
+    "title": "Statistik",
+    "subtitle": "Övervaka försäljning som genererats av appen för kvantitets- och volymrabatter.",
+    "content": "Statistikinnehåll kommer här"
+  },
+  "galleryTab": {
+    "title": "Utkastbilder",
+    "subtitle": "Utforska en samling av dina genererade bilder.",
+    "loadMore": "Ladda mer"
+  },
+  "settingsTab": {
+    "title": "Inställningar",
+    "subtitle": "Lägg till eller ändra uppgifter som är registrerade i appen för kvantitets- och volymrabatter.",
+    "cancel": "Avbryt",
+    "saveSettings": "Spara inställningar",
+    "notifications": "Aviseringar",
+    "receiveStatsEmails": "Få e-postmeddelanden om statistik och konverteringar",
+    "onWeeklyBasis": "Veckovis",
+    "never": "Aldrig",
+    "notificationEmail": "Aviserings-e-post",
+    "emailPlaceholder": "exempel@mail.com",
+    "settingsSaved": "Inställningar sparade!",
+    "settingsSaveFailed": "Kunde inte spara inställningar. Försök igen.",
+    "invalidEmailFormat": "Ogiltigt e-postformat",
+    "emailRequired": "E-post krävs"
+  },
+  "photoStudio": {
+    "showProductImages": "Visa produktbilder",
+    "productImages": {
+      "title": "Produktbilder",
+      "subtitle": "Redigera och uppdatera dina produktbilder."
+    },
+    "generatedImages": {
+      "title": "Genererade bilder",
+      "subtitle": "Redigera och uppdatera dina utkastbilder."
+    },
+    "infoIconDescription": "Infoikonen ger mer information om ett avsnitt.",
+    "liveImages": "Livebilder",
+    "draftImages": "Utkastbilder",
+    "allDraftImages": "Alla utkastbilder",
+    "changeOrderOfLiveImages": "Ändra ordningen på livebilder",
+    "liveImagesInfo": "Observera att bilderna från Livebilder kommer att publiceras direkt och vara synliga för dina kunder på din live-webbplats.",
+    "draftImagesInfo": "Utkastbilder är endast synliga för dig. Experimentera tills du hittar rätt och är redo att publicera dem till Livebilderna.",
+    "noLiveImagesMessage": "Du kan publicera utkastbilder för att göra dem live.",
+    "draftImagesEmptyMessage": "Du kan välja livebilder eller ladda upp nya bilder för att börja redigera.",
+    "draftImagesEmptyMessageNoLive": "Du kan ladda upp bilder för att börja redigera.",
+    "uploadImage": "Ladda upp bild",
+    "uploadMultipleImages": "Ladda upp flera bilder",
+    "copyEditHint": "Välj en eller flera bilder för att tillämpa Kopieringsredigering, eller klicka på \"Ladda upp bild\" för att ladda upp nya.",
+    "imageCurrentlyPublishing": "Den här bilden publiceras just nu.",
+    "maxReferenceImages": "Du kan välja eller ladda upp upp till 6 referensbilder för kopieringsredigeringar.",
+    "dashboard": "Instrumentpanel",
+    "imageStudio": "Bildstudio",
+    "compareChanges": "Jämför ändringar",
+    "removeImage": "Ta bort bild",
+    "removeUploadedImage": "Ta bort uppladdad bild",
+    "goBack": "Gå tillbaka (Esc)",
+    "fullscreen": "Helskärm",
+    "compare": "Jämför",
+    "details": "Detaljer",
+    "editModes": {
+      "label": "Redigeringslägen",
+      "infoContent": "Välj hur du vill redigera din bild"
+    },
+    "openDashboard": "Öppna instrumentpanelen för AI Produktbilder",
+    "dismiss": "Avfärda",
+    "generateInfo": "Generera info",
+    "copyImage": "Kopiera bild",
+    "delete": "Radera",
+    "unpublishGuide": "Avpubliceringsguide",
+    "addRectangleHint": "Lägg till rektangelmarkering",
+    "addCircleHint": "Lägg till cirkelmarkering",
+    "showEditorPanel": "Visa redigeringspanel",
+    "minimizeEditorPanel": "Minimera redigeringspanel",
+    "collapseEditorPanel": "Fäll ihop redigeringspanel",
+    "cancelCopyEdit": "Avbryt kopieringsredigering",
+    "prevProduct": "Föregående produkt",
+    "nextProduct": "Nästa produkt",
+    "searchAndSelectProduct": "Sök och välj en produkt...",
+    "openEditProductDashboardPage": "Öppna redigeringssidan för produkten i instrumentpanelen",
+    "viewLiveProductPage": "Visa produktens live-sida"
+  },
+  "modals": {
+    "upgrade": {
+      "title": "Uppgradera din AI Produktbilder-plan",
+      "primaryButton": "Uppgradera",
+      "secondaryButton": "Inte nu",
+      "exhaustedCredits": "Du har förbrukat dina planpoäng. Uppgradera till en högre plan för att generera nya bilder.",
+      "upgradeForMoreCredits": "Uppgradera din plan för att få fler poäng."
+    },
+    "unpublish": {
+      "title": "Avpublicering av livebild",
+      "primaryButton": "Redigera produktsida",
+      "secondaryButton": "Avbryt",
+      "content": "Just nu kan du inte radera/avpublicera bilder direkt från AI Produktbilder. Besök Redigera produktsida och ta bort den därifrån.",
+      "refreshNote": "Uppdatera din sida för att se ändringarna.",
+      "refresh": "Uppdatera"
+    },
+    "imageDetails": {
+      "prompt": "Prompt",
+      "generateId": "Genererings-ID",
+      "createdAt": "Skapad den",
+      "notAvailable": "Ej tillgänglig",
+      "initialImage": "Ursprunglig bild",
+      "generatedImage": "Genererad bild"
+    },
+    "aiPackshotsDashboard": {
+      "title": "AI Produktbilder",
+      "subtitle": "Förbättra och förfina dina produktbilder enkelt med AI-drivna verktyg.",
+      "dismiss": "Avfärda",
+      "unknownUser": "AI Produktbilder (Okänd användare)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "Vänta tills den aktuella åtgärden är klar."
+    }
+  },
+  "editor": {
+    "imagesGenerated": {
+      "label": "Bilder genererade",
+      "infoContent": "Välj hur många bilder som ska genereras"
+    },
+    "autoUpscaling": {
+      "label": "Automatisk uppskalning",
+      "infoContent": "När detta är aktiverat kommer bilder mindre än 1000px automatiskt att skalas upp till x2 för bättre kvalitet."
+    },
+    "setOutputDimensions": {
+      "label": "Ställ in utgångsdimensioner",
+      "infoContent": "Välj bildförhållandet för de genererade bilderna."
+    },
+    "photoQuality": {
+      "label": "Fotokvalitet",
+      "infoContent": "Lägg till kvalitetstaggar för att förbättra din bild"
+    },
+    "productPositioning": {
+      "infoContent": "Välj hur produkten är placerad i bilden"
+    },
+    "backgroundType": {
+      "infoContent": "Välj bakgrundstyp för din bild"
+    }
+  },
+  "feedback": {
+    "overallExperience": "Hur var din totala upplevelse med AI Produktbilder?"
+  },
+  "common": {
+    "refresh": "Uppdatera",
+    "openSupportCenter": "Öppna supportcenter",
+    "subscriptionInfo": "Prenumerationsinfo",
+    "showSubscriptionInfo": "Visa prenumerationsinfo",
+    "chooseProduct": "Välj en produkt...",
+    "viewAllLiveProductImages": "Visa alla live produktbilder",
+    "copy": "Kopiera",
+    "copied": "Kopierat!"
+  },
+  "productModalSelector": {
+    "selectProduct": "Välj Produkt",
+    "openModal": "Öppna Modal",
+    "noProductsAvailable": "Inga produkter tillgängliga i din butik",
+    "chooseProductPlaceholder": "Välj en produkt..."
+  },
+  "editorPromptInput": {
+    "editImage": "Redigera bild",
+    "enhanceImage": "Förbättra bild",
+    "enhanceSettingsButton": "Förbättra inställningar",
+    "promptInput": "Promptinmatning",
+    "placeholder": {
+      "edit": "Beskriv vad du vill ändra",
+      "enhance": "Beskriv scenen för din bakgrund"
+    },
+    "blankPromptHint": "Lämna detta tomt för att låta AI välja den bästa bakgrunden för din produkt",
+    "tooltip": {
+      "selectImage": "Du måste välja en bild innan du genererar.",
+      "providePrompt": "Du måste ange en prompt innan du genererar.",
+      "applyChanges": "Tillämpa ändringar (⌘ + ↵)",
+      "regenerateImage": "Återgenerera bild (⌘ + ↵)",
+      "generateImage": "Generera bild (⌘ + ↵)"
+    },
+    "editModes": {
+      "enhanceImage": "Förbättra bild",
+      "enhanceImageDescription": "Anpassa din fotokvalitet och se till att slutresultatet matchar din vision.",
+      "editImage": "Redigera bild",
+      "editImageDescription": "Redigera bilder med textinstruktioner och få önskat resultat."
+    },
+    "enhanceSettings": {
+      "addImprovement": "Lägg till förbättring",
+      "productPosition": "Produktposition",
+      "photoBackground": "Fotobakgrund",
+      "original": "Original",
+      "color": "Färg",
+      "aiGenerated": "AI-genererad",
+      "qualityOptions": {
+        "clarity": "Bildskärpa",
+        "sharpness": "Skärpa",
+        "lighting": "Belysning",
+        "shadows": "Skuggor",
+        "color": "Färgbalans"
+      }
+    },
+    "outputSettings": {
+      "costs": "Kostnader",
+      "imageCredits": "Bildpoäng",
+      "aspectRatio": {
+        "original": "Original"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "ingen prompt",
+      "matchReference": "Genererar resultat som nära matchar denna referensbild"
+    },
+    "originalPreview": {
+      "goBack": "Gå tillbaka till original"
+    },
+    "feedback": {
+      "terrible": "Fruktansvärt",
+      "bad": "Dåligt",
+      "okay": "Okej",
+      "good": "Bra",
+      "great": "Utmärkt",
+      "skip": "Hoppa över",
+      "continue": "Fortsätt",
+      "negativeExperienceMessage": "Hej! Jag hade en negativ upplevelse med AI Produktbilder. Kan ni hjälpa mig med detta?",
+      "okExperienceMessage": "Hej! Jag hade en okej upplevelse med AI Produktbilder. Men kan ni hjälpa mig med [Anledning]?"
+    }
+  },
+  "studioEditor": {
+    "footerNote": "AI kan göra misstag, granska dina bilder noggrant.",
+    "subscriptionNotAvailable": "Prenumeration är inte tillgänglig. Uppdatera eller kontakta support.",
+    "imageUpload": {
+      "canOnlyAdd": "Du kan bara lägga till {{count}} till bild(er).",
+      "fileSizeExceeded": "Filen {{fileName}} överskrider gränsen på 10 MB.",
+      "failedToRead": "Kunde inte läsa bildfilen {{fileName}}.",
+      "failedToLoad": "Kunde inte ladda bild {{fileName}}. Försök med en annan fil.",
+      "errorReading": "Fel vid läsning av bildfilen {{fileName}}.",
+      "maxReferenceImagesReached": "Du har nått maxgränsen på 6 referensbilder.",
+      "maxReachedOrProcessing": "Du har nått maxgränsen på 6 referensbilder eller uppladdningar pågår.",
+      "dropImageHere": "Släpp din bild här",
+      "dropImagesHere": "Släpp dina bilder här",
+      "dragImageHere": "Dra din bild här",
+      "dragImagesHere": "Dra dina bilder här",
+      "uploadFromComputer": "Eller ladda upp en bild från din dator",
+      "uploadMultipleFromComputer": "Eller ladda upp flera bilder från din dator"
+    }
+  },
+  "editorPhotoActions": {
+    "edit": "Redigera",
+    "copyEdits": "Kopieringsredigeringar",
+    "publish": "Publicera",
+    "discard": "Kassera",
+    "generateInfo": "Generera info",
+    "copyImage": "Kopiera bild",
+    "delete": "Radera",
+    "unpublishGuide": "Avpubliceringsguide",
+    "reportProblem": "Rapportera ett problem",
+    "noProductIdForPublishing": "Inget produkt-ID tillgängligt för publicering.",
+    "failedToPublish": "Kunde inte publicera bilden.",
+    "noProductIdForUnpublishing": "Inget produkt-ID tillgängligt för avpublicering.",
+    "failedToUnpublish": "Kunde inte avpublicera bilden.",
+    "failedToDelete": "Kunde inte radera bilden.",
+    "imageUploadCleared": "Bilduppladdning rensad.",
+    "noImageToCopy": "Ingen bild att kopiera.",
+    "couldNotGetCanvasContext": "Kunde inte få canvas-kontext",
+    "imageCopiedToClipboard": "Bild kopierad till urklipp!",
+    "clipboardWriteFailed": "Skrivning till urklipp misslyckades.",
+    "failedToCreateImageBlob": "Kunde inte skapa bild-blob.",
+    "failedToLoadImageForCopying": "Kunde inte ladda bild för kopiering.",
+    "failedToCopyImage": "Kunde inte kopiera bild.",
+    "noImageSelectedForGenerateInfo": "Ingen bild vald för att visa genereringsinfo."
+  },
+  "panelFeedback": {
+    "feedback": "Återkoppling",
+    "overallQualityBad": "Den totala kvaliteten är dålig",
+    "didNotRespectPrompt": "Den respekterade inte min prompt",
+    "notRelevantToProduct": "Bilden är inte relevant för produkten",
+    "imageNotClear": "Bilden är inte klar",
+    "other": "Annat",
+    "additionalFeedbackPlaceholder": "Ange ytterligare återkoppling",
+    "submit": "Skicka",
+    "feedbackSubmittedSuccessfully": "Återkoppling skickades.",
+    "additional": "Ytterligare"
+  },
+  "canvasToolbar": {
+    "drawRectangle": "Rita rektangel",
+    "drawing": "Ritar...",
+    "deleteSelectedLayer": "Radera valt lager",
+    "resetImage": "Återställ bild",
+    "downloadPreviewImage": "Ladda ner förhandsgranskningsbild"
+  },
+  "imagePreviewer": {
+    "unableToGenerateImage": "Kan inte generera bild.",
+    "retry": "Försök igen",
+    "deleting": "Raderar...",
+    "uploadedImage": "Uppladdad bild",
+    "removeImage": "Ta bort bild"
+  }
+}
