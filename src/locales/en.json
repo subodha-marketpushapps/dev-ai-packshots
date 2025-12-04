@@ -382,5 +382,59 @@
     "deleting": "Deleting...",
     "uploadedImage": "Uploaded Image",
     "removeImage": "Remove Image"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "SUGGESTED FOR YOU",
+    "currentPlan": "CURRENT PLAN",
+    "credits": "credits",
+    "creditsPerMonth": "credits/month",
+    "testingCredits": "Testing Credits",
+    "orBilledYearly": "(or {{price}} billed yearly)",
+    "current": "Current",
+    "contact": "Contact",
+    "upgrade": "Upgrade"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Basic plans",
+    "enterprisePlans": "Enterprise plans",
+    "wixPricingPlans": "Wix Pricing Plans",
+    "needSupport": "Need support?",
+    "pricingQuestions": "Hi, I have some questions about pricing.",
+    "upgradeYourPlan": "Upgrade Your Plan",
+    "upgradeSubtitle": "Upgrade your plan to get more credits.",
+    "contactMessage": "Hi, I am interested in the {{planName}} plan. Can you help me with this?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "We hope you've had a good experience with the app so far! We would really appreciate it if you can add a review for {{appName}}.",
+    "helpsImmensely": "It helps immensely! ♥️",
+    "userFeedbackReview": "User Feedback Review"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Subscription unavailable",
+    "credits": "credits",
+    "free": "Free",
+    "upgrade": "Upgrade",
+    "aiProductImagesSubscription": "AI Product Images Subscription",
+    "subscriptionInfo": "Subscription Info",
+    "planName": "Plan Name",
+    "creditsAvailable": "Credits available",
+    "creditsReset": "Credits reset",
+    "resetsEveryMonth": "Resets every 1st of the month",
+    "upgradeAiProductImages": "Upgrade AI Product Images.",
+    "upgradeSubtitle": "Upgrade your plan to get more credits.",
+    "explorePlans": "Explore Plans",
+    "showSubscriptionInfo": "Show Subscription Info"
+  },
+  "studioHeader": {
+    "waitForOperation": "Please wait for the current operation to finish.",
+    "failedToOpenDashboard": "Failed to open the AI Product Images Dashboard. Please try again later.",
+    "openDashboard": "Open AI Product Images Dashboard",
+    "dismiss": "Dismiss",
+    "subscriptionUnavailable": "Subscription unavailable",
+    "credits": "credits",
+    "free": "Free",
+    "openDashboardDescription": "Open the AI Product Images Dashboard & easily generate images across all your products.",
+    "goToDashboard": "Go to Dashboard",
+    "upgrade": "Upgrade"
   }
 }

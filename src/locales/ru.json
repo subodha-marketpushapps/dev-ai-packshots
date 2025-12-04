@@ -382,5 +382,59 @@
     "deleting": "Удаление...",
     "uploadedImage": "Загруженное Изображение",
     "removeImage": "Удалить Изображение"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "РЕКОМЕНДОВАНО ДЛЯ ВАС",
+    "currentPlan": "ТЕКУЩИЙ ТАРИФ",
+    "credits": "кредиты",
+    "creditsPerMonth": "кредитов/месяц",
+    "testingCredits": "Тестовые кредиты",
+    "orBilledYearly": "(или {{price}} при ежегодной оплате)",
+    "current": "Текущий",
+    "contact": "Связаться",
+    "upgrade": "Обновить"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Базовые тарифы",
+    "enterprisePlans": "Корпоративные тарифы",
+    "wixPricingPlans": "Тарифы Wix",
+    "needSupport": "Нужна помощь?",
+    "pricingQuestions": "Здравствуйте, у меня есть вопросы по стоимости.",
+    "upgradeYourPlan": "Обновите ваш тариф",
+    "upgradeSubtitle": "Обновите тариф, чтобы получить больше кредитов.",
+    "contactMessage": "Здравствуйте, меня интересует тариф {{planName}}. Можете помочь?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Надеемся, что вам нравится пользоваться приложением! Будем очень благодарны, если вы оставите отзыв о {{appName}}.",
+    "helpsImmensely": "Это очень помогает! ♥️",
+    "userFeedbackReview": "Отзыв пользователя"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Подписка недоступна",
+    "credits": "кредиты",
+    "free": "Бесплатно",
+    "upgrade": "Обновить",
+    "aiProductImagesSubscription": "Подписка на AI Product Images",
+    "subscriptionInfo": "Информация о подписке",
+    "planName": "Название тарифа",
+    "creditsAvailable": "Доступные кредиты",
+    "creditsReset": "Сброс кредитов",
+    "resetsEveryMonth": "Сбрасывается 1-го числа каждого месяца",
+    "upgradeAiProductImages": "Обновить AI Product Images.",
+    "upgradeSubtitle": "Обновите тариф, чтобы получить больше кредитов.",
+    "explorePlans": "Просмотреть тарифы",
+    "showSubscriptionInfo": "Показать информацию о подписке"
+  },
+  "studioHeader": {
+    "waitForOperation": "Пожалуйста, дождитесь завершения текущей операции.",
+    "failedToOpenDashboard": "Не удалось открыть панель AI Product Images. Пожалуйста, попробуйте позже.",
+    "openDashboard": "Открыть панель AI Product Images",
+    "dismiss": "Закрыть",
+    "subscriptionUnavailable": "Подписка недоступна",
+    "credits": "кредиты",
+    "free": "Бесплатно",
+    "openDashboardDescription": "Откройте панель AI Product Images и легко создавайте изображения для всех ваших продуктов.",
+    "goToDashboard": "Перейти к панели",
+    "upgrade": "Обновить"
   }
 }

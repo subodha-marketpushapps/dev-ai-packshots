@@ -382,5 +382,59 @@
     "deleting": "삭제 중...",
     "uploadedImage": "업로드된 이미지",
     "removeImage": "이미지 제거"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "추천 플랜",
+    "currentPlan": "현재 플랜",
+    "credits": "크레딧",
+    "creditsPerMonth": "크레딧/월",
+    "testingCredits": "테스트 크레딧",
+    "orBilledYearly": "(또는 연간 {{price}} 청구)",
+    "current": "현재",
+    "contact": "문의",
+    "upgrade": "업그레이드"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "기본 플랜",
+    "enterprisePlans": "기업 플랜",
+    "wixPricingPlans": "Wix 요금제",
+    "needSupport": "지원이 필요하신가요?",
+    "pricingQuestions": "안녕하세요, 요금제에 대해 질문이 있습니다.",
+    "upgradeYourPlan": "플랜 업그레이드",
+    "upgradeSubtitle": "더 많은 크레딧을 받기 위해 플랜을 업그레이드하세요.",
+    "contactMessage": "안녕하세요, 저는 {{planName}} 플랜에 관심이 있습니다. 도와주실 수 있나요?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "앱을 잘 사용하고 계시길 바랍니다! 가능하시다면 {{appName}}에 리뷰를 남겨주시면 정말 감사하겠습니다.",
+    "helpsImmensely": "큰 도움이 됩니다! ♥️",
+    "userFeedbackReview": "사용자 피드백 리뷰"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "구독을 사용할 수 없음",
+    "credits": "크레딧",
+    "free": "무료",
+    "upgrade": "업그레이드",
+    "aiProductImagesSubscription": "AI 상품 이미지 구독",
+    "subscriptionInfo": "구독 정보",
+    "planName": "플랜 이름",
+    "creditsAvailable": "사용 가능 크레딧",
+    "creditsReset": "크레딧 초기화",
+    "resetsEveryMonth": "매달 1일에 초기화",
+    "upgradeAiProductImages": "AI 상품 이미지를 업그레이드하세요.",
+    "upgradeSubtitle": "더 많은 크레딧을 받기 위해 플랜을 업그레이드하세요.",
+    "explorePlans": "플랜 보기",
+    "showSubscriptionInfo": "구독 정보 보기"
+  },
+  "studioHeader": {
+    "waitForOperation": "현재 작업이 완료될 때까지 기다려 주세요.",
+    "failedToOpenDashboard": "AI Product Images 대시보드를 열지 못했습니다. 나중에 다시 시도해 주세요.",
+    "openDashboard": "AI Product Images 대시보드 열기",
+    "dismiss": "닫기",
+    "subscriptionUnavailable": "구독을 사용할 수 없습니다",
+    "credits": "크레딧",
+    "free": "무료",
+    "openDashboardDescription": "AI Product Images 대시보드를 열고 모든 제품에 대한 이미지를 쉽게 생성하세요.",
+    "goToDashboard": "대시보드로 이동",
+    "upgrade": "업그레이드"
   }
 }

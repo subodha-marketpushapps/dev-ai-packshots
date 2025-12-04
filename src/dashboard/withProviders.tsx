@@ -60,7 +60,6 @@ export function withProviders<P extends {} = {}>(Component: React.FC<P>) {
 
       const userLocale = i18nEssentials.getLanguage();
       i18n.changeLanguage(userLocale);
-      console.log("userLocale====>>>", userLocale);
     }, [isI18nReady]);
     return (
       <WixDesignSystemProvider

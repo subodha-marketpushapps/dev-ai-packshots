@@ -382,5 +382,59 @@
     "deleting": "Raderar...",
     "uploadedImage": "Uppladdad bild",
     "removeImage": "Ta bort bild"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "FÖRSLAG FÖR DIG",
+    "currentPlan": "NUVARANDE PLAN",
+    "credits": "krediter",
+    "creditsPerMonth": "krediter/månad",
+    "testingCredits": "Testkrediter",
+    "orBilledYearly": "(eller {{price}} debiteras årligen)",
+    "current": "Nuvarande",
+    "contact": "Kontakt",
+    "upgrade": "Uppgradera"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Grundplaner",
+    "enterprisePlans": "Företagsplaner",
+    "wixPricingPlans": "Wix prisplaner",
+    "needSupport": "Behöver du support?",
+    "pricingQuestions": "Hej, jag har några frågor om prissättning.",
+    "upgradeYourPlan": "Uppgradera din plan",
+    "upgradeSubtitle": "Uppgradera din plan för att få fler krediter.",
+    "contactMessage": "Hej, jag är intresserad av planen {{planName}}. Kan du hjälpa mig med detta?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Vi hoppas att du har haft en bra upplevelse med appen hittills! Vi skulle verkligen uppskatta om du kan lämna en recension för {{appName}}.",
+    "helpsImmensely": "Det hjälper enormt! ♥️",
+    "userFeedbackReview": "Användarfeedback"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Prenumeration ej tillgänglig",
+    "credits": "krediter",
+    "free": "Gratis",
+    "upgrade": "Uppgradera",
+    "aiProductImagesSubscription": "AI-produktbilder prenumeration",
+    "subscriptionInfo": "Prenumerationsinfo",
+    "planName": "Plannamn",
+    "creditsAvailable": "Tillgängliga krediter",
+    "creditsReset": "Krediter återställs",
+    "resetsEveryMonth": "Återställs den första varje månad",
+    "upgradeAiProductImages": "Uppgradera AI-produktbilder.",
+    "upgradeSubtitle": "Uppgradera din plan för att få fler krediter.",
+    "explorePlans": "Utforska planer",
+    "showSubscriptionInfo": "Visa prenumerationsinfo"
+  },
+  "studioHeader": {
+    "waitForOperation": "Vänta tills den aktuella åtgärden är klar.",
+    "failedToOpenDashboard": "Kunde inte öppna AI Product Images Dashboard. Försök igen senare.",
+    "openDashboard": "Öppna AI Product Images Dashboard",
+    "dismiss": "Avfärda",
+    "subscriptionUnavailable": "Prenumeration är inte tillgänglig",
+    "credits": "poäng",
+    "free": "Gratis",
+    "openDashboardDescription": "Öppna AI Product Images Dashboard och generera enkelt bilder för alla dina produkter.",
+    "goToDashboard": "Gå till Dashboard",
+    "upgrade": "Uppgradera"
   }
 }

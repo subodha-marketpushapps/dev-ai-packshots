@@ -382,5 +382,59 @@
     "deleting": "Eliminazione in corso...",
     "uploadedImage": "Immagine Caricata",
     "removeImage": "Rimuovi Immagine"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "Consigliato per te",
+    "currentPlan": "Piano attuale",
+    "credits": "crediti",
+    "creditsPerMonth": "crediti/mese",
+    "testingCredits": "Crediti di test",
+    "orBilledYearly": "(o {{price}} fatturati annualmente)",
+    "current": "Attuale",
+    "contact": "Contatta",
+    "upgrade": "Aggiorna"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Piani base",
+    "enterprisePlans": "Piani enterprise",
+    "wixPricingPlans": "Piani tariffari Wix",
+    "needSupport": "Serve aiuto?",
+    "pricingQuestions": "Ciao, ho alcune domande sui prezzi.",
+    "upgradeYourPlan": "Aggiorna il tuo piano",
+    "upgradeSubtitle": "Aggiorna il tuo piano per ottenere più crediti.",
+    "contactMessage": "Ciao, sono interessato al piano {{planName}}. Puoi aiutarmi?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Speriamo che ti stia trovando bene con l'app! Ti saremmo molto grati se lasciassi una recensione per {{appName}}.",
+    "helpsImmensely": "Aiuta tantissimo! ♥️",
+    "userFeedbackReview": "Recensione feedback utente"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Abbonamento non disponibile",
+    "credits": "crediti",
+    "free": "Gratuito",
+    "upgrade": "Aggiorna",
+    "aiProductImagesSubscription": "Abbonamento immagini prodotto AI",
+    "subscriptionInfo": "Informazioni abbonamento",
+    "planName": "Nome piano",
+    "creditsAvailable": "Crediti disponibili",
+    "creditsReset": "Reset crediti",
+    "resetsEveryMonth": "Si resetta il primo di ogni mese",
+    "upgradeAiProductImages": "Aggiorna immagini prodotto AI.",
+    "upgradeSubtitle": "Aggiorna il tuo piano per ottenere più crediti.",
+    "explorePlans": "Esplora i piani",
+    "showSubscriptionInfo": "Mostra informazioni abbonamento"
+  },
+  "studioHeader": {
+    "waitForOperation": "Attendere che l'operazione corrente sia completata.",
+    "failedToOpenDashboard": "Impossibile aprire la Dashboard AI Product Images. Riprova più tardi.",
+    "openDashboard": "Apri Dashboard AI Product Images",
+    "dismiss": "Chiudi",
+    "subscriptionUnavailable": "Abbonamento non disponibile",
+    "credits": "crediti",
+    "free": "Gratuito",
+    "openDashboardDescription": "Apri la Dashboard AI Product Images e genera facilmente immagini per tutti i tuoi prodotti.",
+    "goToDashboard": "Vai alla Dashboard",
+    "upgrade": "Aggiorna"
   }
 }

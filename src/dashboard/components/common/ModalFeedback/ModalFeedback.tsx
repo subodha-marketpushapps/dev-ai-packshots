@@ -7,6 +7,7 @@ import {
   CustomModalLayout,
   Loader,
 } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import imageUserFeedback from "../../../../assets/images/image_user-feedback.svg";
 import classes from "./ModalFeedback.module.scss";
 import { APP_ID, APP_NAME } from "../../../../constants";
@@ -16,6 +17,7 @@ const ModalFeedback: React.FC<{
   onUserReviewed: () => void;
   isModalOpened: boolean;
 }> = (props) => {
+  const { t } = useTranslation();
   const [isUserClickPostBtn, setIsUserClickPostBtn] = useState(false);
   const [iframeLoading, setIframeLoading] = useState(true);
 
@@ -52,11 +54,12 @@ const ModalFeedback: React.FC<{
               <Box gap="24px">
                 <Box gap="6px" direction="vertical" flex={1}>
                   <Text size="medium">
-                    We hope you've had a good experience with the app so far! We
-                    would really appreciate it if you can add a review for{" "}
-                    <Text weight="normal">{APP_NAME}</Text>.
+                    {t('modalFeedback.goodExperienceMessage', {
+                      defaultValue: "We hope you've had a good experience with the app so far! We would really appreciate it if you can add a review for {{appName}}.",
+                      appName: APP_NAME
+                    })}
                   </Text>
-                  <Text size="medium">It helps immensely! ♥️</Text>
+                  <Text size="medium">{t('modalFeedback.helpsImmensely', {defaultValue: "It helps immensely! ♥️"})}</Text>
                 </Box>
                 <Image
                   width="120px"
@@ -90,7 +93,7 @@ const ModalFeedback: React.FC<{
               src={`https://www.wix.com/app-market/add-review/${APP_ID}`}
               width="600px"
               height="572px"
-              title="User Feedback Review"
+              title={t('modalFeedback.userFeedbackReview', {defaultValue: "User Feedback Review"})}
               onLoad={() => {
                 setTimeout(() => {
                   setIframeLoading(false);

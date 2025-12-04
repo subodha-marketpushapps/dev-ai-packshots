@@ -382,5 +382,59 @@
     "deleting": "Sletter...",
     "uploadedImage": "Opplastet bilde",
     "removeImage": "Fjern bilde"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "ANBEFALT FOR DEG",
+    "currentPlan": "NÅVÆRENDE PLAN",
+    "credits": "kreditter",
+    "creditsPerMonth": "kreditter/måned",
+    "testingCredits": "Testkreditter",
+    "orBilledYearly": "(eller {{price}} fakturert årlig)",
+    "current": "Nåværende",
+    "contact": "Kontakt",
+    "upgrade": "Oppgrader"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Grunnleggende planer",
+    "enterprisePlans": "Bedriftsplaner",
+    "wixPricingPlans": "Wix prisplaner",
+    "needSupport": "Trenger du hjelp?",
+    "pricingQuestions": "Hei, jeg har noen spørsmål om priser.",
+    "upgradeYourPlan": "Oppgrader planen din",
+    "upgradeSubtitle": "Oppgrader planen din for å få flere kreditter.",
+    "contactMessage": "Hei, jeg er interessert i planen {{planName}}. Kan du hjelpe meg med dette?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Vi håper du har hatt en god opplevelse med appen så langt! Vi setter stor pris på om du kan legge igjen en anmeldelse for {{appName}}.",
+    "helpsImmensely": "Det hjelper enormt! ♥️",
+    "userFeedbackReview": "Brukeromtale"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Abonnement utilgjengelig",
+    "credits": "kreditter",
+    "free": "Gratis",
+    "upgrade": "Oppgrader",
+    "aiProductImagesSubscription": "AI Product Images-abonnement",
+    "subscriptionInfo": "Abonnementsinformasjon",
+    "planName": "Plan navn",
+    "creditsAvailable": "Tilgjengelige kreditter",
+    "creditsReset": "Kreditter tilbakestilles",
+    "resetsEveryMonth": "Tilbakestilles den 1. hver måned",
+    "upgradeAiProductImages": "Oppgrader AI Product Images.",
+    "upgradeSubtitle": "Oppgrader planen din for å få flere kreditter.",
+    "explorePlans": "Utforsk planer",
+    "showSubscriptionInfo": "Vis abonnementsinformasjon"
+  },
+  "studioHeader": {
+    "waitForOperation": "Vennligst vent til den nåværende operasjonen er fullført.",
+    "failedToOpenDashboard": "Kunne ikke åpne AI Product Images Dashboard. Prøv igjen senere.",
+    "openDashboard": "Åpne AI Product Images Dashboard",
+    "dismiss": "Avvis",
+    "subscriptionUnavailable": "Abonnement ikke tilgjengelig",
+    "credits": "kreditter",
+    "free": "Gratis",
+    "openDashboardDescription": "Åpne AI Product Images Dashboard og generer enkelt bilder for alle produktene dine.",
+    "goToDashboard": "Gå til Dashboard",
+    "upgrade": "Oppgrader"
   }
 }

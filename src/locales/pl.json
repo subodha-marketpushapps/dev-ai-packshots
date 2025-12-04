@@ -382,5 +382,59 @@
     "deleting": "Usuwanie...",
     "uploadedImage": "Przesłany Obraz",
     "removeImage": "Usuń Obraz"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "SUGEROWANE DLA CIEBIE",
+    "currentPlan": "AKTUALNY PLAN",
+    "credits": "kredyty",
+    "creditsPerMonth": "kredyty/miesiąc",
+    "testingCredits": "Kredyty testowe",
+    "orBilledYearly": "(lub {{price}} rozliczane rocznie)",
+    "current": "Aktualny",
+    "contact": "Kontakt",
+    "upgrade": "Ulepsz"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Plany podstawowe",
+    "enterprisePlans": "Plany dla firm",
+    "wixPricingPlans": "Plany cenowe Wix",
+    "needSupport": "Potrzebujesz pomocy?",
+    "pricingQuestions": "Cześć, mam kilka pytań dotyczących cen.",
+    "upgradeYourPlan": "Ulepsz swój plan",
+    "upgradeSubtitle": "Ulepsz swój plan, aby uzyskać więcej kredytów.",
+    "contactMessage": "Cześć, interesuje mnie plan {{planName}}. Czy możesz mi pomóc?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Mamy nadzieję, że korzystanie z aplikacji było dla Ciebie pozytywne! Będziemy wdzięczni za recenzję aplikacji {{appName}}.",
+    "helpsImmensely": "To ogromnie pomaga! ♥️",
+    "userFeedbackReview": "Opinia użytkownika"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Subskrypcja niedostępna",
+    "credits": "kredyty",
+    "free": "Darmowe",
+    "upgrade": "Ulepsz",
+    "aiProductImagesSubscription": "Subskrypcja AI Product Images",
+    "subscriptionInfo": "Informacje o subskrypcji",
+    "planName": "Nazwa planu",
+    "creditsAvailable": "Dostępne kredyty",
+    "creditsReset": "Reset kredytów",
+    "resetsEveryMonth": "Resetuje się 1. dnia każdego miesiąca",
+    "upgradeAiProductImages": "Ulepsz AI Product Images.",
+    "upgradeSubtitle": "Ulepsz swój plan, aby uzyskać więcej kredytów.",
+    "explorePlans": "Przeglądaj plany",
+    "showSubscriptionInfo": "Pokaż informacje o subskrypcji"
+  },
+  "studioHeader": {
+    "waitForOperation": "Proszę poczekać, aż bieżąca operacja się zakończy.",
+    "failedToOpenDashboard": "Nie udało się otworzyć Panelu AI Product Images. Spróbuj ponownie później.",
+    "openDashboard": "Otwórz Panel AI Product Images",
+    "dismiss": "Odrzuć",
+    "subscriptionUnavailable": "Subskrypcja niedostępna",
+    "credits": "kredyty",
+    "free": "Darmowe",
+    "openDashboardDescription": "Otwórz Panel AI Product Images i łatwo generuj obrazy dla wszystkich swoich produktów.",
+    "goToDashboard": "Przejdź do Panelu",
+    "upgrade": "Ulepsz"
   }
 }

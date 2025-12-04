@@ -7,6 +7,7 @@ import {
 import React, { useCallback, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { useIntercom } from "react-use-intercom";
+import { useTranslation } from "react-i18next";
 import * as Icons from "@wix/wix-ui-icons-common";
 
 import PricingPlanCard from "./PricingPlanCard";
@@ -22,6 +23,7 @@ const ModalPricingPlans: React.FC<{
   onModalClosed: () => void;
   isModalOpened: boolean;
 }> = (props) => {
+  const { t } = useTranslation();
   const subscription = useRecoilValue(subscriptionState);
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards");
   const { showNewMessage } = useIntercom();
@@ -35,10 +37,13 @@ const ModalPricingPlans: React.FC<{
   const handleContactClick = useCallback(
     (planName: string) => {
       openIntercomWithContent(
-        `Hi, I am interested in the ${planName} plan. Can you help me with this?`
+        t('modalPricingPlans.contactMessage', {
+          defaultValue: "Hi, I am interested in the {{planName}} plan. Can you help me with this?",
+          planName
+        })
       );
     },
-    [openIntercomWithContent]
+    [openIntercomWithContent, t]
   );
 
   const handleOpenWixUpgradePage = useCallback(() => {
@@ -72,7 +77,7 @@ const ModalPricingPlans: React.FC<{
   const PricingPlanCardsView = () => (
     <Box maxHeight={"100%"} overflowY="auto" direction="vertical">
       {/* Regular plans */}
-      <SectionHeader title="Basic plans" skin="standard" />
+      <SectionHeader title={t('modalPricingPlans.basicPlans', {defaultValue: "Basic plans"})} skin="standard" />
       <Box gap="SP3" padding={"SP4"} backgroundColor="D70" direction="vertical">
         {regularPlansToShow.map((plan) => (
           <PricingPlanCard
@@ -87,7 +92,7 @@ const ModalPricingPlans: React.FC<{
       </Box>
 
       {/* Enterprise plans section */}
-      <SectionHeader title="Enterprise plans" skin="standard" />
+      <SectionHeader title={t('modalPricingPlans.enterprisePlans', {defaultValue: "Enterprise plans"})} skin="standard" />
       <Box gap="SP3" padding={"SP4"} backgroundColor="D70" direction="vertical">
         {enterprisePlansToShow.map((plan) => (
           <PricingPlanCard
@@ -111,16 +116,16 @@ const ModalPricingPlans: React.FC<{
       zIndex={9999999}
     >
       <CustomModalLayout
-        primaryButtonText="Wix Pricing Plans"
-        secondaryButtonText="Need support?"
+        primaryButtonText={t('modalPricingPlans.wixPricingPlans', {defaultValue: "Wix Pricing Plans"})}
+        secondaryButtonText={t('modalPricingPlans.needSupport', {defaultValue: "Need support?"})}
         onCloseButtonClick={props.onModalClosed}
         primaryButtonOnClick={handleOpenWixUpgradePage}
         secondaryButtonOnClick={() =>
-          openIntercomWithContent("Hi, I have some questions about pricing.")
+          openIntercomWithContent(t('modalPricingPlans.pricingQuestions', {defaultValue: "Hi, I have some questions about pricing."}))
         }
         primaryButtonProps={{ prefixIcon: <Icons.ExternalLink /> }}
-        title="Upgrade Your Plan"
-        subtitle="Upgrade your plan to get more credits."
+        title={t('modalPricingPlans.upgradeYourPlan', {defaultValue: "Upgrade Your Plan"})}
+        subtitle={t('modalPricingPlans.upgradeSubtitle', {defaultValue: "Upgrade your plan to get more credits."})}
         content={PricingPlanCardsView()}
         removeContentPadding={viewMode === "cards"}
         width={800}

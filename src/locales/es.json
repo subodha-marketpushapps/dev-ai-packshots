@@ -382,6 +382,60 @@
     "deleting": "Eliminando...",
     "uploadedImage": "Imagen cargada",
     "removeImage": "Eliminar imagen"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "RECOMENDADO PARA TI",
+    "currentPlan": "PLAN ACTUAL",
+    "credits": "créditos",
+    "creditsPerMonth": "créditos/mes",
+    "testingCredits": "Créditos de Prueba",
+    "orBilledYearly": "(o {{price}} facturado anualmente)",
+    "current": "Actual",
+    "contact": "Contactar",
+    "upgrade": "Actualizar"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Planes básicos",
+    "enterprisePlans": "Planes empresariales",
+    "wixPricingPlans": "Planes de Precios de Wix",
+    "needSupport": "¿Necesitas ayuda?",
+    "pricingQuestions": "Hola, tengo algunas preguntas sobre los precios.",
+    "upgradeYourPlan": "Actualiza tu Plan",
+    "upgradeSubtitle": "Actualiza tu plan para obtener más créditos.",
+    "contactMessage": "Hola, estoy interesado en el plan {{planName}}. ¿Puedes ayudarme con esto?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "¡Esperamos que hayas tenido una buena experiencia con la aplicación hasta ahora! Realmente apreciaríamos si pudieras agregar una reseña para {{appName}}.",
+    "helpsImmensely": "¡Ayuda muchísimo! ♥️",
+    "userFeedbackReview": "Reseña de Usuario"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Suscripción no disponible",
+    "credits": "créditos",
+    "free": "Gratis",
+    "upgrade": "Actualizar",
+    "aiProductImagesSubscription": "Suscripción de AI Product Images",
+    "subscriptionInfo": "Información de Suscripción",
+    "planName": "Nombre del Plan",
+    "creditsAvailable": "Créditos disponibles",
+    "creditsReset": "Reinicio de créditos",
+    "resetsEveryMonth": "Se reinicia cada día 1 del mes",
+    "upgradeAiProductImages": "Actualizar AI Product Images.",
+    "upgradeSubtitle": "Actualiza tu plan para obtener más créditos.",
+    "explorePlans": "Explorar Planes",
+    "showSubscriptionInfo": "Mostrar Información de Suscripción"
+  },
+  "studioHeader": {
+    "waitForOperation": "Por favor, espera a que termine la operación actual.",
+    "failedToOpenDashboard": "No se pudo abrir el Panel de AI Product Images. Por favor, inténtalo de nuevo más tarde.",
+    "openDashboard": "Abrir Panel de AI Product Images",
+    "dismiss": "Descartar",
+    "subscriptionUnavailable": "Suscripción no disponible",
+    "credits": "créditos",
+    "free": "Gratis",
+    "openDashboardDescription": "Abre el Panel de AI Product Images y genera imágenes fácilmente para todos tus productos.",
+    "goToDashboard": "Ir al Panel",
+    "upgrade": "Actualizar"
   }
 }
 

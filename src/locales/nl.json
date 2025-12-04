@@ -382,5 +382,59 @@
     "deleting": "Verwijderen...",
     "uploadedImage": "Geüploade Afbeelding",
     "removeImage": "Afbeelding verwijderen"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "AANBEVOLEN VOOR JOU",
+    "currentPlan": "HUIDIG PLAN",
+    "credits": "credits",
+    "creditsPerMonth": "credits/maand",
+    "testingCredits": "Testcredits",
+    "orBilledYearly": "(of {{price}} jaarlijks gefactureerd)",
+    "current": "Huidig",
+    "contact": "Contact",
+    "upgrade": "Upgrade"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Basisplannen",
+    "enterprisePlans": "Bedrijfsplannen",
+    "wixPricingPlans": "Wix Prijsplannen",
+    "needSupport": "Hulp nodig?",
+    "pricingQuestions": "Hallo, ik heb enkele vragen over de prijzen.",
+    "upgradeYourPlan": "Upgrade je plan",
+    "upgradeSubtitle": "Upgrade je plan om meer credits te krijgen.",
+    "contactMessage": "Hallo, ik ben geïnteresseerd in het {{planName}}-plan. Kun je me hiermee helpen?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "We hopen dat je tot nu toe een goede ervaring met de app hebt gehad! We zouden het zeer waarderen als je een beoordeling kunt toevoegen voor {{appName}}.",
+    "helpsImmensely": "Het helpt enorm! ♥️",
+    "userFeedbackReview": "Gebruikersfeedback"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Abonnement niet beschikbaar",
+    "credits": "credits",
+    "free": "Gratis",
+    "upgrade": "Upgrade",
+    "aiProductImagesSubscription": "AI Product Images Abonnement",
+    "subscriptionInfo": "Abonnementsinformatie",
+    "planName": "Plannaam",
+    "creditsAvailable": "Beschikbare credits",
+    "creditsReset": "Credits reset",
+    "resetsEveryMonth": "Wordt elke 1e van de maand gereset",
+    "upgradeAiProductImages": "Upgrade AI Product Images.",
+    "upgradeSubtitle": "Upgrade je plan om meer credits te krijgen.",
+    "explorePlans": "Plannen bekijken",
+    "showSubscriptionInfo": "Abonnementsinformatie tonen"
+  },
+  "studioHeader": {
+    "waitForOperation": "Wacht tot de huidige bewerking is voltooid.",
+    "failedToOpenDashboard": "Kan het AI Product Images Dashboard niet openen. Probeer het later opnieuw.",
+    "openDashboard": "AI Product Images Dashboard openen",
+    "dismiss": "Sluiten",
+    "subscriptionUnavailable": "Abonnement niet beschikbaar",
+    "credits": "credits",
+    "free": "Gratis",
+    "openDashboardDescription": "Open het AI Product Images Dashboard en genereer eenvoudig afbeeldingen voor al uw producten.",
+    "goToDashboard": "Ga naar Dashboard",
+    "upgrade": "Upgraden"
   }
 }

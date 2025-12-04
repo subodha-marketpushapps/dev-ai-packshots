@@ -382,6 +382,60 @@
     "deleting": "Suppression en cours...",
     "uploadedImage": "Image téléchargée",
     "removeImage": "Supprimer l'image"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "RECOMMANDÉ POUR VOUS",
+    "currentPlan": "PLAN ACTUEL",
+    "credits": "crédits",
+    "creditsPerMonth": "crédits/mois",
+    "testingCredits": "Crédits de test",
+    "orBilledYearly": "(ou {{price}} facturé annuellement)",
+    "current": "Actuel",
+    "contact": "Contacter",
+    "upgrade": "Mettre à niveau"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Plans de base",
+    "enterprisePlans": "Plans entreprise",
+    "wixPricingPlans": "Plans tarifaires Wix",
+    "needSupport": "Besoin d'aide ?",
+    "pricingQuestions": "Bonjour, j'ai des questions sur les tarifs.",
+    "upgradeYourPlan": "Mettre à niveau votre plan",
+    "upgradeSubtitle": "Mettez à niveau votre plan pour obtenir plus de crédits.",
+    "contactMessage": "Bonjour, je suis intéressé par le plan {{planName}}. Pouvez-vous m'aider avec cela ?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Nous espérons que vous avez eu une bonne expérience avec l'application jusqu'à présent ! Nous apprécierions vraiment si vous pouviez ajouter un avis pour {{appName}}.",
+    "helpsImmensely": "Cela aide énormément ! ♥️",
+    "userFeedbackReview": "Avis des utilisateurs"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Abonnement indisponible",
+    "credits": "crédits",
+    "free": "Gratuit",
+    "upgrade": "Mettre à niveau",
+    "aiProductImagesSubscription": "Abonnement AI Product Images",
+    "subscriptionInfo": "Informations sur l'abonnement",
+    "planName": "Nom du plan",
+    "creditsAvailable": "Crédits disponibles",
+    "creditsReset": "Réinitialisation des crédits",
+    "resetsEveryMonth": "Réinitialisation chaque 1er du mois",
+    "upgradeAiProductImages": "Mettre à niveau AI Product Images.",
+    "upgradeSubtitle": "Mettez à niveau votre plan pour obtenir plus de crédits.",
+    "explorePlans": "Explorer les plans",
+    "showSubscriptionInfo": "Afficher les informations sur l'abonnement"
+  },
+  "studioHeader": {
+    "waitForOperation": "Veuillez attendre que l'opération en cours se termine.",
+    "failedToOpenDashboard": "Échec de l'ouverture du tableau de bord AI Product Images. Veuillez réessayer plus tard.",
+    "openDashboard": "Ouvrir le tableau de bord AI Product Images",
+    "dismiss": "Fermer",
+    "subscriptionUnavailable": "Abonnement indisponible",
+    "credits": "crédits",
+    "free": "Gratuit",
+    "openDashboardDescription": "Ouvrez le tableau de bord AI Product Images et générez facilement des images pour tous vos produits.",
+    "goToDashboard": "Aller au tableau de bord",
+    "upgrade": "Mettre à niveau"
   }
 }
 

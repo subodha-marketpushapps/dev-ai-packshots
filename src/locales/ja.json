@@ -382,5 +382,59 @@
     "deleting": "削除中...",
     "uploadedImage": "アップロードされた画像",
     "removeImage": "画像を削除"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "あなたへのおすすめ",
+    "currentPlan": "現在のプラン",
+    "credits": "クレジット",
+    "creditsPerMonth": "クレジット/月",
+    "testingCredits": "テストクレジット",
+    "orBilledYearly": "（または年間 {{price}} 請求）",
+    "current": "現在",
+    "contact": "お問い合わせ",
+    "upgrade": "アップグレード"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "基本プラン",
+    "enterprisePlans": "エンタープライズプラン",
+    "wixPricingPlans": "Wix 料金プラン",
+    "needSupport": "サポートが必要ですか？",
+    "pricingQuestions": "こんにちは、料金について質問があります。",
+    "upgradeYourPlan": "プランをアップグレード",
+    "upgradeSubtitle": "より多くのクレジットを取得するためにプランをアップグレードしてください。",
+    "contactMessage": "こんにちは、{{planName}} プランに興味があります。ご対応いただけますか？"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "アプリを快適にご利用いただけていることを願っています！よろしければ {{appName}} のレビューをお願いします。",
+    "helpsImmensely": "とても助かります！♥️",
+    "userFeedbackReview": "ユーザーフィードバックレビュー"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "サブスクリプション利用不可",
+    "credits": "クレジット",
+    "free": "無料",
+    "upgrade": "アップグレード",
+    "aiProductImagesSubscription": "AI 商品画像サブスクリプション",
+    "subscriptionInfo": "サブスクリプション情報",
+    "planName": "プラン名",
+    "creditsAvailable": "利用可能クレジット",
+    "creditsReset": "クレジットリセット",
+    "resetsEveryMonth": "毎月1日にリセット",
+    "upgradeAiProductImages": "AI 商品画像をアップグレード。",
+    "upgradeSubtitle": "より多くのクレジットを取得するためにプランをアップグレードしてください。",
+    "explorePlans": "プランを見る",
+    "showSubscriptionInfo": "サブスクリプション情報を表示"
+  },
+  "studioHeader": {
+    "waitForOperation": "現在の操作が完了するまでお待ちください。",
+    "failedToOpenDashboard": "AI Product Images ダッシュボードを開けませんでした。後でもう一度お試しください。",
+    "openDashboard": "AI Product Images ダッシュボードを開く",
+    "dismiss": "閉じる",
+    "subscriptionUnavailable": "サブスクリプションが利用できません",
+    "credits": "クレジット",
+    "free": "無料",
+    "openDashboardDescription": "AI Product Images ダッシュボードを開いて、すべての製品の画像を簡単に生成できます。",
+    "goToDashboard": "ダッシュボードに移動",
+    "upgrade": "アップグレード"
   }
 }

@@ -382,5 +382,59 @@
     "deleting": "Siliniyor...",
     "uploadedImage": "Yüklenen Görsel",
     "removeImage": "Görseli Kaldır"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "SİZİN İÇİN ÖNERİLEN",
+    "currentPlan": "MEVCUT PLAN",
+    "credits": "kredi",
+    "creditsPerMonth": "kredi/ay",
+    "testingCredits": "Test Kredileri",
+    "orBilledYearly": "(veya {{price}} yıllık faturalandırılır)",
+    "current": "Mevcut",
+    "contact": "İletişim",
+    "upgrade": "Yükselt"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Temel planlar",
+    "enterprisePlans": "Kurumsal planlar",
+    "wixPricingPlans": "Wix Fiyatlandırma Planları",
+    "needSupport": "Desteğe mi ihtiyacınız var?",
+    "pricingQuestions": "Merhaba, fiyatlandırma hakkında bazı sorularım var.",
+    "upgradeYourPlan": "Planınızı Yükseltin",
+    "upgradeSubtitle": "Daha fazla kredi almak için planınızı yükseltin.",
+    "contactMessage": "Merhaba, {{planName}} planıyla ilgileniyorum. Bana yardımcı olabilir misiniz?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Uygulama ile şimdiye kadar iyi bir deneyim yaşadığınızı umuyoruz! {{appName}} için bir inceleme bırakırsanız çok memnun oluruz.",
+    "helpsImmensely": "Bu gerçekten çok yardımcı oluyor!",
+    "userFeedbackReview": "Kullanıcı Geri Bildirim İncelemesi"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Abonelik mevcut değil",
+    "credits": "kredi",
+    "free": "Ücretsiz",
+    "upgrade": "Yükselt",
+    "aiProductImagesSubscription": "AI Ürün Görselleri Aboneliği",
+    "subscriptionInfo": "Abonelik Bilgisi",
+    "planName": "Plan Adı",
+    "creditsAvailable": "Kullanılabilir kredi",
+    "creditsReset": "Krediler sıfırlandı",
+    "resetsEveryMonth": "Her ayın 1'inde sıfırlanır",
+    "upgradeAiProductImages": "AI Ürün Görsellerini Yükseltin.",
+    "upgradeSubtitle": "Daha fazla kredi almak için planınızı yükseltin.",
+    "explorePlans": "Planları İncele",
+    "showSubscriptionInfo": "Abonelik Bilgilerini Göster"
+  },
+  "studioHeader": {
+    "waitForOperation": "Lütfen mevcut işlemin tamamlanmasını bekleyin.",
+    "failedToOpenDashboard": "AI Product Images Panosu açılamadı. Lütfen daha sonra tekrar deneyin.",
+    "openDashboard": "AI Product Images Panosunu Aç",
+    "dismiss": "Kapat",
+    "subscriptionUnavailable": "Abonelik kullanılamıyor",
+    "credits": "kredi",
+    "free": "Ücretsiz",
+    "openDashboardDescription": "AI Product Images Panosunu açın ve tüm ürünleriniz için kolayca görsel oluşturun.",
+    "goToDashboard": "Panele Git",
+    "upgrade": "Yükselt"
   }
 }

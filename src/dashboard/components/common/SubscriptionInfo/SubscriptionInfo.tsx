@@ -8,6 +8,7 @@ import {
   SkeletonGroup,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import InfoFloatingHelper from "./InfoFloatingHelper";
 import { useRecoilValue } from "recoil";
 import { subscriptionState } from "../../../services/state/subscriptionState";
@@ -30,6 +31,7 @@ interface SubscriptionInfoPanelProps {
  * Uses PhotoStudioProvider context for subscription data and upgrade modal.
  */
 const StudioSubscriptionInfo: React.FC = () => {
+  const { t } = useTranslation();
   const subscription = useRecoilValue(subscriptionState);
   const { instanceId } = useRecoilValue(wixSiteDataState);
 
@@ -54,7 +56,7 @@ const StudioSubscriptionInfo: React.FC = () => {
         verticalAlign="middle"
         padding="0 SP2"
       >
-        <Text size="small">Subscription unavailable</Text>
+        <Text size="small">{t('subscriptionInfo.subscriptionUnavailable', {defaultValue: "Subscription unavailable"})}</Text>
       </Box>
     );
   }
@@ -83,13 +85,13 @@ const StudioSubscriptionInfo: React.FC = () => {
           color="B10"
         >
           <Icons.SparklesFilled size={16} />
-          <Text size="small">{subscription.creditsAvailable} credits</Text>
+          <Text size="small">{subscription.creditsAvailable} {t('subscriptionInfo.credits', {defaultValue: "credits"})}</Text>
         </Box>
         <Box color="D10">
           <Icons.CircleSmallFilledSmall />
         </Box>
         <Text size="small">
-          {subscription.plan == "Basic" ? "Free" : subscription.plan}
+          {subscription.plan == "Basic" ? t('subscriptionInfo.free', {defaultValue: "Free"}) : subscription.plan}
         </Text>
         {showUpgrade && (
           <Box
@@ -103,7 +105,7 @@ const StudioSubscriptionInfo: React.FC = () => {
               priority={mustUpgrade ? "primary" : "secondary"}
               onClick={handleOpenWixUpgradePage}
             >
-              Upgrade
+              {t('subscriptionInfo.upgrade', {defaultValue: "Upgrade"})}
             </Button>
           </Box>
         )}

@@ -382,5 +382,59 @@
     "deleting": "Đang xóa...",
     "uploadedImage": "Hình ảnh Đã tải lên",
     "removeImage": "Xóa Hình ảnh"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "GỢI Ý CHO BẠN",
+    "currentPlan": "GÓI HIỆN TẠI",
+    "credits": "tín dụng",
+    "creditsPerMonth": "tín dụng/tháng",
+    "testingCredits": "Tín dụng thử nghiệm",
+    "orBilledYearly": "(hoặc {{price}} thanh toán hàng năm)",
+    "current": "Hiện tại",
+    "contact": "Liên hệ",
+    "upgrade": "Nâng cấp"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Gói cơ bản",
+    "enterprisePlans": "Gói doanh nghiệp",
+    "wixPricingPlans": "Gói giá Wix",
+    "needSupport": "Cần hỗ trợ?",
+    "pricingQuestions": "Chào bạn, tôi có vài câu hỏi về giá.",
+    "upgradeYourPlan": "Nâng cấp gói của bạn",
+    "upgradeSubtitle": "Nâng cấp gói để có thêm tín dụng.",
+    "contactMessage": "Chào bạn, tôi quan tâm đến gói {{planName}}. Bạn có thể giúp tôi không?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Chúng tôi hy vọng bạn đã có trải nghiệm tốt với ứng dụng! Chúng tôi rất mong bạn để lại đánh giá cho {{appName}}.",
+    "helpsImmensely": "Điều đó giúp ích rất nhiều!",
+    "userFeedbackReview": "Đánh giá phản hồi người dùng"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Không khả dụng",
+    "credits": "tín dụng",
+    "free": "Miễn phí",
+    "upgrade": "Nâng cấp",
+    "aiProductImagesSubscription": "Gói đăng ký AI Product Images",
+    "subscriptionInfo": "Thông tin đăng ký",
+    "planName": "Tên gói",
+    "creditsAvailable": "Tín dụng khả dụng",
+    "creditsReset": "Tín dụng được đặt lại",
+    "resetsEveryMonth": "Đặt lại vào ngày 1 hàng tháng",
+    "upgradeAiProductImages": "Nâng cấp AI Product Images.",
+    "upgradeSubtitle": "Nâng cấp gói của bạn để có thêm tín dụng.",
+    "explorePlans": "Xem các gói",
+    "showSubscriptionInfo": "Hiển thị thông tin đăng ký"
+  },
+  "studioHeader": {
+    "waitForOperation": "Vui lòng đợi cho đến khi thao tác hiện tại hoàn tất.",
+    "failedToOpenDashboard": "Không thể mở Bảng điều khiển AI Product Images. Vui lòng thử lại sau.",
+    "openDashboard": "Mở Bảng điều khiển AI Product Images",
+    "dismiss": "Đóng",
+    "subscriptionUnavailable": "Gói đăng ký không khả dụng",
+    "credits": "tín dụng",
+    "free": "Miễn phí",
+    "openDashboardDescription": "Mở Bảng điều khiển AI Product Images và dễ dàng tạo hình ảnh cho tất cả sản phẩm của bạn.",
+    "goToDashboard": "Đi đến Bảng điều khiển",
+    "upgrade": "Nâng cấp"
   }
 }

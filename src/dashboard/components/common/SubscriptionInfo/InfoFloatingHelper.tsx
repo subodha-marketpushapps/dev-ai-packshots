@@ -9,6 +9,7 @@ import {
   TextButton,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { ALL_PRICING_PLANS } from "../../../../constants";
 
 export interface SubscriptionInfoPanelProps {
@@ -24,6 +25,7 @@ export interface SubscriptionInfoPanelProps {
 
 const SubscriptionInfoPanel: React.FC<SubscriptionInfoPanelProps> = React.memo(
   ({ subscription, onExplorePlans, context = "dashboard", children }) => {
+    const { t } = useTranslation();
     const currentPricingPlan = ALL_PRICING_PLANS.find(
       (plan) => plan.plan === subscription.plan
     );
@@ -33,26 +35,26 @@ const SubscriptionInfoPanel: React.FC<SubscriptionInfoPanelProps> = React.memo(
       <Box borderRadius={8} gap={"SP2"} direction="vertical">
         <Heading size="small">
           {context === "modal"
-            ? "AI Product Images Subscription"
-            : "Subscription Info"}
+            ? t('subscriptionInfo.aiProductImagesSubscription', {defaultValue: "AI Product Images Subscription"})
+            : t('subscriptionInfo.subscriptionInfo', {defaultValue: "Subscription Info"})}
         </Heading>
         <Box gap={"SP1"} direction="vertical">
           <Box gap="2px">
             <Box width={"114px"}>
               <Text size="small" weight="normal">
-                Plan Name
+                {t('subscriptionInfo.planName', {defaultValue: "Plan Name"})}
               </Text>
             </Box>
             <Box>
               <Text size="small" secondary>
-                {subscription.plan == "Basic" ? "Free" : subscription.plan}
+                {subscription.plan == "Basic" ? t('subscriptionInfo.free', {defaultValue: "Free"}) : subscription.plan}
               </Text>
             </Box>
           </Box>
           <Box gap="2px">
             <Box width={"114px"}>
               <Text size="small" weight="normal">
-                Credits available
+                {t('subscriptionInfo.creditsAvailable', {defaultValue: "Credits available"})}
               </Text>
             </Box>
             <Box
@@ -77,12 +79,12 @@ const SubscriptionInfoPanel: React.FC<SubscriptionInfoPanelProps> = React.memo(
             <Box gap="2px">
               <Box width={"114px"}>
                 <Text size="small" weight="normal">
-                  Credits reset
+                  {t('subscriptionInfo.creditsReset', {defaultValue: "Credits reset"})}
                 </Text>
               </Box>
               <Box gap={"2px"} verticalAlign="middle">
                 <Text size="small" secondary maxLines={1} ellipsis>
-                  Resets every 1st of the month"
+                  {t('subscriptionInfo.resetsEveryMonth', {defaultValue: "Resets every 1st of the month"})}
                 </Text>
               </Box>
             </Box>
@@ -91,15 +93,15 @@ const SubscriptionInfoPanel: React.FC<SubscriptionInfoPanelProps> = React.memo(
         <Box gap={"SP1"} verticalAlign="middle">
           <Text size="tiny">
             {context === "modal"
-              ? "Upgrade AI Product Images."
-              : "Upgrade your plan to get more credits."}
+              ? t('subscriptionInfo.upgradeAiProductImages', {defaultValue: "Upgrade AI Product Images."})
+              : t('subscriptionInfo.upgradeSubtitle', {defaultValue: "Upgrade your plan to get more credits."})}
           </Text>
           <TextButton
             size="tiny"
             onClick={onExplorePlans}
             suffixIcon={<Icons.ExternalLink />}
           >
-            Explore Plans
+            {t('subscriptionInfo.explorePlans', {defaultValue: "Explore Plans"})}
           </TextButton>
         </Box>
 
@@ -124,6 +126,7 @@ const InfoFloatingHelper: React.FC<InfoFloatingHelperProps> = ({
   context = "dashboard",
   children,
 }) => {
+  const { t } = useTranslation();
   const [isSubscriptionInfoOpen, setIsSubscriptionInfoOpen] = useState(false);
   // Handlers
   const handleExplorePlans = useCallback(() => {
@@ -146,7 +149,7 @@ const InfoFloatingHelper: React.FC<InfoFloatingHelperProps> = ({
       skin="light"
       target={
         uiMode === "default" ? (
-          <Tooltip content="Subscription Info" size="small">
+          <Tooltip content={t('subscriptionInfo.subscriptionInfo', {defaultValue: "Subscription Info"})} size="small">
             <Box
               gap={"SP1"}
               verticalAlign="middle"
@@ -159,14 +162,14 @@ const InfoFloatingHelper: React.FC<InfoFloatingHelperProps> = ({
                 priority="tertiary"
                 onClick={handleToggleInfo}
                 size={"tiny"}
-                aria-label="Show Subscription Info"
+                aria-label={t('subscriptionInfo.showSubscriptionInfo', {defaultValue: "Show Subscription Info"})}
               >
                 <Icons.ChevronDown />
               </IconButton>
             </Box>
           </Tooltip>
         ) : (
-          <Tooltip content="Subscription Info" size="small">
+          <Tooltip content={t('subscriptionInfo.subscriptionInfo', {defaultValue: "Subscription Info"})} size="small">
             <IconButton
               skin="standard"
               priority="tertiary"

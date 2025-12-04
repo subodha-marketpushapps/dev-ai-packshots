@@ -10,6 +10,7 @@ import {
   Badge,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import { ENTERPRISE_PLAN_NAMES } from "../../../../constants/data";
 
 interface PricingPlan {
@@ -38,6 +39,7 @@ const PricingPlanCard: React.FC<{
   onContactClick,
   showUpgradeAction = true,
 }) => {
+  const { t } = useTranslation();
   const [hovered, setHovered] = useState(false);
   const isEnterprise = ENTERPRISE_PLAN_NAMES.includes(plan.plan);
   return (
@@ -54,12 +56,12 @@ const PricingPlanCard: React.FC<{
                   <Box height="18px" marginTop={2} marginLeft={-1}>
                     {suggested && (
                       <Badge size="small" skin="premium">
-                        SUGGESTED FOR YOU
+                        {t('pricingPlanCard.suggestedForYou', {defaultValue: "SUGGESTED FOR YOU"})}
                       </Badge>
                     )}
                     {isCurrent && (
                       <Badge size="small" skin="neutral">
-                        CURRENT PLAN
+                        {t('pricingPlanCard.currentPlan', {defaultValue: "CURRENT PLAN"})}
                       </Badge>
                     )}
                   </Box>
@@ -86,16 +88,21 @@ const PricingPlanCard: React.FC<{
                       <Icons.SparklesFilled size={16} />
                     </Box>
                     <Text size="small">
-                      {plan.plan == "Basic" ? "credits" : "credits/month"}
+                      {plan.plan == "Basic" 
+                        ? t('pricingPlanCard.credits', {defaultValue: "credits"})
+                        : t('pricingPlanCard.creditsPerMonth', {defaultValue: "credits/month"})}
                     </Text>
                   </Box>
                   <Text size="tiny" secondary>
                     {plan.plan == "Basic"
-                      ? "Testing Credits"
+                      ? t('pricingPlanCard.testingCredits', {defaultValue: "Testing Credits"})
                       : plan.monthly_price}{" "}
                     {plan.per_month_billed_yearly && (
                       <span>
-                        (or {plan.per_month_billed_yearly} billed yearly)
+                        {t('pricingPlanCard.orBilledYearly', {
+                          defaultValue: "(or {{price}} billed yearly)",
+                          price: plan.per_month_billed_yearly
+                        })}
                       </span>
                     )}
                   </Text>
@@ -118,7 +125,11 @@ const PricingPlanCard: React.FC<{
                     : onUpgradeClick
                 }
               >
-                {isCurrent ? "Current" : isEnterprise ? "Contact" : "Upgrade"}
+                {isCurrent 
+                  ? t('pricingPlanCard.current', {defaultValue: "Current"})
+                  : isEnterprise 
+                  ? t('pricingPlanCard.contact', {defaultValue: "Contact"})
+                  : t('pricingPlanCard.upgrade', {defaultValue: "Upgrade"})}
               </Button>
             </Box>
           )}

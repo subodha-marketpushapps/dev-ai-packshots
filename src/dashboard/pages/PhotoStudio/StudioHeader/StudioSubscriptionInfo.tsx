@@ -7,6 +7,7 @@ import {
   SkeletonRectangle,
   Divider,
 } from "@wix/design-system";
+import { useTranslation } from "react-i18next";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
 import * as Icons from "@wix/wix-ui-icons-common";
 import InfoFloatingHelper from "../../../components/common/SubscriptionInfo/InfoFloatingHelper";
@@ -28,6 +29,7 @@ interface StudioSubscriptionInfoProps {
 const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
   context = "dashboard",
 }) => {
+  const { t } = useTranslation();
   const { subscription, isUpgradeModalOpen } = usePhotoStudio();
   const { addToast } = useStatusToast();
 
@@ -45,7 +47,7 @@ const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
         content:
           error instanceof Error
             ? error.message
-            : "Failed to open the AI Product Images Dashboard. Please try again later.",
+            : t('studioHeader.failedToOpenDashboard', {defaultValue: "Failed to open the AI Product Images Dashboard. Please try again later."}),
         status: "error",
       });
     }
@@ -68,7 +70,7 @@ const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
         verticalAlign="middle"
         padding="0 SP2"
       >
-        <Text size="small">Subscription unavailable</Text>
+        <Text size="small">{t('studioHeader.subscriptionUnavailable', {defaultValue: "Subscription unavailable"})}</Text>
       </Box>
     );
   }
@@ -93,13 +95,13 @@ const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
           color="B10"
         >
           <Icons.SparklesFilled size={16} />
-          <Text size="small">{subscription.creditsAvailable} credits</Text>
+          <Text size="small">{subscription.creditsAvailable} {t('studioHeader.credits', {defaultValue: "credits"})}</Text>
         </Box>
         <Box color="D10">
           <Icons.CircleSmallFilledSmall />
         </Box>
         <Text size="small">
-          {subscription.plan == "Basic" ? "Free" : subscription.plan}
+          {subscription.plan == "Basic" ? t('studioHeader.free', {defaultValue: "Free"}) : subscription.plan}
         </Text>
       </Box>
 
@@ -116,8 +118,7 @@ const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
 
               <Box gap={2} direction="vertical">
                 <Text size="tiny">
-                  Open the AI Product Images Dashboard & easily generate images
-                  across all your products.
+                  {t('studioHeader.openDashboardDescription', {defaultValue: "Open the AI Product Images Dashboard & easily generate images across all your products."})}
                 </Text>
                 <Box>
                   <Button
@@ -125,7 +126,7 @@ const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
                     onClick={handleOpenDashboard}
                     size="tiny"
                   >
-                    Go to Dashboard
+                    {t('studioHeader.goToDashboard', {defaultValue: "Go to Dashboard"})}
                   </Button>
                 </Box>
               </Box>
@@ -140,7 +141,7 @@ const StudioSubscriptionInfo: React.FC<StudioSubscriptionInfoProps> = ({
             onClick={handleOpenWixUpgradePage}
             disabled={isUpgradeModalOpen}
           >
-            Upgrade
+            {t('studioHeader.upgrade', {defaultValue: "Upgrade"})}
           </Button>
         )}
       </Box>

@@ -382,5 +382,59 @@
     "deleting": "正在删除...",
     "uploadedImage": "已上传图像",
     "removeImage": "移除图像"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "为你推荐",
+    "currentPlan": "当前方案",
+    "credits": "积分",
+    "creditsPerMonth": "积分/月",
+    "testingCredits": "测试积分",
+    "orBilledYearly": "（或按年计费 {{price}}）",
+    "current": "当前",
+    "contact": "联系",
+    "upgrade": "升级"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "基础方案",
+    "enterprisePlans": "企业方案",
+    "wixPricingPlans": "Wix 定价方案",
+    "needSupport": "需要帮助？",
+    "pricingQuestions": "你好，我有一些关于定价的问题。",
+    "upgradeYourPlan": "升级你的方案",
+    "upgradeSubtitle": "升级你的方案以获得更多积分。",
+    "contactMessage": "你好，我对 {{planName}} 方案感兴趣。你能帮我吗？"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "我们希望你目前对应用有良好的体验！如果可以的话，我们非常感谢你为 {{appName}} 留下评价。",
+    "helpsImmensely": "这对我们帮助巨大！♥️",
+    "userFeedbackReview": "用户反馈评价"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "订阅不可用",
+    "credits": "积分",
+    "free": "免费",
+    "upgrade": "升级",
+    "aiProductImagesSubscription": "AI 产品图像订阅",
+    "subscriptionInfo": "订阅信息",
+    "planName": "方案名称",
+    "creditsAvailable": "可用积分",
+    "creditsReset": "积分重置",
+    "resetsEveryMonth": "每月1日重置",
+    "upgradeAiProductImages": "升级 AI 产品图像。",
+    "upgradeSubtitle": "升级你的方案以获得更多积分。",
+    "explorePlans": "查看方案",
+    "showSubscriptionInfo": "显示订阅信息"
+  },
+  "studioHeader": {
+    "waitForOperation": "请等待当前操作完成。",
+    "failedToOpenDashboard": "无法打开 AI 产品图像仪表板。请稍后再试。",
+    "openDashboard": "打开 AI 产品图像仪表板",
+    "dismiss": "关闭",
+    "subscriptionUnavailable": "订阅不可用",
+    "credits": "积分",
+    "free": "免费",
+    "openDashboardDescription": "打开 AI 产品图像仪表板，轻松为所有产品生成图像。",
+    "goToDashboard": "前往仪表板",
+    "upgrade": "升级"
   }
 }

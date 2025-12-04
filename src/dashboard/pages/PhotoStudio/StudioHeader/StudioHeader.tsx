@@ -8,6 +8,7 @@ import {
   Tooltip,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
 import { useStatusToast } from "../../../services/providers/StatusToastProvider";
@@ -25,6 +26,7 @@ const PhotoStudioHeader: React.FC<PhotoStudioHeaderProps> = ({
   showDashboardButton = false,
   showCloseButton = true,
 }) => {
+  const { t } = useTranslation();
   const { closePhotoStudio, apiLoading } = usePhotoStudio();
   const { addToast } = useStatusToast();
 
@@ -38,7 +40,7 @@ const PhotoStudioHeader: React.FC<PhotoStudioHeaderProps> = ({
       }
     } else {
       addToast({
-        content: "Please wait for the current operation to finish.",
+        content: t('studioHeader.waitForOperation', {defaultValue: "Please wait for the current operation to finish."}),
         status: "warning",
       });
     }
@@ -52,7 +54,7 @@ const PhotoStudioHeader: React.FC<PhotoStudioHeaderProps> = ({
         content:
           error instanceof Error
             ? error.message
-            : "Failed to open the AI Product Images Dashboard. Please try again later.",
+            : t('studioHeader.failedToOpenDashboard', {defaultValue: "Failed to open the AI Product Images Dashboard. Please try again later."}),
         status: "error",
       });
     }
@@ -93,7 +95,7 @@ const PhotoStudioHeader: React.FC<PhotoStudioHeaderProps> = ({
       </Box>
       <Box>
         {showDashboardButton && (
-          <Tooltip content="Open AI Product Images Dashboard" size="small">
+          <Tooltip content={t('studioHeader.openDashboard', {defaultValue: "Open AI Product Images Dashboard"})} size="small">
             <IconButton
               size="small"
               skin="dark"
@@ -105,7 +107,7 @@ const PhotoStudioHeader: React.FC<PhotoStudioHeaderProps> = ({
           </Tooltip>
         )}
         {showCloseButton && (
-          <Tooltip content="Dismiss" size="small" enterDelay={1000}>
+          <Tooltip content={t('studioHeader.dismiss', {defaultValue: "Dismiss"})} size="small" enterDelay={1000}>
             <IconButton
               size="small"
               skin="dark"

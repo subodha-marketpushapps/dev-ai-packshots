@@ -382,5 +382,59 @@
     "deleting": "Mazání...",
     "uploadedImage": "Nahraný obrázek",
     "removeImage": "Odebrat obrázek"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "Doporučeno pro vás",
+    "currentPlan": "Aktuální plán",
+    "credits": "kredity",
+    "creditsPerMonth": "kreditů/měsíc",
+    "testingCredits": "Testovací kredity",
+    "orBilledYearly": "(nebo {{price}} účtováno ročně)",
+    "current": "Aktuální",
+    "contact": "Kontakt",
+    "upgrade": "Upgradovat"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Základní plány",
+    "enterprisePlans": "Podnikové plány",
+    "wixPricingPlans": "Ceník Wix",
+    "needSupport": "Potřebujete pomoc?",
+    "pricingQuestions": "Ahoj, mám pár otázek ohledně ceny.",
+    "upgradeYourPlan": "Upgradujte svůj plán",
+    "upgradeSubtitle": "Upgradujte svůj plán a získejte více kreditů.",
+    "contactMessage": "Ahoj, mám zájem o plán {{planName}}. Můžete mi pomoci?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Doufáme, že máte s aplikací dobrou zkušenost! Velmi oceníme, pokud přidáte recenzi pro {{appName}}.",
+    "helpsImmensely": "Moc to pomůže! ♥️",
+    "userFeedbackReview": "Uživatelské hodnocení"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Předplatné není dostupné",
+    "credits": "kredity",
+    "free": "Zdarma",
+    "upgrade": "Upgradovat",
+    "aiProductImagesSubscription": "Předplatné AI produktových obrázků",
+    "subscriptionInfo": "Informace o předplatném",
+    "planName": "Název plánu",
+    "creditsAvailable": "Dostupné kredity",
+    "creditsReset": "Reset kreditů",
+    "resetsEveryMonth": "Resetuje se každého 1. dne v měsíci",
+    "upgradeAiProductImages": "Upgradujte AI produktové obrázky.",
+    "upgradeSubtitle": "Upgradujte svůj plán a získejte více kreditů.",
+    "explorePlans": "Prozkoumat plány",
+    "showSubscriptionInfo": "Zobrazit informace o předplatném"
+  },
+  "studioHeader": {
+    "waitForOperation": "Please wait for the current operation to finish.",
+    "failedToOpenDashboard": "Failed to open the AI Product Images Dashboard. Please try again later.",
+    "openDashboard": "Open AI Product Images Dashboard",
+    "dismiss": "Dismiss",
+    "subscriptionUnavailable": "Subscription unavailable",
+    "credits": "credits",
+    "free": "Free",
+    "openDashboardDescription": "Open the AI Product Images Dashboard & easily generate images across all your products.",
+    "goToDashboard": "Go to Dashboard",
+    "upgrade": "Upgrade"
   }
 }

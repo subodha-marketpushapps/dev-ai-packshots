@@ -1,387 +1,440 @@
 {
   "homePage": {
-    "pageTitle": "AI Product Images - [Dev]",
-    "pageSubtitle": "Elevate Your Product Visuals Using AI-Driven Image Enhancement.",
-    "openDModal": "Open D Modal"
+    "pageTitle": "Gambar Produk AI - [Dev]",
+    "pageSubtitle": "Tingkatkan Visual Produk Anda Menggunakan Peningkatan Gambar Didorong AI.",
+    "openDModal": "Buka Modal D"
   },
   "errors": {
     "settingsLoadError": {
-      "title": "We couldn't load the Settings data",
-      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+      "title": "Kami tidak dapat memuat data Pengaturan",
+      "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi."
     },
     "wixDataSyncError": {
-      "title": "We couldn't sync with the Wix Site data",
-      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+      "title": "Kami tidak dapat menyinkronkan dengan data Situs Wix",
+      "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi."
     },
     "imagesLoadError": {
-      "title": "We couldn't load your images",
-      "subtitle": "There was a problem fetching your generated images. Please try again later."
+      "title": "Kami tidak dapat memuat gambar Anda",
+      "subtitle": "Ada masalah saat mengambil gambar yang Anda hasilkan. Silakan coba lagi nanti."
     },
     "draftImagesLoadError": {
-      "title": "We couldn't load the Draft Image data",
-      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+      "title": "Kami tidak dapat memuat data Gambar Draf",
+      "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi."
     },
     "instanceUpdateError": {
-      "title": "We couldn't update your instance",
-      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+      "title": "Kami tidak dapat memperbarui instans Anda",
+      "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi."
     },
     "tableLoadError": {
-      "title": "We couldn't load this table",
-      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again.",
-      "intercomMessage": "I having a data loading issue with the 'Store Products' table. Can you help me with this?",
-      "intercomButtonLabel": "Contact Support"
+      "title": "Kami tidak dapat memuat tabel ini",
+      "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi.",
+      "intercomMessage": "Saya mengalami masalah pemuatan data dengan tabel 'Produk Toko'. Bisakah Anda membantu saya?",
+      "intercomButtonLabel": "Hubungi Dukungan"
     },
     "genericError": {
-      "title": "We couldn't load the data",
-      "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+      "title": "Kami tidak dapat memuat data",
+      "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi."
     }
   },
   "emptyStates": {
     "noProductSelected": {
-      "title": "No product selected",
-      "subtitle": "Please select a product to open the photo studio."
+      "title": "Tidak ada produk yang dipilih",
+      "subtitle": "Silakan pilih produk untuk membuka studio foto."
     },
     "productNotFound": {
-      "title": "Product not found",
-      "subtitle": "The selected product could not be found. Please try again or select a different product."
+      "title": "Produk tidak ditemukan",
+      "subtitle": "Produk yang dipilih tidak dapat ditemukan. Silakan coba lagi atau pilih produk lain."
     },
     "noDraftImages": {
-      "title": "No Draft Images",
-      "subtitle": "Generate your first image with Photo Studio."
+      "title": "Tidak Ada Gambar Draf",
+      "subtitle": "Hasilkan gambar pertama Anda dengan Studio Foto."
     },
     "noStoreProducts": {
-      "title": "No Store Products",
-      "subtitle": "Once you add store products, they will appear here."
+      "title": "Tidak Ada Produk Toko",
+      "subtitle": "Setelah Anda menambahkan produk toko, produk akan muncul di sini."
     },
     "startTypingToSearch": {
-      "title": "Start typing to search products",
-      "subtitle": "Enter at least 3 characters to search through your product catalog"
+      "title": "Mulai mengetik untuk mencari produk",
+      "subtitle": "Masukkan setidaknya 3 karakter untuk mencari melalui katalog produk Anda"
     },
     "noSearchResults": {
-      "title": "No search results",
-      "subtitle": "No items match your search criteria. Try to search by another keyword"
+      "title": "Tidak ada hasil pencarian",
+      "subtitle": "Tidak ada item yang cocok dengan kriteria pencarian Anda. Coba cari dengan kata kunci lain"
     },
-    "noLiveImages": "No live images found",
-    "noDraftImagesFound": "No draft images found"
+    "noLiveImages": "Tidak ada gambar live yang ditemukan",
+    "noDraftImagesFound": "Tidak ada gambar draf yang ditemukan"
   },
   "loading": {
-    "loadingData": "Loading data...",
-    "loadingImages": "Loading Images...",
-    "loading": "Loading..."
+    "loadingData": "Memuat data...",
+    "loadingImages": "Memuat Gambar...",
+    "loading": "Memuat..."
   },
   "tabs": {
-    "products": "Products",
-    "draftImages": "Draft Images"
+    "products": "Produk",
+    "draftImages": "Gambar Draf"
   },
   "productsTab": {
-    "title": "Store Products",
-    "subtitle": "Manage, Edit, and Enhance your product images to match your brand perfectly.",
-    "generateImage": "Generate Image",
-    "createNewProduct": "Create New Product",
-    "storeProducts": "Store Products",
-    "searchPlaceholder": "Search products...",
-    "refreshData": "Refresh data",
-    "tableInfo": "Use this table to view and edit store product related product images.",
-    "columnProductName": "Product Name",
-    "columnProductImages": "Product Images",
-    "columnGeneratedImages": "Generated Images",
-    "viewAllGeneratedImages": "View all generated images",
-    "liveImageAlt": "Live Image",
-    "generatedImageAlt": "Generated Image",
+    "title": "Produk Toko",
+    "subtitle": "Kelola, Edit, dan Tingkatkan gambar produk Anda agar sesuai dengan merek Anda dengan sempurna.",
+    "generateImage": "Hasilkan Gambar",
+    "createNewProduct": "Buat Produk Baru",
+    "storeProducts": "Produk Toko",
+    "searchPlaceholder": "Cari produk...",
+    "refreshData": "Segarkan data",
+    "tableInfo": "Gunakan tabel ini untuk melihat dan mengedit gambar produk terkait produk toko.",
+    "columnProductName": "Nama Produk",
+    "columnProductImages": "Gambar Produk",
+    "columnGeneratedImages": "Gambar yang Dihasilkan",
+    "viewAllGeneratedImages": "Lihat semua gambar yang dihasilkan",
+    "liveImageAlt": "Gambar Live",
+    "generatedImageAlt": "Gambar yang Dihasilkan",
     "edit": "Edit"
   },
   "statisticsTab": {
-    "title": "Statistics",
-    "subtitle": "Monitor sales generated by the Quantity and Volume Discount app.",
-    "content": "Statistics content goes here"
+    "title": "Statistik",
+    "subtitle": "Pantau penjualan yang dihasilkan oleh aplikasi Diskon Kuantitas dan Volume.",
+    "content": "Konten statistik ada di sini"
   },
   "galleryTab": {
-    "title": "Draft Images",
-    "subtitle": "Explore a collection of your generated images.",
-    "loadMore": "Load More"
+    "title": "Gambar Draf",
+    "subtitle": "Jelajahi koleksi gambar yang Anda hasilkan.",
+    "loadMore": "Muat Lebih Banyak"
   },
   "settingsTab": {
-    "title": "Settings",
-    "subtitle": "Add or change details registered in Quantity and Volume Discount app.",
-    "cancel": "Cancel",
-    "saveSettings": "Save Settings",
-    "notifications": "Notifications",
-    "receiveStatsEmails": "Receive Stats and Conversion Emails",
-    "onWeeklyBasis": "On a Weekly Basis",
-    "never": "Never",
-    "notificationEmail": "Notification Email",
-    "emailPlaceholder": "sample@mail.com",
-    "settingsSaved": "Settings saved successfully!",
-    "settingsSaveFailed": "Failed to save settings. Please try again.",
-    "invalidEmailFormat": "Invalid email format",
-    "emailRequired": "Email is required"
+    "title": "Pengaturan",
+    "subtitle": "Tambahkan atau ubah detail yang terdaftar di aplikasi Diskon Kuantitas dan Volume.",
+    "cancel": "Batal",
+    "saveSettings": "Simpan Pengaturan",
+    "notifications": "Pemberitahuan",
+    "receiveStatsEmails": "Terima Email Statistik dan Konversi",
+    "onWeeklyBasis": "Secara Mingguan",
+    "never": "Jangan Pernah",
+    "notificationEmail": "Email Pemberitahuan",
+    "emailPlaceholder": "contoh@surat.com",
+    "settingsSaved": "Pengaturan berhasil disimpan!",
+    "settingsSaveFailed": "Gagal menyimpan pengaturan. Silakan coba lagi.",
+    "invalidEmailFormat": "Format email tidak valid",
+    "emailRequired": "Email wajib diisi"
   },
   "photoStudio": {
-    "showProductImages": "Show Product Images",
+    "showProductImages": "Tampilkan Gambar Produk",
     "productImages": {
-      "title": "Product Images",
-      "subtitle": "Edit and update your product images."
+      "title": "Gambar Produk",
+      "subtitle": "Edit dan perbarui gambar produk Anda."
     },
     "generatedImages": {
-      "title": "Generated Images",
-      "subtitle": "Edit and update your draft images."
+      "title": "Gambar yang Dihasilkan",
+      "subtitle": "Edit dan perbarui gambar draf Anda."
     },
-    "infoIconDescription": "Info icon gives more information about a section.",
-    "liveImages": "Live Images",
-    "draftImages": "Draft Images",
-    "allDraftImages": "All Draft Images",
-    "changeOrderOfLiveImages": "Change order of Live Images",
-    "liveImagesInfo": "Please note that the images from Live Images will be directly published & visible to your customers on your live site.",
-    "draftImagesInfo": "Draft Images are visible only to you. Feel free to experiment until you find the right fit and are ready to Publish it to the Live Images.",
-    "noLiveImagesMessage": "You can publish draft images to make them live.",
-    "draftImagesEmptyMessage": "You can select live images or upload new images to start editing.",
-    "draftImagesEmptyMessageNoLive": "You can upload images to start editing.",
-    "uploadImage": "Upload Image",
-    "uploadMultipleImages": "Upload Multiple Images",
-    "copyEditHint": "Select one or more images to apply Copy Edit, or click \"Upload Image\" to upload new ones.",
-    "imageCurrentlyPublishing": "This image is currently being published.",
-    "maxReferenceImages": "You can select or upload up to 6 images for copy edits.",
-    "dashboard": "Dashboard",
-    "imageStudio": "Image Studio",
-    "compareChanges": "Compare Changes",
-    "removeImage": "Remove Image",
-    "removeUploadedImage": "Remove uploaded image",
-    "goBack": "Go back (Esc)",
-    "fullscreen": "Fullscreen",
-    "compare": "Compare",
-    "details": "Details",
+    "infoIconDescription": "Ikon Info memberikan informasi lebih lanjut tentang suatu bagian.",
+    "liveImages": "Gambar Live",
+    "draftImages": "Gambar Draf",
+    "allDraftImages": "Semua Gambar Draf",
+    "changeOrderOfLiveImages": "Ubah urutan Gambar Live",
+    "liveImagesInfo": "Harap dicatat bahwa gambar dari Gambar Live akan langsung diterbitkan & terlihat oleh pelanggan Anda di situs live Anda.",
+    "draftImagesInfo": "Gambar Draf hanya terlihat oleh Anda. Jangan ragu untuk bereksperimen sampai Anda menemukan yang paling cocok dan siap untuk Menerbitkannya ke Gambar Live.",
+    "noLiveImagesMessage": "Anda dapat menerbitkan gambar draf untuk menjadikannya live.",
+    "draftImagesEmptyMessage": "Anda dapat memilih gambar live atau mengunggah gambar baru untuk mulai mengedit.",
+    "draftImagesEmptyMessageNoLive": "Anda dapat mengunggah gambar untuk mulai mengedit.",
+    "uploadImage": "Unggah Gambar",
+    "uploadMultipleImages": "Unggah Beberapa Gambar",
+    "copyEditHint": "Pilih satu atau lebih gambar untuk menerapkan Salin Edit, atau klik \"Unggah Gambar\" untuk mengunggah yang baru.",
+    "imageCurrentlyPublishing": "Gambar ini sedang diterbitkan.",
+    "maxReferenceImages": "Anda dapat memilih atau mengunggah hingga 6 gambar untuk salinan edit.",
+    "dashboard": "Dasbor",
+    "imageStudio": "Studio Gambar",
+    "compareChanges": "Bandingkan Perubahan",
+    "removeImage": "Hapus Gambar",
+    "removeUploadedImage": "Hapus gambar yang diunggah",
+    "goBack": "Kembali (Esc)",
+    "fullscreen": "Layar Penuh",
+    "compare": "Bandingkan",
+    "details": "Detail",
     "editModes": {
-      "label": "Edit Modes",
-      "infoContent": "Choose how you want to edit your image"
+      "label": "Mode Edit",
+      "infoContent": "Pilih cara Anda ingin mengedit gambar Anda"
     },
-    "openDashboard": "Open AI Product Images Dashboard",
-    "dismiss": "Dismiss",
-    "generateInfo": "Generate info",
-    "copyImage": "Copy image",
-    "delete": "Delete",
-    "unpublishGuide": "Unpublish Guide",
-    "addRectangleHint": "Add rectangle hint",
-    "addCircleHint": "Add circle hint",
-    "showEditorPanel": "Show Editor Panel",
-    "minimizeEditorPanel": "Minimize Editor Panel",
-    "collapseEditorPanel": "Collapse Editor Panel",
-    "cancelCopyEdit": "Cancel Copy Edit",
-    "prevProduct": "Prev Product",
-    "nextProduct": "Next Product",
-    "searchAndSelectProduct": "Search and select a product...",
-    "openEditProductDashboardPage": "Open Edit Product Dashboard Page",
-    "viewLiveProductPage": "View Live Product Page"
+    "openDashboard": "Buka Dasbor Gambar Produk AI",
+    "dismiss": "Singkirkan",
+    "generateInfo": "Hasilkan info",
+    "copyImage": "Salin gambar",
+    "delete": "Hapus",
+    "unpublishGuide": "Panduan Batalkan Penerbitan",
+    "addRectangleHint": "Tambahkan petunjuk persegi panjang",
+    "addCircleHint": "Tambahkan petunjuk lingkaran",
+    "showEditorPanel": "Tampilkan Panel Editor",
+    "minimizeEditorPanel": "Minimalkan Panel Editor",
+    "collapseEditorPanel": "Lipat Panel Editor",
+    "cancelCopyEdit": "Batalkan Salin Edit",
+    "prevProduct": "Produk Sebelumnya",
+    "nextProduct": "Produk Selanjutnya",
+    "searchAndSelectProduct": "Cari dan pilih produk...",
+    "openEditProductDashboardPage": "Buka Halaman Dasbor Edit Produk",
+    "viewLiveProductPage": "Lihat Halaman Produk Live"
   },
   "modals": {
     "upgrade": {
-      "title": "Upgrade Your AI Product Images Plan",
-      "primaryButton": "Upgrade",
-      "secondaryButton": "Not Now",
-      "exhaustedCredits": "You've exhausted your plan credits. Upgrade to a higher plan to generate new images.",
-      "upgradeForMoreCredits": "Upgrade your plan to get more credits."
+      "title": "Tingkatkan Paket Gambar Produk AI Anda",
+      "primaryButton": "Tingkatkan",
+      "secondaryButton": "Nanti Saja",
+      "exhaustedCredits": "Anda telah menghabiskan kredit paket Anda. Tingkatkan ke paket yang lebih tinggi untuk menghasilkan gambar baru.",
+      "upgradeForMoreCredits": "Tingkatkan paket Anda untuk mendapatkan lebih banyak kredit."
     },
     "unpublish": {
-      "title": "Live Image Unpublish",
-      "primaryButton": "Edit Product Page",
-      "secondaryButton": "Cancel",
-      "content": "At this moment you cannot delete/unpublish images directly from AI Product Images. Please visit the Edit Product Page and remove it from there.",
-      "refreshNote": "Refresh your page to see the changes.",
-      "refresh": "Refresh"
+      "title": "Batalkan Penerbitan Gambar Live",
+      "primaryButton": "Edit Halaman Produk",
+      "secondaryButton": "Batal",
+      "content": "Saat ini Anda tidak dapat menghapus/membatalkan penerbitan gambar langsung dari Gambar Produk AI. Silakan kunjungi Halaman Edit Produk dan hapus dari sana.",
+      "refreshNote": "Segarkan halaman Anda untuk melihat perubahannya.",
+      "refresh": "Segarkan"
     },
     "imageDetails": {
       "prompt": "Prompt",
-      "generateId": "Generate Id",
-      "createdAt": "Created at",
-      "notAvailable": "N/A",
-      "initialImage": "Initial Image",
-      "generatedImage": "Generated Image"
+      "generateId": "Hasilkan Id",
+      "createdAt": "Dibuat pada",
+      "notAvailable": "T/A",
+      "initialImage": "Gambar Awal",
+      "generatedImage": "Gambar yang Dihasilkan"
     },
     "aiPackshotsDashboard": {
-      "title": "AI Product Images",
-      "subtitle": "Enhance and refine your product images effortlessly with AI-powered tools.",
-      "dismiss": "Dismiss",
-      "unknownUser": "AI Product Images(Unknown user)"
+      "title": "Gambar Produk AI",
+      "subtitle": "Tingkatkan dan perbaiki gambar produk Anda dengan mudah menggunakan alat bertenaga AI.",
+      "dismiss": "Singkirkan",
+      "unknownUser": "Gambar Produk AI (Pengguna tidak dikenal)"
     },
     "aiPackshotsModal": {
-      "waitForOperation": "Please wait for the current operation to finish."
+      "waitForOperation": "Harap tunggu operasi saat ini selesai."
     }
   },
   "editor": {
     "imagesGenerated": {
-      "label": "Images Generated",
-      "infoContent": "Select the number of images to generate"
+      "label": "Gambar Dihasilkan",
+      "infoContent": "Pilih jumlah gambar yang akan dihasilkan"
     },
     "autoUpscaling": {
-      "label": "Auto Upscaling",
-      "infoContent": "When enabled, images smaller than 1000px will be automatically upscaled to x2 for better quality."
+      "label": "Peningkatan Otomatis",
+      "infoContent": "Ketika diaktifkan, gambar yang lebih kecil dari 1000px akan secara otomatis ditingkatkan menjadi x2 untuk kualitas yang lebih baik."
     },
     "setOutputDimensions": {
-      "label": "Set output dimensions",
-      "infoContent": "Select the aspect ratio for the generated images."
+      "label": "Tetapkan dimensi output",
+      "infoContent": "Pilih rasio aspek untuk gambar yang dihasilkan."
     },
     "photoQuality": {
-      "label": "Photo quality",
-      "infoContent": "Add quality tags to enhance your image"
+      "label": "Kualitas foto",
+      "infoContent": "Tambahkan tag kualitas untuk meningkatkan gambar Anda"
     },
     "productPositioning": {
-      "infoContent": "Choose how the product is positioned in the image"
+      "infoContent": "Pilih cara produk diposisikan dalam gambar"
     },
     "backgroundType": {
-      "infoContent": "Select the background type for your image"
+      "infoContent": "Pilih jenis latar belakang untuk gambar Anda"
     }
   },
   "feedback": {
-    "overallExperience": "How was your overall experience with AI Product Images?"
+    "overallExperience": "Bagaimana pengalaman keseluruhan Anda dengan Gambar Produk AI?"
   },
   "common": {
-    "refresh": "Refresh",
-    "openSupportCenter": "Open support center",
-    "subscriptionInfo": "Subscription Info",
-    "showSubscriptionInfo": "Show Subscription Info",
-    "chooseProduct": "Choose a product...",
-    "viewAllLiveProductImages": "View all live Product images",
-    "copy": "Copy",
-    "copied": "Copied!"
+    "refresh": "Segarkan",
+    "openSupportCenter": "Buka pusat dukungan",
+    "subscriptionInfo": "Info Langganan",
+    "showSubscriptionInfo": "Tampilkan Info Langganan",
+    "chooseProduct": "Pilih produk...",
+    "viewAllLiveProductImages": "Lihat semua Gambar Produk live",
+    "copy": "Salin",
+    "copied": "Tersalin!"
   },
   "productModalSelector": {
-    "selectProduct": "Select Product",
-    "openModal": "Open Modal",
-    "noProductsAvailable": "No products available in your store",
-    "chooseProductPlaceholder": "Choose a product..."
+    "selectProduct": "Pilih Produk",
+    "openModal": "Buka Modal",
+    "noProductsAvailable": "Tidak ada produk yang tersedia di toko Anda",
+    "chooseProductPlaceholder": "Pilih produk..."
   },
   "editorPromptInput": {
-    "editImage": "Edit Image",
-    "enhanceImage": "Enhance Image",
-    "enhanceSettingsButton": "Enhance Settings",
-    "promptInput": "Prompt Input",
+    "editImage": "Edit Gambar",
+    "enhanceImage": "Tingkatkan Gambar",
+    "enhanceSettingsButton": "Pengaturan Peningkatan",
+    "promptInput": "Input Prompt",
     "placeholder": {
-      "edit": "Describe what you want to change",
-      "enhance": "Describe the scene of your background"
+      "edit": "Jelaskan apa yang ingin Anda ubah",
+      "enhance": "Jelaskan pemandangan latar belakang Anda"
     },
-    "blankPromptHint": "Leave this blank to let AI choose the best background for your product",
+    "blankPromptHint": "Biarkan kosong untuk membiarkan AI memilih latar belakang terbaik untuk produk Anda",
     "tooltip": {
-      "selectImage": "You must select an image before generating.",
-      "providePrompt": "You must provide a prompt before generating.",
-      "applyChanges": "Apply Changes (⌘ + ↵)",
-      "regenerateImage": "Regenerate Image (⌘ + ↵)",
-      "generateImage": "Generate Image (⌘ + ↵)"
+      "selectImage": "Anda harus memilih gambar sebelum menghasilkan.",
+      "providePrompt": "Anda harus memberikan prompt sebelum menghasilkan.",
+      "applyChanges": "Terapkan Perubahan (⌘ + ↵)",
+      "regenerateImage": "Hasilkan Ulang Gambar (⌘ + ↵)",
+      "generateImage": "Hasilkan Gambar (⌘ + ↵)"
     },
     "editModes": {
-      "enhanceImage": "Enhance Image",
-      "enhanceImageDescription": "Customize your photo quality and make the final output match your vision.",
-      "editImage": "Edit Image",
-      "editImageDescription": "Edit images with text instructions and get the desired output."
+      "enhanceImage": "Tingkatkan Gambar",
+      "enhanceImageDescription": "Sesuaikan kualitas foto Anda dan buat output akhir sesuai dengan visi Anda.",
+      "editImage": "Edit Gambar",
+      "editImageDescription": "Edit gambar dengan instruksi teks dan dapatkan output yang diinginkan."
     },
     "enhanceSettings": {
-      "addImprovement": "Add Improvement",
-      "productPosition": "Product position",
-      "photoBackground": "Photo Background",
-      "original": "Original",
-      "color": "Color",
-      "aiGenerated": "AI Generated",
+      "addImprovement": "Tambahkan Peningkatan",
+      "productPosition": "Posisi produk",
+      "photoBackground": "Latar Belakang Foto",
+      "original": "Asli",
+      "color": "Warna",
+      "aiGenerated": "Dihasilkan AI",
       "qualityOptions": {
-        "clarity": "Image clarity",
-        "sharpness": "Sharpness",
-        "lighting": "Lighting",
-        "shadows": "Shadows",
-        "color": "Color Balance"
+        "clarity": "Kejelasan gambar",
+        "sharpness": "Ketajaman",
+        "lighting": "Pencahayaan",
+        "shadows": "Bayangan",
+        "color": "Keseimbangan Warna"
       }
     },
     "outputSettings": {
-      "costs": "Costs",
-      "imageCredits": "Image Credits",
+      "costs": "Biaya",
+      "imageCredits": "Kredit Gambar",
       "aspectRatio": {
-        "original": "Original"
+        "original": "Asli"
       }
     },
     "referencePreview": {
-      "noPrompt": "no prompt",
-      "matchReference": "Generates results that closely match this reference image"
+      "noPrompt": "tidak ada prompt",
+      "matchReference": "Menghasilkan hasil yang sangat cocok dengan gambar referensi ini"
     },
     "originalPreview": {
-      "goBack": "Go Back to Original"
+      "goBack": "Kembali ke Asli"
     },
     "feedback": {
-      "terrible": "Terrible",
-      "bad": "Bad",
-      "okay": "Okay",
-      "good": "Good",
-      "great": "Great",
-      "skip": "Skip",
-      "continue": "Continue",
-      "negativeExperienceMessage": "Hi there! I had a negative experience with the AI Product Images. Can you help me with this?",
-      "okExperienceMessage": "Hi there! I had a OK experience with the AI Product Images. But can you help me with [Reason]?"
+      "terrible": "Mengerikan",
+      "bad": "Buruk",
+      "okay": "Oke",
+      "good": "Bagus",
+      "great": "Hebat",
+      "skip": "Lewati",
+      "continue": "Lanjutkan",
+      "negativeExperienceMessage": "Halo! Saya memiliki pengalaman negatif dengan Gambar Produk AI. Bisakah Anda membantu saya?",
+      "okExperienceMessage": "Halo! Saya memiliki pengalaman OK dengan Gambar Produk AI. Tetapi bisakah Anda membantu saya dengan [Alasan]?"
     }
   },
   "studioEditor": {
-    "footerNote": "AI can make mistakes, please review your images carefully.",
-    "subscriptionNotAvailable": "Subscription not available. Please refresh or contact support.",
+    "footerNote": "AI dapat membuat kesalahan, harap tinjau gambar Anda dengan cermat.",
+    "subscriptionNotAvailable": "Langganan tidak tersedia. Harap segarkan atau hubungi dukungan.",
     "imageUpload": {
-      "canOnlyAdd": "You can only add {{count}} more image(s).",
-      "fileSizeExceeded": "File {{fileName}} exceeds 10 MB limit.",
-      "failedToRead": "Failed to read image file {{fileName}}.",
-      "failedToLoad": "Failed to load image {{fileName}}. Please try another file.",
-      "errorReading": "Error reading image file {{fileName}}.",
-      "maxReferenceImagesReached": "You have reached the maximum of 6 reference images.",
-      "maxReachedOrProcessing": "You have reached the maximum of 6 reference images or uploads are processing.",
-      "dropImageHere": "Drop your image here",
-      "dropImagesHere": "Drop your images here",
-      "dragImageHere": "Drag your image here",
-      "dragImagesHere": "Drag your images here",
-      "uploadFromComputer": "Or upload an image from your computer",
-      "uploadMultipleFromComputer": "Or upload multiple images from your computer"
+      "canOnlyAdd": "Anda hanya dapat menambahkan {{count}} gambar lagi.",
+      "fileSizeExceeded": "File {{fileName}} melebihi batas 10 MB.",
+      "failedToRead": "Gagal membaca file gambar {{fileName}}.",
+      "failedToLoad": "Gagal memuat gambar {{fileName}}. Silakan coba file lain.",
+      "errorReading": "Kesalahan membaca file gambar {{fileName}}.",
+      "maxReferenceImagesReached": "Anda telah mencapai maksimum 6 gambar referensi.",
+      "maxReachedOrProcessing": "Anda telah mencapai maksimum 6 gambar referensi atau unggahan sedang diproses.",
+      "dropImageHere": "Letakkan gambar Anda di sini",
+      "dropImagesHere": "Letakkan gambar-gambar Anda di sini",
+      "dragImageHere": "Seret gambar Anda di sini",
+      "dragImagesHere": "Seret gambar-gambar Anda di sini",
+      "uploadFromComputer": "Atau unggah gambar dari komputer Anda",
+      "uploadMultipleFromComputer": "Atau unggah beberapa gambar dari komputer Anda"
     }
   },
   "editorPhotoActions": {
     "edit": "Edit",
-    "copyEdits": "Copy Edits",
-    "publish": "Publish",
-    "discard": "Discard",
-    "generateInfo": "Generate info",
-    "copyImage": "Copy image",
-    "delete": "Delete",
-    "unpublishGuide": "Unpublish Guide",
-    "reportProblem": "Report a problem",
-    "noProductIdForPublishing": "No product ID available for publishing.",
-    "failedToPublish": "Failed to publish image.",
-    "noProductIdForUnpublishing": "No product ID available for unpublishing.",
-    "failedToUnpublish": "Failed to unpublish image.",
-    "failedToDelete": "Failed to delete image.",
-    "imageUploadCleared": "Image upload cleared.",
-    "noImageToCopy": "No image to copy.",
-    "couldNotGetCanvasContext": "Could not get canvas context",
-    "imageCopiedToClipboard": "Image copied to clipboard!",
-    "clipboardWriteFailed": "Clipboard write failed.",
-    "failedToCreateImageBlob": "Failed to create image blob.",
-    "failedToLoadImageForCopying": "Failed to load image for copying.",
-    "failedToCopyImage": "Failed to copy image.",
-    "noImageSelectedForGenerateInfo": "No image selected to show generate info."
+    "copyEdits": "Salin Edit",
+    "publish": "Terbitkan",
+    "discard": "Buang",
+    "generateInfo": "Hasilkan info",
+    "copyImage": "Salin gambar",
+    "delete": "Hapus",
+    "unpublishGuide": "Panduan Batalkan Penerbitan",
+    "reportProblem": "Laporkan masalah",
+    "noProductIdForPublishing": "Tidak ada ID produk yang tersedia untuk penerbitan.",
+    "failedToPublish": "Gagal menerbitkan gambar.",
+    "noProductIdForUnpublishing": "Tidak ada ID produk yang tersedia untuk pembatalan penerbitan.",
+    "failedToUnpublish": "Gagal membatalkan penerbitan gambar.",
+    "failedToDelete": "Gagal menghapus gambar.",
+    "imageUploadCleared": "Unggahan gambar dihapus.",
+    "noImageToCopy": "Tidak ada gambar untuk disalin.",
+    "couldNotGetCanvasContext": "Tidak dapatkan konteks kanvas",
+    "imageCopiedToClipboard": "Gambar disalin ke papan klip!",
+    "clipboardWriteFailed": "Penulisan papan klip gagal.",
+    "failedToCreateImageBlob": "Gagal membuat blob gambar.",
+    "failedToLoadImageForCopying": "Gagal memuat gambar untuk disalin.",
+    "failedToCopyImage": "Gagal menyalin gambar.",
+    "noImageSelectedForGenerateInfo": "Tidak ada gambar yang dipilih untuk menampilkan info hasilkan."
   },
   "panelFeedback": {
-    "feedback": "Feedback",
-    "overallQualityBad": "The overall quality is bad",
-    "didNotRespectPrompt": "It didn't respect my prompt",
-    "notRelevantToProduct": "The image is not relevant to the product",
-    "imageNotClear": "The image is not clear",
-    "other": "Other",
-    "additionalFeedbackPlaceholder": "Please provide additional feedback",
-    "submit": "Submit",
-    "feedbackSubmittedSuccessfully": "Feedback submitted successfully.",
-    "additional": "Additional"
+    "feedback": "Umpan Balik",
+    "overallQualityBad": "Kualitas keseluruhan buruk",
+    "didNotRespectPrompt": "Tidak menghormati prompt saya",
+    "notRelevantToProduct": "Gambar tidak relevan dengan produk",
+    "imageNotClear": "Gambar tidak jelas",
+    "other": "Lainnya",
+    "additionalFeedbackPlaceholder": "Harap berikan umpan balik tambahan",
+    "submit": "Kirim",
+    "feedbackSubmittedSuccessfully": "Umpan balik berhasil dikirim.",
+    "additional": "Tambahan"
   },
   "canvasToolbar": {
-    "drawRectangle": "Draw Rectangle",
-    "drawing": "Drawing...",
-    "deleteSelectedLayer": "Delete Selected Layer",
-    "resetImage": "Reset Image",
-    "downloadPreviewImage": "Download Preview Image"
+    "drawRectangle": "Gambar Persegi Panjang",
+    "drawing": "Menggambar...",
+    "deleteSelectedLayer": "Hapus Layer yang Dipilih",
+    "resetImage": "Atur Ulang Gambar",
+    "downloadPreviewImage": "Unduh Gambar Pratinjau"
   },
   "imagePreviewer": {
-    "unableToGenerateImage": "Unable to generate image.",
-    "retry": "Retry",
-    "deleting": "Deleting...",
-    "uploadedImage": "Uploaded Image",
-    "removeImage": "Remove Image"
+    "unableToGenerateImage": "Tidak dapat menghasilkan gambar.",
+    "retry": "Coba Lagi",
+    "deleting": "Menghapus...",
+    "uploadedImage": "Gambar yang Diunggah",
+    "removeImage": "Hapus Gambar"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "Direkomendasikan untuk Anda",
+    "currentPlan": "Paket Saat Ini",
+    "credits": "kredit",
+    "creditsPerMonth": "kredit/bulan",
+    "testingCredits": "Kredit Pengujian",
+    "orBilledYearly": "(atau {{price}} ditagihkan tahunan)",
+    "current": "Saat Ini",
+    "contact": "Kontak",
+    "upgrade": "Upgrade"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Paket dasar",
+    "enterprisePlans": "Paket enterprise",
+    "wixPricingPlans": "Paket Harga Wix",
+    "needSupport": "Butuh bantuan?",
+    "pricingQuestions": "Hai, saya punya beberapa pertanyaan tentang harga.",
+    "upgradeYourPlan": "Upgrade paket Anda",
+    "upgradeSubtitle": "Upgrade paket Anda untuk mendapatkan lebih banyak kredit.",
+    "contactMessage": "Hai, saya tertarik dengan paket {{planName}}. Bisakah Anda membantu saya?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Kami harap Anda menikmati menggunakan aplikasi ini! Kami sangat menghargai jika Anda dapat memberikan ulasan untuk {{appName}}.",
+    "helpsImmensely": "Sangat membantu! ♥️",
+    "userFeedbackReview": "Ulasan umpan balik pengguna"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Langganan tidak tersedia",
+    "credits": "kredit",
+    "free": "Gratis",
+    "upgrade": "Upgrade",
+    "aiProductImagesSubscription": "Langganan Gambar Produk AI",
+    "subscriptionInfo": "Info Langganan",
+    "planName": "Nama Paket",
+    "creditsAvailable": "Kredit tersedia",
+    "creditsReset": "Reset kredit",
+    "resetsEveryMonth": "Reset setiap tanggal 1 setiap bulan",
+    "upgradeAiProductImages": "Upgrade Gambar Produk AI.",
+    "upgradeSubtitle": "Upgrade paket Anda untuk mendapatkan lebih banyak kredit.",
+    "explorePlans": "Lihat Paket",
+    "showSubscriptionInfo": "Tampilkan Info Langganan"
+  },
+  "studioHeader": {
+    "waitForOperation": "Harap tunggu hingga operasi saat ini selesai.",
+    "failedToOpenDashboard": "Gagal membuka Dashboard AI Product Images. Silakan coba lagi nanti.",
+    "openDashboard": "Buka Dashboard AI Product Images",
+    "dismiss": "Tutup",
+    "subscriptionUnavailable": "Langganan tidak tersedia",
+    "credits": "kredit",
+    "free": "Gratis",
+    "openDashboardDescription": "Buka Dashboard AI Product Images & buat gambar dengan mudah untuk semua produk Anda.",
+    "goToDashboard": "Buka Dashboard",
+    "upgrade": "Tingkatkan"
   }
 }
-

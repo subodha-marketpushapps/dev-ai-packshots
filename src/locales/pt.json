@@ -382,5 +382,59 @@
     "deleting": "Excluindo...",
     "uploadedImage": "Imagem Enviada",
     "removeImage": "Remover Imagem"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "RECOMENDADO PARA VOCÊ",
+    "currentPlan": "PLANO ATUAL",
+    "credits": "créditos",
+    "creditsPerMonth": "créditos/mês",
+    "testingCredits": "Créditos de Teste",
+    "orBilledYearly": "(ou {{price}} cobrado anualmente)",
+    "current": "Atual",
+    "contact": "Contatar",
+    "upgrade": "Atualizar"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "Planos básicos",
+    "enterprisePlans": "Planos empresariais",
+    "wixPricingPlans": "Planos de Preços Wix",
+    "needSupport": "Precisa de ajuda?",
+    "pricingQuestions": "Olá, tenho algumas perguntas sobre preços.",
+    "upgradeYourPlan": "Atualize Seu Plano",
+    "upgradeSubtitle": "Atualize seu plano para obter mais créditos.",
+    "contactMessage": "Olá, estou interessado no plano {{planName}}. Você pode me ajudar com isso?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "Esperamos que você tenha tido uma boa experiência com o aplicativo até agora! Nós realmente apreciaríamos se você pudesse adicionar uma avaliação para {{appName}}.",
+    "helpsImmensely": "Ajuda imensamente! ♥️",
+    "userFeedbackReview": "Avaliação do Usuário"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "Assinatura indisponível",
+    "credits": "créditos",
+    "free": "Grátis",
+    "upgrade": "Atualizar",
+    "aiProductImagesSubscription": "Assinatura AI Product Images",
+    "subscriptionInfo": "Informações da Assinatura",
+    "planName": "Nome do Plano",
+    "creditsAvailable": "Créditos disponíveis",
+    "creditsReset": "Redefinir créditos",
+    "resetsEveryMonth": "Redefine todo dia 1º do mês",
+    "upgradeAiProductImages": "Atualizar AI Product Images.",
+    "upgradeSubtitle": "Atualize seu plano para obter mais créditos.",
+    "explorePlans": "Explorar Planos",
+    "showSubscriptionInfo": "Mostrar Informações da Assinatura"
+  },
+  "studioHeader": {
+    "waitForOperation": "Por favor, aguarde até que a operação atual seja concluída.",
+    "failedToOpenDashboard": "Falha ao abrir o Painel AI Product Images. Por favor, tente novamente mais tarde.",
+    "openDashboard": "Abrir Painel AI Product Images",
+    "dismiss": "Fechar",
+    "subscriptionUnavailable": "Assinatura indisponível",
+    "credits": "créditos",
+    "free": "Grátis",
+    "openDashboardDescription": "Abra o Painel AI Product Images e gere imagens facilmente para todos os seus produtos.",
+    "goToDashboard": "Ir para o Painel",
+    "upgrade": "Atualizar"
   }
 }

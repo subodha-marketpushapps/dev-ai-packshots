@@ -173,208 +173,208 @@
     "viewLiveProductPage": "ดูหน้าผลิตภัณฑ์สด"
   },
   "modals": {
-      "upgrade": {
-        "title": "อัปเกรดแผนรูปภาพผลิตภัณฑ์ AI ของคุณ",
-        "primaryButton": "อัปเกรด",
-        "secondaryButton": "ไม่ใช่ตอนนี้",
-        "exhaustedCredits": "คุณใช้เครดิตในแผนของคุณหมดแล้ว อัปเกรดเป็นแผนที่สูงขึ้นเพื่อสร้างรูปภาพใหม่",
-        "upgradeForMoreCredits": "อัปเกรดแผนของคุณเพื่อรับเครดิตเพิ่ม"
-      },
-      "unpublish": {
-        "title": "ยกเลิกการเผยแพร่รูปภาพสด",
-        "primaryButton": "แก้ไขหน้าผลิตภัณฑ์",
-        "secondaryButton": "ยกเลิก",
-        "content": "ในขณะนี้ คุณไม่สามารถลบ/ยกเลิกการเผยแพร่รูปภาพโดยตรงจากรูปภาพผลิตภัณฑ์ AI โปรดไปที่หน้าแก้ไขผลิตภัณฑ์และลบออกจากที่นั่น",
-        "refreshNote": "รีเฟรชหน้าของคุณเพื่อดูการเปลี่ยนแปลง",
-        "refresh": "รีเฟรช"
-      },
-      "imageDetails": {
-        "prompt": "คำสั่ง (Prompt)",
-        "generateId": "รหัสการสร้าง (Generate Id)",
-        "createdAt": "สร้างเมื่อ",
-        "notAvailable": "ไม่มี",
-        "initialImage": "รูปภาพเริ่มต้น",
-        "generatedImage": "รูปภาพที่สร้างขึ้น"
-      },
-      "aiPackshotsDashboard": {
-        "title": "รูปภาพผลิตภัณฑ์ AI",
-        "subtitle": "ปรับปรุงและขัดเกลารูปภาพผลิตภัณฑ์ของคุณได้อย่างง่ายดายด้วยเครื่องมือที่ขับเคลื่อนด้วย AI",
-        "dismiss": "ยกเลิก",
-        "unknownUser": "รูปภาพผลิตภัณฑ์ AI (ผู้ใช้ที่ไม่รู้จัก)"
-      },
-      "aiPackshotsModal": {
-        "waitForOperation": "โปรดรอให้การดำเนินการปัจจุบันเสร็จสิ้น"
-      }
+    "upgrade": {
+      "title": "อัปเกรดแผนรูปภาพผลิตภัณฑ์ AI ของคุณ",
+      "primaryButton": "อัปเกรด",
+      "secondaryButton": "ไม่ใช่ตอนนี้",
+      "exhaustedCredits": "คุณใช้เครดิตในแผนของคุณหมดแล้ว อัปเกรดเป็นแผนที่สูงขึ้นเพื่อสร้างรูปภาพใหม่",
+      "upgradeForMoreCredits": "อัปเกรดแผนของคุณเพื่อรับเครดิตเพิ่ม"
+    },
+    "unpublish": {
+      "title": "ยกเลิกการเผยแพร่รูปภาพสด",
+      "primaryButton": "แก้ไขหน้าผลิตภัณฑ์",
+      "secondaryButton": "ยกเลิก",
+      "content": "ในขณะนี้ คุณไม่สามารถลบ/ยกเลิกการเผยแพร่รูปภาพโดยตรงจากรูปภาพผลิตภัณฑ์ AI โปรดไปที่หน้าแก้ไขผลิตภัณฑ์และลบออกจากที่นั่น",
+      "refreshNote": "รีเฟรชหน้าของคุณเพื่อดูการเปลี่ยนแปลง",
+      "refresh": "รีเฟรช"
+    },
+    "imageDetails": {
+      "prompt": "คำสั่ง (Prompt)",
+      "generateId": "รหัสการสร้าง (Generate Id)",
+      "createdAt": "สร้างเมื่อ",
+      "notAvailable": "ไม่มี",
+      "initialImage": "รูปภาพเริ่มต้น",
+      "generatedImage": "รูปภาพที่สร้างขึ้น"
+    },
+    "aiPackshotsDashboard": {
+      "title": "รูปภาพผลิตภัณฑ์ AI",
+      "subtitle": "ปรับปรุงและขัดเกลารูปภาพผลิตภัณฑ์ของคุณได้อย่างง่ายดายด้วยเครื่องมือที่ขับเคลื่อนด้วย AI",
+      "dismiss": "ยกเลิก",
+      "unknownUser": "รูปภาพผลิตภัณฑ์ AI (ผู้ใช้ที่ไม่รู้จัก)"
+    },
+    "aiPackshotsModal": {
+      "waitForOperation": "โปรดรอให้การดำเนินการปัจจุบันเสร็จสิ้น"
+    }
   },
   "editor": {
-      "imagesGenerated": {
-        "label": "รูปภาพที่สร้าง",
-        "infoContent": "เลือกจำนวนรูปภาพที่จะสร้าง"
-      },
-      "autoUpscaling": {
-        "label": "การปรับขนาดขึ้นอัตโนมัติ (Auto Upscaling)",
-        "infoContent": "เมื่อเปิดใช้งาน รูปภาพที่มีขนาดเล็กกว่า 1000px จะถูกปรับขนาดขึ้นเป็น x2 โดยอัตโนมัติเพื่อคุณภาพที่ดีขึ้น"
-      },
-      "setOutputDimensions": {
-        "label": "ตั้งค่าขนาดเอาต์พุต",
-        "infoContent": "เลือกอัตราส่วนภาพสำหรับรูปภาพที่สร้างขึ้น"
-      },
-      "photoQuality": {
-        "label": "คุณภาพของภาพถ่าย",
-        "infoContent": "เพิ่มแท็กคุณภาพเพื่อปรับปรุงรูปภาพของคุณ"
-      },
-      "productPositioning": {
-        "infoContent": "เลือกตำแหน่งของผลิตภัณฑ์ในรูปภาพ"
-      },
-      "backgroundType": {
-        "infoContent": "เลือกประเภทพื้นหลังสำหรับรูปภาพของคุณ"
-      }
+    "imagesGenerated": {
+      "label": "รูปภาพที่สร้าง",
+      "infoContent": "เลือกจำนวนรูปภาพที่จะสร้าง"
+    },
+    "autoUpscaling": {
+      "label": "การปรับขนาดขึ้นอัตโนมัติ (Auto Upscaling)",
+      "infoContent": "เมื่อเปิดใช้งาน รูปภาพที่มีขนาดเล็กกว่า 1000px จะถูกปรับขนาดขึ้นเป็น x2 โดยอัตโนมัติเพื่อคุณภาพที่ดีขึ้น"
+    },
+    "setOutputDimensions": {
+      "label": "ตั้งค่าขนาดเอาต์พุต",
+      "infoContent": "เลือกอัตราส่วนภาพสำหรับรูปภาพที่สร้างขึ้น"
+    },
+    "photoQuality": {
+      "label": "คุณภาพของภาพถ่าย",
+      "infoContent": "เพิ่มแท็กคุณภาพเพื่อปรับปรุงรูปภาพของคุณ"
+    },
+    "productPositioning": {
+      "infoContent": "เลือกตำแหน่งของผลิตภัณฑ์ในรูปภาพ"
+    },
+    "backgroundType": {
+      "infoContent": "เลือกประเภทพื้นหลังสำหรับรูปภาพของคุณ"
+    }
   },
   "feedback": {
-      "overallExperience": "ประสบการณ์โดยรวมของคุณกับรูปภาพผลิตภัณฑ์ AI เป็นอย่างไร?"
+    "overallExperience": "ประสบการณ์โดยรวมของคุณกับรูปภาพผลิตภัณฑ์ AI เป็นอย่างไร?"
   },
   "common": {
-      "refresh": "รีเฟรช",
-      "openSupportCenter": "เปิดศูนย์สนับสนุน",
-      "subscriptionInfo": "ข้อมูลการสมัครสมาชิก",
-      "showSubscriptionInfo": "แสดงข้อมูลการสมัครสมาชิก",
-      "chooseProduct": "เลือกผลิตภัณฑ์...",
-      "viewAllLiveProductImages": "ดูรูปภาพผลิตภัณฑ์สดทั้งหมด",
-      "copy": "คัดลอก",
-      "copied": "คัดลอกแล้ว!"
+    "refresh": "รีเฟรช",
+    "openSupportCenter": "เปิดศูนย์สนับสนุน",
+    "subscriptionInfo": "ข้อมูลการสมัครสมาชิก",
+    "showSubscriptionInfo": "แสดงข้อมูลการสมัครสมาชิก",
+    "chooseProduct": "เลือกผลิตภัณฑ์...",
+    "viewAllLiveProductImages": "ดูรูปภาพผลิตภัณฑ์สดทั้งหมด",
+    "copy": "คัดลอก",
+    "copied": "คัดลอกแล้ว!"
   },
   "productModalSelector": {
-      "selectProduct": "เลือกผลิตภัณฑ์",
-      "openModal": "เปิด Modal",
-      "noProductsAvailable": "ไม่มีผลิตภัณฑ์ในร้านค้าของคุณ",
-      "chooseProductPlaceholder": "เลือกผลิตภัณฑ์..."
+    "selectProduct": "เลือกผลิตภัณฑ์",
+    "openModal": "เปิด Modal",
+    "noProductsAvailable": "ไม่มีผลิตภัณฑ์ในร้านค้าของคุณ",
+    "chooseProductPlaceholder": "เลือกผลิตภัณฑ์..."
   },
   "editorPromptInput": {
-      "editImage": "แก้ไขรูปภาพ",
+    "editImage": "แก้ไขรูปภาพ",
+    "enhanceImage": "ปรับปรุงรูปภาพ",
+    "enhanceSettingsButton": "การตั้งค่าการปรับปรุง",
+    "promptInput": "ช่องป้อนคำสั่ง (Prompt)",
+    "placeholder": {
+      "edit": "อธิบายสิ่งที่คุณต้องการเปลี่ยนแปลง",
+      "enhance": "อธิบายฉากหลังของคุณ"
+    },
+    "blankPromptHint": "เว้นว่างไว้เพื่อให้ AI เลือกพื้นหลังที่ดีที่สุดสำหรับผลิตภัณฑ์ของคุณ",
+    "tooltip": {
+      "selectImage": "คุณต้องเลือกรูปภาพก่อนสร้าง",
+      "providePrompt": "คุณต้องระบุคำสั่ง (Prompt) ก่อนสร้าง",
+      "applyChanges": "ใช้การเปลี่ยนแปลง (⌘ + ↵)",
+      "regenerateImage": "สร้างรูปภาพใหม่ (⌘ + ↵)",
+      "generateImage": "สร้างรูปภาพ (⌘ + ↵)"
+    },
+    "editModes": {
       "enhanceImage": "ปรับปรุงรูปภาพ",
-      "enhanceSettingsButton": "การตั้งค่าการปรับปรุง",
-      "promptInput": "ช่องป้อนคำสั่ง (Prompt)",
-      "placeholder": {
-        "edit": "อธิบายสิ่งที่คุณต้องการเปลี่ยนแปลง",
-        "enhance": "อธิบายฉากหลังของคุณ"
-      },
-      "blankPromptHint": "เว้นว่างไว้เพื่อให้ AI เลือกพื้นหลังที่ดีที่สุดสำหรับผลิตภัณฑ์ของคุณ",
-      "tooltip": {
-        "selectImage": "คุณต้องเลือกรูปภาพก่อนสร้าง",
-        "providePrompt": "คุณต้องระบุคำสั่ง (Prompt) ก่อนสร้าง",
-        "applyChanges": "ใช้การเปลี่ยนแปลง (⌘ + ↵)",
-        "regenerateImage": "สร้างรูปภาพใหม่ (⌘ + ↵)",
-        "generateImage": "สร้างรูปภาพ (⌘ + ↵)"
-      },
-      "editModes": {
-        "enhanceImage": "ปรับปรุงรูปภาพ",
-        "enhanceImageDescription": "ปรับแต่งคุณภาพของภาพถ่ายของคุณและทำให้ผลลัพธ์สุดท้ายตรงกับวิสัยทัศน์ของคุณ",
-        "editImage": "แก้ไขรูปภาพ",
-        "editImageDescription": "แก้ไขรูปภาพด้วยคำแนะนำข้อความและรับผลลัพธ์ที่ต้องการ"
-      },
-      "enhanceSettings": {
-        "addImprovement": "เพิ่มการปรับปรุง",
-        "productPosition": "ตำแหน่งผลิตภัณฑ์",
-        "photoBackground": "พื้นหลังภาพถ่าย",
-        "original": "ต้นฉบับ",
-        "color": "สี",
-        "aiGenerated": "สร้างโดย AI",
-        "qualityOptions": {
-          "clarity": "ความคมชัดของภาพ",
-          "sharpness": "ความคมชัด",
-          "lighting": "แสง",
-          "shadows": "เงา",
-          "color": "สมดุลสี"
-        }
-      },
-      "outputSettings": {
-        "costs": "ค่าใช้จ่าย",
-        "imageCredits": "เครดิตรูปภาพ",
-        "aspectRatio": {
-          "original": "ต้นฉบับ"
-        }
-      },
-      "referencePreview": {
-        "noPrompt": "ไม่มีคำสั่ง (prompt)",
-        "matchReference": "สร้างผลลัพธ์ที่ใกล้เคียงกับรูปภาพอ้างอิงนี้"
-      },
-      "originalPreview": {
-        "goBack": "กลับไปที่ต้นฉบับ"
-      },
-      "feedback": {
-        "terrible": "แย่มาก",
-        "bad": "ไม่ดี",
-        "okay": "พอใช้",
-        "good": "ดี",
-        "great": "ยอดเยี่ยม",
-        "skip": "ข้าม",
-        "continue": "ดำเนินการต่อ",
-        "negativeExperienceMessage": "สวัสดี! ฉันได้รับประสบการณ์เชิงลบกับรูปภาพผลิตภัณฑ์ AI คุณช่วยฉันได้ไหม?",
-        "okExperienceMessage": "สวัสดี! ฉันได้รับประสบการณ์ที่ 'พอใช้' กับรูปภาพผลิตภัณฑ์ AI แต่คุณช่วยฉันในเรื่อง [เหตุผล] ได้ไหม?"
+      "enhanceImageDescription": "ปรับแต่งคุณภาพของภาพถ่ายของคุณและทำให้ผลลัพธ์สุดท้ายตรงกับวิสัยทัศน์ของคุณ",
+      "editImage": "แก้ไขรูปภาพ",
+      "editImageDescription": "แก้ไขรูปภาพด้วยคำแนะนำข้อความและรับผลลัพธ์ที่ต้องการ"
+    },
+    "enhanceSettings": {
+      "addImprovement": "เพิ่มการปรับปรุง",
+      "productPosition": "ตำแหน่งผลิตภัณฑ์",
+      "photoBackground": "พื้นหลังภาพถ่าย",
+      "original": "ต้นฉบับ",
+      "color": "สี",
+      "aiGenerated": "สร้างโดย AI",
+      "qualityOptions": {
+        "clarity": "ความคมชัดของภาพ",
+        "sharpness": "ความคมชัด",
+        "lighting": "แสง",
+        "shadows": "เงา",
+        "color": "สมดุลสี"
+      }
+    },
+    "outputSettings": {
+      "costs": "ค่าใช้จ่าย",
+      "imageCredits": "เครดิตรูปภาพ",
+      "aspectRatio": {
+        "original": "ต้นฉบับ"
+      }
+    },
+    "referencePreview": {
+      "noPrompt": "ไม่มีคำสั่ง (prompt)",
+      "matchReference": "สร้างผลลัพธ์ที่ใกล้เคียงกับรูปภาพอ้างอิงนี้"
+    },
+    "originalPreview": {
+      "goBack": "กลับไปที่ต้นฉบับ"
+    },
+    "feedback": {
+      "terrible": "แย่มาก",
+      "bad": "ไม่ดี",
+      "okay": "พอใช้",
+      "good": "ดี",
+      "great": "ยอดเยี่ยม",
+      "skip": "ข้าม",
+      "continue": "ดำเนินการต่อ",
+      "negativeExperienceMessage": "สวัสดี! ฉันได้รับประสบการณ์เชิงลบกับรูปภาพผลิตภัณฑ์ AI คุณช่วยฉันได้ไหม?",
+      "okExperienceMessage": "สวัสดี! ฉันได้รับประสบการณ์ที่ 'พอใช้' กับรูปภาพผลิตภัณฑ์ AI แต่คุณช่วยฉันในเรื่อง [เหตุผล] ได้ไหม?"
     }
   },
   "studioEditor": {
-      "footerNote": "AI อาจทำผิดพลาดได้ โปรดตรวจสอบรูปภาพของคุณอย่างรอบคอบ",
-      "subscriptionNotAvailable": "ไม่มีการสมัครสมาชิก โปรดรีเฟรชหรือติดต่อฝ่ายสนับสนุน",
-      "imageUpload": {
-        "canOnlyAdd": "คุณสามารถเพิ่มรูปภาพได้อีก {{count}} รูปเท่านั้น",
-        "fileSizeExceeded": "ไฟล์ {{fileName}} มีขนาดเกินขีดจำกัด 10 MB",
-        "failedToRead": "อ่านไฟล์รูปภาพ {{fileName}} ล้มเหลว",
-        "failedToLoad": "โหลดรูปภาพ {{fileName}} ล้มเหลว โปรดลองไฟล์อื่น",
-        "errorReading": "เกิดข้อผิดพลาดในการอ่านไฟล์รูปภาพ {{fileName}}",
-        "maxReferenceImagesReached": "คุณถึงจำนวนสูงสุด 6 รูปภาพอ้างอิงแล้ว",
-        "maxReachedOrProcessing": "คุณถึงจำนวนสูงสุด 6 รูปภาพอ้างอิงแล้ว หรือกำลังดำเนินการอัปโหลด",
-        "dropImageHere": "วางรูปภาพของคุณที่นี่",
-        "dropImagesHere": "วางรูปภาพของคุณที่นี่",
-        "dragImageHere": "ลากรูปภาพของคุณมาที่นี่",
-        "dragImagesHere": "ลากรูปภาพของคุณมาที่นี่",
-        "uploadFromComputer": "หรืออัปโหลดรูปภาพจากคอมพิวเตอร์ของคุณ",
-        "uploadMultipleFromComputer": "หรืออัปโหลดรูปภาพหลายรูปจากคอมพิวเตอร์ของคุณ"
+    "footerNote": "AI อาจทำผิดพลาดได้ โปรดตรวจสอบรูปภาพของคุณอย่างรอบคอบ",
+    "subscriptionNotAvailable": "ไม่มีการสมัครสมาชิก โปรดรีเฟรชหรือติดต่อฝ่ายสนับสนุน",
+    "imageUpload": {
+      "canOnlyAdd": "คุณสามารถเพิ่มรูปภาพได้อีก {{count}} รูปเท่านั้น",
+      "fileSizeExceeded": "ไฟล์ {{fileName}} มีขนาดเกินขีดจำกัด 10 MB",
+      "failedToRead": "อ่านไฟล์รูปภาพ {{fileName}} ล้มเหลว",
+      "failedToLoad": "โหลดรูปภาพ {{fileName}} ล้มเหลว โปรดลองไฟล์อื่น",
+      "errorReading": "เกิดข้อผิดพลาดในการอ่านไฟล์รูปภาพ {{fileName}}",
+      "maxReferenceImagesReached": "คุณถึงจำนวนสูงสุด 6 รูปภาพอ้างอิงแล้ว",
+      "maxReachedOrProcessing": "คุณถึงจำนวนสูงสุด 6 รูปภาพอ้างอิงแล้ว หรือกำลังดำเนินการอัปโหลด",
+      "dropImageHere": "วางรูปภาพของคุณที่นี่",
+      "dropImagesHere": "วางรูปภาพของคุณที่นี่",
+      "dragImageHere": "ลากรูปภาพของคุณมาที่นี่",
+      "dragImagesHere": "ลากรูปภาพของคุณมาที่นี่",
+      "uploadFromComputer": "หรืออัปโหลดรูปภาพจากคอมพิวเตอร์ของคุณ",
+      "uploadMultipleFromComputer": "หรืออัปโหลดรูปภาพหลายรูปจากคอมพิวเตอร์ของคุณ"
     }
   },
   "editorPhotoActions": {
-      "edit": "แก้ไข",
-      "copyEdits": "คัดลอกการแก้ไข",
-      "publish": "เผยแพร่",
-      "discard": "ละทิ้ง",
-      "generateInfo": "ข้อมูลการสร้าง",
-      "copyImage": "คัดลอกรูปภาพ",
-      "delete": "ลบ",
-      "unpublishGuide": "คู่มือการยกเลิกการเผยแพร่",
-      "reportProblem": "รายงานปัญหา",
-      "noProductIdForPublishing": "ไม่มีรหัสผลิตภัณฑ์สำหรับการเผยแพร่",
-      "failedToPublish": "เผยแพร่รูปภาพล้มเหลว",
-      "noProductIdForUnpublishing": "ไม่มีรหัสผลิตภัณฑ์สำหรับการยกเลิกการเผยแพร่",
-      "failedToUnpublish": "ยกเลิกการเผยแพร่รูปภาพล้มเหลว",
-      "failedToDelete": "ลบรูปภาพล้มเหลว",
-      "imageUploadCleared": "ล้างการอัปโหลดรูปภาพแล้ว",
-      "noImageToCopy": "ไม่มีรูปภาพให้คัดลอก",
-      "couldNotGetCanvasContext": "ไม่สามารถรับบริบทแคนวาสได้",
-      "imageCopiedToClipboard": "คัดลอกรูปภาพไปยังคลิปบอร์ดแล้ว!",
-      "clipboardWriteFailed": "การเขียนคลิปบอร์ดล้มเหลว",
-      "failedToCreateImageBlob": "สร้างอิมเมจ Blob ล้มเหลว",
-      "failedToLoadImageForCopying": "โหลดรูปภาพสำหรับการคัดลอกล้มเหลว",
-      "failedToCopyImage": "คัดลอกรูปภาพล้มเหลว",
-      "noImageSelectedForGenerateInfo": "ไม่ได้เลือกรูปภาพเพื่อแสดงข้อมูลการสร้าง"
+    "edit": "แก้ไข",
+    "copyEdits": "คัดลอกการแก้ไข",
+    "publish": "เผยแพร่",
+    "discard": "ละทิ้ง",
+    "generateInfo": "ข้อมูลการสร้าง",
+    "copyImage": "คัดลอกรูปภาพ",
+    "delete": "ลบ",
+    "unpublishGuide": "คู่มือการยกเลิกการเผยแพร่",
+    "reportProblem": "รายงานปัญหา",
+    "noProductIdForPublishing": "ไม่มีรหัสผลิตภัณฑ์สำหรับการเผยแพร่",
+    "failedToPublish": "เผยแพร่รูปภาพล้มเหลว",
+    "noProductIdForUnpublishing": "ไม่มีรหัสผลิตภัณฑ์สำหรับการยกเลิกการเผยแพร่",
+    "failedToUnpublish": "ยกเลิกการเผยแพร่รูปภาพล้มเหลว",
+    "failedToDelete": "ลบรูปภาพล้มเหลว",
+    "imageUploadCleared": "ล้างการอัปโหลดรูปภาพแล้ว",
+    "noImageToCopy": "ไม่มีรูปภาพให้คัดลอก",
+    "couldNotGetCanvasContext": "ไม่สามารถรับบริบทแคนวาสได้",
+    "imageCopiedToClipboard": "คัดลอกรูปภาพไปยังคลิปบอร์ดแล้ว!",
+    "clipboardWriteFailed": "การเขียนคลิปบอร์ดล้มเหลว",
+    "failedToCreateImageBlob": "สร้างอิมเมจ Blob ล้มเหลว",
+    "failedToLoadImageForCopying": "โหลดรูปภาพสำหรับการคัดลอกล้มเหลว",
+    "failedToCopyImage": "คัดลอกรูปภาพล้มเหลว",
+    "noImageSelectedForGenerateInfo": "ไม่ได้เลือกรูปภาพเพื่อแสดงข้อมูลการสร้าง"
   },
   "panelFeedback": {
-      "feedback": "ข้อเสนอแนะ",
-      "overallQualityBad": "คุณภาพโดยรวมไม่ดี",
-      "didNotRespectPrompt": "ไม่เป็นไปตามคำสั่ง (prompt) ของฉัน",
-      "notRelevantToProduct": "รูปภาพไม่เกี่ยวข้องกับผลิตภัณฑ์",
-      "imageNotClear": "รูปภาพไม่ชัดเจน",
-      "other": "อื่น ๆ",
-      "additionalFeedbackPlaceholder": "โปรดให้ข้อเสนอแนะเพิ่มเติม",
-      "submit": "ส่ง",
-      "feedbackSubmittedSuccessfully": "ส่งข้อเสนอแนะเรียบร้อยแล้ว",
-      "additional": "เพิ่มเติม"
+    "feedback": "ข้อเสนอแนะ",
+    "overallQualityBad": "คุณภาพโดยรวมไม่ดี",
+    "didNotRespectPrompt": "ไม่เป็นไปตามคำสั่ง (prompt) ของฉัน",
+    "notRelevantToProduct": "รูปภาพไม่เกี่ยวข้องกับผลิตภัณฑ์",
+    "imageNotClear": "รูปภาพไม่ชัดเจน",
+    "other": "อื่น ๆ",
+    "additionalFeedbackPlaceholder": "โปรดให้ข้อเสนอแนะเพิ่มเติม",
+    "submit": "ส่ง",
+    "feedbackSubmittedSuccessfully": "ส่งข้อเสนอแนะเรียบร้อยแล้ว",
+    "additional": "เพิ่มเติม"
   },
   "canvasToolbar": {
-      "drawRectangle": "วาดสี่เหลี่ยมผืนผ้า",
-      "drawing": "กำลังวาด...",
-      "deleteSelectedLayer": "ลบเลเยอร์ที่เลือก",
-      "resetImage": "รีเซ็ตรูปภาพ",
-      "downloadPreviewImage": "ดาวน์โหลดรูปภาพตัวอย่าง"
+    "drawRectangle": "วาดสี่เหลี่ยมผืนผ้า",
+    "drawing": "กำลังวาด...",
+    "deleteSelectedLayer": "ลบเลเยอร์ที่เลือก",
+    "resetImage": "รีเซ็ตรูปภาพ",
+    "downloadPreviewImage": "ดาวน์โหลดรูปภาพตัวอย่าง"
   },
   "imagePreviewer": {
     "unableToGenerateImage": "ไม่สามารถสร้างรูปภาพได้",
@@ -382,5 +382,59 @@
     "deleting": "กำลังลบ...",
     "uploadedImage": "รูปภาพที่อัปโหลด",
     "removeImage": "ลบรูปภาพ"
+  },
+  "pricingPlanCard": {
+    "suggestedForYou": "แนะนำสำหรับคุณ",
+    "currentPlan": "แผนปัจจุบัน",
+    "credits": "เครดิต",
+    "creditsPerMonth": "เครดิต/เดือน",
+    "testingCredits": "เครดิตสำหรับทดสอบ",
+    "orBilledYearly": "(หรือเรียกเก็บ {{price}} ต่อปี)",
+    "current": "ปัจจุบัน",
+    "contact": "ติดต่อ",
+    "upgrade": "อัปเกรด"
+  },
+  "modalPricingPlans": {
+    "basicPlans": "แผนพื้นฐาน",
+    "enterprisePlans": "แผนองค์กร",
+    "wixPricingPlans": "แผนราคา Wix",
+    "needSupport": "ต้องการความช่วยเหลือ?",
+    "pricingQuestions": "สวัสดีค่ะ/ครับ ฉันมีคำถามเกี่ยวกับราคา",
+    "upgradeYourPlan": "อัปเกรดแผนของคุณ",
+    "upgradeSubtitle": "อัปเกรดแผนของคุณเพื่อรับเครดิตเพิ่มเติม",
+    "contactMessage": "สวัสดีค่ะ/ครับ ฉันสนใจแผน {{planName}} คุณช่วยฉันได้ไหม?"
+  },
+  "modalFeedback": {
+    "goodExperienceMessage": "หวังว่าคุณจะได้รับประสบการณ์ที่ดีกับแอปนี้จนถึงตอนนี้! เราจะขอบคุณมากหากคุณช่วยเพิ่มรีวิวให้กับ {{appName}}",
+    "helpsImmensely": "มันช่วยได้มาก! ♥️",
+    "userFeedbackReview": "รีวิวความคิดเห็นผู้ใช้"
+  },
+  "subscriptionInfo": {
+    "subscriptionUnavailable": "ไม่สามารถใช้งานการสมัครสมาชิกได้",
+    "credits": "เครดิต",
+    "free": "ฟรี",
+    "upgrade": "อัปเกรด",
+    "aiProductImagesSubscription": "การสมัครใช้งาน AI Product Images",
+    "subscriptionInfo": "ข้อมูลการสมัครสมาชิก",
+    "planName": "ชื่อแผน",
+    "creditsAvailable": "เครดิตที่มีอยู่",
+    "creditsReset": "รีเซ็ตเครดิต",
+    "resetsEveryMonth": "รีเซ็ตทุกวันที่ 1 ของเดือน",
+    "upgradeAiProductImages": "อัปเกรด AI Product Images",
+    "upgradeSubtitle": "อัปเกรดแผนของคุณเพื่อรับเครดิตเพิ่มเติม",
+    "explorePlans": "สำรวจแผนต่าง ๆ",
+    "showSubscriptionInfo": "แสดงข้อมูลการสมัครสมาชิก"
+  },
+  "studioHeader": {
+    "waitForOperation": "โปรดรอให้การดำเนินการปัจจุบันเสร็จสิ้น",
+    "failedToOpenDashboard": "ไม่สามารถเปิดแดชบอร์ด AI Product Images ได้ กรุณาลองอีกครั้งในภายหลัง",
+    "openDashboard": "เปิดแดชบอร์ด AI Product Images",
+    "dismiss": "ปิด",
+    "subscriptionUnavailable": "การสมัครสมาชิกไม่พร้อมใช้งาน",
+    "credits": "เครดิต",
+    "free": "ฟรี",
+    "openDashboardDescription": "เปิดแดชบอร์ด AI Product Images และสร้างรูปภาพได้อย่างง่ายดายสำหรับผลิตภัณฑ์ทั้งหมดของคุณ",
+    "goToDashboard": "ไปที่แดชบอร์ด",
+    "upgrade": "อัปเกรด"
   }
 }
