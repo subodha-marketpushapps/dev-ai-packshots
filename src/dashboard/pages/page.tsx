@@ -171,7 +171,8 @@ function MainPage() {
 
   return (
     <PageLayout
-      title={t('homePage.pageTitle', {defaultValue: "AI Product Images - [Dev]"})}
+      // title={t('homePage.pageTitle', {defaultValue: "AI Product Images - [Dev]"})}
+      title="AI Product Images - [Dev]"
       subtitle={t('homePage.pageSubtitle', {defaultValue: "Elevate Your Product Visuals Using AI-Driven Image Enhancement."})}
       actionBar={
         <Box gap={2}>

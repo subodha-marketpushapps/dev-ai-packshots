@@ -17,7 +17,7 @@ const CompactHeader: React.FC<CompactHeaderProps> = ({
 }) => {
   const { t } = useTranslation();
   
-  const titleText = title || t('modals.aiPackshotsDashboard.title', {defaultValue: "AI Product Images"});
+  const titleText = title || "AI Product Images";
   const subtitleText = subtitle || t('modals.aiPackshotsDashboard.subtitle', {defaultValue: "Enhance and refine your product images effortlessly with AI-powered tools."});
   
   return (
