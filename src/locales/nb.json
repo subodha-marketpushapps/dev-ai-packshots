@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Kunne ikke laste inn data",
       "subtitle": "En teknisk feil oppstod. Prøv igjen om et par minutter."
+    },
+    "errorBoundary": {
+      "message": "Noe gikk galt. Vennligst prøv igjen."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Neste produkt",
     "searchAndSelectProduct": "Søk og velg produkt...",
     "openEditProductDashboardPage": "Åpne dashbordsiden for produktredigering",
-    "viewLiveProductPage": "Vis live produktside"
+    "viewLiveProductPage": "Vis live produktside",
+    "referenceImage": "Referansebilde",
+    "publishing": "Publiserer...",
+    "failedImage": "Mislykket bilde",
+    "imagePreview": "Bildeeksempel",
+    "productPageUnavailable": "Nettstedet ditt er ikke publisert, eller produktsiden er ikke tilgjengelig.",
+    "sku": "SKU:",
+    "price": "Pris:",
+    "noProductsFound": "Ingen produkter funnet for \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

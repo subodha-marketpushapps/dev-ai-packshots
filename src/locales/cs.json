@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Nepodařilo se načíst data",
       "subtitle": "Vypadá to, že na naší straně došlo k technickému problému. Počkejte několik minut a zkuste to znovu."
+    },
+    "errorBoundary": {
+      "message": "Něco se pokazilo. Zkuste to prosím znovu."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Další produkt",
     "searchAndSelectProduct": "Hledat a vybrat produkt...",
     "openEditProductDashboardPage": "Otevřít stránku nástěnky pro úpravu produktu",
-    "viewLiveProductPage": "Zobrazit živou stránku produktu"
+    "viewLiveProductPage": "Zobrazit živou stránku produktu",
+    "referenceImage": "Referenční obrázek",
+    "publishing": "Publikování...",
+    "failedImage": "Neúspěšný obrázek",
+    "imagePreview": "Náhled obrázku",
+    "productPageUnavailable": "Váš web není publikován nebo stránka produktu není k dispozici.",
+    "sku": "SKU:",
+    "price": "Cena:",
+    "noProductsFound": "Pro \"{{searchTerm}}\" nebyly nalezeny žádné produkty"
   },
   "modals": {
     "upgrade": {

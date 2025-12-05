@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Verileri yükleyemedik",
       "subtitle": "Görünüşe göre teknik bir sorun oluştu. Lütfen birkaç dakika bekleyip tekrar deneyin."
+    },
+    "errorBoundary": {
+      "message": "Bir şeyler yanlış gitti. Lütfen tekrar deneyin."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Sonraki Ürün",
     "searchAndSelectProduct": "Ürün ara ve seç...",
     "openEditProductDashboardPage": "Ürün Düzenleme Panel Sayfasını Aç",
-    "viewLiveProductPage": "Yayınlanmış Ürün Sayfasını Görüntüle"
+    "viewLiveProductPage": "Yayınlanmış Ürün Sayfasını Görüntüle",
+    "referenceImage": "Referans görüntü",
+    "publishing": "Yayınlanıyor...",
+    "failedImage": "Başarısız görüntü",
+    "imagePreview": "Görüntü önizleme",
+    "productPageUnavailable": "Siteniz yayınlanmamış veya ürün sayfası kullanılamıyor.",
+    "sku": "SKU:",
+    "price": "Fiyat:",
+    "noProductsFound": "\"{{searchTerm}}\" için ürün bulunamadı"
   },
   "modals": {
     "upgrade": {

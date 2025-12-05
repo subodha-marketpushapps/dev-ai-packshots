@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Kami tidak dapat memuat data",
       "subtitle": "Sepertinya ada masalah teknis di pihak kami. Tunggu beberapa menit dan coba lagi."
+    },
+    "errorBoundary": {
+      "message": "Terjadi kesalahan. Silakan coba lagi."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Produk Selanjutnya",
     "searchAndSelectProduct": "Cari dan pilih produk...",
     "openEditProductDashboardPage": "Buka Halaman Dasbor Edit Produk",
-    "viewLiveProductPage": "Lihat Halaman Produk Live"
+    "viewLiveProductPage": "Lihat Halaman Produk Live",
+    "referenceImage": "Gambar referensi",
+    "publishing": "Menerbitkan...",
+    "failedImage": "Gambar gagal",
+    "imagePreview": "Pratinjau gambar",
+    "productPageUnavailable": "Situs Anda belum diterbitkan atau halaman produk tidak tersedia.",
+    "sku": "SKU:",
+    "price": "Harga:",
+    "noProductsFound": "Tidak ada produk ditemukan untuk \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

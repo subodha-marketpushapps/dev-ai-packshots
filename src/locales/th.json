@@ -34,6 +34,9 @@
     "genericError": {
       "title": "เราไม่สามารถโหลดข้อมูลได้",
       "subtitle": "ดูเหมือนว่าจะมีปัญหาทางเทคนิคในส่วนของเรา โปรดรอสักครู่แล้วลองอีกครั้ง"
+    },
+    "errorBoundary": {
+      "message": "เกิดข้อผิดพลาด กรุณาลองอีกครั้ง"
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "ผลิตภัณฑ์ถัดไป",
     "searchAndSelectProduct": "ค้นหาและเลือกผลิตภัณฑ์...",
     "openEditProductDashboardPage": "เปิดหน้าแดชบอร์ดแก้ไขผลิตภัณฑ์",
-    "viewLiveProductPage": "ดูหน้าผลิตภัณฑ์สด"
+    "viewLiveProductPage": "ดูหน้าผลิตภัณฑ์สด",
+    "referenceImage": "รูปอ้างอิง",
+    "publishing": "กำลังเผยแพร่...",
+    "failedImage": "รูปภาพล้มเหลว",
+    "imagePreview": "ตัวอย่างรูปภาพ",
+    "productPageUnavailable": "เว็บไซต์ของคุณยังไม่ได้เผยแพร่หรือหน้า produk ไม่พร้อมใช้งาน",
+    "sku": "SKU:",
+    "price": "ราคา:",
+    "noProductsFound": "ไม่พบผลิตภัณฑ์สำหรับ \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

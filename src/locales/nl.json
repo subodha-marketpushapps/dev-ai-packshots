@@ -34,6 +34,9 @@
     "genericError": {
       "title": "We konden de gegevens niet laden",
       "subtitle": "Er is een technisch probleem aan onze kant opgetreden. Wacht een paar minuten en probeer het opnieuw."
+    },
+    "errorBoundary": {
+      "message": "Er is iets misgegaan. Probeer het opnieuw."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Volgend Product",
     "searchAndSelectProduct": "Zoek en selecteer een product...",
     "openEditProductDashboardPage": "Bewerk Product Dashboard Pagina openen",
-    "viewLiveProductPage": "Bekijk Live Product Pagina"
+    "viewLiveProductPage": "Bekijk Live Product Pagina",
+    "referenceImage": "Referentieafbeelding",
+    "publishing": "Publiceren...",
+    "failedImage": "Mislukte afbeelding",
+    "imagePreview": "Afbeeldingsvoorbeeld",
+    "productPageUnavailable": "Uw site is niet gepubliceerd of de productpagina is niet beschikbaar.",
+    "sku": "SKU:",
+    "price": "Prijs:",
+    "noProductsFound": "Geen producten gevonden voor \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

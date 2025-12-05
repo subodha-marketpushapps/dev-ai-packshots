@@ -34,6 +34,9 @@
     "genericError": {
       "title": "データを読み込めませんでした",
       "subtitle": "技術的な問題が発生したようです。数分待ってからもう一度お試しください。"
+    },
+    "errorBoundary": {
+      "message": "問題が発生しました。もう一度お試しください。"
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "次の製品",
     "searchAndSelectProduct": "製品を検索して選択...",
     "openEditProductDashboardPage": "製品編集ダッシュボードページを開く",
-    "viewLiveProductPage": "ライブ製品ページを表示"
+    "viewLiveProductPage": "ライブ製品ページを表示",
+    "referenceImage": "参照画像",
+    "publishing": "公開中...",
+    "failedImage": "失敗した画像",
+    "imagePreview": "画像プレビュー",
+    "productPageUnavailable": "サイトが公開されていないか、製品ページが利用できません。",
+    "sku": "SKU:",
+    "price": "価格:",
+    "noProductsFound": "「{{searchTerm}}」の製品が見つかりませんでした"
   },
   "modals": {
     "upgrade": {

@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Chúng tôi không thể tải dữ liệu",
       "subtitle": "Có vẻ như có một sự cố kỹ thuật từ phía chúng tôi. Vui lòng đợi vài phút và thử lại."
+    },
+    "errorBoundary": {
+      "message": "Đã xảy ra lỗi. Vui lòng thử lại."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Sản phẩm Tiếp theo",
     "searchAndSelectProduct": "Tìm kiếm và chọn một sản phẩm...",
     "openEditProductDashboardPage": "Mở Trang Bảng điều khiển Chỉnh sửa Sản phẩm",
-    "viewLiveProductPage": "Xem Trang Sản phẩm Trực tiếp"
+    "viewLiveProductPage": "Xem Trang Sản phẩm Trực tiếp",
+    "referenceImage": "Hình ảnh tham chiếu",
+    "publishing": "Đang xuất bản...",
+    "failedImage": "Hình ảnh thất bại",
+    "imagePreview": "Xem trước hình ảnh",
+    "productPageUnavailable": "Trang web của bạn chưa được xuất bản hoặc trang sản phẩm không khả dụng.",
+    "sku": "SKU:",
+    "price": "Giá:",
+    "noProductsFound": "Không tìm thấy sản phẩm cho \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

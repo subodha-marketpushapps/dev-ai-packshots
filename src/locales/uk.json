@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Не вдалося завантажити дані",
       "subtitle": "Схоже, на нашому боці виникла технічна проблема. Зачекайте кілька хвилин і спробуйте ще раз."
+    },
+    "errorBoundary": {
+      "message": "Щось пішло не так. Будь ласка, спробуйте ще раз."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Наступний продукт",
     "searchAndSelectProduct": "Шукайте та виберіть продукт...",
     "openEditProductDashboardPage": "Відкрити Сторінку редагування продукту на Панелі керування",
-    "viewLiveProductPage": "Переглянути Активну сторінку продукту"
+    "viewLiveProductPage": "Переглянути Активну сторінку продукту",
+    "referenceImage": "Еталонне зображення",
+    "publishing": "Публікація...",
+    "failedImage": "Невдале зображення",
+    "imagePreview": "Попередній перегляд зображення",
+    "productPageUnavailable": "Ваш сайт не опубліковано або сторінка продукту недоступна.",
+    "sku": "SKU:",
+    "price": "Ціна:",
+    "noProductsFound": "Продукти не знайдено для \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

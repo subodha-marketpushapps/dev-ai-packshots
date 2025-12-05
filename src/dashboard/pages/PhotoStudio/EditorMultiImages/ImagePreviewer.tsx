@@ -52,7 +52,7 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
     const errorMessageText = errorMessage || t('imagePreviewer.unableToGenerateImage', {defaultValue: "Unable to generate image."});
     const imgSrc = image?.imageUrl || undefined;
     const state = image?.imageState || "confirm";
-    const width = isSingleImage ? "auto" : "25vw";
+    const width = "auto"; //isSingleImage ? "auto" : "25vw";
     const height = isSingleImage ? "45vh" : "30vh";
 
     // Memoize style object for image
@@ -91,7 +91,6 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
       <Box
         width={width}
         height="auto"
-        minWidth={"25vw"}
         minHeight={"30vh"}
         position="relative"
         gap="SP1"

@@ -34,6 +34,9 @@
     "genericError": {
       "title": "We couldn't load the data",
       "subtitle": "Looks like there was a technical issue on our end. Wait a few minutes and try again."
+    },
+    "errorBoundary": {
+      "message": "Something went wrong. Please try again."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Next Product",
     "searchAndSelectProduct": "Search and select a product...",
     "openEditProductDashboardPage": "Open Edit Product Dashboard Page",
-    "viewLiveProductPage": "View Live Product Page"
+    "viewLiveProductPage": "View Live Product Page",
+    "referenceImage": "Reference Image",
+    "publishing": "Publishing...",
+    "failedImage": "Failed Image",
+    "imagePreview": "Image Preview",
+    "productPageUnavailable": "Your site is not published or the product page is unavailable.",
+    "sku": "SKU:",
+    "price": "Price:",
+    "noProductsFound": "No products found for \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

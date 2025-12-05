@@ -34,6 +34,9 @@
     "genericError": {
       "title": "我们无法加载数据",
       "subtitle": "我们这边似乎出现了技术问题。请等待几分钟后重试。"
+    },
+    "errorBoundary": {
+      "message": "出现了问题。请重试。"
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "下一个产品",
     "searchAndSelectProduct": "搜索并选择一个产品...",
     "openEditProductDashboardPage": "打开编辑产品仪表板页面",
-    "viewLiveProductPage": "查看实时产品页面"
+    "viewLiveProductPage": "查看实时产品页面",
+    "referenceImage": "参考图像",
+    "publishing": "发布中...",
+    "failedImage": "失败的图像",
+    "imagePreview": "图像预览",
+    "productPageUnavailable": "您的网站未发布或产品页面不可用。",
+    "sku": "SKU:",
+    "price": "价格:",
+    "noProductsFound": "未找到 \"{{searchTerm}}\" 的产品"
   },
   "modals": {
     "upgrade": {

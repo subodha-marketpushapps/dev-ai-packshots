@@ -1,7 +1,8 @@
 import React, { Component, ReactNode } from "react";
+import { withTranslation, WithTranslation } from "react-i18next";
 import { Box, Text } from "@wix/design-system";
 
-interface Props {
+interface Props extends WithTranslation {
   children: ReactNode;
 }
 
@@ -25,9 +26,12 @@ class ErrorBoundary extends Component<Props, State> {
 
   render() {
     if (this.state.hasError) {
+      const { t } = this.props;
       return (
         <Box padding="SP4" backgroundColor="R60" borderRadius={8}>
-          <Text skin="error">Something went wrong. Please try again.</Text>
+          <Text skin="error">
+            {t('errors.errorBoundary.message', {defaultValue: "Something went wrong. Please try again."})}
+          </Text>
         </Box>
       );
     }
@@ -35,4 +39,4 @@ class ErrorBoundary extends Component<Props, State> {
   }
 }
 
-export default ErrorBoundary;
+export default withTranslation()(ErrorBoundary);

@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Vi kunne ikke indlæse data",
       "subtitle": "Der opstod et teknisk problem hos os. Vent et par minutter og prøv igen."
+    },
+    "errorBoundary": {
+      "message": "Noget gik galt. Prøv venligst igen."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Næste produkt",
     "searchAndSelectProduct": "Søg og vælg et produkt...",
     "openEditProductDashboardPage": "Åbn siden Rediger produkt",
-    "viewLiveProductPage": "Se produktets live-side"
+    "viewLiveProductPage": "Se produktets live-side",
+    "referenceImage": "Referencebillede",
+    "publishing": "Publicerer...",
+    "failedImage": "Mislykket billede",
+    "imagePreview": "Billedeksempel",
+    "productPageUnavailable": "Dit websted er ikke publiceret, eller produktsiden er ikke tilgængelig.",
+    "sku": "SKU:",
+    "price": "Pris:",
+    "noProductsFound": "Ingen produkter fundet for \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

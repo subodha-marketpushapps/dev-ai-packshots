@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Vi kunde inte ladda data",
       "subtitle": "Det verkar som att det uppstod ett tekniskt problem hos oss. Vänta några minuter och försök igen."
+    },
+    "errorBoundary": {
+      "message": "Något gick fel. Vänligen försök igen."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Nästa produkt",
     "searchAndSelectProduct": "Sök och välj en produkt...",
     "openEditProductDashboardPage": "Öppna redigeringssidan för produkten i instrumentpanelen",
-    "viewLiveProductPage": "Visa produktens live-sida"
+    "viewLiveProductPage": "Visa produktens live-sida",
+    "referenceImage": "Referensbild",
+    "publishing": "Publicerar...",
+    "failedImage": "Misslyckad bild",
+    "imagePreview": "Bildförhandsvisning",
+    "productPageUnavailable": "Din webbplats är inte publicerad eller produktsidan är inte tillgänglig.",
+    "sku": "SKU:",
+    "price": "Pris:",
+    "noProductsFound": "Inga produkter hittades för \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

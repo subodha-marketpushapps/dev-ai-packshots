@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Tooltip,
   Box,
@@ -40,6 +41,7 @@ const ImageLoadingSkeleton: React.FC<{ height: number }> = ({ height }) => (
 // Memoized ImagePreview moved outside to avoid re-creation on each render
 const ImagePreview: React.FC<ImagePreviewProps> = React.memo(
   ({ imageUrl, imageId, height }) => {
+    const { t } = useTranslation();
     const [loading, setLoading] = React.useState(true);
     const prevUrl = React.useRef(imageUrl);
 
@@ -56,7 +58,7 @@ const ImagePreview: React.FC<ImagePreviewProps> = React.memo(
         <Image
           height="100%"
           src={imageUrl || ""}
-          alt={imageId || "Image Preview"}
+          alt={imageId || t('photoStudio.imagePreview', {defaultValue: "Image Preview"})}
           onLoad={() => setLoading(false)}
           onError={() => setLoading(false)}
           style={loading ? { display: "none" } : {}}
@@ -77,6 +79,8 @@ const SelectableImagePreview: React.FC<SelectableImagePreviewProps> = ({
   onClick,
   imageObj,
 }) => {
+  const { t } = useTranslation();
+  
   // Overlay icons for special states
   const overlayIcon = (() => {
     if (imageObj?.comments && imageObj.comments.length > 0) {
@@ -101,7 +105,7 @@ const SelectableImagePreview: React.FC<SelectableImagePreviewProps> = ({
     if (imageObj?.imageState === PROCESS_STATES.REFERENCE) {
       return (
         <Tooltip
-          content={"Reference Image"}
+          content={t('photoStudio.referenceImage', {defaultValue: "Reference Image"})}
           appendTo="scrollParent"
           size="small"
         >
@@ -120,7 +124,7 @@ const SelectableImagePreview: React.FC<SelectableImagePreviewProps> = ({
     if (imageObj?.imageState === PROCESS_STATES.PUBLISHING) {
       return (
         <Tooltip
-          content={"Publishing..."}
+          content={t('photoStudio.publishing', {defaultValue: "Publishing..."})}
           appendTo="scrollParent"
           size="small"
           disabled={false}
@@ -142,7 +146,7 @@ const SelectableImagePreview: React.FC<SelectableImagePreviewProps> = ({
       imageObj?.generationStatus == "FAILED"
     ) {
       return (
-        <Tooltip content={"Failed Image"} appendTo="scrollParent" size="small">
+        <Tooltip content={t('photoStudio.failedImage', {defaultValue: "Failed Image"})} appendTo="scrollParent" size="small">
           <Box
             backgroundColor="D80"
             borderRadius={4}

@@ -34,6 +34,9 @@
     "genericError": {
       "title": "Não foi possível carregar os dados",
       "subtitle": "Parece que houve um problema técnico do nosso lado. Aguarde alguns minutos e tente novamente."
+    },
+    "errorBoundary": {
+      "message": "Algo deu errado. Por favor, tente novamente."
     }
   },
   "emptyStates": {
@@ -170,7 +173,15 @@
     "nextProduct": "Próximo Produto",
     "searchAndSelectProduct": "Buscar e selecionar um produto...",
     "openEditProductDashboardPage": "Abrir Página do Painel de Edição de Produto",
-    "viewLiveProductPage": "Ver Página de Produto ao Vivo"
+    "viewLiveProductPage": "Ver Página de Produto ao Vivo",
+    "referenceImage": "Imagem de Referência",
+    "publishing": "Publicando...",
+    "failedImage": "Imagem Falhada",
+    "imagePreview": "Pré-visualização da Imagem",
+    "productPageUnavailable": "Seu site não está publicado ou a página do produto não está disponível.",
+    "sku": "SKU:",
+    "price": "Preço:",
+    "noProductsFound": "Nenhum produto encontrado para \"{{searchTerm}}\""
   },
   "modals": {
     "upgrade": {

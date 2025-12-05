@@ -5,6 +5,7 @@ import React, {
   useEffect,
   useRef,
 } from "react";
+import { useTranslation } from "react-i18next";
 import {
   AutoComplete,
   Box,
@@ -114,6 +115,7 @@ interface ProductNavigatorState {
  * - See backup/variant files in _archive for previous versions.
  */
 const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
+  const { t } = useTranslation();
   const {
     productId,
     changeProductId,
@@ -412,8 +414,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
     ) {
       addToast({
         status: "warning",
-        content:
-          "Your site is not published or the product page is unavailable.",
+        content: t('photoStudio.productPageUnavailable', {defaultValue: "Your site is not published or the product page is unavailable."}),
       });
       return;
     }
@@ -443,7 +444,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
                   ellipsis
                   maxLines={1}
                 >
-                  SKU: {product.sku}
+                  {t('photoStudio.sku', {defaultValue: "SKU:"})} {product.sku}
                 </Text>
                 <Icons.CircleSmallFilledSmall />
               </Box>
@@ -453,7 +454,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
               light={product.id === productId}
               secondary={product.id !== productId}
             >
-              Price: {price}
+              {t('photoStudio.price', {defaultValue: "Price:"})} {price}
             </Text>
           </Box>
         ),
@@ -474,7 +475,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
       options.push(
         listItemSelectBuilder({
           id: "__no_results__",
-          title: `No products found for "${effectiveSearchTerm}"`,
+          title: t('photoStudio.noProductsFound', {defaultValue: "No products found for \"{{searchTerm}}\"", searchTerm: effectiveSearchTerm}),
           disabled: true,
           prefix: <Icons.Search />,
         })
@@ -582,7 +583,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
             key={productId}
             size="medium"
             border="bottomLine"
-            placeholder="Search and select a product..."
+            placeholder={t('photoStudio.searchAndSelectProduct', {defaultValue: "Search and select a product..."})}
             maxHeightPixels="320px"
             textOverflow="ellipsis"
             options={productOptions}
@@ -627,7 +628,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
               !state.isFocused && (
                 <Box verticalAlign="middle" minHeight={34}>
                   <Tooltip
-                    content="Open Edit Product Dashboard Page"
+                    content={t('photoStudio.openEditProductDashboardPage', {defaultValue: "Open Edit Product Dashboard Page"})}
                     zIndex={9999999}
                     size="small"
                   >
@@ -642,7 +643,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
                     </IconButton>
                   </Tooltip>
                   <Tooltip
-                    content="View Live Product Page"
+                    content={t('photoStudio.viewLiveProductPage', {defaultValue: "View Live Product Page"})}
                     zIndex={9999999}
                     size="small"
                   >
