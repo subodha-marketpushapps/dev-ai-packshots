@@ -30,7 +30,7 @@ const SUPPORTED_LANGUAGES = [
   'nb', 'nl', 'pl', 'pt', 'ru', 'sv', 'th', 'tr', 'uk', 'vi', 'zh'
 ] as const;
 
-// Local resources as fallback (only used if Locize fails)
+// Local resources as fallback (fills gaps in Locize translations)
 const localResources: Record<string, typeof enTranslations> = {
   cs: csTranslations,
   da: daTranslations,
@@ -60,7 +60,6 @@ const normalizeLanguage = (lng: string | string[]): string => {
   const language = Array.isArray(lng) ? lng[0] : lng;
   if (!language) return 'en';
   
-  // Extract base language code (e.g., 'en-US' -> 'en')
   const baseLang = language.split('-')[0].toLowerCase();
   
   // Check if it's a supported language
@@ -76,29 +75,30 @@ const normalizeLanguage = (lng: string | string[]): string => {
     return 'en';
   }
   
-  return 'en'; // Default fallback
+  return 'en';
 };
 
-// Helper to add local resource as fallback
-const addLocalFallback = (lng: string): void => {
-  const resource = localResources[lng];
+// Consolidated function to ensure local resources are available for a language
+// Uses i18next's built-in merging with overwrite: false to let Locize override local
+const ensureLocalResources = (lng: string): void => {
+  const normalizedLng = normalizeLanguage(lng);
+  const resource = localResources[normalizedLng];
+  
   if (resource) {
-    i18n.addResourceBundle(lng, 'translation', resource, true, false);
+    // Add with overwrite: false - Locize keys take precedence, local fills gaps
+    i18n.addResourceBundle(normalizedLng, 'translation', resource, true, false);
     if (_DEV) {
-      console.log(`[i18n] Added local fallback for ${lng}`);
+      console.log(`[i18n] Ensured local resources for ${normalizedLng}`);
     }
   }
 };
-
-// Fallback timeout configuration
-const FALLBACK_TIMEOUT = 10000; // 10 seconds
 
 // Track loaded languages from Locize
 const loadedFromBackend = new Set<string>();
 let fallbackTimeoutId: ReturnType<typeof setTimeout> | null = null;
 let isNamespaceLoaded = false;
 
-// Initialize i18n with proper async handling
+// Initialize i18n
 const initPromise = i18n
   .use(LocizeBackend)
   .use(initReactI18next)
@@ -106,7 +106,7 @@ const initPromise = i18n
     defaultNS: 'translation',
     ns: ['translation'],
     load: 'languageOnly',
-    partialBundledLanguages: true, // Allow merging Locize with local fallbacks
+    partialBundledLanguages: true, // Enable merging Locize with local fallbacks
 
     backend: {
       projectId: LOCIZE_PROJECT_ID,
@@ -120,18 +120,23 @@ const initPromise = i18n
       }),
     },
 
-    fallbackLng: 'en',
+    // Custom fallback: current language's local resources, then English
+    fallbackLng: (code: string) => {
+      const normalizedCode = normalizeLanguage(code);
+      if (normalizedCode !== 'en' && localResources[normalizedCode]) {
+        return [normalizedCode, 'en'];
+      }
+      return 'en';
+    },
     
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
-      // Custom lookup function to filter invalid language codes
       lookupLocalStorage: 'i18nextLng',
       lookupCookie: 'i18next',
       lookupQuerystring: 'lng',
       lookupFromPathIndex: 0,
       lookupFromSubdomainIndex: 0,
-      // Convert detected language to valid code
       convertDetectedLanguage: (lng: string) => normalizeLanguage(lng),
     },
 
@@ -145,68 +150,72 @@ const initPromise = i18n
     },
   });
 
-// Add local resources immediately as safety net (before backend loads)
+// Add initial local resources immediately after init
 // This ensures translations are available even if Locize is slow or fails
-const addInitialLocalResources = async () => {
+initPromise.then(() => {
   const detectedLng = i18n.language || 'en';
   const normalizedLng = normalizeLanguage(detectedLng);
   
-  // Add English as base fallback immediately
-  if (normalizedLng !== 'en' && localResources.en) {
-    i18n.addResourceBundle('en', 'translation', localResources.en, true, false);
+  // Always add English as base fallback
+  ensureLocalResources('en');
+  
+  // Add detected language resources
+  if (normalizedLng !== 'en') {
+    ensureLocalResources(normalizedLng);
   }
   
-  // Add detected language as fallback
-  if (localResources[normalizedLng]) {
-    i18n.addResourceBundle(normalizedLng, 'translation', localResources[normalizedLng], true, false);
-    isNamespaceLoaded = true;
-    if (_DEV) {
-      console.log(`[i18n] Added initial local resources for ${normalizedLng}`);
-    }
+  isNamespaceLoaded = true;
+  if (_DEV) {
+    console.log(`[i18n] Initialized with language "${normalizedLng}", local resources added`);
   }
-};
-
-// Wait for init and add initial resources
-initPromise.then(() => {
-  addInitialLocalResources();
 }).catch((err) => {
   console.error('[i18n] Initialization error:', err);
-  addInitialLocalResources(); // Still add local resources on error
+  // Still add local resources on error
+  ensureLocalResources('en');
+  ensureLocalResources(i18n.language || 'en');
+  isNamespaceLoaded = true;
 });
 
-// Track successful loads from Locize backend
+// When Locize loads successfully, ensure local resources are merged
+// This fills in any missing keys from Locize
 i18n.on('loaded', (loaded: Record<string, Record<string, unknown>>) => {
   Object.keys(loaded).forEach((lng) => {
     loadedFromBackend.add(lng);
+    const normalizedLng = normalizeLanguage(lng);
+    
+    // Re-add local resources to fill gaps (overwrite: false ensures Locize takes precedence)
+    ensureLocalResources(normalizedLng);
+    
     isNamespaceLoaded = true;
     if (_DEV) {
-      console.log(`[i18n] ✓ Loaded ${lng} from Locize`);
+      console.log(`[i18n] ✓ Loaded ${lng} from Locize, local resources merged`);
     }
   });
 });
 
-// Track when namespace is ready
+// When language changes, ensure local resources are available
 i18n.on('languageChanged', (lng: string) => {
-  // Ensure namespace is loaded when language changes
+  const normalizedLng = normalizeLanguage(lng);
+  ensureLocalResources(normalizedLng);
+  
+  // Ensure namespace is loaded
   i18n.loadNamespaces('translation').then(() => {
     isNamespaceLoaded = true;
     if (_DEV) {
-      console.log(`[i18n] Namespace loaded for ${lng}`);
+      console.log(`[i18n] Language changed to ${lng}, namespace loaded`);
     }
   }).catch((err) => {
     console.error(`[i18n] Failed to load namespace for ${lng}:`, err);
-    // Add local fallback if namespace load fails
-    addLocalFallback(normalizeLanguage(lng));
     isNamespaceLoaded = true;
   });
 });
 
-// Handle backend load failures - add local fallback immediately
+// Handle backend load failures
 i18n.on('failedLoading', (lng: string, ns: string, msg: string) => {
   if (ns === 'translation') {
     const normalizedLng = normalizeLanguage(lng);
     
-    // If invalid language detected, switch to fallback
+    // If invalid language detected, switch to English
     if (normalizedLng !== lng && normalizedLng === 'en') {
       if (_DEV) {
         console.warn(`[i18n] Invalid language "${lng}" detected, switching to "en"`);
@@ -218,11 +227,12 @@ i18n.on('failedLoading', (lng: string, ns: string, msg: string) => {
     if (_DEV) {
       console.warn(`[i18n] ✗ Failed to load ${normalizedLng} from Locize:`, msg);
     }
-    addLocalFallback(normalizedLng);
+    ensureLocalResources(normalizedLng);
+    isNamespaceLoaded = true;
   }
 });
 
-// Set timeout fallback if backend doesn't load in time
+// Timeout fallback if backend doesn't load in time
 fallbackTimeoutId = setTimeout(() => {
   const currentLng = i18n.language || 'en';
   const bundle = i18n.getResourceBundle(currentLng, 'translation');
@@ -232,21 +242,22 @@ fallbackTimeoutId = setTimeout(() => {
     if (_DEV) {
       console.warn(`[i18n] ⏱ Backend timeout - using local fallback for ${currentLng}`);
     }
-    addLocalFallback(currentLng);
+    ensureLocalResources(currentLng);
+    isNamespaceLoaded = true;
   }
-}, FALLBACK_TIMEOUT);
+}, 10000); // 10 seconds
 
-// Clean up timeout on successful initialization
+// Clean up timeout and validate language on initialization
 i18n.on('initialized', async () => {
   if (fallbackTimeoutId) {
     clearTimeout(fallbackTimeoutId);
     fallbackTimeoutId = null;
   }
   
-  // Validate and fix language after initialization
   const currentLng = i18n.language;
   const normalizedLng = normalizeLanguage(currentLng);
   
+  // Correct invalid language
   if (normalizedLng !== currentLng) {
     if (_DEV) {
       console.warn(`[i18n] Correcting invalid language "${currentLng}" to "${normalizedLng}"`);
@@ -254,17 +265,18 @@ i18n.on('initialized', async () => {
     await i18n.changeLanguage(normalizedLng);
   }
   
+  // Ensure local resources are available
+  ensureLocalResources(normalizedLng);
+  
   // Ensure namespace is loaded
   try {
     await i18n.loadNamespaces('translation');
     isNamespaceLoaded = true;
     if (_DEV) {
-      console.log(`[i18n] Initialized with language "${normalizedLng}" - namespace loaded`);
+      console.log(`[i18n] Initialized with language "${normalizedLng}", ready`);
     }
   } catch (err) {
     console.error('[i18n] Failed to load namespace:', err);
-    // Add local fallback
-    addLocalFallback(normalizedLng);
     isNamespaceLoaded = true;
   }
 });
@@ -293,4 +305,3 @@ export const waitForI18n = async (): Promise<void> => {
 };
 
 export default i18n;
-

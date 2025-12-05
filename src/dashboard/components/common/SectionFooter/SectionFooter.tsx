@@ -13,8 +13,6 @@ const SectionFooter = () => {
     window.open(url, "_blank", "noopener");
   };
 
-  console.log("MKP_LINKS", t('sectionFooter.mkpYoutubeChannel'))
-
   const MKP_LINKS = [
     {
       label: t('sectionFooter.mkpYoutubeChannel', {defaultValue: "MKP Youtube Channel"}),
