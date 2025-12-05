@@ -150,6 +150,15 @@
     "removeImage": "Görseli Kaldır",
     "removeUploadedImage": "Yüklenen görseli kaldır",
     "goBack": "Geri dön (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Görüntü başarıyla yayınlandı.",
+      "imagePublishFailed": "Görüntü yayınlanamadı.",
+      "imageDeletedSuccess": "Görüntü başarıyla silindi.",
+      "imageDeleteFailed": "Görüntü silinemedi.",
+      "noProductIdOrImageUrl": "Yayınlama için ürün ID'si veya görüntü URL'si mevcut değil.",
+      "noTaskIdFound": "Bu görüntü için görev ID'si bulunamadı.",
+      "maxImagesPerProduct": "Ürün başına yalnızca 10 görüntü yayınlayabilirsiniz. Yeni bir görüntü yayınlamadan önce lütfen yayını iptal edin veya bir görüntüyü silin."
+    },
     "fullscreen": "Tam ekran",
     "compare": "Karşılaştır",
     "details": "Detaylar",

@@ -23,6 +23,7 @@ import React, {
   useEffect,
   useMemo,
 } from "react";
+import { useTranslation } from "react-i18next";
 import { useQueryClient } from "@tanstack/react-query";
 import { useEditorActions } from "../../hooks/useEditorActions";
 import PhotoStudio from "../../pages/PhotoStudio";
@@ -269,6 +270,7 @@ export const PhotoStudioProvider: React.FC<{
   showCloseButton = true,
   onCustomClose,
 }) => {
+    const { t } = useTranslation();
     const queryClient = useQueryClient();
 
     // --- Editor/Image State ---
@@ -622,8 +624,7 @@ export const PhotoStudioProvider: React.FC<{
           clearError("api");
 
           if (!productId || !image.imageUrl) {
-            const errorMsg =
-              "No product ID or image URL available for publishing.";
+            const errorMsg = t('photoStudio.api.noProductIdOrImageUrl', {defaultValue: "No product ID or image URL available for publishing."});
             setError("api", errorMsg);
             addToast({
               content: errorMsg,
@@ -638,8 +639,7 @@ export const PhotoStudioProvider: React.FC<{
           ).filter((img) => img.isLiveImage).length;
           if (liveImagesCount >= 10) {
             addToast({
-              content:
-                "You can only publish up to 10 images per product. Please unpublish or delete an image before publishing a new one.",
+              content: t('photoStudio.api.maxImagesPerProduct', {defaultValue: "You can only publish up to 10 images per product. Please unpublish or delete an image before publishing a new one."}),
               status: "warning",
             });
             return;
@@ -722,17 +722,17 @@ export const PhotoStudioProvider: React.FC<{
           }
 
           addToast({
-            content: "Image published successfully.",
+            content: t('photoStudio.api.imagePublishedSuccess', {defaultValue: "Image published successfully."}),
             status: "success",
           });
         } catch (err: any) {
-          const errorMessage = err.message || "Failed to publish image";
+          const errorMessage = err.message || t('photoStudio.api.imagePublishFailed', {defaultValue: "Failed to publish image"});
           setError("api", errorMessage);
           if (uploadedId) {
             deleteFileExplorerImage(uploadedId);
           }
           addToast({
-            content: "Failed to publish image.",
+            content: t('photoStudio.api.imagePublishFailed', {defaultValue: "Failed to publish image."}),
             status: "error",
           });
           throw err;
@@ -777,7 +777,7 @@ export const PhotoStudioProvider: React.FC<{
           clearError("api");
 
           if (!image.id) {
-            const errorMsg = "No task ID found for this image.";
+            const errorMsg = t('photoStudio.api.noTaskIdFound', {defaultValue: "No task ID found for this image."});
             setError("api", errorMsg);
             addToast({
               content: errorMsg,
@@ -799,13 +799,13 @@ export const PhotoStudioProvider: React.FC<{
             {
               onSuccess: () => {
                 addToast({
-                  content: "Image deleted successfully.",
+                  content: t('photoStudio.api.imageDeletedSuccess', {defaultValue: "Image deleted successfully."}),
                   status: "success",
                 });
                 deleteFileExplorerImage(image.id);
               },
               onError: (error) => {
-                const errorMsg = "Failed to delete image.";
+                const errorMsg = t('photoStudio.api.imageDeleteFailed', {defaultValue: "Failed to delete image."});
                 setError("api", errorMsg);
                 addToast({
                   content: errorMsg,
@@ -819,7 +819,7 @@ export const PhotoStudioProvider: React.FC<{
             }
           );
         } catch (err: any) {
-          const errorMessage = err.message || "Failed to delete image";
+          const errorMessage = err.message || t('photoStudio.api.imageDeleteFailed', {defaultValue: "Failed to delete image"});
           setError("api", errorMessage);
           throw err;
         } finally {

@@ -150,6 +150,15 @@
     "removeImage": "Remove Image",
     "removeUploadedImage": "Remove uploaded image",
     "goBack": "Go back (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Image published successfully.",
+      "imagePublishFailed": "Failed to publish image.",
+      "imageDeletedSuccess": "Image deleted successfully.",
+      "imageDeleteFailed": "Failed to delete image.",
+      "noProductIdOrImageUrl": "No product ID or image URL available for publishing.",
+      "noTaskIdFound": "No task ID found for this image.",
+      "maxImagesPerProduct": "You can only publish up to 10 images per product. Please unpublish or delete an image before publishing a new one."
+    },
     "fullscreen": "Fullscreen",
     "compare": "Compare",
     "details": "Details",

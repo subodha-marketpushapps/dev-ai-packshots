@@ -421,7 +421,7 @@ const StudioImageExplorer: React.FC<{
                 <SidePanel.Section
                   title={`${
                     studioType == "product" ? t('photoStudio.draftImages', {defaultValue: "Draft"}) : t('photoStudio.allDraftImages', {defaultValue: "All Draft"})
-                  } Images (${shortedDraftImages.length})`}
+                  } (${shortedDraftImages.length})`}
                   suffix={
                     <InfoIcon
                       size="small"

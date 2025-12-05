@@ -150,6 +150,15 @@
     "removeImage": "画像を削除",
     "removeUploadedImage": "アップロードした画像を削除",
     "goBack": "戻る (Esc)",
+    "api": {
+      "imagePublishedSuccess": "画像が正常に公開されました。",
+      "imagePublishFailed": "画像の公開に失敗しました。",
+      "imageDeletedSuccess": "画像が正常に削除されました。",
+      "imageDeleteFailed": "画像の削除に失敗しました。",
+      "noProductIdOrImageUrl": "公開に使用できる製品IDまたは画像URLがありません。",
+      "noTaskIdFound": "この画像のタスクIDが見つかりません。",
+      "maxImagesPerProduct": "製品あたり最大10枚の画像のみ公開できます。新しい画像を公開する前に、公開を解除するか画像を削除してください。"
+    },
     "fullscreen": "全画面表示",
     "compare": "比較",
     "details": "詳細",

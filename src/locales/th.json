@@ -150,6 +150,15 @@
     "removeImage": "ลบรูปภาพ",
     "removeUploadedImage": "ลบรูปภาพที่อัปโหลด",
     "goBack": "ย้อนกลับ (Esc)",
+    "api": {
+      "imagePublishedSuccess": "เผยแพร่รูปภาพสำเร็จแล้ว",
+      "imagePublishFailed": "ไม่สามารถเผยแพร่รูปภาพได้",
+      "imageDeletedSuccess": "ลบรูปภาพสำเร็จแล้ว",
+      "imageDeleteFailed": "ไม่สามารถลบรูปภาพได้",
+      "noProductIdOrImageUrl": "ไม่มี ID ผลิตภัณฑ์หรือ URL รูปภาพสำหรับการเผยแพร่",
+      "noTaskIdFound": "ไม่พบ ID งานสำหรับรูปภาพนี้",
+      "maxImagesPerProduct": "คุณสามารถเผยแพร่รูปภาพได้สูงสุด 10 รูปต่อผลิตภัณฑ์ กรุณายกเลิกการเผยแพร่หรือลบรูปภาพก่อนเผยแพร่รูปใหม่"
+    },
     "fullscreen": "เต็มหน้าจอ",
     "compare": "เปรียบเทียบ",
     "details": "รายละเอียด",

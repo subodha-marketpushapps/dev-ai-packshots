@@ -150,6 +150,15 @@
     "removeImage": "Fjern billede",
     "removeUploadedImage": "Fjern uploadet billede",
     "goBack": "Gå tilbage (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Billede blev offentliggjort med succes.",
+      "imagePublishFailed": "Kunne ikke offentliggøre billede.",
+      "imageDeletedSuccess": "Billede blev slettet med succes.",
+      "imageDeleteFailed": "Kunne ikke slette billede.",
+      "noProductIdOrImageUrl": "Ingen produkt-ID eller billede-URL tilgængelig til offentliggørelse.",
+      "noTaskIdFound": "Ingen opgave-ID fundet for dette billede.",
+      "maxImagesPerProduct": "Du kan kun offentliggøre op til 10 billeder per produkt. Annuller offentliggørelsen eller slet et billede, før du offentliggør et nyt."
+    },
     "fullscreen": "Fuld skærm",
     "compare": "Sammenlign",
     "details": "Detaljer",

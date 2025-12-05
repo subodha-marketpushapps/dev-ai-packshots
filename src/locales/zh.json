@@ -150,6 +150,15 @@
     "removeImage": "移除图像",
     "removeUploadedImage": "移除已上传图像",
     "goBack": "返回 (Esc)",
+    "api": {
+      "imagePublishedSuccess": "图像已成功发布。",
+      "imagePublishFailed": "发布图像失败。",
+      "imageDeletedSuccess": "图像已成功删除。",
+      "imageDeleteFailed": "删除图像失败。",
+      "noProductIdOrImageUrl": "没有可用于发布的产品ID或图像URL。",
+      "noTaskIdFound": "找不到此图像的任务ID。",
+      "maxImagesPerProduct": "每个产品最多只能发布10张图像。在发布新图像之前，请取消发布或删除图像。"
+    },
     "fullscreen": "全屏",
     "compare": "比较",
     "details": "详细信息",

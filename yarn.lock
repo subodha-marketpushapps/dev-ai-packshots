@@ -1475,19 +1475,19 @@
     "@wix/auto_sdk_business-tools_locations" "1.0.38"
     "@wix/auto_sdk_business-tools_site-properties" "1.0.97"
 
-"@wix/cli-app@^1.1.131":
-  version "1.1.140"
-  resolved "https://registry.npmjs.org/@wix/cli-app/-/cli-app-1.1.140.tgz"
-  integrity sha512-jHnPBJ7JKW53yxj8FrpDO8uTwxQ90wkDA64NF8NCsvAh3pm/qEHuPmopJqPGa1S2j155UKnaz8yKSlxogUVpBA==
+"@wix/cli-app@^1.1.141":
+  version "1.1.141"
+  resolved "https://registry.npmjs.org/@wix/cli-app/-/cli-app-1.1.141.tgz"
+  integrity sha512-jNKeExSgLlOj52lks8RrI5Q6fzlUBchRhQ8UJHRYScaTtij6QPp54Odb31teSgwo2ll/sCaruXsrQ18/V3APWg==
   dependencies:
     esbuild "^0.25.0"
     miniflare "3.20241106.0"
     vite "6.2.4"
 
-"@wix/cli@^1.1.131":
-  version "1.1.140"
-  resolved "https://registry.npmjs.org/@wix/cli/-/cli-1.1.140.tgz"
-  integrity sha512-syHFBWOyy/5+O/XmeRzVPCLFFVv+rudvgHBvIEwR7Tli/HEfndE/SVhdjvUmc550xjXW2bJbablB34ZcZ8kfMw==
+"@wix/cli@^1.1.141":
+  version "1.1.141"
+  resolved "https://registry.npmjs.org/@wix/cli/-/cli-1.1.141.tgz"
+  integrity sha512-CAyMOhMG6u1ukugyLg1m/XWhGUhnl13krwufdoAt8DmNtynZtlj6Ybq6ROAj5NhWXrXu659KM6s/HL5upeRdRg==
   dependencies:
     node-gyp "^8.4.1"
   optionalDependencies:

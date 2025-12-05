@@ -150,6 +150,15 @@
     "removeImage": "Afbeelding verwijderen",
     "removeUploadedImage": "Geüploade afbeelding verwijderen",
     "goBack": "Terug (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Afbeelding succesvol gepubliceerd.",
+      "imagePublishFailed": "Fout bij het publiceren van de afbeelding.",
+      "imageDeletedSuccess": "Afbeelding succesvol verwijderd.",
+      "imageDeleteFailed": "Fout bij het verwijderen van de afbeelding.",
+      "noProductIdOrImageUrl": "Geen product-ID of afbeelding-URL beschikbaar voor publicatie.",
+      "noTaskIdFound": "Geen taak-ID gevonden voor deze afbeelding.",
+      "maxImagesPerProduct": "U kunt slechts maximaal 10 afbeeldingen per product publiceren. Maak de publicatie ongedaan of verwijder een afbeelding voordat u een nieuwe publiceert."
+    },
     "fullscreen": "Volledig scherm",
     "compare": "Vergelijken",
     "details": "Details",

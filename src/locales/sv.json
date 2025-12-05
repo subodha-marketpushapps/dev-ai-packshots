@@ -150,6 +150,15 @@
     "removeImage": "Ta bort bild",
     "removeUploadedImage": "Ta bort uppladdad bild",
     "goBack": "Gå tillbaka (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Bild publicerades.",
+      "imagePublishFailed": "Kunde inte publicera bild.",
+      "imageDeletedSuccess": "Bild raderades.",
+      "imageDeleteFailed": "Kunde inte radera bild.",
+      "noProductIdOrImageUrl": "Inget produkt-ID eller bild-URL tillgängligt för publicering.",
+      "noTaskIdFound": "Inget uppgifts-ID hittades för denna bild.",
+      "maxImagesPerProduct": "Du kan bara publicera upp till 10 bilder per produkt. Avpublicera eller radera en bild innan du publicerar en ny."
+    },
     "fullscreen": "Helskärm",
     "compare": "Jämför",
     "details": "Detaljer",

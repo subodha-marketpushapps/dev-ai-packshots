@@ -150,6 +150,15 @@
     "removeImage": "Hapus Gambar",
     "removeUploadedImage": "Hapus gambar yang diunggah",
     "goBack": "Kembali (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Gambar berhasil dipublikasikan.",
+      "imagePublishFailed": "Gagal mempublikasikan gambar.",
+      "imageDeletedSuccess": "Gambar berhasil dihapus.",
+      "imageDeleteFailed": "Gagal menghapus gambar.",
+      "noProductIdOrImageUrl": "Tidak ada ID produk atau URL gambar yang tersedia untuk dipublikasikan.",
+      "noTaskIdFound": "ID tugas tidak ditemukan untuk gambar ini.",
+      "maxImagesPerProduct": "Anda hanya dapat mempublikasikan hingga 10 gambar per produk. Harap batalkan publikasi atau hapus gambar sebelum mempublikasikan yang baru."
+    },
     "fullscreen": "Layar Penuh",
     "compare": "Bandingkan",
     "details": "Detail",

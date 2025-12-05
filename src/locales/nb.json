@@ -150,6 +150,15 @@
     "removeImage": "Fjern bilde",
     "removeUploadedImage": "Fjern opplastet bilde",
     "goBack": "Gå tilbake (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Bilde ble publisert.",
+      "imagePublishFailed": "Kunne ikke publisere bilde.",
+      "imageDeletedSuccess": "Bilde ble slettet.",
+      "imageDeleteFailed": "Kunne ikke slette bilde.",
+      "noProductIdOrImageUrl": "Ingen produkt-ID eller bilde-URL tilgjengelig for publisering.",
+      "noTaskIdFound": "Ingen oppgave-ID funnet for dette bildet.",
+      "maxImagesPerProduct": "Du kan bare publisere opp til 10 bilder per produkt. Avpubliser eller slett et bilde før du publiserer et nytt."
+    },
     "fullscreen": "Fullskjerm",
     "compare": "Sammenlign",
     "details": "Detaljer",

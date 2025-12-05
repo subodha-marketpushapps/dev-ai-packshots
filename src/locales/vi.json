@@ -150,6 +150,15 @@
     "removeImage": "Xóa Hình ảnh",
     "removeUploadedImage": "Xóa hình ảnh đã tải lên",
     "goBack": "Quay lại (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Đã xuất bản hình ảnh thành công.",
+      "imagePublishFailed": "Không thể xuất bản hình ảnh.",
+      "imageDeletedSuccess": "Đã xóa hình ảnh thành công.",
+      "imageDeleteFailed": "Không thể xóa hình ảnh.",
+      "noProductIdOrImageUrl": "Không có ID sản phẩm hoặc URL hình ảnh để xuất bản.",
+      "noTaskIdFound": "Không tìm thấy ID nhiệm vụ cho hình ảnh này.",
+      "maxImagesPerProduct": "Bạn chỉ có thể xuất bản tối đa 10 hình ảnh cho mỗi sản phẩm. Vui lòng hủy xuất bản hoặc xóa hình ảnh trước khi xuất bản hình ảnh mới."
+    },
     "fullscreen": "Toàn màn hình",
     "compare": "So sánh",
     "details": "Chi tiết",

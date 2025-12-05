@@ -150,6 +150,15 @@
     "removeImage": "Rimuovi Immagine",
     "removeUploadedImage": "Rimuovi immagine caricata",
     "goBack": "Torna indietro (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Immagine pubblicata con successo.",
+      "imagePublishFailed": "Impossibile pubblicare l'immagine.",
+      "imageDeletedSuccess": "Immagine eliminata con successo.",
+      "imageDeleteFailed": "Impossibile eliminare l'immagine.",
+      "noProductIdOrImageUrl": "Nessun ID prodotto o URL immagine disponibile per la pubblicazione.",
+      "noTaskIdFound": "Nessun ID attività trovato per questa immagine.",
+      "maxImagesPerProduct": "Puoi pubblicare solo fino a 10 immagini per prodotto. Annulla la pubblicazione o elimina un'immagine prima di pubblicarne una nuova."
+    },
     "fullscreen": "Schermo Intero",
     "compare": "Confronta",
     "details": "Dettagli",

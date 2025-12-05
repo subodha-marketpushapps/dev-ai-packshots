@@ -150,6 +150,15 @@
     "removeImage": "Odebrat obrázek",
     "removeUploadedImage": "Odebrat nahraný obrázek",
     "goBack": "Zpět (Esc)",
+    "api": {
+      "imagePublishedSuccess": "Obrázek byl úspěšně publikován.",
+      "imagePublishFailed": "Nepodařilo se publikovat obrázek.",
+      "imageDeletedSuccess": "Obrázek byl úspěšně smazán.",
+      "imageDeleteFailed": "Nepodařilo se smazat obrázek.",
+      "noProductIdOrImageUrl": "Není k dispozici ID produktu nebo URL obrázku pro publikaci.",
+      "noTaskIdFound": "Pro tento obrázek nebylo nalezeno ID úlohy.",
+      "maxImagesPerProduct": "Můžete publikovat pouze až 10 obrázků na produkt. Zrušte publikaci nebo smažte obrázek před publikováním nového."
+    },
     "fullscreen": "Celá obrazovka",
     "compare": "Porovnat",
     "details": "Detaily",
