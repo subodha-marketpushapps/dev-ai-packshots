@@ -252,7 +252,14 @@
     "chooseProduct": "製品を選択...",
     "viewAllLiveProductImages": "すべてのライブ製品画像を表示",
     "copy": "コピー",
-    "copied": "コピーしました！"
+    "copied": "コピーしました！",
+    "clearSearch": "検索をクリア"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTubeチャンネル",
+    "mkpWebsite": "MKPウェブサイト",
+    "moreMkpApps": "その他のMKPアプリ",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "製品を選択",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "AI Product Images ダッシュボードを開いて、すべての製品の画像を簡単に生成できます。",
     "goToDashboard": "ダッシュボードに移動",
     "upgrade": "アップグレード"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "画像をダウンロード",
+      "deleteImage": "画像を削除"
+    },
+    "cornerRadius": {
+      "editIndividually": "個別に編集",
+      "applyToAllCorners": "すべての角に適用",
+      "topLeftCorner": "左上の角",
+      "topRightCorner": "右上の角",
+      "bottomLeftCorner": "左下の角",
+      "bottomRightCorner": "右下の角"
+    }
   }
 }

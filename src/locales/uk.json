@@ -252,7 +252,14 @@
     "chooseProduct": "Виберіть продукт...",
     "viewAllLiveProductImages": "Переглянути всі активні зображення продуктів",
     "copy": "Копіювати",
-    "copied": "Скопійовано!"
+    "copied": "Скопійовано!",
+    "clearSearch": "Очистити пошук"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "Канал MKP на YouTube",
+    "mkpWebsite": "Веб-сайт MKP",
+    "moreMkpApps": "Більше додатків MKP",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Вибрати продукт",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Відкрийте панель AI Product Images і легко створюйте зображення для всіх ваших продуктів.",
     "goToDashboard": "Перейти до панелі",
     "upgrade": "Оновити"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Завантажити зображення",
+      "deleteImage": "Видалити зображення"
+    },
+    "cornerRadius": {
+      "editIndividually": "Редагувати окремо",
+      "applyToAllCorners": "Застосувати до всіх кутів",
+      "topLeftCorner": "Верхній лівий кут",
+      "topRightCorner": "Верхній правий кут",
+      "bottomLeftCorner": "Нижній лівий кут",
+      "bottomRightCorner": "Нижній правий кут"
+    }
   }
 }

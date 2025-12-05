@@ -252,7 +252,14 @@
     "chooseProduct": "Vælg et produkt...",
     "viewAllLiveProductImages": "Se alle live-produktbilleder",
     "copy": "Kopiér",
-    "copied": "Kopieret!"
+    "copied": "Kopieret!",
+    "clearSearch": "Ryd søgning"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube-kanal",
+    "mkpWebsite": "MKP Websted",
+    "moreMkpApps": "Flere MKP Apps",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Vælg produkt",
@@ -437,15 +444,29 @@
     "showSubscriptionInfo": "Vis abonnementsinfo"
   },
   "studioHeader": {
-    "waitForOperation": "Please wait for the current operation to finish.",
-    "failedToOpenDashboard": "Failed to open the AI Product Images Dashboard. Please try again later.",
-    "openDashboard": "Open AI Product Images Dashboard",
-    "dismiss": "Dismiss",
-    "subscriptionUnavailable": "Subscription unavailable",
-    "credits": "credits",
-    "free": "Free",
-    "openDashboardDescription": "Open the AI Product Images Dashboard & easily generate images across all your products.",
-    "goToDashboard": "Go to Dashboard",
-    "upgrade": "Upgrade"
+    "waitForOperation": "Vent venligst, mens den aktuelle handling færdiggøres.",
+    "failedToOpenDashboard": "Det lykkedes ikke at åbne AI-produktbilled-dashboardet. Prøv igen senere.",
+    "openDashboard": "Åbn AI-produktbilled-dashboard",
+    "dismiss": "Luk",
+    "subscriptionUnavailable": "Abonnement ikke tilgængeligt",
+    "credits": "kreditter",
+    "free": "Gratis",
+    "openDashboardDescription": "Åbn AI-produktbilled-dashboardet og generér nemt billeder for alle dine produkter.",
+    "goToDashboard": "Gå til dashboard",
+    "upgrade": "Opgrader"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Download billede",
+      "deleteImage": "Slet billede"
+    },
+    "cornerRadius": {
+      "editIndividually": "Rediger individuelt",
+      "applyToAllCorners": "Anvend på alle hjørner",
+      "topLeftCorner": "Øverste venstre hjørne",
+      "topRightCorner": "Øverste højre hjørne",
+      "bottomLeftCorner": "Nederste venstre hjørne",
+      "bottomRightCorner": "Nederste højre hjørne"
+    }
   }
 }

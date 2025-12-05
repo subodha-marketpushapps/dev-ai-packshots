@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, TextButton, Tooltip, Text, IconButton } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
 import { useStatusToast } from "../../../../services/providers/StatusToastProvider";
@@ -23,6 +24,7 @@ const CellWixProductName: React.FC<CellProductNameProps> = React.memo(
     productId,
     showMoreWithLivePreview = false,
   }) => {
+    const { t } = useTranslation();
     const { addToast } = useStatusToast();
     const handleOpenProductEditPage = useCallback(() => {
       openProductEditPage(productId ?? product.id);
@@ -32,8 +34,7 @@ const CellWixProductName: React.FC<CellProductNameProps> = React.memo(
       if (!product || !product.productPageUrl || !product.productPageUrl.base) {
         addToast({
           status: "warning",
-          content:
-            "Your site is not published or the product page is unavailable.",
+          content: t('photoStudio.productPageUnavailable', {defaultValue: "Your site is not published or the product page is unavailable."}),
         });
         return;
       }
@@ -50,7 +51,7 @@ const CellWixProductName: React.FC<CellProductNameProps> = React.memo(
               suffixIcon={
                 <Tooltip
                   zIndex={9999999}
-                  content="Open Edit Product Dashboard Page"
+                  content={t('photoStudio.openEditProductDashboardPage', {defaultValue: "Open Edit Product Dashboard Page"})}
                 >
                   <Icons.ExternalLinkSmall />
                 </Tooltip>
@@ -66,7 +67,7 @@ const CellWixProductName: React.FC<CellProductNameProps> = React.memo(
           )}
           {!showStoreLink && <Text size="small">{product.name}</Text>}
           {showMoreWithLivePreview && product.productPageUrl && (
-            <Tooltip content="View Live Product Page" zIndex={9999999}>
+            <Tooltip content={t('photoStudio.viewLiveProductPage', {defaultValue: "View Live Product Page"})} zIndex={9999999}>
               <IconButton
                 skin="dark"
                 priority="tertiary"
@@ -83,14 +84,14 @@ const CellWixProductName: React.FC<CellProductNameProps> = React.memo(
           {product.sku && (
             <>
               <Text size="tiny" className={classes["gray-color"]}>
-                <span>SKU: {product.sku}</span>
+                <span>{t('photoStudio.sku', {defaultValue: "SKU:"})} {product.sku}</span>
               </Text>
               <Icons.CircleSmallFilledSmall className={classes["gray-color"]} />
             </>
           )}
 
           <Text size="tiny" className={classes["gray-color"]}>
-            <span>Price: {extractFormattedPrice(product)}</span>
+            <span>{t('photoStudio.price', {defaultValue: "Price:"})} {extractFormattedPrice(product)}</span>
           </Text>
         </Box>
       </Box>

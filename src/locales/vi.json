@@ -252,7 +252,14 @@
     "chooseProduct": "Chọn một sản phẩm...",
     "viewAllLiveProductImages": "Xem tất cả hình ảnh Sản phẩm trực tiếp",
     "copy": "Sao chép",
-    "copied": "Đã sao chép!"
+    "copied": "Đã sao chép!",
+    "clearSearch": "Xóa tìm kiếm"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "Kênh YouTube MKP",
+    "mkpWebsite": "Trang Web MKP",
+    "moreMkpApps": "Thêm Ứng dụng MKP",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Chọn Sản phẩm",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Mở Bảng điều khiển AI Product Images và dễ dàng tạo hình ảnh cho tất cả sản phẩm của bạn.",
     "goToDashboard": "Đi đến Bảng điều khiển",
     "upgrade": "Nâng cấp"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Tải xuống hình ảnh",
+      "deleteImage": "Xóa hình ảnh"
+    },
+    "cornerRadius": {
+      "editIndividually": "Chỉnh sửa riêng lẻ",
+      "applyToAllCorners": "Áp dụng cho tất cả các góc",
+      "topLeftCorner": "Góc trên bên trái",
+      "topRightCorner": "Góc trên bên phải",
+      "bottomLeftCorner": "Góc dưới bên trái",
+      "bottomRightCorner": "Góc dưới bên phải"
+    }
   }
 }

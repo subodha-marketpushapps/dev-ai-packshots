@@ -252,7 +252,14 @@
     "chooseProduct": "Velg produkt...",
     "viewAllLiveProductImages": "Vis alle live produktbilder",
     "copy": "Kopier",
-    "copied": "Kopiert!"
+    "copied": "Kopiert!",
+    "clearSearch": "Tøm søk"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube-kanal",
+    "mkpWebsite": "MKP Nettsted",
+    "moreMkpApps": "Flere MKP Apps",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Velg produkt",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Åpne AI Product Images Dashboard og generer enkelt bilder for alle produktene dine.",
     "goToDashboard": "Gå til Dashboard",
     "upgrade": "Oppgrader"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Last ned bilde",
+      "deleteImage": "Slett bilde"
+    },
+    "cornerRadius": {
+      "editIndividually": "Rediger individuelt",
+      "applyToAllCorners": "Bruk på alle hjørner",
+      "topLeftCorner": "Øverste venstre hjørne",
+      "topRightCorner": "Øverste høyre hjørne",
+      "bottomLeftCorner": "Nederste venstre hjørne",
+      "bottomRightCorner": "Nederste høyre hjørne"
+    }
   }
 }

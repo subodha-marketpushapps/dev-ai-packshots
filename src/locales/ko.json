@@ -252,7 +252,14 @@
     "chooseProduct": "제품 선택...",
     "viewAllLiveProductImages": "모든 라이브 제품 이미지 보기",
     "copy": "복사",
-    "copied": "복사되었습니다!"
+    "copied": "복사되었습니다!",
+    "clearSearch": "검색 지우기"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube 채널",
+    "mkpWebsite": "MKP 웹사이트",
+    "moreMkpApps": "더 많은 MKP 앱",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "제품 선택",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "AI Product Images 대시보드를 열고 모든 제품에 대한 이미지를 쉽게 생성하세요.",
     "goToDashboard": "대시보드로 이동",
     "upgrade": "업그레이드"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "이미지 다운로드",
+      "deleteImage": "이미지 삭제"
+    },
+    "cornerRadius": {
+      "editIndividually": "개별 편집",
+      "applyToAllCorners": "모든 모서리에 적용",
+      "topLeftCorner": "왼쪽 위 모서리",
+      "topRightCorner": "오른쪽 위 모서리",
+      "bottomLeftCorner": "왼쪽 아래 모서리",
+      "bottomRightCorner": "오른쪽 아래 모서리"
+    }
   }
 }

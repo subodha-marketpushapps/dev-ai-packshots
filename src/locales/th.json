@@ -252,7 +252,14 @@
     "chooseProduct": "เลือกผลิตภัณฑ์...",
     "viewAllLiveProductImages": "ดูรูปภาพผลิตภัณฑ์สดทั้งหมด",
     "copy": "คัดลอก",
-    "copied": "คัดลอกแล้ว!"
+    "copied": "คัดลอกแล้ว!",
+    "clearSearch": "ล้างการค้นหา"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "ช่อง YouTube ของ MKP",
+    "mkpWebsite": "เว็บไซต์ MKP",
+    "moreMkpApps": "แอป MKP เพิ่มเติม",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "เลือกผลิตภัณฑ์",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "เปิดแดชบอร์ด AI Product Images และสร้างรูปภาพได้อย่างง่ายดายสำหรับผลิตภัณฑ์ทั้งหมดของคุณ",
     "goToDashboard": "ไปที่แดชบอร์ด",
     "upgrade": "อัปเกรด"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "ดาวน์โหลดรูปภาพ",
+      "deleteImage": "ลบรูปภาพ"
+    },
+    "cornerRadius": {
+      "editIndividually": "แก้ไขทีละรายการ",
+      "applyToAllCorners": "ใช้กับทุกมุม",
+      "topLeftCorner": "มุมซ้ายบน",
+      "topRightCorner": "มุมขวาบน",
+      "bottomLeftCorner": "มุมซ้ายล่าง",
+      "bottomRightCorner": "มุมขวาล่าง"
+    }
   }
 }

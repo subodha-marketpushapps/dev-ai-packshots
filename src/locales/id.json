@@ -252,7 +252,14 @@
     "chooseProduct": "Pilih produk...",
     "viewAllLiveProductImages": "Lihat semua Gambar Produk live",
     "copy": "Salin",
-    "copied": "Tersalin!"
+    "copied": "Tersalin!",
+    "clearSearch": "Hapus pencarian"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "Saluran YouTube MKP",
+    "mkpWebsite": "Situs Web MKP",
+    "moreMkpApps": "Lebih Banyak Aplikasi MKP",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Pilih Produk",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Buka Dashboard AI Product Images & buat gambar dengan mudah untuk semua produk Anda.",
     "goToDashboard": "Buka Dashboard",
     "upgrade": "Tingkatkan"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Unduh gambar",
+      "deleteImage": "Hapus gambar"
+    },
+    "cornerRadius": {
+      "editIndividually": "Edit secara individual",
+      "applyToAllCorners": "Terapkan ke semua sudut",
+      "topLeftCorner": "Sudut kiri atas",
+      "topRightCorner": "Sudut kanan atas",
+      "bottomLeftCorner": "Sudut kiri bawah",
+      "bottomRightCorner": "Sudut kanan bawah"
+    }
   }
 }

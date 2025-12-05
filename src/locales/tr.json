@@ -252,7 +252,14 @@
     "chooseProduct": "Bir ürün seçin...",
     "viewAllLiveProductImages": "Tüm yayınlanmış ürün görsellerini görüntüle",
     "copy": "Kopyala",
-    "copied": "Kopyalandı!"
+    "copied": "Kopyalandı!",
+    "clearSearch": "Aramayı temizle"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube Kanalı",
+    "mkpWebsite": "MKP Web Sitesi",
+    "moreMkpApps": "Daha Fazla MKP Uygulaması",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Ürün Seç",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "AI Product Images Panosunu açın ve tüm ürünleriniz için kolayca görsel oluşturun.",
     "goToDashboard": "Panele Git",
     "upgrade": "Yükselt"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Görüntüyü indir",
+      "deleteImage": "Görüntüyü sil"
+    },
+    "cornerRadius": {
+      "editIndividually": "Ayrı ayrı düzenle",
+      "applyToAllCorners": "Tüm köşelere uygula",
+      "topLeftCorner": "Sol üst köşe",
+      "topRightCorner": "Sağ üst köşe",
+      "bottomLeftCorner": "Sol alt köşe",
+      "bottomRightCorner": "Sağ alt köşe"
+    }
   }
 }

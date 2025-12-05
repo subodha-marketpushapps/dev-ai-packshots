@@ -252,7 +252,14 @@
     "chooseProduct": "Wybierz produkt...",
     "viewAllLiveProductImages": "Zobacz wszystkie aktywne Obrazy Produktu",
     "copy": "Kopiuj",
-    "copied": "Skopiowano!"
+    "copied": "Skopiowano!",
+    "clearSearch": "Wyczyść wyszukiwanie"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "Kanał YouTube MKP",
+    "mkpWebsite": "Strona MKP",
+    "moreMkpApps": "Więcej aplikacji MKP",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Wybierz Produkt",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Otwórz Panel AI Product Images i łatwo generuj obrazy dla wszystkich swoich produktów.",
     "goToDashboard": "Przejdź do Panelu",
     "upgrade": "Ulepsz"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Pobierz obraz",
+      "deleteImage": "Usuń obraz"
+    },
+    "cornerRadius": {
+      "editIndividually": "Edytuj indywidualnie",
+      "applyToAllCorners": "Zastosuj do wszystkich rogów",
+      "topLeftCorner": "Lewy górny róg",
+      "topRightCorner": "Prawy górny róg",
+      "bottomLeftCorner": "Lewy dolny róg",
+      "bottomRightCorner": "Prawy dolny róg"
+    }
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { debounce } from "lodash";
 import { CornerRadiusInput } from "@wix/design-system";
 import { CornerRadius } from "../../../../interfaces";
@@ -18,6 +19,7 @@ const InputCornerRadius: React.FC<InputCornerRadiusProps> = ({
   },
   onChange,
 }) => {
+  const { t } = useTranslation();
   const [cornerRadius, setCornerRadius] = useState<CornerRadius>(value);
 
   // Debounced function to handle updates
@@ -49,28 +51,28 @@ const InputCornerRadius: React.FC<InputCornerRadiusProps> = ({
     <CornerRadiusInput
       size="small"
       linkingButtonLabels={{
-        pressed: "Edit individually",
-        unpressed: "Apply to all corners",
+        pressed: t('ui.cornerRadius.editIndividually', {defaultValue: "Edit individually"}),
+        unpressed: t('ui.cornerRadius.applyToAllCorners', {defaultValue: "Apply to all corners"}),
       }}
       linked={cornerRadius.linked}
       topLeft={{
         value: cornerRadius.topLeft,
-        ariaLabel: "Top left corner",
+        ariaLabel: t('ui.cornerRadius.topLeftCorner', {defaultValue: "Top left corner"}),
         onChange: (e) => handleCornerChange("topLeft", e ?? 0),
       }}
       topRight={{
         value: cornerRadius.topRight,
-        ariaLabel: "Top right corner",
+        ariaLabel: t('ui.cornerRadius.topRightCorner', {defaultValue: "Top right corner"}),
         onChange: (e) => handleCornerChange("topRight", e ?? 0),
       }}
       bottomLeft={{
         value: cornerRadius.bottomLeft,
-        ariaLabel: "Bottom left corner",
+        ariaLabel: t('ui.cornerRadius.bottomLeftCorner', {defaultValue: "Bottom left corner"}),
         onChange: (e) => handleCornerChange("bottomLeft", e ?? 0),
       }}
       bottomRight={{
         value: cornerRadius.bottomRight,
-        ariaLabel: "Bottom right corner",
+        ariaLabel: t('ui.cornerRadius.bottomRightCorner', {defaultValue: "Bottom right corner"}),
         onChange: (e) => handleCornerChange("bottomRight", e ?? 0),
       }}
       onLinkedToggle={(isLinked) => {

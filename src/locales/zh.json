@@ -252,7 +252,14 @@
     "chooseProduct": "选择一个产品...",
     "viewAllLiveProductImages": "查看所有实时产品图像",
     "copy": "复制",
-    "copied": "已复制！"
+    "copied": "已复制！",
+    "clearSearch": "清除搜索"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube频道",
+    "mkpWebsite": "MKP网站",
+    "moreMkpApps": "更多MKP应用",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "选择产品",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "打开 AI 产品图像仪表板，轻松为所有产品生成图像。",
     "goToDashboard": "前往仪表板",
     "upgrade": "升级"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "下载图像",
+      "deleteImage": "删除图像"
+    },
+    "cornerRadius": {
+      "editIndividually": "单独编辑",
+      "applyToAllCorners": "应用于所有角",
+      "topLeftCorner": "左上角",
+      "topRightCorner": "右上角",
+      "bottomLeftCorner": "左下角",
+      "bottomRightCorner": "右下角"
+    }
   }
 }

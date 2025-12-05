@@ -252,7 +252,14 @@
     "chooseProduct": "Välj en produkt...",
     "viewAllLiveProductImages": "Visa alla live produktbilder",
     "copy": "Kopiera",
-    "copied": "Kopierat!"
+    "copied": "Kopierat!",
+    "clearSearch": "Rensa sökning"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube-kanal",
+    "mkpWebsite": "MKP Webbplats",
+    "moreMkpApps": "Fler MKP Apps",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Välj Produkt",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Öppna AI Product Images Dashboard och generera enkelt bilder för alla dina produkter.",
     "goToDashboard": "Gå till Dashboard",
     "upgrade": "Uppgradera"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Ladda ner bild",
+      "deleteImage": "Ta bort bild"
+    },
+    "cornerRadius": {
+      "editIndividually": "Redigera individuellt",
+      "applyToAllCorners": "Tillämpa på alla hörn",
+      "topLeftCorner": "Övre vänstra hörnet",
+      "topRightCorner": "Övre högra hörnet",
+      "bottomLeftCorner": "Nedre vänstra hörnet",
+      "bottomRightCorner": "Nedre högra hörnet"
+    }
   }
 }

@@ -252,7 +252,14 @@
     "chooseProduct": "Kies een product...",
     "viewAllLiveProductImages": "Bekijk alle live Productafbeeldingen",
     "copy": "Kopiëren",
-    "copied": "Gekopieerd!"
+    "copied": "Gekopieerd!",
+    "clearSearch": "Zoekopdracht wissen"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube-kanaal",
+    "mkpWebsite": "MKP Website",
+    "moreMkpApps": "Meer MKP Apps",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Selecteer Product",
@@ -447,5 +454,19 @@
     "openDashboardDescription": "Open het AI Product Images Dashboard en genereer eenvoudig afbeeldingen voor al uw producten.",
     "goToDashboard": "Ga naar Dashboard",
     "upgrade": "Upgraden"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Afbeelding downloaden",
+      "deleteImage": "Afbeelding verwijderen"
+    },
+    "cornerRadius": {
+      "editIndividually": "Individueel bewerken",
+      "applyToAllCorners": "Toepassen op alle hoeken",
+      "topLeftCorner": "Linkerbovenhoek",
+      "topRightCorner": "Rechterbovenhoek",
+      "bottomLeftCorner": "Linkeronderhoek",
+      "bottomRightCorner": "Rechteronderhoek"
+    }
   }
 }

@@ -252,7 +252,14 @@
     "chooseProduct": "Vybrat produkt...",
     "viewAllLiveProductImages": "Zobrazit všechny živé obrázky produktů",
     "copy": "Kopírovat",
-    "copied": "Zkopírováno!"
+    "copied": "Zkopírováno!",
+    "clearSearch": "Vymazat vyhledávání"
+  },
+  "sectionFooter": {
+    "mkpYoutubeChannel": "MKP YouTube kanál",
+    "mkpWebsite": "MKP Webové stránky",
+    "moreMkpApps": "Více aplikací MKP",
+    "copyright": "© {{year}} MarketPush Apps"
   },
   "productModalSelector": {
     "selectProduct": "Vybrat produkt",
@@ -437,15 +444,29 @@
     "showSubscriptionInfo": "Zobrazit informace o předplatném"
   },
   "studioHeader": {
-    "waitForOperation": "Please wait for the current operation to finish.",
-    "failedToOpenDashboard": "Failed to open the AI Product Images Dashboard. Please try again later.",
-    "openDashboard": "Open AI Product Images Dashboard",
-    "dismiss": "Dismiss",
-    "subscriptionUnavailable": "Subscription unavailable",
-    "credits": "credits",
-    "free": "Free",
-    "openDashboardDescription": "Open the AI Product Images Dashboard & easily generate images across all your products.",
-    "goToDashboard": "Go to Dashboard",
-    "upgrade": "Upgrade"
+    "waitForOperation": "Počkejte prosím, až se aktuální operace dokončí.",
+    "failedToOpenDashboard": "Nepodařilo se otevřít Nástěnku AI Product Images. Zkuste to prosím později.",
+    "openDashboard": "Otevřít Nástěnku AI Product Images",
+    "dismiss": "Zavřít",
+    "subscriptionUnavailable": "Předplatné není k dispozici",
+    "credits": "kredity",
+    "free": "Zdarma",
+    "openDashboardDescription": "Otevřete Nástěnku AI Product Images a snadno generujte obrázky pro všechny vaše produkty.",
+    "goToDashboard": "Přejít na Nástěnku",
+    "upgrade": "Upgradovat"
+  },
+  "ui": {
+    "imagePicker": {
+      "downloadImage": "Stáhnout obrázek",
+      "deleteImage": "Smazat obrázek"
+    },
+    "cornerRadius": {
+      "editIndividually": "Upravit jednotlivě",
+      "applyToAllCorners": "Použít na všechny rohy",
+      "topLeftCorner": "Levý horní roh",
+      "topRightCorner": "Pravý horní roh",
+      "bottomLeftCorner": "Levý dolní roh",
+      "bottomRightCorner": "Pravý dolní roh"
+    }
   }
 }

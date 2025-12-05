@@ -1,4 +1,5 @@
 import React, { type FC, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { Box, ImageViewer } from "@wix/design-system";
 import { dashboard } from "@wix/dashboard";
 import { media } from "@wix/sdk";
@@ -24,6 +25,7 @@ export const ImagePicker: FC<Props> = ({
   frameHeight = "100px",
   requestOptions = {},
 }) => {
+  const { t } = useTranslation();
   const handleMediaManager = useCallback(async () => {
     try {
       const response = await dashboard.openMediaManager();
@@ -81,8 +83,8 @@ export const ImagePicker: FC<Props> = ({
       onUpdateImage={handleMediaManager}
       onRemoveImage={() => onChange("", "")}
       onDownloadImage={() => downloadImage(imageUrl)}
-      downloadImageInfo="Download image"
-      removeImageInfo="Delete image"
+      downloadImageInfo={t('ui.imagePicker.downloadImage', {defaultValue: "Download image"})}
+      removeImageInfo={t('ui.imagePicker.deleteImage', {defaultValue: "Delete image"})}
       showDownloadButton={true}
     />
   );

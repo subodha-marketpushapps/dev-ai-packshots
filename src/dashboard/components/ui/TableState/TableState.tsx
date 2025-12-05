@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { Image, Table, TextButton } from "@wix/design-system";
 import { useIntercom } from "react-use-intercom";
 import classes from "./TableState.module.scss";
@@ -20,6 +21,7 @@ const TableState: React.FC<TableStateProps> = ({
   customActions,
   innerActionFunction,
 }) => {
+  const { t } = useTranslation();
   const { showNewMessage } = useIntercom();
   const openIntercomWithContent = useCallback(
     (message: string | undefined) => showNewMessage(message),
@@ -75,10 +77,9 @@ const TableState: React.FC<TableStateProps> = ({
   if (stateType === "noSearchResults") {
     return (
       <Table.EmptyState
-        title={title ?? "No search results"}
+        title={title ?? t('emptyStates.noSearchResults.title', {defaultValue: "No search results"})}
         subtitle={
-          subtitle ??
-          "No items match your search criteria. Try to search by another keyword"
+          subtitle ?? t('emptyStates.noSearchResults.subtitle', {defaultValue: "No items match your search criteria. Try to search by another keyword"})
         }
         image={
           <Image
@@ -91,7 +92,9 @@ const TableState: React.FC<TableStateProps> = ({
         className={classes["empty-state"]}
       >
         {customActions}
-        <TextButton onClick={innerActionFunction}>Clear Search</TextButton>
+        <TextButton onClick={innerActionFunction}>
+          {t('common.clearSearch', {defaultValue: "Clear Search"})}
+        </TextButton>
       </Table.EmptyState>
     );
   }
