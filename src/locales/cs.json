@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Nebo nahrajte více obrázků ze svého počítače"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Váš obrázek byl moderován naším bezpečnostním filtrem. Zkuste jiný pokyn pro AI nebo jiný obrázek.",
+    "noImageSelected": "Nebyl vybrán žádný obrázek ke zpracování.",
+    "generatedImageFailedToLoad": "Vygenerovaný obrázek se nepodařilo načíst.",
+    "failedToGenerateImage": "Generování obrázku se nezdařilo{{errorDetails}}",
+    "errorGeneratingImage": "Chyba při generování obrázku",
+    "noReferenceImageSelected": "Nebyl vybrán žádný referenční obrázek ke zpracování.",
+    "invalidImageUrl": "Adresa URL obrázku chybí nebo je neplatná.",
+    "unknownImageSize": "Nebylo možné určit velikost obrázku."
+  },
   "editorPhotoActions": {
     "edit": "Upravit",
     "copyEdits": "Kopírovat úpravy",

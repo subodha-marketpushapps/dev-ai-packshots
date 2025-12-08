@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Hoặc tải lên nhiều hình ảnh từ máy tính của bạn"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Hình ảnh của bạn bị bộ lọc an toàn của chúng tôi kiểm duyệt. Vui lòng thử hướng dẫn hoặc hình ảnh AI khác.",
+    "noImageSelected": "Không có hình nào được chọn để xử lý.",
+    "generatedImageFailedToLoad": "Không tải được hình ảnh đã tạo.",
+    "failedToGenerateImage": "Tạo hình ảnh không thành công{{errorDetails}}",
+    "errorGeneratingImage": "Lỗi khi tạo hình ảnh",
+    "noReferenceImageSelected": "Chưa chọn hình ảnh tham chiếu để xử lý.",
+    "invalidImageUrl": "URL hình ảnh bị thiếu hoặc không hợp lệ.",
+    "unknownImageSize": "Không xác định được kích thước hình ảnh."
+  },
   "editorPhotoActions": {
     "edit": "Chỉnh sửa",
     "copyEdits": "Sao chép Chỉnh sửa",

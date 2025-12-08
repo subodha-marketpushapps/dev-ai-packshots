@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Ya da bilgisayarınızdan birden fazla görsel yükleyin"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Görseliniz güvenlik filtremiz tarafından moderasyonlandı. Lütfen farklı bir yapay zeka talimatı veya görsel deneyin.",
+    "noImageSelected": "İşleme için görsel seçilmedi.",
+    "generatedImageFailedToLoad": "Oluşturulan görsel yüklenemedi.",
+    "failedToGenerateImage": "Görsel oluşturulamadı{{errorDetails}}",
+    "errorGeneratingImage": "Görsel oluşturulurken hata oluştu",
+    "noReferenceImageSelected": "İşleme için referans görsel seçilmedi.",
+    "invalidImageUrl": "Görsel URL'si eksik veya geçersiz.",
+    "unknownImageSize": "Görsel boyutu belirlenemedi."
+  },
   "editorPhotoActions": {
     "edit": "Düzenle",
     "copyEdits": "Kopya Düzenlemeler",

@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Или загрузите несколько изображений с вашего компьютера"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Ваше изображение было отклонено нашим фильтром безопасности. Попробуйте другую инструкцию ИИ или другое изображение.",
+    "noImageSelected": "Не выбрано изображение для обработки.",
+    "generatedImageFailedToLoad": "Не удалось загрузить сгенерированное изображение.",
+    "failedToGenerateImage": "Не удалось сгенерировать изображение{{errorDetails}}",
+    "errorGeneratingImage": "Ошибка при генерации изображения",
+    "noReferenceImageSelected": "Не выбрано эталонное изображение для обработки.",
+    "invalidImageUrl": "URL изображения отсутствует или недействителен.",
+    "unknownImageSize": "Не удалось определить размер изображения."
+  },
   "editorPhotoActions": {
     "edit": "Редактировать",
     "copyEdits": "Копировать Редактирование",

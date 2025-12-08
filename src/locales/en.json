@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Or upload multiple images from your computer"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Your image was moderated by our safety filter. Please try a different AI prompt instruction or image.",
+    "noImageSelected": "No image selected for processing.",
+    "generatedImageFailedToLoad": "Generated image failed to load.",
+    "failedToGenerateImage": "Failed to generate image{{errorDetails}}",
+    "errorGeneratingImage": "Error generating image",
+    "noReferenceImageSelected": "No reference image selected for processing.",
+    "invalidImageUrl": "Image URL is missing or invalid.",
+    "unknownImageSize": "Could not determine image size."
+  },
   "editorPhotoActions": {
     "edit": "Edit",
     "copyEdits": "Copy Edits",

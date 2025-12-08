@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "หรืออัปโหลดรูปภาพหลายรูปจากคอมพิวเตอร์ของคุณ"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "รูปของคุณถูกกลั่นกรองโดยตัวกรองความปลอดภัยของเรา โปรดลองคำสั่ง AI หรือรูปภาพอื่น",
+    "noImageSelected": "ไม่ได้เลือกรูปภาพสำหรับประมวลผล",
+    "generatedImageFailedToLoad": "ไม่สามารถโหลดรูปภาพที่สร้างขึ้นได้",
+    "failedToGenerateImage": "ไม่สามารถสร้างรูปภาพได้{{errorDetails}}",
+    "errorGeneratingImage": "เกิดข้อผิดพลาดขณะสร้างรูปภาพ",
+    "noReferenceImageSelected": "ไม่ได้เลือกรูปภาพอ้างอิงสำหรับประมวลผล",
+    "invalidImageUrl": "URL ของรูปภาพหายไปหรือไม่ถูกต้อง",
+    "unknownImageSize": "ไม่สามารถระบุขนาดรูปภาพได้"
+  },
   "editorPhotoActions": {
     "edit": "แก้ไข",
     "copyEdits": "คัดลอกการแก้ไข",

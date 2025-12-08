@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Або завантажте кілька зображень зі свого комп'ютера"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Ваше зображення було відхилено нашим фільтром безпеки. Спробуйте іншу інструкцію або зображення.",
+    "noImageSelected": "Не вибрано жодного зображення для обробки.",
+    "generatedImageFailedToLoad": "Не вдалося завантажити згенероване зображення.",
+    "failedToGenerateImage": "Не вдалося згенерувати зображення{{errorDetails}}",
+    "errorGeneratingImage": "Помилка під час генерації зображення",
+    "noReferenceImageSelected": "Не вибрано жодного еталонного зображення для обробки.",
+    "invalidImageUrl": "URL-адреса зображення відсутня або недійсна.",
+    "unknownImageSize": "Не вдалося визначити розмір зображення."
+  },
   "editorPhotoActions": {
     "edit": "Редагувати",
     "copyEdits": "Копіювати редагування",

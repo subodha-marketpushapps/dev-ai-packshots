@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Ou faça upload de múltiplas imagens do seu computador"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Sua imagem foi moderada pelo nosso filtro de segurança. Tente outra instrução ou imagem.",
+    "noImageSelected": "Nenhuma imagem selecionada para processamento.",
+    "generatedImageFailedToLoad": "A imagem gerada não pôde ser carregada.",
+    "failedToGenerateImage": "Falha ao gerar a imagem{{errorDetails}}",
+    "errorGeneratingImage": "Erro ao gerar imagem",
+    "noReferenceImageSelected": "Nenhuma imagem de referência selecionada para processamento.",
+    "invalidImageUrl": "A URL da imagem está ausente ou inválida.",
+    "unknownImageSize": "Não foi possível determinar o tamanho da imagem."
+  },
   "editorPhotoActions": {
     "edit": "Editar",
     "copyEdits": "Copiar Edições",

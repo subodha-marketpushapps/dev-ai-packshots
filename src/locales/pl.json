@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Lub prześlij wiele obrazów z komputera"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Twój obraz został zmoderowany przez nasz filtr bezpieczeństwa. Spróbuj innej instrukcji AI lub innego obrazu.",
+    "noImageSelected": "Nie wybrano obrazu do przetworzenia.",
+    "generatedImageFailedToLoad": "Wygenerowany obraz nie mógł zostać załadowany.",
+    "failedToGenerateImage": "Nie udało się wygenerować obrazu{{errorDetails}}",
+    "errorGeneratingImage": "Błąd podczas generowania obrazu",
+    "noReferenceImageSelected": "Nie wybrano obrazu referencyjnego do przetworzenia.",
+    "invalidImageUrl": "Adres URL obrazu jest brakujący lub nieprawidłowy.",
+    "unknownImageSize": "Nie udało się ustalić rozmiaru obrazu."
+  },
   "editorPhotoActions": {
     "edit": "Edytuj",
     "copyEdits": "Kopiuj Edycje",

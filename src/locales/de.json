@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Oder laden Sie mehrere Bilder von Ihrem Computer hoch"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Dein Bild wurde von unserem Sicherheitsfilter moderiert. Bitte versuche eine andere KI-Aufforderung oder ein anderes Bild.",
+    "noImageSelected": "Kein Bild zur Verarbeitung ausgewählt.",
+    "generatedImageFailedToLoad": "Generiertes Bild konnte nicht geladen werden.",
+    "failedToGenerateImage": "Bild konnte nicht generiert werden{{errorDetails}}",
+    "errorGeneratingImage": "Fehler beim Generieren des Bildes",
+    "noReferenceImageSelected": "Kein Referenzbild zur Verarbeitung ausgewählt.",
+    "invalidImageUrl": "Bild-URL fehlt oder ist ungültig.",
+    "unknownImageSize": "Bildgröße konnte nicht bestimmt werden."
+  },
   "editorPhotoActions": {
     "edit": "Bearbeiten",
     "copyEdits": "Bearbeitungen kopieren",

@@ -17,6 +17,7 @@
  *   // Use submitFluxEdit or submitFluxEditWithReferenceImage as needed in your UI logic.
  */
 import { useCallback, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { usePhotoStudio } from "../services/providers/PhotoStudioProvider";
 import { useStatusToast } from "../services/providers/StatusToastProvider";
 import {
@@ -35,6 +36,7 @@ import type { EditorCanvasHandle } from "../pages/PhotoStudio/EditorCanvas/Edito
 import { useQueryClient } from "@tanstack/react-query";
 import { QUERY_ALL_GENERATED_IMAGES } from "./useGeneratedImages";
 import { useSubscription } from "./useSubscription";
+import type { TFunction } from "i18next";
 
 /**
  * Helper to show an error toast.
@@ -51,10 +53,13 @@ function showErrorToast(
  * Helper to expand error messages for better user feedback.
  * This is used to provide more user-friendly error messages based on specific error patterns.
  */
-function expandErrorMessage(error: string): string {
+function expandErrorMessage(error: string, t: TFunction): string {
   // Expand error message if it contains specific patterns
   if (error.includes("Content Moderated (Safety Filter)")) {
-    return "Your image was moderated by our safety filter. Please try a different AI prompt instruction or Image.";
+    return t("fluxEditHandlers.contentModerated", {
+      defaultValue:
+        "Your image was moderated by our safety filter. Please try a different AI prompt instruction or image.",
+    });
   }
   return error;
 }
@@ -129,6 +134,7 @@ export const useFluxEditHandlers = () => {
     checkShouldShowFeedback,
   } = usePhotoStudio();
   const { addToast } = useStatusToast();
+  const { t } = useTranslation();
   const { mutate: fluxEditApiMutate } = useFluxEditApi();
   const { mutate: fluxEnhanceApiMutate } = useFluxEnhanceApi();
   const { refetch: refetchSubscription } = useSubscription();
@@ -160,7 +166,12 @@ export const useFluxEditHandlers = () => {
         setApiImagePreparing(false);
       }
       if (!canvasImage) {
-        showErrorToast(addToast, "No image selected for processing.");
+        showErrorToast(
+          addToast,
+          t("fluxEditHandlers.noImageSelected", {
+            defaultValue: "No image selected for processing.",
+          })
+        );
         updateFileExplorerImage(layerId, { imageState: PROCESS_STATES.ERROR });
         return;
       }
@@ -220,7 +231,9 @@ export const useFluxEditHandlers = () => {
             });
             showErrorToast(
               addToast,
-              `Generated image failed to load.`,
+              t("fluxEditHandlers.generatedImageFailedToLoad", {
+                defaultValue: "Generated image failed to load.",
+              }),
               "warning"
             );
           };
@@ -232,17 +245,22 @@ export const useFluxEditHandlers = () => {
           });
           showErrorToast(
             addToast,
-            expandErrorMessage(
-              `Failed to generate image. ${response.error}${
-                response.error ? "." : ""
-              } `
-            )
+            t("fluxEditHandlers.failedToGenerateImage", {
+              defaultValue: "Failed to generate image{{errorDetails}}",
+              errorDetails:  "",
+            })
           );
           setApiLoading(false);
         }
       } catch (error: any) {
         updateFileExplorerImage(layerId, { imageState: PROCESS_STATES.ERROR });
-        showErrorToast(addToast, error.message || `Error generating image`);
+        showErrorToast(
+          addToast,
+          error.message ||
+            t("fluxEditHandlers.errorGeneratingImage", {
+              defaultValue: "Error generating image",
+            })
+        );
         setApiLoading(false);
       }
     },
@@ -259,6 +277,7 @@ export const useFluxEditHandlers = () => {
       queryClient,
       refetchSubscription,
       checkShouldShowFeedback,
+      t,
     ]
   );
 
@@ -273,12 +292,22 @@ export const useFluxEditHandlers = () => {
       isMultiBatch = false
     ): Promise<void> => {
       if (!referenceImage) {
-        showErrorToast(addToast, "No reference image selected for processing.");
+        showErrorToast(
+          addToast,
+          t("fluxEditHandlers.noReferenceImageSelected", {
+            defaultValue: "No reference image selected for processing.",
+          })
+        );
         return;
       }
       setApiImagePreparing(true);
       if (!imageLayer.imageUrl || typeof imageLayer.imageUrl !== "string") {
-        showErrorToast(addToast, "Image URL is missing or invalid.");
+        showErrorToast(
+          addToast,
+          t("fluxEditHandlers.invalidImageUrl", {
+            defaultValue: "Image URL is missing or invalid.",
+          })
+        );
         updateFileExplorerImage(layerId, { imageState: PROCESS_STATES.ERROR });
         setApiImagePreparing(false);
         return;
@@ -298,7 +327,12 @@ export const useFluxEditHandlers = () => {
           img.src = imageLayer.imageUrl || "";
         });
       } catch {
-        showErrorToast(addToast, "Could not determine image size.");
+        showErrorToast(
+          addToast,
+          t("fluxEditHandlers.unknownImageSize", {
+            defaultValue: "Could not determine image size.",
+          })
+        );
         updateFileExplorerImage(layerId, { imageState: PROCESS_STATES.ERROR });
         setApiImagePreparing(false);
         return;
@@ -319,7 +353,12 @@ export const useFluxEditHandlers = () => {
         setApiImagePreparing(false);
       }
       if (!canvasImage) {
-        showErrorToast(addToast, "No image selected for processing.");
+        showErrorToast(
+          addToast,
+          t("fluxEditHandlers.noImageSelected", {
+            defaultValue: "No image selected for processing.",
+          })
+        );
         updateFileExplorerImage(layerId, { imageState: PROCESS_STATES.ERROR });
         return;
       }
@@ -385,7 +424,9 @@ export const useFluxEditHandlers = () => {
             });
             showErrorToast(
               addToast,
-              `Generated image failed to load.`,
+              t("fluxEditHandlers.generatedImageFailedToLoad", {
+                defaultValue: "Generated image failed to load.",
+              }),
               "warning"
             );
           };
@@ -397,17 +438,22 @@ export const useFluxEditHandlers = () => {
           });
           showErrorToast(
             addToast,
-            expandErrorMessage(
-              `Failed to generate image. ${response.error}${
-                response.error ? "." : ""
-              } `
-            )
+            t("fluxEditHandlers.failedToGenerateImage", {
+              defaultValue: "Failed to generate image{{errorDetails}}",
+              errorDetails: "",
+            })
           );
           setApiLoading(false);
         }
       } catch (error: any) {
         updateFileExplorerImage(layerId, { imageState: PROCESS_STATES.ERROR });
-        showErrorToast(addToast, error.message || `Error generating image. `);
+        showErrorToast(
+          addToast,
+          error.message ||
+            t("fluxEditHandlers.errorGeneratingImage", {
+              defaultValue: "Error generating image",
+            })
+        );
         setApiLoading(false);
       }
     },
@@ -425,6 +471,7 @@ export const useFluxEditHandlers = () => {
       queryClient,
       refetchSubscription,
       checkShouldShowFeedback,
+      t,
     ]
   );
 

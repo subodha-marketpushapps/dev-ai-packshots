@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Atau unggah beberapa gambar dari komputer Anda"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Gambar Anda dimoderasi oleh filter keamanan kami. Coba instruksi AI atau gambar lain.",
+    "noImageSelected": "Tidak ada gambar yang dipilih untuk diproses.",
+    "generatedImageFailedToLoad": "Gambar yang dihasilkan gagal dimuat.",
+    "failedToGenerateImage": "Gagal menghasilkan gambar{{errorDetails}}",
+    "errorGeneratingImage": "Terjadi kesalahan saat menghasilkan gambar",
+    "noReferenceImageSelected": "Tidak ada gambar referensi yang dipilih untuk diproses.",
+    "invalidImageUrl": "URL gambar hilang atau tidak valid.",
+    "unknownImageSize": "Tidak dapat menentukan ukuran gambar."
+  },
   "editorPhotoActions": {
     "edit": "Edit",
     "copyEdits": "Salin Edit",

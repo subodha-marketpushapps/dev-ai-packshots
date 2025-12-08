@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "或从您的计算机上传多张图像"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "您的图片被我们的安全过滤器拦截。请尝试不同的 AI 指令或图片。",
+    "noImageSelected": "未选择要处理的图片。",
+    "generatedImageFailedToLoad": "生成的图片加载失败。",
+    "failedToGenerateImage": "生成图片失败{{errorDetails}}",
+    "errorGeneratingImage": "生成图片时出错",
+    "noReferenceImageSelected": "未选择用于处理的参考图片。",
+    "invalidImageUrl": "图片 URL 缺失或无效。",
+    "unknownImageSize": "无法确定图片大小。"
+  },
   "editorPhotoActions": {
     "edit": "编辑",
     "copyEdits": "复制编辑",

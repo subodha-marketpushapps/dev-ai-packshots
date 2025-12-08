@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Of upload meerdere afbeeldingen vanaf uw computer"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Je afbeelding is gemodereerd door onze veiligheidsfilter. Probeer een andere AI-opdracht of afbeelding.",
+    "noImageSelected": "Geen afbeelding geselecteerd om te verwerken.",
+    "generatedImageFailedToLoad": "Gegenereerde afbeelding kon niet worden geladen.",
+    "failedToGenerateImage": "Afbeelding genereren mislukt{{errorDetails}}",
+    "errorGeneratingImage": "Fout bij het genereren van afbeelding",
+    "noReferenceImageSelected": "Geen referentieafbeelding geselecteerd om te verwerken.",
+    "invalidImageUrl": "Afbeeldings-URL ontbreekt of is ongeldig.",
+    "unknownImageSize": "Afbeeldingsgrootte kon niet worden bepaald."
+  },
   "editorPhotoActions": {
     "edit": "Bewerken",
     "copyEdits": "Kopieer bewerkingen",

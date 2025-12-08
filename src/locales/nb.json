@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "Eller last opp flere bilder fra datamaskinen"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "Bildet ditt ble moderert av sikkerhetsfilteret vårt. Prøv en annen AI-instruksjon eller et annet bilde.",
+    "noImageSelected": "Ingen bilde valgt for behandling.",
+    "generatedImageFailedToLoad": "Det genererte bildet kunne ikke lastes inn.",
+    "failedToGenerateImage": "Kunne ikke generere bilde{{errorDetails}}",
+    "errorGeneratingImage": "Feil ved generering av bilde",
+    "noReferenceImageSelected": "Ingen referansebilde valgt for behandling.",
+    "invalidImageUrl": "Bilde-URL mangler eller er ugyldig.",
+    "unknownImageSize": "Kunne ikke fastslå bildestørrelsen."
+  },
   "editorPhotoActions": {
     "edit": "Rediger",
     "copyEdits": "Kopiredigeringer",

@@ -359,6 +359,16 @@
       "uploadMultipleFromComputer": "または、コンピューターから複数の画像をアップロード"
     }
   },
+  "fluxEditHandlers": {
+    "contentModerated": "画像はセーフティフィルターにより制限されました。別のAI指示または画像をお試しください。",
+    "noImageSelected": "処理する画像が選択されていません。",
+    "generatedImageFailedToLoad": "生成された画像を読み込めませんでした。",
+    "failedToGenerateImage": "画像の生成に失敗しました{{errorDetails}}",
+    "errorGeneratingImage": "画像生成中にエラーが発生しました",
+    "noReferenceImageSelected": "処理する参照画像が選択されていません。",
+    "invalidImageUrl": "画像URLがないか無効です。",
+    "unknownImageSize": "画像サイズを特定できませんでした。"
+  },
   "editorPhotoActions": {
     "edit": "編集",
     "copyEdits": "コピー編集",
