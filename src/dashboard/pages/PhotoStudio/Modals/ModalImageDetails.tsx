@@ -52,6 +52,8 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
       initialMode === MODES.DETAILED
     );
 
+    console.log("image", image);
+
     // Loading state for input image
     const [inputImageLoading, setInputImageLoading] = useState(false);
 
@@ -134,12 +136,14 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
                 {image?.enhancedPrompt ? image.enhancedPrompt : t('modals.imageDetails.notAvailable', {defaultValue: "N/A"})}
               </Text>
             </Box>
-            <Box direction="vertical">
-              <Heading size="tiny">{t('modals.imageDetails.generateId', {defaultValue: "Generate Id"})}</Heading>
-              <Text size="small" secondary>
-                {image?.seed}
-              </Text>
-            </Box>
+            {image?.seed && (
+              <Box direction="vertical">
+                <Heading size="tiny">{t('modals.imageDetails.generateId', {defaultValue: "Generate Id"})}</Heading>
+                <Text size="small" secondary>
+                  {image?.seed}
+                </Text>
+              </Box>
+            )}
             <Box direction="vertical">
               <Heading size="tiny">{t('modals.imageDetails.createdAt', {defaultValue: "Created at"})}</Heading>
               <Text size="small" secondary>

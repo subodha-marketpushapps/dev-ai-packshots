@@ -431,8 +431,8 @@ const EditorPromptInput: React.FC<SampleComponentProps> = ({
             </Box>
           </Box>
         )}
-        <Box align="space-between" direction="horizontal" flexWrap="wrap" marginTop="SP2">
-          <Box gap="SP2" verticalAlign="middle">
+        <Box align="space-between" direction="horizontal" flexWrap="wrap" marginTop="SP2" gap={"SP2"}>
+          <Box gap="SP2" verticalAlign="middle" flexWrap="wrap">
             {!referenceImage && EditModePopover}
             {!referenceImage &&
               outputSettings.editingMode === "enhance" &&
