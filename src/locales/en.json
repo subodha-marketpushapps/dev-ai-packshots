@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Bottom left corner",
       "bottomRightCorner": "Bottom right corner"
     }
+  },
+  "recommendedApps": {
+    "title": "Recommended Apps",
+    "learnMore": "Learn More"
   }
 }

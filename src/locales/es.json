@@ -487,6 +487,10 @@
       "bottomLeftCorner": "Esquina inferior izquierda",
       "bottomRightCorner": "Esquina inferior derecha"
     }
+  },
+  "recommendedApps": {
+    "title": "Apps recomendadas",
+    "learnMore": "Saber más"
   }
 }
 

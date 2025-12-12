@@ -52,8 +52,6 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
       initialMode === MODES.DETAILED
     );
 
-    console.log("image", image);
-
     // Loading state for input image
     const [inputImageLoading, setInputImageLoading] = useState(false);
 
@@ -161,7 +159,6 @@ const ModalImageDetails: React.FC<{ studioMode?: "modal" | "absolute" }> =
     if (!isModalOpened || !image) return null;
     const isLiveImage = image.isLiveImage || false;
 
-    console.log("image data", image);
     return (
       <StudioModalBase isOpen={isModalOpened} mode={studioMode}>
         <Box

@@ -556,7 +556,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
       {/* 
       <Box>
         <Tooltip
-          content="Prev Product"
+          content={t('photoStudio.prevProduct', {defaultValue: "Prev Product"})}
           appendTo="scrollParent"
           zIndex={9999}
           size="small"
@@ -671,7 +671,7 @@ const StudioProductNavigator: React.FC<StudioProductNavigatorProps> = () => {
       {/* 
       <Box>
         <Tooltip
-          content="Next Product"
+          content={t('photoStudio.nextProduct', {defaultValue: "Next Product"})}
           zIndex={9999999}
           size="small"
           appendTo="scrollParent"

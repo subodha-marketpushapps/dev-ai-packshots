@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Góc dưới bên trái",
       "bottomRightCorner": "Góc dưới bên phải"
     }
+  },
+  "recommendedApps": {
+    "title": "Ứng dụng được đề xuất",
+    "learnMore": "Tìm hiểu thêm"
   }
 }

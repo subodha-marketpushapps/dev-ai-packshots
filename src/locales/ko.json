@@ -487,5 +487,9 @@
       "bottomLeftCorner": "왼쪽 아래 모서리",
       "bottomRightCorner": "오른쪽 아래 모서리"
     }
+  },
+  "recommendedApps": {
+    "title": "추천 앱",
+    "learnMore": "자세히 알아보기"
   }
 }

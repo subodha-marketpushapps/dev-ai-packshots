@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Levý dolní roh",
       "bottomRightCorner": "Pravý dolní roh"
     }
+  },
+  "recommendedApps": {
+    "title": "Doporučené aplikace",
+    "learnMore": "Zjistit více"
   }
 }

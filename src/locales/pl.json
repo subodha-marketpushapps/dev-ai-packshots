@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Lewy dolny róg",
       "bottomRightCorner": "Prawy dolny róg"
     }
+  },
+  "recommendedApps": {
+    "title": "Polecane aplikacje",
+    "learnMore": "Dowiedz się więcej"
   }
 }

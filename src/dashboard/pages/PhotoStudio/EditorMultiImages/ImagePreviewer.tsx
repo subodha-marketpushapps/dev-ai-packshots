@@ -233,7 +233,7 @@ const ImagePreviewer: React.FC<ImagePreviewerProps> = React.memo(
                   priority="secondary"
                   size="tiny"
                   onClick={() => deleteFileExplorerImage(image.id)}
-                  aria-label="Remove uploaded image"
+                  aria-label={t('imagePreviewer.removeUploadedImage', {defaultValue: "Remove uploaded image"})}
                 >
                   <Icons.DeleteSmall />
                 </IconButton>

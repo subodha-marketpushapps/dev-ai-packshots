@@ -1,10 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Card, Image, Box, Text, TextButton } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
 
 import APP_LIST from "./recommendedAppList";
 
 const RecommendedApps: React.FC = () => {
+  const { t } = useTranslation();
+  
   function handleUrlClick(url: string) {
     window.open(url, "_blank", "noopener");
   }
@@ -12,7 +15,7 @@ const RecommendedApps: React.FC = () => {
   const lastElementId = APP_LIST[APP_LIST.length - 1].id;
   return (
     <Card>
-      <Card.Header title="Recommended Apps" />
+      <Card.Header title={t('recommendedApps.title', {defaultValue: "Recommended Apps"})} />
       <Card.Divider />
       <Card.Content>
         <Box gap={3} direction="vertical">
@@ -47,7 +50,7 @@ const RecommendedApps: React.FC = () => {
                   onClick={() => handleUrlClick(app.url)}
                   suffixIcon={<Icons.ExternalLink />}
                 >
-                  Learn More
+                  {t('recommendedApps.learnMore', {defaultValue: "Learn More"})}
                 </TextButton>
               </Box>
             </Box>

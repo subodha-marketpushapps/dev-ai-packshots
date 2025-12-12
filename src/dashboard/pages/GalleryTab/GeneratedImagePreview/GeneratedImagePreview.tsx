@@ -8,6 +8,7 @@ import {
   CopyClipboard,
 } from "@wix/design-system";
 import * as Icons from "@wix/wix-ui-icons-common";
+import { useTranslation } from "react-i18next";
 import classes from "./GeneratedImagePreview.module.scss";
 import { GeneratedImage } from "../../../../interfaces";
 import { usePhotoStudio } from "../../../services/providers/PhotoStudioProvider";
@@ -22,7 +23,7 @@ const GeneratedImagePreview: React.FC<{
   size = "30vh",
 }) => {
   const imageEditor = usePhotoStudio();
-
+  const { t } = useTranslation();
   // Function to handle adding products
   const handleOnPhotoEditClick = (product: GeneratedImage) => {
     try {
@@ -58,7 +59,7 @@ const GeneratedImagePreview: React.FC<{
       >
         <CopyClipboard value={image.enhancedPrompt || ""}>
           {({ isCopied, copyToClipboard, reset }) => (
-            <Tooltip content={!isCopied ? "Copy" : "Copied!"} size="small">
+            <Tooltip content={!isCopied ? t('common.copy', {defaultValue: "Copy"}) : t('common.copied', {defaultValue: "Copied!"})} size="small">
               <IconButton
                 skin="transparent"
                 priority="primary"

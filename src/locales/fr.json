@@ -487,6 +487,10 @@
       "bottomLeftCorner": "Coin inférieur gauche",
       "bottomRightCorner": "Coin inférieur droit"
     }
+  },
+  "recommendedApps": {
+    "title": "Apps recommandées",
+    "learnMore": "En savoir plus"
   }
 }
 

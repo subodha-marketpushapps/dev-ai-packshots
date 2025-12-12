@@ -104,7 +104,7 @@ const CellWixProductName: React.FC<CellProductNameProps> = React.memo(
             suffixIcon={
               <Tooltip
                 zIndex={9999999}
-                content="Open Edit Product Dashboard Page"
+                content={t('photoStudio.openEditProductDashboardPage', {defaultValue: "Open Edit Product Dashboard Page"})}
               >
                 <Icons.ExternalLinkSmall />
               </Tooltip>

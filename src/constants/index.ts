@@ -100,8 +100,8 @@ export const GUIDE_JAR_IFRAMES = {
     "https://www.guidejar.com/embed/fb65913a-3037-45bc-addf-9aa8afb5bfe6?type=1&controls=off",
 };
 
-export const LOCIZE_PROJECT_ID = '5d009855-d0eb-44db-99c3-8627f036cf41'; 
-export const LOCIZE_API_KEY = '2cd45d7d-11ee-4b72-81ce-28c9e71044eb';
+export const LOCIZE_PROJECT_ID = '5de584e9-6fc4-4ea2-96e2-fb6399616cd7'; 
+export const LOCIZE_API_KEY = 'b858dd8e-f982-4462-b0c9-e3f5bcb74c32';
 export const LOCIZE_VERSION = 'latest';
 
 // Re-export constants from other modules

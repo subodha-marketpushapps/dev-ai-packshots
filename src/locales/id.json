@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Sudut kiri bawah",
       "bottomRightCorner": "Sudut kanan bawah"
     }
+  },
+  "recommendedApps": {
+    "title": "Aplikasi yang Direkomendasikan",
+    "learnMore": "Pelajari lebih lanjut"
   }
 }

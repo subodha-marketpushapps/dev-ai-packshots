@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Sol alt köşe",
       "bottomRightCorner": "Sağ alt köşe"
     }
+  },
+  "recommendedApps": {
+    "title": "Önerilen Uygulamalar",
+    "learnMore": "Daha fazla bilgi"
   }
 }

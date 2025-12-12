@@ -487,5 +487,9 @@
       "bottomLeftCorner": "มุมซ้ายล่าง",
       "bottomRightCorner": "มุมขวาล่าง"
     }
+  },
+  "recommendedApps": {
+    "title": "แอปที่แนะนำ",
+    "learnMore": "เรียนรู้เพิ่มเติม"
   }
 }

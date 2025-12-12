@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Нижний левый угол",
       "bottomRightCorner": "Нижний правый угол"
     }
+  },
+  "recommendedApps": {
+    "title": "Рекомендуемые приложения",
+    "learnMore": "Узнать больше"
   }
 }

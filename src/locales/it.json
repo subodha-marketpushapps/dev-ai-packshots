@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Angolo inferiore sinistro",
       "bottomRightCorner": "Angolo inferiore destro"
     }
+  },
+  "recommendedApps": {
+    "title": "App consigliate",
+    "learnMore": "Scopri di più"
   }
 }

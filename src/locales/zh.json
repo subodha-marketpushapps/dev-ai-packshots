@@ -487,5 +487,9 @@
       "bottomLeftCorner": "左下角",
       "bottomRightCorner": "右下角"
     }
+  },
+  "recommendedApps": {
+    "title": "推荐应用",
+    "learnMore": "了解更多"
   }
 }

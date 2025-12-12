@@ -487,5 +487,9 @@
       "bottomLeftCorner": "Nederste venstre hjørne",
       "bottomRightCorner": "Nederste høyre hjørne"
     }
+  },
+  "recommendedApps": {
+    "title": "Anbefalte apper",
+    "learnMore": "Les mer"
   }
 }
